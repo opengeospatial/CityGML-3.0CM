@@ -15,7 +15,11 @@ GitHub enables parallel work by allowing the WPs to fork their own branch of the
  
 **Outreach:**
 
-Independently, the SWG intends to expose some results via GitHub during the course of the development cycle to get external review, much as we did during GeoPackage 1.0. This may best be done via a second public repository with a slightly different URL such as  http://www.github.com/opengeospatial/CityGML-3.0 (and then the private one could be as  http://www.github.com/opengeospatial/CityGML-3.0-SWG . That’s a technical issue.
+The SWG intends to expose some results via GitHub during the course of the development cycle to get external review via this repository. The publication process is described in the CityGML 3.0 Development Process document. The intent is to make results available for public review early in the process and to encourage exernal experts to join us formally in working on components for which they have special interest or expertise.
  
-We are actively looking for external expertise via the CFP developed by Claus Nagel and we have a tentative plan to have a second OGC-SIG 3D public workshop hosted by Fraunhofer in Darmstadt this summer or early autumn.
+For more information, please read the the Call for Participation document, which is also found in this repository. We have a tentative plan to have a second OGC-SIG 3D public workshop hosted by Fraunhofer in Darmstadt this summer or early autumn.
+
+**Work Packages:**
+
+The devlopment process is fully described in the CityGML 3.0 Development Process document. A summary of the fourteen work packages can be found in this repository's wiki oages. Each work package corresponds to a them selected over the course of the past year (March 2013 - March 2014) and published by the OGC.
  
