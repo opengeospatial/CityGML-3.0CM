@@ -1,7 +1,7 @@
 CityGML-3.0
 ===========
 
-Public repository for the Open Geospatial Consortium (OGC) CityGML SWG development of version 3.0 of the CityGML standard.
+Public repository for the Open Geospatial Consortium (OGC) CityGML SWG development of version 3.0 of the CityGML standard in cooperation with SIG 3D and Buiding Smart International.
 
 **Workflow:**
 
@@ -19,4 +19,3 @@ Independently, the SWG intends to expose some results via GitHub during the cour
  
 We are actively looking for external expertise via the CFP developed by Claus Nagel and we have a tentative plan to have a second OGC-SIG 3D public workshop hosted by Fraunhofer in Darmstadt this summer or early autumn.
  
-Now is the time to make sure that what we are doing and how we are doing it fits with the OGC P&P. As far as the chairs know at this point we are within the OGC P&P. This would be a good time to let us know if we need to make adjustments. I attached a diagram of our process as discussed in today’s SWG meeting.
