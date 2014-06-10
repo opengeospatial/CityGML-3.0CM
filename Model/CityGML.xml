@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3">
+	<XMI.header>
+		<XMI.documentation>
+			<XMI.exporter>Enterprise Architect</XMI.exporter>
+			<XMI.exporterVersion>2.5</XMI.exporterVersion>
+		</XMI.documentation>
+	</XMI.header>
+	<XMI.content>
+		<UML:Model name="EA Model" xmi.id="MX_EAID_369E0123_00FC_4098_BEF2_3BB506B2012A">
+			<UML:Namespace.ownedElement>
+				<UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
+				<UML:Package name="CityGML" xmi.id="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+					<UML:ModelElement.taggedValue>
+						<UML:TaggedValue tag="documentation" value="--- 4th December 2013 ---&#xA;This version of the UML model represents a SIG 3D consolidated UML model in the variant which represents the geometry objects as associations.&#xA;Contributions to this version have been by SIG 3D and CityGML SWG as well as Jürgen Ebbinghaus, Tatjana Kutzner, Andreas Donaubauer and Thomas H. Kolbe.&#xA;&#xA;&#xA;--- 20th September 2013 ---&#xA;This UML model has been remodeled based on the CityGML specification 2.0 by AED-SICAD AG (Jürgen Ebbinghaus) by order of AGeoBW  Amt für Geoinformationswesen der Bundeswehr. &#xA;&#xA;Afterwards, the model has been checked and edited by Technische Universität München, Chair of Geoinformatics (Tatjana Kutzner, Andreas Donaubauer, Thomas H. Kolbe).&#xA;&#xA;In September 2013 the model was donated to the public by AGeoBW and AED-SICAD AG in order to support further CityGML development."/>
+						<UML:TaggedValue tag="parent" value="EAPK_FC0C9957_42F3_4380_B8DF_6ABDEB8D6F0A"/>
+						<UML:TaggedValue tag="ea_package_id" value="676"/>
+						<UML:TaggedValue tag="created" value="2012-07-09 00:00:00"/>
+						<UML:TaggedValue tag="modified" value="2012-07-09 00:00:00"/>
+						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+						<UML:TaggedValue tag="xmlpath" value="CityGML.xml"/>
+						<UML:TaggedValue tag="lastloaddate" value="2013-04-17 14:47:56"/>
+						<UML:TaggedValue tag="lastsavedate" value="2013-04-17 15:55:15"/>
+						<UML:TaggedValue tag="version" value="1.0"/>
+						<UML:TaggedValue tag="isprotected" value="FALSE"/>
+						<UML:TaggedValue tag="usedtd" value="FALSE"/>
+						<UML:TaggedValue tag="owner" value="cnagel"/>
+						<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
+						<UML:TaggedValue tag="logxml" value="FALSE"/>
+						<UML:TaggedValue tag="tpos" value="0"/>
+						<UML:TaggedValue tag="packageFlags" value="VICON=3;Recurse=0;VCCFG=CityGML;CRC=0;"/>
+						<UML:TaggedValue tag="batchsave" value="0"/>
+						<UML:TaggedValue tag="batchload" value="0"/>
+						<UML:TaggedValue tag="phase" value="1.0"/>
+						<UML:TaggedValue tag="status" value="Proposed"/>
+						<UML:TaggedValue tag="author" value="ebbinghaus,kutzner,donaubauer,kolbe"/>
+						<UML:TaggedValue tag="complexity" value="1"/>
+						<UML:TaggedValue tag="ea_stype" value="Public"/>
+						<UML:TaggedValue tag="tpos" value="0"/>
+						<UML:TaggedValue tag="gentype" value="Java"/>
+					</UML:ModelElement.taggedValue>
+					<UML:Namespace.ownedElement>
+						<UML:Collaboration xmi.id="EAID_369E0123_00FC_4098_BEF2_3BB506B2012A_Collaboration" name="Collaborations">
+							<UML:Namespace.ownedElement>
+								<UML:ClassifierRole name="Transportation" xmi.id="EAID_050DB26B_9C8E_44f0_B42E_3A24C7384E7F" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="Application Schema"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A"/>
+										<UML:TaggedValue tag="date_created" value="2012-11-26 09:27:47"/>
+										<UML:TaggedValue tag="date_modified" value="2013-12-15 17:05:26"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_050DB26B_9C8E_44f0_B42E_3A24C7384E7F"/>
+										<UML:TaggedValue tag="package_name" value="CityGML"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="ebbinghaus"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="Application Schema"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="685"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={4F36105F-985B-4174-86FF-3169E65EF1D9}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Application Schema;GUID={C639DD4F-A6D1-4c36-936F-B0A59A386C40};FQName=UML Profile for GML Applications Schemas::Application Schema;@ENDSTEREO;$DES;$CLT={050DB26B-9C8E-44f0-B42E-3A24C7384E7F}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Tunnel" xmi.id="EAID_070A5649_8282_4ad3_A1DE_A9A41FCB55B8" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="Application Schema"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A"/>
+										<UML:TaggedValue tag="date_created" value="2012-11-21 15:39:42"/>
+										<UML:TaggedValue tag="date_modified" value="2013-12-15 17:05:40"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_070A5649_8282_4ad3_A1DE_A9A41FCB55B8"/>
+										<UML:TaggedValue tag="package_name" value="CityGML"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="ebbinghaus"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="Application Schema"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="686"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={D5ECD0A6-5AA4-4b97-800C-04BF26A9B0FA}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Application Schema;GUID={C639DD4F-A6D1-4c36-936F-B0A59A386C40};FQName=UML Profile for GML Applications Schemas::Application Schema;@ENDSTEREO;$DES;$CLT={070A5649-8282-4ad3-A1DE-A9A41FCB55B8}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Building" xmi.id="EAID_4F2C8A46_ADA6_4d7e_AB59_DF53F7FA0FEA" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="Application Schema"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A"/>
+										<UML:TaggedValue tag="date_created" value="2012-11-21 15:39:42"/>
+										<UML:TaggedValue tag="date_modified" value="2013-12-15 17:02:36"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_4F2C8A46_ADA6_4d7e_AB59_DF53F7FA0FEA"/>
+										<UML:TaggedValue tag="package_name" value="CityGML"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="ebbinghaus"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="Application Schema"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="679"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={E0B2A198-E1C7-4fc3-9982-543B548965ED}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Application Schema;GUID={C639DD4F-A6D1-4c36-936F-B0A59A386C40};FQName=UML Profile for GML Applications Schemas::Application Schema;@ENDSTEREO;$DES;$CLT={4F2C8A46-ADA6-4d7e-AB59-DF53F7FA0FEA}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="CityObjectGroup" xmi.id="EAID_8877ED0D_AFFC_4f03_9B58_F2736F8935AB" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="Application Schema"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A"/>
+										<UML:TaggedValue tag="date_created" value="2012-11-27 12:23:19"/>
+										<UML:TaggedValue tag="date_modified" value="2013-12-15 17:03:06"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_8877ED0D_AFFC_4f03_9B58_F2736F8935AB"/>
+										<UML:TaggedValue tag="package_name" value="CityGML"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="ebbinghaus"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="Application Schema"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="681"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={A9970AB1-0909-43fc-8D54-F639FDACAF28}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Application Schema;GUID={C639DD4F-A6D1-4c36-936F-B0A59A386C40};FQName=UML Profile for GML Applications Schemas::Application Schema;@ENDSTEREO;$DES;$CLT={8877ED0D-AFFC-4f03-9B58-F2736F8935AB}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Generics" xmi.id="EAID_8DE930BB_8AB7_4f5e_B948_190AE7C6588E" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="Application Schema"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="documentation" value="&quot;SIG3D: Generic Attribute of type &quot;&quot;date&quot;&quot;.&quot;"/>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A"/>
+										<UML:TaggedValue tag="date_created" value="2012-11-19 13:47:33"/>
+										<UML:TaggedValue tag="date_modified" value="2013-12-15 17:04:31"/>
+										<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_8DE930BB_8AB7_4f5e_B948_190AE7C6588E"/>
+										<UML:TaggedValue tag="package_name" value="CityGML"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="ebbinghaus"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="Application Schema"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="682"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={935A57F2-688C-4550-B819-9060030A6739}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Application Schema;GUID={C639DD4F-A6D1-4c36-936F-B0A59A386C40};FQName=UML Profile for GML Applications Schemas::Application Schema;@ENDSTEREO;$DES;$CLT={8DE930BB-8AB7-4f5e-B948-190AE7C6588E}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Bridge" xmi.id="EAID_907C7DFC_E94C_45a2_A3CC_CFC4D25612E3" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="Application Schema"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A"/>
+										<UML:TaggedValue tag="date_created" value="2012-11-21 15:39:42"/>
+										<UML:TaggedValue tag="date_modified" value="2013-12-15 17:02:16"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_907C7DFC_E94C_45a2_A3CC_CFC4D25612E3"/>
+										<UML:TaggedValue tag="package_name" value="CityGML"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="ebbinghaus"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="Application Schema"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="678"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={DE665E21-8BB0-4e08-BA9B-BDBE095CBDFA}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Application Schema;GUID={C639DD4F-A6D1-4c36-936F-B0A59A386C40};FQName=UML Profile for GML Applications Schemas::Application Schema;@ENDSTEREO;$DES;$CLT={907C7DFC-E94C-45a2-A3CC-CFC4D25612E3}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="WaterBody" xmi.id="EAID_A5BC15D5_3041_4a84_BA9E_A28E1B43D317" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="Application Schema"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A"/>
+										<UML:TaggedValue tag="date_created" value="2012-11-26 12:48:30"/>
+										<UML:TaggedValue tag="date_modified" value="2013-12-15 17:06:12"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_A5BC15D5_3041_4a84_BA9E_A28E1B43D317"/>
+										<UML:TaggedValue tag="package_name" value="CityGML"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="ebbinghaus"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="Application Schema"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="688"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={351AE463-BBA5-4930-BA1F-BF44DECAEBF4}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Application Schema;GUID={C639DD4F-A6D1-4c36-936F-B0A59A386C40};FQName=UML Profile for GML Applications Schemas::Application Schema;@ENDSTEREO;$DES;$CLT={A5BC15D5-3041-4a84-BA9E-A28E1B43D317}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="LandUse" xmi.id="EAID_C1AAF1C3_9E48_468d_A272_EA37B3F35235" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="Application Schema"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A"/>
+										<UML:TaggedValue tag="date_created" value="2012-11-28 13:05:09"/>
+										<UML:TaggedValue tag="date_modified" value="2013-12-15 17:04:49"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_C1AAF1C3_9E48_468d_A272_EA37B3F35235"/>
+										<UML:TaggedValue tag="package_name" value="CityGML"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="ebbinghaus"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="Application Schema"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="683"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={F14CB5E8-C413-46f1-ABD8-D51C6F02E176}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Application Schema;GUID={C639DD4F-A6D1-4c36-936F-B0A59A386C40};FQName=UML Profile for GML Applications Schemas::Application Schema;@ENDSTEREO;$DES;$CLT={C1AAF1C3-9E48-468d-A272-EA37B3F35235}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Vegetation" xmi.id="EAID_D44D446F_8AF9_49d7_BD32_6DA30532A847" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="Application Schema"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A"/>
+										<UML:TaggedValue tag="date_created" value="2012-11-26 10:55:06"/>
+										<UML:TaggedValue tag="date_modified" value="2013-12-15 17:05:56"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_D44D446F_8AF9_49d7_BD32_6DA30532A847"/>
+										<UML:TaggedValue tag="package_name" value="CityGML"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="ebbinghaus"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="Application Schema"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="687"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={39614935-B438-4304-87D7-EBA114C716E6}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Application Schema;GUID={C639DD4F-A6D1-4c36-936F-B0A59A386C40};FQName=UML Profile for GML Applications Schemas::Application Schema;@ENDSTEREO;$DES;$CLT={D44D446F-8AF9-49d7-BD32-6DA30532A847}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="CityFurniture" xmi.id="EAID_E1321C0B_B95B_44c0_A3EA_3B507911CD78" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="Application Schema"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A"/>
+										<UML:TaggedValue tag="date_created" value="2012-11-27 11:05:08"/>
+										<UML:TaggedValue tag="date_modified" value="2013-12-15 17:02:52"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_E1321C0B_B95B_44c0_A3EA_3B507911CD78"/>
+										<UML:TaggedValue tag="package_name" value="CityGML"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="ebbinghaus"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="Application Schema"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="680"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={3E4AFD7F-BA7E-4e83-ACD5-BBE42CC37C01}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Application Schema;GUID={C639DD4F-A6D1-4c36-936F-B0A59A386C40};FQName=UML Profile for GML Applications Schemas::Application Schema;@ENDSTEREO;$DES;$CLT={E1321C0B-B95B-44c0-A3EA-3B507911CD78}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Appearance" xmi.id="EAID_E5331CB6_6DCD_42ba_BAFF_7747D02BBEDD" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="Application Schema"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A"/>
+										<UML:TaggedValue tag="date_created" value="2012-11-27 13:10:00"/>
+										<UML:TaggedValue tag="date_modified" value="2013-12-13 20:42:57"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_E5331CB6_6DCD_42ba_BAFF_7747D02BBEDD"/>
+										<UML:TaggedValue tag="package_name" value="CityGML"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="ebbinghaus"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="Application Schema"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="677"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={159620E1-6920-4714-9F29-2B5AFB07B118}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Application Schema;GUID={C639DD4F-A6D1-4c36-936F-B0A59A386C40};FQName=UML Profile for GML Applications Schemas::Application Schema;@ENDSTEREO;$DES;$CLT={E5331CB6-6DCD-42ba-BAFF-7747D02BBEDD}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Relief" xmi.id="EAID_E5C5322E_A142_4812_AD39_C64DA8CBCE6E" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="Application Schema"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A"/>
+										<UML:TaggedValue tag="date_created" value="2012-11-28 13:27:43"/>
+										<UML:TaggedValue tag="date_modified" value="2013-12-15 17:05:11"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_E5C5322E_A142_4812_AD39_C64DA8CBCE6E"/>
+										<UML:TaggedValue tag="package_name" value="CityGML"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="ebbinghaus"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="Application Schema"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="684"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={6BC5650A-650B-4923-97F9-AC011C2A3069}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Application Schema;GUID={C639DD4F-A6D1-4c36-936F-B0A59A386C40};FQName=UML Profile for GML Applications Schemas::Application Schema;@ENDSTEREO;$DES;$CLT={E5C5322E-A142-4812-AD39-C64DA8CBCE6E}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+								<UML:ClassifierRole name="Core" xmi.id="EAID_FDE7D4FC_4EF3_42d1_9A94_D7340DBBD79F" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="Application Schema"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="isAbstract" value="false"/>
+										<UML:TaggedValue tag="isSpecification" value="false"/>
+										<UML:TaggedValue tag="ea_stype" value="Package"/>
+										<UML:TaggedValue tag="ea_ntype" value="0"/>
+										<UML:TaggedValue tag="version" value="1.0"/>
+										<UML:TaggedValue tag="isActive" value="false"/>
+										<UML:TaggedValue tag="package" value="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A"/>
+										<UML:TaggedValue tag="date_created" value="2012-07-09 16:37:10"/>
+										<UML:TaggedValue tag="date_modified" value="2013-12-15 17:03:21"/>
+										<UML:TaggedValue tag="gentype" value="Java"/>
+										<UML:TaggedValue tag="tagged" value="0"/>
+										<UML:TaggedValue tag="package2" value="EAID_FDE7D4FC_4EF3_42d1_9A94_D7340DBBD79F"/>
+										<UML:TaggedValue tag="package_name" value="CityGML"/>
+										<UML:TaggedValue tag="phase" value="1.0"/>
+										<UML:TaggedValue tag="author" value="ebbinghaus"/>
+										<UML:TaggedValue tag="complexity" value="1"/>
+										<UML:TaggedValue tag="status" value="Proposed"/>
+										<UML:TaggedValue tag="stereotype" value="Application Schema"/>
+										<UML:TaggedValue tag="tpos" value="0"/>
+										<UML:TaggedValue tag="ea_localid" value="689"/>
+										<UML:TaggedValue tag="ea_eleType" value="package"/>
+										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={E5ACDA9D-DDC6-426f-95E3-07D4DF166063}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Application Schema;GUID={C639DD4F-A6D1-4c36-936F-B0A59A386C40};FQName=UML Profile for GML Applications Schemas::Application Schema;@ENDSTEREO;$DES;$CLT={FDE7D4FC-4EF3-42d1-9A94-D7340DBBD79F}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+									</UML:ModelElement.taggedValue>
+								</UML:ClassifierRole>
+							</UML:Namespace.ownedElement>
+							<UML:Collaboration.interaction/>
+						</UML:Collaboration>
+						<UML:Package name="Appearance" xmi.id="EAPK_E5331CB6_6DCD_42ba_BAFF_7747D02BBEDD" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype xmi.idref="EAID_AE6D5E7E_4D84_4f94_B24B_D816013665C4"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="parent" value="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A"/>
+								<UML:TaggedValue tag="created" value="2012-11-27 13:10:00"/>
+								<UML:TaggedValue tag="modified" value="2012-11-27 13:10:00"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="appearance\Appearance.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2013-04-17 14:47:16"/>
+								<UML:TaggedValue tag="lastsavedate" value="2013-04-17 14:47:16"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="owner" value="cnagel"/>
+								<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=CityGML;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="author" value="ebbinghaus"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="stereotype" value="Application Schema"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+						<UML:Package name="Bridge" xmi.id="EAPK_907C7DFC_E94C_45a2_A3CC_CFC4D25612E3" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype xmi.idref="EAID_AE6D5E7E_4D84_4f94_B24B_D816013665C4"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="parent" value="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A"/>
+								<UML:TaggedValue tag="created" value="2012-11-21 15:39:42"/>
+								<UML:TaggedValue tag="modified" value="2012-11-21 15:39:42"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="bridge\Bridge.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2012-11-23 10:00:47"/>
+								<UML:TaggedValue tag="lastsavedate" value="2012-11-23 10:00:47"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="owner" value="cnagel"/>
+								<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=CityGML;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="author" value="ebbinghaus"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="stereotype" value="Application Schema"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+						<UML:Package name="Building" xmi.id="EAPK_4F2C8A46_ADA6_4d7e_AB59_DF53F7FA0FEA" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype xmi.idref="EAID_AE6D5E7E_4D84_4f94_B24B_D816013665C4"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="parent" value="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A"/>
+								<UML:TaggedValue tag="created" value="2012-11-21 15:39:42"/>
+								<UML:TaggedValue tag="modified" value="2012-11-21 15:39:42"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="building\Building.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2013-04-17 14:47:20"/>
+								<UML:TaggedValue tag="lastsavedate" value="2013-04-17 14:47:20"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="owner" value="cnagel"/>
+								<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=CityGML;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="author" value="ebbinghaus"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="stereotype" value="Application Schema"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+						<UML:Package name="CityFurniture" xmi.id="EAPK_E1321C0B_B95B_44c0_A3EA_3B507911CD78" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype xmi.idref="EAID_AE6D5E7E_4D84_4f94_B24B_D816013665C4"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="parent" value="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A"/>
+								<UML:TaggedValue tag="created" value="2012-11-27 11:05:08"/>
+								<UML:TaggedValue tag="modified" value="2012-11-27 11:05:08"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="cityfurniture\CityFurniture.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2013-04-17 14:47:21"/>
+								<UML:TaggedValue tag="lastsavedate" value="2013-04-17 14:47:21"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="owner" value="cnagel"/>
+								<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=CityGML;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="author" value="ebbinghaus"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="stereotype" value="Application Schema"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+						<UML:Package name="CityObjectGroup" xmi.id="EAPK_8877ED0D_AFFC_4f03_9B58_F2736F8935AB" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype xmi.idref="EAID_AE6D5E7E_4D84_4f94_B24B_D816013665C4"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="parent" value="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A"/>
+								<UML:TaggedValue tag="created" value="2012-11-27 12:23:19"/>
+								<UML:TaggedValue tag="modified" value="2012-11-27 12:23:19"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="cityobjectgroup\CityObjectGroup.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2013-04-17 14:47:21"/>
+								<UML:TaggedValue tag="lastsavedate" value="2013-04-17 14:47:21"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="owner" value="cnagel"/>
+								<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=CityGML;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="author" value="ebbinghaus"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="stereotype" value="Application Schema"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+						<UML:Package name="Core" xmi.id="EAPK_FDE7D4FC_4EF3_42d1_9A94_D7340DBBD79F" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype xmi.idref="EAID_AE6D5E7E_4D84_4f94_B24B_D816013665C4"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="parent" value="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A"/>
+								<UML:TaggedValue tag="created" value="2012-07-09 00:00:00"/>
+								<UML:TaggedValue tag="modified" value="2012-07-09 00:00:00"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="core\Core.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2012-07-09 16:37:10"/>
+								<UML:TaggedValue tag="lastsavedate" value="2012-07-09 16:37:10"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="owner" value="cnagel"/>
+								<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=CityGML;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="author" value="ebbinghaus"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="stereotype" value="Application Schema"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+						<UML:Package name="Generics" xmi.id="EAPK_8DE930BB_8AB7_4f5e_B948_190AE7C6588E" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype xmi.idref="EAID_AE6D5E7E_4D84_4f94_B24B_D816013665C4"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="&quot;SIG3D: Generic Attribute of type &quot;&quot;date&quot;&quot;.&quot;"/>
+								<UML:TaggedValue tag="parent" value="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A"/>
+								<UML:TaggedValue tag="created" value="2012-11-19 13:47:33"/>
+								<UML:TaggedValue tag="modified" value="2012-11-19 13:47:33"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="generics\Generics.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2013-04-17 14:47:21"/>
+								<UML:TaggedValue tag="lastsavedate" value="2013-04-17 14:47:21"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="owner" value="cnagel"/>
+								<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=CityGML;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="author" value="ebbinghaus"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="stereotype" value="Application Schema"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+						<UML:Package name="LandUse" xmi.id="EAPK_C1AAF1C3_9E48_468d_A272_EA37B3F35235" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype xmi.idref="EAID_AE6D5E7E_4D84_4f94_B24B_D816013665C4"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="parent" value="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A"/>
+								<UML:TaggedValue tag="created" value="2012-11-28 13:05:09"/>
+								<UML:TaggedValue tag="modified" value="2012-11-28 13:05:09"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="landuse\LandUse.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2013-04-17 14:47:22"/>
+								<UML:TaggedValue tag="lastsavedate" value="2013-04-17 14:47:22"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="owner" value="cnagel"/>
+								<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=CityGML;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="author" value="ebbinghaus"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="stereotype" value="Application Schema"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+						<UML:Package name="Relief" xmi.id="EAPK_E5C5322E_A142_4812_AD39_C64DA8CBCE6E" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype xmi.idref="EAID_AE6D5E7E_4D84_4f94_B24B_D816013665C4"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="parent" value="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A"/>
+								<UML:TaggedValue tag="created" value="2012-11-28 13:27:43"/>
+								<UML:TaggedValue tag="modified" value="2012-11-28 13:27:43"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="relief\Relief.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2013-04-17 14:47:22"/>
+								<UML:TaggedValue tag="lastsavedate" value="2013-04-17 14:47:22"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="owner" value="cnagel"/>
+								<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=CityGML;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="author" value="ebbinghaus"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="stereotype" value="Application Schema"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+						<UML:Package name="Transportation" xmi.id="EAPK_050DB26B_9C8E_44f0_B42E_3A24C7384E7F" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype xmi.idref="EAID_AE6D5E7E_4D84_4f94_B24B_D816013665C4"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="parent" value="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A"/>
+								<UML:TaggedValue tag="created" value="2012-11-26 09:27:47"/>
+								<UML:TaggedValue tag="modified" value="2012-11-26 09:27:47"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="transportation\Transportation.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2013-04-17 14:47:22"/>
+								<UML:TaggedValue tag="lastsavedate" value="2013-04-17 14:47:22"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="owner" value="cnagel"/>
+								<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=CityGML;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="author" value="ebbinghaus"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="stereotype" value="Application Schema"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+						<UML:Package name="Tunnel" xmi.id="EAPK_070A5649_8282_4ad3_A1DE_A9A41FCB55B8" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype xmi.idref="EAID_AE6D5E7E_4D84_4f94_B24B_D816013665C4"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="parent" value="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A"/>
+								<UML:TaggedValue tag="created" value="2012-11-21 15:39:42"/>
+								<UML:TaggedValue tag="modified" value="2012-11-21 15:39:42"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="tunnel\Tunnel.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2012-11-23 14:46:40"/>
+								<UML:TaggedValue tag="lastsavedate" value="2012-11-23 14:46:40"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="owner" value="cnagel"/>
+								<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=CityGML;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="author" value="ebbinghaus"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="stereotype" value="Application Schema"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+						<UML:Package name="Vegetation" xmi.id="EAPK_D44D446F_8AF9_49d7_BD32_6DA30532A847" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype xmi.idref="EAID_AE6D5E7E_4D84_4f94_B24B_D816013665C4"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="parent" value="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A"/>
+								<UML:TaggedValue tag="created" value="2012-11-26 10:55:06"/>
+								<UML:TaggedValue tag="modified" value="2012-11-26 10:55:06"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="vegetation\Vegetation.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2013-04-17 14:47:24"/>
+								<UML:TaggedValue tag="lastsavedate" value="2013-04-17 14:47:24"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="owner" value="cnagel"/>
+								<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=CityGML;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="author" value="ebbinghaus"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="stereotype" value="Application Schema"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+						<UML:Package name="WaterBody" xmi.id="EAPK_A5BC15D5_3041_4a84_BA9E_A28E1B43D317" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype xmi.idref="EAID_AE6D5E7E_4D84_4f94_B24B_D816013665C4"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="parent" value="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A"/>
+								<UML:TaggedValue tag="created" value="2012-11-26 12:48:30"/>
+								<UML:TaggedValue tag="modified" value="2012-11-26 12:48:30"/>
+								<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+								<UML:TaggedValue tag="xmlpath" value="waterbody\WaterBody.xml"/>
+								<UML:TaggedValue tag="lastloaddate" value="2013-04-17 14:47:25"/>
+								<UML:TaggedValue tag="lastsavedate" value="2013-04-17 14:47:25"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="isprotected" value="FALSE"/>
+								<UML:TaggedValue tag="usedtd" value="FALSE"/>
+								<UML:TaggedValue tag="owner" value="cnagel"/>
+								<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
+								<UML:TaggedValue tag="logxml" value="FALSE"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="batchsave" value="0"/>
+								<UML:TaggedValue tag="batchload" value="0"/>
+								<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=CityGML;"/>
+								<UML:TaggedValue tag="savedasstub" value="true"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="author" value="ebbinghaus"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="stereotype" value="Application Schema"/>
+								<UML:TaggedValue tag="ea_stype" value="Public"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Package>
+					</UML:Namespace.ownedElement>
+				</UML:Package>
+				<UML:Stereotype xmi.id="EAID_AE6D5E7E_4D84_4f94_B24B_D816013665C4" name="Application Schema" isRoot="false" isLeaf="false" isAbstract="false">
+					<UML:Stereotype.baseClass>Package</UML:Stereotype.baseClass>
+				</UML:Stereotype>
+			</UML:Namespace.ownedElement>
+		</UML:Model>
+		<UML:TaggedValue tag="gmlProfileSchema" xmi.id="EAID_48460EC2_3840_3638_A156_4B5F5ECC5FE9" value="#NOTES#Description: URL of the schema location of a GML profile (optional)&#xA;" modelElement="EAID_050DB26B_9C8E_44f0_B42E_3A24C7384E7F"/>
+		<UML:TaggedValue tag="targetNamespace" xmi.id="EAID_393CD814_65F2_0f65_982A_D5FCD4B96B47" value="http://www.opengis.net/citygml/transportation/2.x#NOTES#Default: FIXME&#xA;Description: Target XML namespace of the application schema&#xA;" modelElement="EAID_050DB26B_9C8E_44f0_B42E_3A24C7384E7F"/>
+		<UML:TaggedValue tag="version" xmi.id="EAID_6F40CEE6_5EE4_0a5e_8A62_AA6A53833FA1" value="1.0#NOTES#Default: FIXME&#xA;Description: Current version of the application schema&#xA;" modelElement="EAID_050DB26B_9C8E_44f0_B42E_3A24C7384E7F"/>
+		<UML:TaggedValue tag="xmlns" xmi.id="EAID_08B91BD2_9450_4294_8415_D64729816472" value="tran#NOTES#Default: FIXME&#xA;Description: Namespace prefix to be used as short form of the target namespace&#xA;" modelElement="EAID_050DB26B_9C8E_44f0_B42E_3A24C7384E7F"/>
+		<UML:TaggedValue tag="xsdDocument" xmi.id="EAID_6E79370E_F9EC_2bf9_B30D_6FC242BAD78A" value="transportation.xsd#NOTES#Default: FIXME&#xA;Description: Name of an XML Schema document to create representing the content of this package&#xA;" modelElement="EAID_050DB26B_9C8E_44f0_B42E_3A24C7384E7F"/>
+		<UML:TaggedValue tag="xsdEncodingRule" xmi.id="EAID_BCD3CBEE_41AC_b741_8A51_099E4E2DD985" value="iso19136_2007#NOTES#Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions&#xA;Default: iso19136_2007&#xA;Description: XML Schema encoding rule to apply&#xA;" modelElement="EAID_050DB26B_9C8E_44f0_B42E_3A24C7384E7F"/>
+		<UML:TaggedValue tag="gmlProfileSchema" xmi.id="EAID_48460EC2_3840_3638_8B04_D2F2A590385F" value="#NOTES#Description: URL of the schema location of a GML profile (optional)&#xA;" modelElement="EAID_070A5649_8282_4ad3_A1DE_A9A41FCB55B8"/>
+		<UML:TaggedValue tag="targetNamespace" xmi.id="EAID_393CD814_65F2_0f65_B112_CDC770C6D868" value="http://www.opengis.net/citygml/tunnel/2.x#NOTES#Default: FIXME&#xA;Description: Target XML namespace of the application schema&#xA;" modelElement="EAID_070A5649_8282_4ad3_A1DE_A9A41FCB55B8"/>
+		<UML:TaggedValue tag="version" xmi.id="EAID_6F40CEE6_5EE4_0a5e_92A6_90FCF3CB6EB1" value="1.0#NOTES#Default: FIXME&#xA;Description: Current version of the application schema&#xA;" modelElement="EAID_070A5649_8282_4ad3_A1DE_A9A41FCB55B8"/>
+		<UML:TaggedValue tag="xmlns" xmi.id="EAID_08B91BD2_9450_4294_A814_679BB31D8364" value="tun#NOTES#Default: FIXME&#xA;Description: Namespace prefix to be used as short form of the target namespace&#xA;" modelElement="EAID_070A5649_8282_4ad3_A1DE_A9A41FCB55B8"/>
+		<UML:TaggedValue tag="xsdDocument" xmi.id="EAID_6E79370E_F9EC_2bf9_9CEE_41F47669CC64" value="tunnel.xsd#NOTES#Default: FIXME&#xA;Description: Name of an XML Schema document to create representing the content of this package&#xA;" modelElement="EAID_070A5649_8282_4ad3_A1DE_A9A41FCB55B8"/>
+		<UML:TaggedValue tag="xsdEncodingRule" xmi.id="EAID_BCD3CBEE_41AC_b741_9901_96607C124DF6" value="iso19136_2007#NOTES#Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions&#xA;Default: iso19136_2007&#xA;Description: XML Schema encoding rule to apply&#xA;" modelElement="EAID_070A5649_8282_4ad3_A1DE_A9A41FCB55B8"/>
+		<UML:TaggedValue tag="gmlProfileSchema" xmi.id="EAID_48460EC2_3840_3638_85F2_603777DA4571" value="#NOTES#Description: URL of the schema location of a GML profile (optional)&#xA;" modelElement="EAID_4F2C8A46_ADA6_4d7e_AB59_DF53F7FA0FEA"/>
+		<UML:TaggedValue tag="targetNamespace" xmi.id="EAID_393CD814_65F2_0f65_BAD9_3DB1D8356302" value="http://www.opengis.net/citygml/building/2.x#NOTES#Default: FIXME&#xA;Description: Target XML namespace of the application schema&#xA;" modelElement="EAID_4F2C8A46_ADA6_4d7e_AB59_DF53F7FA0FEA"/>
+		<UML:TaggedValue tag="version" xmi.id="EAID_6F40CEE6_5EE4_0a5e_A9EE_1E9233EB2BF4" value="1.0#NOTES#Default: FIXME&#xA;Description: Current version of the application schema&#xA;" modelElement="EAID_4F2C8A46_ADA6_4d7e_AB59_DF53F7FA0FEA"/>
+		<UML:TaggedValue tag="xmlns" xmi.id="EAID_08B91BD2_9450_4294_B090_BAA27B0F80C1" value="bldg#NOTES#Default: FIXME&#xA;Description: Namespace prefix to be used as short form of the target namespace&#xA;" modelElement="EAID_4F2C8A46_ADA6_4d7e_AB59_DF53F7FA0FEA"/>
+		<UML:TaggedValue tag="xsdDocument" xmi.id="EAID_6E79370E_F9EC_2bf9_89B2_C9371C485495" value="building.xsd#NOTES#Default: FIXME&#xA;Description: Name of an XML Schema document to create representing the content of this package&#xA;" modelElement="EAID_4F2C8A46_ADA6_4d7e_AB59_DF53F7FA0FEA"/>
+		<UML:TaggedValue tag="xsdEncodingRule" xmi.id="EAID_BCD3CBEE_41AC_b741_B14C_BFAAF1F448DF" value="iso19136_2007#NOTES#Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions&#xA;Default: iso19136_2007&#xA;Description: XML Schema encoding rule to apply&#xA;" modelElement="EAID_4F2C8A46_ADA6_4d7e_AB59_DF53F7FA0FEA"/>
+		<UML:TaggedValue tag="gmlProfileSchema" xmi.id="EAID_48460EC2_3840_3638_948D_B32893A930B6" value="#NOTES#Description: URL of the schema location of a GML profile (optional)&#xA;" modelElement="EAID_8877ED0D_AFFC_4f03_9B58_F2736F8935AB"/>
+		<UML:TaggedValue tag="targetNamespace" xmi.id="EAID_393CD814_65F2_0f65_9A39_12CEECB9313B" value="http://www.opengis.net/citygml/cityobjectgroup/2.x#NOTES#Default: FIXME&#xA;Description: Target XML namespace of the application schema&#xA;" modelElement="EAID_8877ED0D_AFFC_4f03_9B58_F2736F8935AB"/>
+		<UML:TaggedValue tag="version" xmi.id="EAID_6F40CEE6_5EE4_0a5e_8C1D_3D841AB2BDD0" value="1.0#NOTES#Default: FIXME&#xA;Description: Current version of the application schema&#xA;" modelElement="EAID_8877ED0D_AFFC_4f03_9B58_F2736F8935AB"/>
+		<UML:TaggedValue tag="xmlns" xmi.id="EAID_08B91BD2_9450_4294_80DB_33C3723D7EB6" value="grp#NOTES#Default: FIXME&#xA;Description: Namespace prefix to be used as short form of the target namespace&#xA;" modelElement="EAID_8877ED0D_AFFC_4f03_9B58_F2736F8935AB"/>
+		<UML:TaggedValue tag="xsdDocument" xmi.id="EAID_6E79370E_F9EC_2bf9_8761_46CEA7CA7149" value="cityObjectGroup.xsd#NOTES#Default: FIXME&#xA;Description: Name of an XML Schema document to create representing the content of this package&#xA;" modelElement="EAID_8877ED0D_AFFC_4f03_9B58_F2736F8935AB"/>
+		<UML:TaggedValue tag="xsdEncodingRule" xmi.id="EAID_BCD3CBEE_41AC_b741_AE44_7072A10A9169" value="iso19136_2007#NOTES#Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions&#xA;Default: iso19136_2007&#xA;Description: XML Schema encoding rule to apply&#xA;" modelElement="EAID_8877ED0D_AFFC_4f03_9B58_F2736F8935AB"/>
+		<UML:TaggedValue tag="gmlProfileSchema" xmi.id="EAID_48460EC2_3840_3638_992F_9E50C63862B8" value="#NOTES#Description: URL of the schema location of a GML profile (optional)&#xA;" modelElement="EAID_8DE930BB_8AB7_4f5e_B948_190AE7C6588E"/>
+		<UML:TaggedValue tag="targetNamespace" xmi.id="EAID_393CD814_65F2_0f65_BAA8_54837FBB812A" value="http://www.opengis.net/citygml/generics/2.x#NOTES#Default: FIXME&#xA;Description: Target XML namespace of the application schema&#xA;" modelElement="EAID_8DE930BB_8AB7_4f5e_B948_190AE7C6588E"/>
+		<UML:TaggedValue tag="version" xmi.id="EAID_6F40CEE6_5EE4_0a5e_8F89_92FD29632892" value="1.0#NOTES#Default: FIXME&#xA;Description: Current version of the application schema&#xA;" modelElement="EAID_8DE930BB_8AB7_4f5e_B948_190AE7C6588E"/>
+		<UML:TaggedValue tag="xmlns" xmi.id="EAID_08B91BD2_9450_4294_80C5_3B2361C2FABD" value="gen#NOTES#Default: FIXME&#xA;Description: Namespace prefix to be used as short form of the target namespace&#xA;" modelElement="EAID_8DE930BB_8AB7_4f5e_B948_190AE7C6588E"/>
+		<UML:TaggedValue tag="xsdDocument" xmi.id="EAID_6E79370E_F9EC_2bf9_AB56_167564595C94" value="generics.xsd#NOTES#Default: FIXME&#xA;Description: Name of an XML Schema document to create representing the content of this package&#xA;" modelElement="EAID_8DE930BB_8AB7_4f5e_B948_190AE7C6588E"/>
+		<UML:TaggedValue tag="xsdEncodingRule" xmi.id="EAID_BCD3CBEE_41AC_b741_B3EE_FF22AA064884" value="iso19136_2007#NOTES#Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions&#xA;Default: iso19136_2007&#xA;Description: XML Schema encoding rule to apply&#xA;" modelElement="EAID_8DE930BB_8AB7_4f5e_B948_190AE7C6588E"/>
+		<UML:TaggedValue tag="gmlProfileSchema" xmi.id="EAID_48460EC2_3840_3638_8763_292487A7E2FF" value="#NOTES#Description: URL of the schema location of a GML profile (optional)&#xA;" modelElement="EAID_907C7DFC_E94C_45a2_A3CC_CFC4D25612E3"/>
+		<UML:TaggedValue tag="targetNamespace" xmi.id="EAID_393CD814_65F2_0f65_9851_033EE185B87C" value="http://www.opengis.net/citygml/bridge/2.x#NOTES#Default: FIXME&#xA;Description: Target XML namespace of the application schema&#xA;" modelElement="EAID_907C7DFC_E94C_45a2_A3CC_CFC4D25612E3"/>
+		<UML:TaggedValue tag="version" xmi.id="EAID_6F40CEE6_5EE4_0a5e_8222_ADBEF7D03084" value="1.0#NOTES#Default: FIXME&#xA;Description: Current version of the application schema&#xA;" modelElement="EAID_907C7DFC_E94C_45a2_A3CC_CFC4D25612E3"/>
+		<UML:TaggedValue tag="xmlns" xmi.id="EAID_08B91BD2_9450_4294_859B_B98D25244EB5" value="brid#NOTES#Default: FIXME&#xA;Description: Namespace prefix to be used as short form of the target namespace&#xA;" modelElement="EAID_907C7DFC_E94C_45a2_A3CC_CFC4D25612E3"/>
+		<UML:TaggedValue tag="xsdDocument" xmi.id="EAID_6E79370E_F9EC_2bf9_AA09_B5F4604BECB9" value="bridge.xsd#NOTES#Default: FIXME&#xA;Description: Name of an XML Schema document to create representing the content of this package&#xA;" modelElement="EAID_907C7DFC_E94C_45a2_A3CC_CFC4D25612E3"/>
+		<UML:TaggedValue tag="xsdEncodingRule" xmi.id="EAID_BCD3CBEE_41AC_b741_977B_80D6CF6F69F4" value="iso19136_2007#NOTES#Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions&#xA;Default: iso19136_2007&#xA;Description: XML Schema encoding rule to apply&#xA;" modelElement="EAID_907C7DFC_E94C_45a2_A3CC_CFC4D25612E3"/>
+		<UML:TaggedValue tag="gmlProfileSchema" xmi.id="EAID_48460EC2_3840_3638_B113_5B23460E2D97" value="#NOTES#Description: URL of the schema location of a GML profile (optional)&#xA;" modelElement="EAID_A5BC15D5_3041_4a84_BA9E_A28E1B43D317"/>
+		<UML:TaggedValue tag="targetNamespace" xmi.id="EAID_393CD814_65F2_0f65_8039_824AE694A2BE" value="http://www.opengis.net/citygml/waterbody/2.x#NOTES#Default: FIXME&#xA;Description: Target XML namespace of the application schema&#xA;" modelElement="EAID_A5BC15D5_3041_4a84_BA9E_A28E1B43D317"/>
+		<UML:TaggedValue tag="version" xmi.id="EAID_6F40CEE6_5EE4_0a5e_96E8_60BD064AB3B8" value="1.0#NOTES#Default: FIXME&#xA;Description: Current version of the application schema&#xA;" modelElement="EAID_A5BC15D5_3041_4a84_BA9E_A28E1B43D317"/>
+		<UML:TaggedValue tag="xmlns" xmi.id="EAID_08B91BD2_9450_4294_A1BF_18D5F1D2796B" value="wtr#NOTES#Default: FIXME&#xA;Description: Namespace prefix to be used as short form of the target namespace&#xA;" modelElement="EAID_A5BC15D5_3041_4a84_BA9E_A28E1B43D317"/>
+		<UML:TaggedValue tag="xsdDocument" xmi.id="EAID_6E79370E_F9EC_2bf9_807E_387365E3DD95" value="waterBody.xsd#NOTES#Default: FIXME&#xA;Description: Name of an XML Schema document to create representing the content of this package&#xA;" modelElement="EAID_A5BC15D5_3041_4a84_BA9E_A28E1B43D317"/>
+		<UML:TaggedValue tag="xsdEncodingRule" xmi.id="EAID_BCD3CBEE_41AC_b741_8FC0_680BB822BEA8" value="iso19136_2007#NOTES#Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions&#xA;Default: iso19136_2007&#xA;Description: XML Schema encoding rule to apply&#xA;" modelElement="EAID_A5BC15D5_3041_4a84_BA9E_A28E1B43D317"/>
+		<UML:TaggedValue tag="gmlProfileSchema" xmi.id="EAID_48460EC2_3840_3638_8BA9_55ED901CA1C6" value="#NOTES#Description: URL of the schema location of a GML profile (optional)&#xA;" modelElement="EAID_C1AAF1C3_9E48_468d_A272_EA37B3F35235"/>
+		<UML:TaggedValue tag="targetNamespace" xmi.id="EAID_393CD814_65F2_0f65_8767_B516B4DE95EE" value="http://www.opengis.net/citygml/landuse/2.x#NOTES#Default: FIXME&#xA;Description: Target XML namespace of the application schema&#xA;" modelElement="EAID_C1AAF1C3_9E48_468d_A272_EA37B3F35235"/>
+		<UML:TaggedValue tag="version" xmi.id="EAID_6F40CEE6_5EE4_0a5e_AFFD_4EB2A8019FCB" value="1.0#NOTES#Default: FIXME&#xA;Description: Current version of the application schema&#xA;" modelElement="EAID_C1AAF1C3_9E48_468d_A272_EA37B3F35235"/>
+		<UML:TaggedValue tag="xmlns" xmi.id="EAID_08B91BD2_9450_4294_8C4B_93E08F742DF1" value="luse#NOTES#Default: FIXME&#xA;Description: Namespace prefix to be used as short form of the target namespace&#xA;" modelElement="EAID_C1AAF1C3_9E48_468d_A272_EA37B3F35235"/>
+		<UML:TaggedValue tag="xsdDocument" xmi.id="EAID_6E79370E_F9EC_2bf9_B74A_BBD196FD2F00" value="landUse.xsd#NOTES#Default: FIXME&#xA;Description: Name of an XML Schema document to create representing the content of this package&#xA;" modelElement="EAID_C1AAF1C3_9E48_468d_A272_EA37B3F35235"/>
+		<UML:TaggedValue tag="xsdEncodingRule" xmi.id="EAID_BCD3CBEE_41AC_b741_9852_25EF568BDB10" value="iso19136_2007#NOTES#Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions&#xA;Default: iso19136_2007&#xA;Description: XML Schema encoding rule to apply&#xA;" modelElement="EAID_C1AAF1C3_9E48_468d_A272_EA37B3F35235"/>
+		<UML:TaggedValue tag="gmlProfileSchema" xmi.id="EAID_48460EC2_3840_3638_A8D5_97249C869C8B" value="#NOTES#Description: URL of the schema location of a GML profile (optional)&#xA;" modelElement="EAID_D44D446F_8AF9_49d7_BD32_6DA30532A847"/>
+		<UML:TaggedValue tag="targetNamespace" xmi.id="EAID_393CD814_65F2_0f65_A747_CAE034B5BEA9" value="http://www.opengis.net/citygml/vegetation/2.x#NOTES#Default: FIXME&#xA;Description: Target XML namespace of the application schema&#xA;" modelElement="EAID_D44D446F_8AF9_49d7_BD32_6DA30532A847"/>
+		<UML:TaggedValue tag="version" xmi.id="EAID_6F40CEE6_5EE4_0a5e_908D_A9057565F07B" value="1.0#NOTES#Default: FIXME&#xA;Description: Current version of the application schema&#xA;" modelElement="EAID_D44D446F_8AF9_49d7_BD32_6DA30532A847"/>
+		<UML:TaggedValue tag="xmlns" xmi.id="EAID_08B91BD2_9450_4294_8C59_A3908D83C6AE" value="veg#NOTES#Default: FIXME&#xA;Description: Namespace prefix to be used as short form of the target namespace&#xA;" modelElement="EAID_D44D446F_8AF9_49d7_BD32_6DA30532A847"/>
+		<UML:TaggedValue tag="xsdDocument" xmi.id="EAID_6E79370E_F9EC_2bf9_BFB8_88A07F84CC68" value="vegetation.xsd#NOTES#Default: FIXME&#xA;Description: Name of an XML Schema document to create representing the content of this package&#xA;" modelElement="EAID_D44D446F_8AF9_49d7_BD32_6DA30532A847"/>
+		<UML:TaggedValue tag="xsdEncodingRule" xmi.id="EAID_BCD3CBEE_41AC_b741_B5C8_8BD29CB5349D" value="iso19136_2007#NOTES#Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions&#xA;Default: iso19136_2007&#xA;Description: XML Schema encoding rule to apply&#xA;" modelElement="EAID_D44D446F_8AF9_49d7_BD32_6DA30532A847"/>
+		<UML:TaggedValue tag="gmlProfileSchema" xmi.id="EAID_48460EC2_3840_3638_8093_CB467210A0D8" value="#NOTES#Description: URL of the schema location of a GML profile (optional)&#xA;" modelElement="EAID_E1321C0B_B95B_44c0_A3EA_3B507911CD78"/>
+		<UML:TaggedValue tag="targetNamespace" xmi.id="EAID_393CD814_65F2_0f65_933E_B1868320F709" value="http://www.opengis.net/citygml/cityfurniture/2.x#NOTES#Default: FIXME&#xA;Description: Target XML namespace of the application schema&#xA;" modelElement="EAID_E1321C0B_B95B_44c0_A3EA_3B507911CD78"/>
+		<UML:TaggedValue tag="version" xmi.id="EAID_6F40CEE6_5EE4_0a5e_8623_85A05E322CC2" value="1.0#NOTES#Default: FIXME&#xA;Description: Current version of the application schema&#xA;" modelElement="EAID_E1321C0B_B95B_44c0_A3EA_3B507911CD78"/>
+		<UML:TaggedValue tag="xmlns" xmi.id="EAID_08B91BD2_9450_4294_A449_6512826529AA" value="frn#NOTES#Default: FIXME&#xA;Description: Namespace prefix to be used as short form of the target namespace&#xA;" modelElement="EAID_E1321C0B_B95B_44c0_A3EA_3B507911CD78"/>
+		<UML:TaggedValue tag="xsdDocument" xmi.id="EAID_6E79370E_F9EC_2bf9_8B6D_FA015F2FDC5B" value="cityFurniture.xsd#NOTES#Default: FIXME&#xA;Description: Name of an XML Schema document to create representing the content of this package&#xA;" modelElement="EAID_E1321C0B_B95B_44c0_A3EA_3B507911CD78"/>
+		<UML:TaggedValue tag="xsdEncodingRule" xmi.id="EAID_BCD3CBEE_41AC_b741_A2B5_40C3AB3D92BB" value="iso19136_2007#NOTES#Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions&#xA;Default: iso19136_2007&#xA;Description: XML Schema encoding rule to apply&#xA;" modelElement="EAID_E1321C0B_B95B_44c0_A3EA_3B507911CD78"/>
+		<UML:TaggedValue tag="gmlProfileSchema" xmi.id="EAID_48460EC2_3840_3638_BEC3_D62144A5FE5F" value="#NOTES#Description: URL of the schema location of a GML profile (optional)&#xA;" modelElement="EAID_E5331CB6_6DCD_42ba_BAFF_7747D02BBEDD"/>
+		<UML:TaggedValue tag="targetNamespace" xmi.id="EAID_393CD814_65F2_0f65_9236_0E955D4809EC" value="http://www.opengis.net/citygml/appearance/2.x#NOTES#Default: FIXME&#xA;Description: Target XML namespace of the application schema&#xA;" modelElement="EAID_E5331CB6_6DCD_42ba_BAFF_7747D02BBEDD"/>
+		<UML:TaggedValue tag="version" xmi.id="EAID_6F40CEE6_5EE4_0a5e_8F8A_71477B11677B" value="1.0#NOTES#Default: FIXME&#xA;Description: Current version of the application schema&#xA;" modelElement="EAID_E5331CB6_6DCD_42ba_BAFF_7747D02BBEDD"/>
+		<UML:TaggedValue tag="xmlns" xmi.id="EAID_08B91BD2_9450_4294_9E54_50D2D3FC1A87" value="app#NOTES#Default: FIXME&#xA;Description: Namespace prefix to be used as short form of the target namespace&#xA;" modelElement="EAID_E5331CB6_6DCD_42ba_BAFF_7747D02BBEDD"/>
+		<UML:TaggedValue tag="xsdDocument" xmi.id="EAID_6E79370E_F9EC_2bf9_8DEA_34111F2AA44C" value="appearance.xsd#NOTES#Default: FIXME&#xA;Description: Name of an XML Schema document to create representing the content of this package&#xA;" modelElement="EAID_E5331CB6_6DCD_42ba_BAFF_7747D02BBEDD"/>
+		<UML:TaggedValue tag="xsdEncodingRule" xmi.id="EAID_BCD3CBEE_41AC_b741_9E14_48815EACAF6C" value="iso19136_2007#NOTES#Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions&#xA;Default: iso19136_2007&#xA;Description: XML Schema encoding rule to apply&#xA;" modelElement="EAID_E5331CB6_6DCD_42ba_BAFF_7747D02BBEDD"/>
+		<UML:TaggedValue tag="gmlProfileSchema" xmi.id="EAID_48460EC2_3840_3638_A654_06B57781B131" value="#NOTES#Description: URL of the schema location of a GML profile (optional)&#xA;" modelElement="EAID_E5C5322E_A142_4812_AD39_C64DA8CBCE6E"/>
+		<UML:TaggedValue tag="targetNamespace" xmi.id="EAID_393CD814_65F2_0f65_BAF2_167055BBF900" value="http://www.opengis.net/citygml/relief/2.x#NOTES#Default: FIXME&#xA;Description: Target XML namespace of the application schema&#xA;" modelElement="EAID_E5C5322E_A142_4812_AD39_C64DA8CBCE6E"/>
+		<UML:TaggedValue tag="version" xmi.id="EAID_6F40CEE6_5EE4_0a5e_8FE9_BBC37D56EC66" value="1.0#NOTES#Default: FIXME&#xA;Description: Current version of the application schema&#xA;" modelElement="EAID_E5C5322E_A142_4812_AD39_C64DA8CBCE6E"/>
+		<UML:TaggedValue tag="xmlns" xmi.id="EAID_08B91BD2_9450_4294_A37C_7DEA02F75F33" value="dem#NOTES#Default: FIXME&#xA;Description: Namespace prefix to be used as short form of the target namespace&#xA;" modelElement="EAID_E5C5322E_A142_4812_AD39_C64DA8CBCE6E"/>
+		<UML:TaggedValue tag="xsdDocument" xmi.id="EAID_6E79370E_F9EC_2bf9_8697_507E39AF68E8" value="relief.xsd#NOTES#Default: FIXME&#xA;Description: Name of an XML Schema document to create representing the content of this package&#xA;" modelElement="EAID_E5C5322E_A142_4812_AD39_C64DA8CBCE6E"/>
+		<UML:TaggedValue tag="xsdEncodingRule" xmi.id="EAID_BCD3CBEE_41AC_b741_BC51_4DF3DBA90A51" value="iso19136_2007#NOTES#Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions&#xA;Default: iso19136_2007&#xA;Description: XML Schema encoding rule to apply&#xA;" modelElement="EAID_E5C5322E_A142_4812_AD39_C64DA8CBCE6E"/>
+		<UML:TaggedValue tag="gmlProfileSchema" xmi.id="EAID_48460EC2_3840_3638_ADE7_CC58D8A6F0BE" value="#NOTES#Description: URL of the schema location of a GML profile (optional)&#xA;" modelElement="EAID_FDE7D4FC_4EF3_42d1_9A94_D7340DBBD79F"/>
+		<UML:TaggedValue tag="targetNamespace" xmi.id="EAID_393CD814_65F2_0f65_B818_7DA51E23BB02" value="http://www.opengis.net/citygml/2.x#NOTES#Default: FIXME&#xA;Description: Target XML namespace of the application schema&#xA;" modelElement="EAID_FDE7D4FC_4EF3_42d1_9A94_D7340DBBD79F"/>
+		<UML:TaggedValue tag="version" xmi.id="EAID_6F40CEE6_5EE4_0a5e_B2CE_EBDBB5F45CA6" value="1.0#NOTES#Default: FIXME&#xA;Description: Current version of the application schema&#xA;" modelElement="EAID_FDE7D4FC_4EF3_42d1_9A94_D7340DBBD79F"/>
+		<UML:TaggedValue tag="xmlns" xmi.id="EAID_08B91BD2_9450_4294_B04B_8BA7322A67CD" value="core#NOTES#Default: FIXME&#xA;Description: Namespace prefix to be used as short form of the target namespace&#xA;" modelElement="EAID_FDE7D4FC_4EF3_42d1_9A94_D7340DBBD79F"/>
+		<UML:TaggedValue tag="xsdDocument" xmi.id="EAID_6E79370E_F9EC_2bf9_9544_37CCEC77EC2A" value="cityGMLBase.xsd#NOTES#Default: FIXME&#xA;Description: Name of an XML Schema document to create representing the content of this package&#xA;" modelElement="EAID_FDE7D4FC_4EF3_42d1_9A94_D7340DBBD79F"/>
+		<UML:TaggedValue tag="xsdEncodingRule" xmi.id="EAID_BCD3CBEE_41AC_b741_AC46_DAFF5A985E04" value="iso19136_2007#NOTES#Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions&#xA;Default: iso19136_2007&#xA;Description: XML Schema encoding rule to apply&#xA;" modelElement="EAID_FDE7D4FC_4EF3_42d1_9A94_D7340DBBD79F"/>
+	</XMI.content>
+	<XMI.difference/>
+	<XMI.extensions xmi.extender="Enterprise Architect 2.5"/>
+</XMI>

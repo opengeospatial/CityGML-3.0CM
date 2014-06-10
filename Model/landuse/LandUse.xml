@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<XMI xmi.version="1.1" xmlns:UML="omg.org/UML1.3">
+	<XMI.header>
+		<XMI.documentation>
+			<XMI.exporter>Enterprise Architect</XMI.exporter>
+			<XMI.exporterVersion>2.5</XMI.exporterVersion>
+		</XMI.documentation>
+	</XMI.header>
+	<XMI.content>
+		<UML:Model name="EA Model" xmi.id="MX_EAID_C1AAF1C3_9E48_468d_A272_EA37B3F35235">
+			<UML:Namespace.ownedElement>
+				<UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
+				<UML:Package name="LandUse" xmi.id="EAPK_C1AAF1C3_9E48_468d_A272_EA37B3F35235" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+					<UML:ModelElement.stereotype>
+						<UML:Stereotype xmi.idref="EAID_42625D6E_8AA4_4529_87B0_EC9A8F752F2C"/>
+					</UML:ModelElement.stereotype>
+					<UML:ModelElement.taggedValue>
+						<UML:TaggedValue tag="parent" value="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A"/>
+						<UML:TaggedValue tag="created" value="2012-11-28 13:05:09"/>
+						<UML:TaggedValue tag="modified" value="2012-11-28 13:05:09"/>
+						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
+						<UML:TaggedValue tag="xmlpath" value="landuse\LandUse.xml"/>
+						<UML:TaggedValue tag="lastloaddate" value="2013-04-17 14:47:22"/>
+						<UML:TaggedValue tag="lastsavedate" value="2013-04-17 14:47:22"/>
+						<UML:TaggedValue tag="version" value="1.0"/>
+						<UML:TaggedValue tag="isprotected" value="FALSE"/>
+						<UML:TaggedValue tag="usedtd" value="FALSE"/>
+						<UML:TaggedValue tag="owner" value="cnagel"/>
+						<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
+						<UML:TaggedValue tag="logxml" value="FALSE"/>
+						<UML:TaggedValue tag="tpos" value="0"/>
+						<UML:TaggedValue tag="packageFlags" value="Recurse=0;VCCFG=CityGML;CRC=0;"/>
+						<UML:TaggedValue tag="batchsave" value="0"/>
+						<UML:TaggedValue tag="batchload" value="0"/>
+						<UML:TaggedValue tag="phase" value="1.0"/>
+						<UML:TaggedValue tag="status" value="Proposed"/>
+						<UML:TaggedValue tag="author" value="ebbinghaus"/>
+						<UML:TaggedValue tag="complexity" value="1"/>
+						<UML:TaggedValue tag="stereotype" value="Application Schema"/>
+						<UML:TaggedValue tag="ea_stype" value="Public"/>
+						<UML:TaggedValue tag="tpos" value="0"/>
+						<UML:TaggedValue tag="gentype" value="Java"/>
+					</UML:ModelElement.taggedValue>
+					<UML:Namespace.ownedElement>
+						<UML:Class name="LandUse" xmi.id="EAID_35EB0970_FB62_433e_87B7_D7C77F816533" visibility="public" namespace="EAPK_C1AAF1C3_9E48_468d_A272_EA37B3F35235" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="FeatureType"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="SIG3D: Object describing an area of the earth's surface dedicated to a specific land use or having a specific land cover with or without vegetation, such as sand, rock, mud flats, forest, grasslands, etc (i.e. the physical appearance)."/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Class"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="package" value="EAPK_C1AAF1C3_9E48_468d_A272_EA37B3F35235"/>
+								<UML:TaggedValue tag="date_created" value="2012-07-09 13:57:03"/>
+								<UML:TaggedValue tag="date_modified" value="2013-12-15 18:22:25"/>
+								<UML:TaggedValue tag="gentype" value="Java"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="LandUse"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="author" value="ebbinghaus"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="stereotype" value="FeatureType"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="6690"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={B1B6828F-AF79-49b4-9989-9593F8A29ABA}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=FeatureType;GUID={4D00AB2D-D6FD-42f6-BC4F-2B7047741691};FQName=UML Profile for GML Applications Schemas::FeatureType;@ENDSTEREO;$DES;$CLT={35EB0970-FB62-433e-87B7-D7C77F816533}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={9EFA2A5A-27AF-4a70-9DEF-0E6637200F1E}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isActive@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={35EB0970-FB62-433e-87B7-D7C77F816533}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Classifier.feature>
+								<UML:Attribute name="class" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_DD20EA95_5FD0_4d14_9871_FCCEE29651B5"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="Property"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="SIG3D: Classification of LandUse as given by the relevant national regulations, information communities or specific applications. "/>
+										<UML:TaggedValue tag="type" value="Code"/>
+										<UML:TaggedValue tag="derived" value="0"/>
+										<UML:TaggedValue tag="containment" value="Not Specified"/>
+										<UML:TaggedValue tag="ordered" value="0"/>
+										<UML:TaggedValue tag="scale" value="0"/>
+										<UML:TaggedValue tag="stereotype" value="Property"/>
+										<UML:TaggedValue tag="collection" value="false"/>
+										<UML:TaggedValue tag="position" value="0"/>
+										<UML:TaggedValue tag="lowerBound" value="0"/>
+										<UML:TaggedValue tag="upperBound" value="1"/>
+										<UML:TaggedValue tag="duplicates" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{823F3C93-5954-46ff-87C2-76254D389D71}"/>
+										<UML:TaggedValue tag="ea_localid" value="8418"/>
+										<UML:TaggedValue tag="styleex" value="IsLiteral=0;volatile=0;"/>
+										<UML:TaggedValue tag="sequenceNumber" value="1" xmi.id="EAID_401F51A2_36E2_43c8_8244_2B3EE3C6CCC3"/>
+										<UML:TaggedValue tag="inlineOrByReference" value="inlineOrByReference" xmi.id="EAID_6F7075ED_3EFA_4cf6_AD74_E036DFF79CF1"/>
+										<UML:TaggedValue tag="isMetadata" value="false" xmi.id="EAID_0DFFB0CC_0B7D_4e76_9D9B_452EDCC25C7A"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="function" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_DD20EA95_5FD0_4d14_9871_FCCEE29651B5"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="Property"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="SIG3D: Specified function of LandUse as given by the relevant national regulations, information communities or specific applications. "/>
+										<UML:TaggedValue tag="type" value="Code"/>
+										<UML:TaggedValue tag="derived" value="0"/>
+										<UML:TaggedValue tag="containment" value="Not Specified"/>
+										<UML:TaggedValue tag="ordered" value="0"/>
+										<UML:TaggedValue tag="scale" value="0"/>
+										<UML:TaggedValue tag="stereotype" value="Property"/>
+										<UML:TaggedValue tag="collection" value="false"/>
+										<UML:TaggedValue tag="position" value="1"/>
+										<UML:TaggedValue tag="lowerBound" value="0"/>
+										<UML:TaggedValue tag="upperBound" value="*"/>
+										<UML:TaggedValue tag="duplicates" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{E75AB872-30E4-4c06-BF0C-FCBCEC5AE447}"/>
+										<UML:TaggedValue tag="ea_localid" value="8419"/>
+										<UML:TaggedValue tag="styleex" value="IsLiteral=0;volatile=0;"/>
+										<UML:TaggedValue tag="sequenceNumber" value="2" xmi.id="EAID_40A70199_ABAE_4de9_BFF9_73F1BAADBE85"/>
+										<UML:TaggedValue tag="inlineOrByReference" value="inlineOrByReference" xmi.id="EAID_FAC341C0_F2F8_41f1_90D0_EAAA7FE5FD19"/>
+										<UML:TaggedValue tag="isMetadata" value="false" xmi.id="EAID_0D393F80_1332_4175_8B97_400AA6124BD1"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+								<UML:Attribute name="usage" changeable="none" visibility="public" ownerScope="instance" targetScope="instance">
+									<UML:Attribute.initialValue>
+										<UML:Expression/>
+									</UML:Attribute.initialValue>
+									<UML:StructuralFeature.type>
+										<UML:Classifier xmi.idref="EAID_DD20EA95_5FD0_4d14_9871_FCCEE29651B5"/>
+									</UML:StructuralFeature.type>
+									<UML:ModelElement.stereotype>
+										<UML:Stereotype name="Property"/>
+									</UML:ModelElement.stereotype>
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="SIG3D: Actual usage of LandUse as given by the relevant national regulations, information communities or specific applications. "/>
+										<UML:TaggedValue tag="type" value="Code"/>
+										<UML:TaggedValue tag="derived" value="0"/>
+										<UML:TaggedValue tag="containment" value="Not Specified"/>
+										<UML:TaggedValue tag="ordered" value="0"/>
+										<UML:TaggedValue tag="scale" value="0"/>
+										<UML:TaggedValue tag="stereotype" value="Property"/>
+										<UML:TaggedValue tag="collection" value="false"/>
+										<UML:TaggedValue tag="position" value="2"/>
+										<UML:TaggedValue tag="lowerBound" value="0"/>
+										<UML:TaggedValue tag="upperBound" value="*"/>
+										<UML:TaggedValue tag="duplicates" value="0"/>
+										<UML:TaggedValue tag="ea_guid" value="{089EDEE9-F983-4761-AED5-642A188A020A}"/>
+										<UML:TaggedValue tag="ea_localid" value="8420"/>
+										<UML:TaggedValue tag="styleex" value="IsLiteral=0;volatile=0;"/>
+										<UML:TaggedValue tag="sequenceNumber" value="3" xmi.id="EAID_239DE072_55DF_4c5d_87CE_D069D7B710F2"/>
+										<UML:TaggedValue tag="inlineOrByReference" value="inlineOrByReference" xmi.id="EAID_DB4D42A7_F669_4f0c_B386_6CDF468F7F1B"/>
+										<UML:TaggedValue tag="isMetadata" value="false" xmi.id="EAID_CA6CE1E9_E314_454c_9FB8_DC50E9C3E3BA"/>
+									</UML:ModelElement.taggedValue>
+								</UML:Attribute>
+							</UML:Classifier.feature>
+						</UML:Class>
+						<UML:Association xmi.id="EAID_00616827_0314_4da8_9C67_2565414B79F9" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="style" value="3"/>
+								<UML:TaggedValue tag="ea_type" value="Association"/>
+								<UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+								<UML:TaggedValue tag="linemode" value="3"/>
+								<UML:TaggedValue tag="linecolor" value="-1"/>
+								<UML:TaggedValue tag="linewidth" value="0"/>
+								<UML:TaggedValue tag="seqno" value="0"/>
+								<UML:TaggedValue tag="headStyle" value="0"/>
+								<UML:TaggedValue tag="lineStyle" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="8601"/>
+								<UML:TaggedValue tag="ea_sourceName" value="LandUse"/>
+								<UML:TaggedValue tag="ea_targetName" value="GM_MultiSurface"/>
+								<UML:TaggedValue tag="ea_sourceType" value="Class"/>
+								<UML:TaggedValue tag="ea_targetType" value="Class"/>
+								<UML:TaggedValue tag="ea_sourceID" value="6690"/>
+								<UML:TaggedValue tag="ea_targetID" value="1220"/>
+								<UML:TaggedValue tag="$ea_dst_xref_property" value="$XREFPROP=$XID={DC7243D0-DDAB-4838-A84A-ED645CFB51E8}$XID;$NAM=Stereotypes$NAM;$TYP=connectorDestEnd property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;GUID={79A00823-2344-47ff-B2D8-097E40320B37};FQName=UML Profile for GML Applications Schemas::Property;@ENDSTEREO;$DES;$CLT={00616827-0314-4da8-9C67-2565414B79F9}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+								<UML:TaggedValue tag="virtualInheritance" value="0"/>
+								<UML:TaggedValue tag="lb" value="*"/>
+								<UML:TaggedValue tag="rb" value="0..1"/>
+								<UML:TaggedValue tag="rt" value="+lod1MultiSurface&#xA;«Property»"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Association.connection>
+								<UML:AssociationEnd visibility="public" multiplicity="*" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_35EB0970_FB62_433e_87B7_D7C77F816533">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="containment" value="Unspecified"/>
+										<UML:TaggedValue tag="sourcestyle" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+										<UML:TaggedValue tag="ea_end" value="source"/>
+									</UML:ModelElement.taggedValue>
+								</UML:AssociationEnd>
+								<UML:AssociationEnd visibility="public" multiplicity="0..1" name="lod1MultiSurface" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_642283DE_4A64_4b12_B987_2F095D1C49FB">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="SIG3D: Relation to a LOD1 multi surface geometry representing the Land Use area. The LOD concept for LandUse is defined in chapter ..."/>
+										<UML:TaggedValue tag="containment" value="Unspecified"/>
+										<UML:TaggedValue tag="destStereotype" value="Property"/>
+										<UML:TaggedValue tag="deststyle" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+										<UML:TaggedValue tag="ea_end" value="target"/>
+										<UML:TaggedValue tag="sequenceNumber" value="5" xmi.id="EAID_2B315327_595F_47ac_BC94_839907538944"/>
+										<UML:TaggedValue tag="inlineOrByReference" value="inlineOrByReference" xmi.id="EAID_5BEFB6BD_1313_4712_82B0_D650E9983A7F"/>
+										<UML:TaggedValue tag="isMetadata" value="false" xmi.id="EAID_0B465AD1_1718_4b26_B9B2_980454E556A4"/>
+									</UML:ModelElement.taggedValue>
+								</UML:AssociationEnd>
+							</UML:Association.connection>
+						</UML:Association>
+						<UML:Association xmi.id="EAID_549CB69E_56D5_40b6_835B_8D1828A5D01D" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="style" value="3"/>
+								<UML:TaggedValue tag="ea_type" value="Association"/>
+								<UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+								<UML:TaggedValue tag="linemode" value="3"/>
+								<UML:TaggedValue tag="linecolor" value="-1"/>
+								<UML:TaggedValue tag="linewidth" value="0"/>
+								<UML:TaggedValue tag="seqno" value="0"/>
+								<UML:TaggedValue tag="headStyle" value="0"/>
+								<UML:TaggedValue tag="lineStyle" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="8600"/>
+								<UML:TaggedValue tag="ea_sourceName" value="LandUse"/>
+								<UML:TaggedValue tag="ea_targetName" value="GM_MultiSurface"/>
+								<UML:TaggedValue tag="ea_sourceType" value="Class"/>
+								<UML:TaggedValue tag="ea_targetType" value="Class"/>
+								<UML:TaggedValue tag="ea_sourceID" value="6690"/>
+								<UML:TaggedValue tag="ea_targetID" value="1220"/>
+								<UML:TaggedValue tag="$ea_dst_xref_property" value="$XREFPROP=$XID={875BD14D-0E18-4d5f-8525-C0DA96EA4BC1}$XID;$NAM=Stereotypes$NAM;$TYP=connectorDestEnd property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;GUID={79A00823-2344-47ff-B2D8-097E40320B37};FQName=UML Profile for GML Applications Schemas::Property;@ENDSTEREO;$DES;$CLT={549CB69E-56D5-40b6-835B-8D1828A5D01D}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+								<UML:TaggedValue tag="virtualInheritance" value="0"/>
+								<UML:TaggedValue tag="lb" value="*"/>
+								<UML:TaggedValue tag="rb" value="0..1"/>
+								<UML:TaggedValue tag="rt" value="+lod2MultiSurface&#xA;«Property»"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Association.connection>
+								<UML:AssociationEnd visibility="public" multiplicity="*" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_35EB0970_FB62_433e_87B7_D7C77F816533">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="containment" value="Unspecified"/>
+										<UML:TaggedValue tag="sourcestyle" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+										<UML:TaggedValue tag="ea_end" value="source"/>
+									</UML:ModelElement.taggedValue>
+								</UML:AssociationEnd>
+								<UML:AssociationEnd visibility="public" multiplicity="0..1" name="lod2MultiSurface" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_642283DE_4A64_4b12_B987_2F095D1C49FB">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="SIG3D: Relation to a LOD2 multi surface geometry representing the Land Use area. The LOD concept for LandUse is defined in chapter ..."/>
+										<UML:TaggedValue tag="containment" value="Unspecified"/>
+										<UML:TaggedValue tag="destStereotype" value="Property"/>
+										<UML:TaggedValue tag="deststyle" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+										<UML:TaggedValue tag="ea_end" value="target"/>
+										<UML:TaggedValue tag="sequenceNumber" value="6" xmi.id="EAID_73756E7A_A06A_4047_94C5_10001AF97D4C"/>
+										<UML:TaggedValue tag="inlineOrByReference" value="inlineOrByReference" xmi.id="EAID_1CAD6ACB_F363_48f4_BEE8_EF9DD040B176"/>
+										<UML:TaggedValue tag="isMetadata" value="false" xmi.id="EAID_245A932D_2E00_439b_817D_4A34063A6762"/>
+									</UML:ModelElement.taggedValue>
+								</UML:AssociationEnd>
+							</UML:Association.connection>
+						</UML:Association>
+						<UML:Association xmi.id="EAID_7D16D0D8_B119_45ae_830E_59AB7295E06B" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="style" value="3"/>
+								<UML:TaggedValue tag="ea_type" value="Association"/>
+								<UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+								<UML:TaggedValue tag="linemode" value="3"/>
+								<UML:TaggedValue tag="linecolor" value="-1"/>
+								<UML:TaggedValue tag="linewidth" value="0"/>
+								<UML:TaggedValue tag="seqno" value="0"/>
+								<UML:TaggedValue tag="headStyle" value="0"/>
+								<UML:TaggedValue tag="lineStyle" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="8599"/>
+								<UML:TaggedValue tag="ea_sourceName" value="LandUse"/>
+								<UML:TaggedValue tag="ea_targetName" value="GM_MultiSurface"/>
+								<UML:TaggedValue tag="ea_sourceType" value="Class"/>
+								<UML:TaggedValue tag="ea_targetType" value="Class"/>
+								<UML:TaggedValue tag="ea_sourceID" value="6690"/>
+								<UML:TaggedValue tag="ea_targetID" value="1220"/>
+								<UML:TaggedValue tag="$ea_dst_xref_property" value="$XREFPROP=$XID={1C91BEBE-252C-46df-B76E-73A3CA0D47F6}$XID;$NAM=Stereotypes$NAM;$TYP=connectorDestEnd property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;GUID={79A00823-2344-47ff-B2D8-097E40320B37};FQName=UML Profile for GML Applications Schemas::Property;@ENDSTEREO;$DES;$CLT={7D16D0D8-B119-45ae-830E-59AB7295E06B}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+								<UML:TaggedValue tag="virtualInheritance" value="0"/>
+								<UML:TaggedValue tag="lb" value="*"/>
+								<UML:TaggedValue tag="rb" value="0..1"/>
+								<UML:TaggedValue tag="rt" value="+lod3MultiSurface&#xA;«Property»"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Association.connection>
+								<UML:AssociationEnd visibility="public" multiplicity="*" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_35EB0970_FB62_433e_87B7_D7C77F816533">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="containment" value="Unspecified"/>
+										<UML:TaggedValue tag="sourcestyle" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+										<UML:TaggedValue tag="ea_end" value="source"/>
+									</UML:ModelElement.taggedValue>
+								</UML:AssociationEnd>
+								<UML:AssociationEnd visibility="public" multiplicity="0..1" name="lod3MultiSurface" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_642283DE_4A64_4b12_B987_2F095D1C49FB">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="SIG3D: Relation to a LOD3 multi surface geometry representing the Land Use area. The LOD concept for LandUse is defined in chapter ..."/>
+										<UML:TaggedValue tag="containment" value="Unspecified"/>
+										<UML:TaggedValue tag="destStereotype" value="Property"/>
+										<UML:TaggedValue tag="deststyle" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+										<UML:TaggedValue tag="ea_end" value="target"/>
+										<UML:TaggedValue tag="sequenceNumber" value="7" xmi.id="EAID_E39948A4_4E32_45ea_A061_DC62056AA4B1"/>
+										<UML:TaggedValue tag="inlineOrByReference" value="inlineOrByReference" xmi.id="EAID_D8F4F904_4B84_43a5_8BB0_D007042CAB3D"/>
+										<UML:TaggedValue tag="isMetadata" value="false" xmi.id="EAID_88B51130_3705_4353_99BF_8A06B1EB2C1A"/>
+									</UML:ModelElement.taggedValue>
+								</UML:AssociationEnd>
+							</UML:Association.connection>
+						</UML:Association>
+						<UML:Generalization subtype="EAID_35EB0970_FB62_433e_87B7_D7C77F816533" supertype="EAID_B7DD64BA_C4AB_4607_9123_680D06F1C7C0" xmi.id="EAID_AC5247C5_14C0_4676_8C71_8E7213CB9D28" visibility="public">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="style" value="3"/>
+								<UML:TaggedValue tag="ea_type" value="Generalization"/>
+								<UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+								<UML:TaggedValue tag="linemode" value="3"/>
+								<UML:TaggedValue tag="linecolor" value="-1"/>
+								<UML:TaggedValue tag="linewidth" value="0"/>
+								<UML:TaggedValue tag="seqno" value="0"/>
+								<UML:TaggedValue tag="headStyle" value="0"/>
+								<UML:TaggedValue tag="lineStyle" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="8602"/>
+								<UML:TaggedValue tag="ea_sourceName" value="LandUse"/>
+								<UML:TaggedValue tag="ea_targetName" value="AbstractCityObject"/>
+								<UML:TaggedValue tag="ea_sourceType" value="Class"/>
+								<UML:TaggedValue tag="ea_targetType" value="Class"/>
+								<UML:TaggedValue tag="ea_sourceID" value="6690"/>
+								<UML:TaggedValue tag="ea_targetID" value="6740"/>
+								<UML:TaggedValue tag="src_visibility" value="Public"/>
+								<UML:TaggedValue tag="src_aggregation" value="0"/>
+								<UML:TaggedValue tag="src_isOrdered" value="false"/>
+								<UML:TaggedValue tag="src_targetScope" value="instance"/>
+								<UML:TaggedValue tag="src_changeable" value="none"/>
+								<UML:TaggedValue tag="src_isNavigable" value="false"/>
+								<UML:TaggedValue tag="src_containment" value="Unspecified"/>
+								<UML:TaggedValue tag="src_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
+								<UML:TaggedValue tag="dst_visibility" value="Public"/>
+								<UML:TaggedValue tag="dst_aggregation" value="0"/>
+								<UML:TaggedValue tag="dst_isOrdered" value="false"/>
+								<UML:TaggedValue tag="dst_targetScope" value="instance"/>
+								<UML:TaggedValue tag="dst_changeable" value="none"/>
+								<UML:TaggedValue tag="dst_isNavigable" value="true"/>
+								<UML:TaggedValue tag="dst_containment" value="Unspecified"/>
+								<UML:TaggedValue tag="dst_style" value="Union=0;Derived=0;AllowDuplicates=0;"/>
+								<UML:TaggedValue tag="virtualInheritance" value="0"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Generalization>
+						<UML:Association xmi.id="EAID_D486D4E0_78D2_4108_B2A9_5B366CA51A58" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="style" value="3"/>
+								<UML:TaggedValue tag="ea_type" value="Association"/>
+								<UML:TaggedValue tag="direction" value="Unspecified"/>
+								<UML:TaggedValue tag="linemode" value="3"/>
+								<UML:TaggedValue tag="linecolor" value="-1"/>
+								<UML:TaggedValue tag="linewidth" value="0"/>
+								<UML:TaggedValue tag="seqno" value="0"/>
+								<UML:TaggedValue tag="headStyle" value="0"/>
+								<UML:TaggedValue tag="lineStyle" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="8598"/>
+								<UML:TaggedValue tag="ea_sourceName" value="LandUse"/>
+								<UML:TaggedValue tag="ea_targetName" value="GM_MultiSurface"/>
+								<UML:TaggedValue tag="ea_sourceType" value="Class"/>
+								<UML:TaggedValue tag="ea_targetType" value="Class"/>
+								<UML:TaggedValue tag="ea_sourceID" value="6690"/>
+								<UML:TaggedValue tag="ea_targetID" value="1220"/>
+								<UML:TaggedValue tag="$ea_dst_xref_property" value="$XREFPROP=$XID={B2BF503B-6D85-42cc-86BA-72DBA8D2EA39}$XID;$NAM=Stereotypes$NAM;$TYP=connectorDestEnd property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;GUID={79A00823-2344-47ff-B2D8-097E40320B37};FQName=UML Profile for GML Applications Schemas::Property;@ENDSTEREO;$DES;$CLT={D486D4E0-78D2-4108-B2A9-5B366CA51A58}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+								<UML:TaggedValue tag="virtualInheritance" value="0"/>
+								<UML:TaggedValue tag="lb" value="*"/>
+								<UML:TaggedValue tag="rb" value="0..1"/>
+								<UML:TaggedValue tag="rt" value="+lod4MultiSurface&#xA;«Property»"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Association.connection>
+								<UML:AssociationEnd visibility="public" multiplicity="*" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_35EB0970_FB62_433e_87B7_D7C77F816533">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="containment" value="Unspecified"/>
+										<UML:TaggedValue tag="sourcestyle" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+										<UML:TaggedValue tag="ea_end" value="source"/>
+									</UML:ModelElement.taggedValue>
+								</UML:AssociationEnd>
+								<UML:AssociationEnd visibility="public" multiplicity="0..1" name="lod4MultiSurface" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_642283DE_4A64_4b12_B987_2F095D1C49FB">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="SIG3D: Relation to a LOD4 multi surface geometry representing the Land Use area. The LOD concept for LandUse is defined in chapter ..."/>
+										<UML:TaggedValue tag="containment" value="Unspecified"/>
+										<UML:TaggedValue tag="destStereotype" value="Property"/>
+										<UML:TaggedValue tag="deststyle" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+										<UML:TaggedValue tag="ea_end" value="target"/>
+										<UML:TaggedValue tag="sequenceNumber" value="8" xmi.id="EAID_0A749394_ACC1_4282_8015_8335C8ABADE4"/>
+										<UML:TaggedValue tag="inlineOrByReference" value="inlineOrByReference" xmi.id="EAID_87280DD8_A8CB_40d6_8EE2_18EE36223AD7"/>
+										<UML:TaggedValue tag="isMetadata" value="false" xmi.id="EAID_06D8E7B2_5CD2_4661_BFFE_707DEDC6C8B8"/>
+									</UML:ModelElement.taggedValue>
+								</UML:AssociationEnd>
+							</UML:Association.connection>
+						</UML:Association>
+						<UML:Association xmi.id="EAID_FCEA8D90_14CA_4e72_A965_A11A45BFD401" visibility="public" isRoot="false" isLeaf="false" isAbstract="false">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="style" value="3"/>
+								<UML:TaggedValue tag="ea_type" value="Association"/>
+								<UML:TaggedValue tag="direction" value="Source -&gt; Destination"/>
+								<UML:TaggedValue tag="linemode" value="3"/>
+								<UML:TaggedValue tag="linecolor" value="-1"/>
+								<UML:TaggedValue tag="linewidth" value="0"/>
+								<UML:TaggedValue tag="seqno" value="0"/>
+								<UML:TaggedValue tag="headStyle" value="0"/>
+								<UML:TaggedValue tag="lineStyle" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="8597"/>
+								<UML:TaggedValue tag="ea_sourceName" value="LandUse"/>
+								<UML:TaggedValue tag="ea_targetName" value="GM_MultiSurface"/>
+								<UML:TaggedValue tag="ea_sourceType" value="Class"/>
+								<UML:TaggedValue tag="ea_targetType" value="Class"/>
+								<UML:TaggedValue tag="ea_sourceID" value="6690"/>
+								<UML:TaggedValue tag="ea_targetID" value="1220"/>
+								<UML:TaggedValue tag="$ea_dst_xref_property" value="$XREFPROP=$XID={AB8C7F2A-6EC1-4449-9D62-73110C93BA39}$XID;$NAM=Stereotypes$NAM;$TYP=connectorDestEnd property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;GUID={79A00823-2344-47ff-B2D8-097E40320B37};FQName=UML Profile for GML Applications Schemas::Property;@ENDSTEREO;$DES;$CLT={FCEA8D90-14CA-4e72-A965-A11A45BFD401}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+								<UML:TaggedValue tag="virtualInheritance" value="0"/>
+								<UML:TaggedValue tag="lb" value="*"/>
+								<UML:TaggedValue tag="rb" value="0..1"/>
+								<UML:TaggedValue tag="rt" value="+lod0MultiSurface&#xA;«Property»"/>
+							</UML:ModelElement.taggedValue>
+							<UML:Association.connection>
+								<UML:AssociationEnd visibility="public" multiplicity="*" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="false" type="EAID_35EB0970_FB62_433e_87B7_D7C77F816533">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="containment" value="Unspecified"/>
+										<UML:TaggedValue tag="sourcestyle" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+										<UML:TaggedValue tag="ea_end" value="source"/>
+									</UML:ModelElement.taggedValue>
+								</UML:AssociationEnd>
+								<UML:AssociationEnd visibility="public" multiplicity="0..1" name="lod0MultiSurface" aggregation="none" isOrdered="false" targetScope="instance" changeable="none" isNavigable="true" type="EAID_642283DE_4A64_4b12_B987_2F095D1C49FB">
+									<UML:ModelElement.taggedValue>
+										<UML:TaggedValue tag="description" value="SIG3D: Relation to a LOD0 multi surface geometry representing the Land Use area. The LOD concept for LandUse is defined in chapter ..."/>
+										<UML:TaggedValue tag="containment" value="Unspecified"/>
+										<UML:TaggedValue tag="destStereotype" value="Property"/>
+										<UML:TaggedValue tag="deststyle" value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+										<UML:TaggedValue tag="ea_end" value="target"/>
+										<UML:TaggedValue tag="sequenceNumber" value="4" xmi.id="EAID_61C2270B_E0C4_4756_9DF2_988CEEB8B738"/>
+										<UML:TaggedValue tag="inlineOrByReference" value="inlineOrByReference" xmi.id="EAID_1ADBBD1F_2659_47d8_AFB2_F84E3E712CE5"/>
+										<UML:TaggedValue tag="isMetadata" value="false" xmi.id="EAID_8725D037_F8BF_460e_AD86_7BA531FAE741"/>
+									</UML:ModelElement.taggedValue>
+								</UML:AssociationEnd>
+							</UML:Association.connection>
+						</UML:Association>
+					</UML:Namespace.ownedElement>
+				</UML:Package>
+				<UML:Stereotype xmi.id="EAID_42625D6E_8AA4_4529_87B0_EC9A8F752F2C" name="Application Schema" isRoot="false" isLeaf="false" isAbstract="false">
+					<UML:Stereotype.baseClass>Package</UML:Stereotype.baseClass>
+				</UML:Stereotype>
+			</UML:Namespace.ownedElement>
+		</UML:Model>
+		<UML:TaggedValue tag="gmlProfileSchema" xmi.id="EAID_48460EC2_3840_3638_8BA9_55ED901CA1C6" value="#NOTES#Description: URL of the schema location of a GML profile (optional)&#xA;" modelElement="MX_EAID_C1AAF1C3_9E48_468d_A272_EA37B3F35235"/>
+		<UML:TaggedValue tag="targetNamespace" xmi.id="EAID_393CD814_65F2_0f65_8767_B516B4DE95EE" value="http://www.opengis.net/citygml/landuse/2.x#NOTES#Default: FIXME&#xA;Description: Target XML namespace of the application schema&#xA;" modelElement="MX_EAID_C1AAF1C3_9E48_468d_A272_EA37B3F35235"/>
+		<UML:TaggedValue tag="version" xmi.id="EAID_6F40CEE6_5EE4_0a5e_AFFD_4EB2A8019FCB" value="1.0#NOTES#Default: FIXME&#xA;Description: Current version of the application schema&#xA;" modelElement="MX_EAID_C1AAF1C3_9E48_468d_A272_EA37B3F35235"/>
+		<UML:TaggedValue tag="xmlns" xmi.id="EAID_08B91BD2_9450_4294_8C4B_93E08F742DF1" value="luse#NOTES#Default: FIXME&#xA;Description: Namespace prefix to be used as short form of the target namespace&#xA;" modelElement="MX_EAID_C1AAF1C3_9E48_468d_A272_EA37B3F35235"/>
+		<UML:TaggedValue tag="xsdDocument" xmi.id="EAID_6E79370E_F9EC_2bf9_B74A_BBD196FD2F00" value="landUse.xsd#NOTES#Default: FIXME&#xA;Description: Name of an XML Schema document to create representing the content of this package&#xA;" modelElement="MX_EAID_C1AAF1C3_9E48_468d_A272_EA37B3F35235"/>
+		<UML:TaggedValue tag="xsdEncodingRule" xmi.id="EAID_BCD3CBEE_41AC_b741_9852_25EF568BDB10" value="iso19136_2007#NOTES#Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions&#xA;Default: iso19136_2007&#xA;Description: XML Schema encoding rule to apply&#xA;" modelElement="MX_EAID_C1AAF1C3_9E48_468d_A272_EA37B3F35235"/>
+		<UML:TaggedValue tag="byValuePropertyType" xmi.id="EAID_ED33D65F_2D66_502d_9752_CCA85941F947" value="false#NOTES#Values: false&#xA;Default: false&#xA;Description: Create a property type that requires that the instance is encoded inline (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.&#xA;" modelElement="EAID_35EB0970_FB62_433e_87B7_D7C77F816533"/>
+		<UML:TaggedValue tag="isCollection" xmi.id="EAID_26B33348_746F_d874_91A5_8459BDEA46A0" value="false#NOTES#Values: true | false&#xA;Default: false&#xA;Description: Identifies the feature type as a feature collection.&#xA;" modelElement="EAID_35EB0970_FB62_433e_87B7_D7C77F816533"/>
+		<UML:TaggedValue tag="noPropertyType" xmi.id="EAID_F9638764_222B_cc22_AE0B_B026751DBCBB" value="false#NOTES#Values: false&#xA;Default: false&#xA;Description: Surpress creation of a standard property type that supports inline or by-reference encoding (applies to ISO 19136:2007 encoding rule). Always set to false in INSPIRE.&#xA;" modelElement="EAID_35EB0970_FB62_433e_87B7_D7C77F816533"/>
+		<UML:TaggedValue tag="xsdEncodingRule" xmi.id="EAID_BCD3CBEE_C795_f6c7_B371_C07313477956" value="iso19136_2007#NOTES#Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions&#xA;Default: iso19136_2007&#xA;Description: XML Schema encoding rule to apply&#xA;" modelElement="EAID_35EB0970_FB62_433e_87B7_D7C77F816533"/>
+		<UML:Diagram name="LandUse" xmi.id="EAID_CC93EE95_FF75_448b_9449_79C9FD49472F" diagramType="ClassDiagram" owner="EAPK_C1AAF1C3_9E48_468d_A272_EA37B3F35235" toolName="Enterprise Architect 2.5">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="version" value="1.0"/>
+				<UML:TaggedValue tag="author" value="ebbinghaus"/>
+				<UML:TaggedValue tag="created_date" value="2012-11-28 13:05:13"/>
+				<UML:TaggedValue tag="modified_date" value="2013-12-03 21:01:39"/>
+				<UML:TaggedValue tag="package" value="EAPK_C1AAF1C3_9E48_468d_A272_EA37B3F35235"/>
+				<UML:TaggedValue tag="type" value="Logical"/>
+				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;;cls=0;"/>
+				<UML:TaggedValue tag="matrixitems" value="locked=false;matrixactive=false;swimlanesactive=true;width=1;"/>
+				<UML:TaggedValue tag="ea_localid" value="3474"/>
+				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=795;DocSize.cy=1134;ShowDetails=0;Orientation=P;Zoom=131;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=1;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=1;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=0;AdvancedConnectorProps=0;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;HideConnStereotype=1;"/>
+				<UML:TaggedValue tag="styleex" value="SaveTag=22B2AE38;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;MatrixLineWidth=1;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=0;AdvancedConnectorProps=0;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;HideConnStereotype=1;SuppressedCompartments=;"/>
+			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=566;Top=293;Right=683;Bottom=360;" subject="EAID_642283DE_4A64_4b12_B987_2F095D1C49FB" seqno="1" style="DUID=AEBA26D8;NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;AttPro=0;AttPri=0;AttPub=0;AttPkg=0;OpPro=0;OpPri=0;OpPub=0;OpPkg=0;AttCustom=0;OpCustom=0;RzO=1;BCol=10551232;"/>
+				<UML:DiagramElement geometry="Left=113;Top=133;Right=261;Bottom=188;" subject="EAID_B7DD64BA_C4AB_4607_9123_680D06F1C7C0" seqno="2" style="DUID=A3429B1C;NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;AttPro=0;AttPri=0;AttPub=0;AttPkg=0;OpPro=0;OpPri=0;OpPub=0;OpPkg=0;AttCustom=0;OpCustom=0;RzO=1;BCol=16764057;"/>
+				<UML:DiagramElement geometry="Left=101;Top=267;Right=273;Bottom=394;" subject="EAID_35EB0970_FB62_433e_87B7_D7C77F816533" seqno="3" style="DUID=6EAFDD88;NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;BCol=10092287;"/>
+				<UML:DiagramElement geometry="SCTR=1;SCME=1;SX=0;SY=0;EX=0;EY=0;EDGE=4;SCTR.LEFT=105;SCTR.TOP=-218;SCTR.RIGHT=521;SCTR.BOTTOM=-187;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=113:-187$105:-187$105:-218$521:-218$261:-188$;" subject="EAID_C22B8769_C2E7_4e9b_9C0D_138631E90002" style="Mode=3;EOID=A3429B1C;SOID=A3429B1C;Color=-1;LWidth=0;Hidden=1;"/>
+				<UML:DiagramElement geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_AC5247C5_14C0_4676_8C71_8E7213CB9D28" style="Mode=3;EOID=A3429B1C;SOID=6EAFDD88;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=85;SY=51;EX=-1;EY=1;EDGE=2;$LLB=CX=4:CY=13:OX=0:OY=-18:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=;LMT=;LMB=;LRT=CX=87:CY=26:OX=9:OY=-53:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=18:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=524:-278$524:-323$;" subject="EAID_FCEA8D90_14CA_4e72_A965_A11A45BFD401" style="Mode=3;EOID=AEBA26D8;SOID=6EAFDD88;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=-4;SY=-58;EX=0;EY=1;EDGE=2;$LLB=CX=4:CY=13:OX=0:OY=-15:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=;LMT=;LMB=;LRT=CX=87:CY=26:OX=7:OY=58:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=18:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=524:-388$524:-323$;" subject="EAID_D486D4E0_78D2_4108_B2A9_5B366CA51A58" style="Mode=3;EOID=AEBA26D8;SOID=6EAFDD88;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=85;SY=-31;EX=1;EY=1;EDGE=2;$LLB=CX=4:CY=13:OX=0:OY=-14:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=;LMT=;LMB=;LRT=CX=87:CY=26:OX=8:OY=30:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=18:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=524:-361$524:-323$;" subject="EAID_7D16D0D8_B119_45ae_830E_59AB7295E06B" style="Mode=3;EOID=AEBA26D8;SOID=6EAFDD88;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=85;SY=-4;EX=-8;EY=3;EDGE=2;$LLB=CX=4:CY=13:OX=0:OY=-14:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=;LMT=;LMB=;LRT=CX=87:CY=26:OX=8:OY=4:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=18:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=524:-334$524:-323$;" subject="EAID_549CB69E_56D5_40b6_835B_8D1828A5D01D" style="Mode=3;EOID=AEBA26D8;SOID=6EAFDD88;Color=-1;LWidth=0;Hidden=0;"/>
+				<UML:DiagramElement geometry="SX=85;SY=24;EX=0;EY=2;EDGE=2;$LLB=CX=4:CY=13:OX=0:OY=-15:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=;LMT=;LMB=;LRT=CX=87:CY=26:OX=8:OY=-24:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=18:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=524:-306$524:-323$;" subject="EAID_00616827_0314_4da8_9C67_2565414B79F9" style="Mode=3;EOID=AEBA26D8;SOID=6EAFDD88;Color=-1;LWidth=0;Hidden=0;"/>
+			</UML:Diagram.element>
+		</UML:Diagram>
+	</XMI.content>
+	<XMI.difference/>
+	<XMI.extensions xmi.extender="Enterprise Architect 2.5">
+		<EAStub xmi.id="EAID_642283DE_4A64_4b12_B987_2F095D1C49FB" name="GM_MultiSurface" UMLType="Class"/>
+		<EAModel.paramSub/>
+		<EAStub xmi.id="EAID_B7DD64BA_C4AB_4607_9123_680D06F1C7C0" name="AbstractCityObject" UMLType="Class"/>
+		<EAStub xmi.id="EAID_DD20EA95_5FD0_4d14_9871_FCCEE29651B5" name="Code" UMLType="Class"/>
+	</XMI.extensions>
+</XMI>
