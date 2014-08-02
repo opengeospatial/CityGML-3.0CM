@@ -1,0 +1,2 @@
+﻿This is a sample public text file resource. There is a link to it from the public wiki for this work package. Everyone should be able to read it.
+
