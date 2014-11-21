@@ -1,0 +1,54 @@
+Minutes of telecon 21 november 2014
+
+Agenda: 
+1. Welcome & agenda
+2. Preparation for Tokyo meeting
+3. Ongoing work
+  a. Codelists 
+  b. Definitions
+  c. UML model
+4. Plan next telecon
+
+Present: 
+- Linda
+- Dimitri
+- Joachim
+- Heinrich
+- Gerhard
+
+Preparation for Tokyo meeting
+- Dimitri will make a presentation and present our progress to the CityGML SWG. He will send us a draft for comments in advance. 
+- He will ask Steve for a 1 hour time slot. 
+- Contents of the presentation will be based on the Workshop minutes and include among other things our proposal for definitions (and invite discussion), our proposal for geometric LODs, our discussion on semantic parts (and ask for feedback), and if there is sufficient time, a first look at our draft UML model. 
+
+Codelists
+- Linda created a first draft of codelists based on the IMGeo codelists. 
+- The question was raised if we want to create normative or informative codelists
+- The codelists will be extensible. 
+- Comments on the Class codelist: 
+	- civic > civil
+	- Add ‘transportation structure’ en ‘production structure’
+- Comments on the Function codelist: 
+	- Should this list be hierarchical? Maybe an informal hierarchy like implemented in some INSPIRE LandUse codelists, because it has the benefit of making long codelists more readable for humans. The hierarchy would not be intended to be used by computers. 
+	- As a first step we will create a non-hierarchic 'long list', then revisit the hierarchy question. 
+	- Function and Usage codelists will have the same content. 
+	- 'Bunker' is a building
+	- Action all: compare French/German (e.g. AAA) codelists with Linda's proposed list. 
+ 
+Definitions
+-	Bridge definition: 
+	-	 ‘two or more points’
+	- or: ‘one or more’? (not according to the workshop minutes)
+	- Maybe not refer to ISO source. 
+- Action all: review the definition proposals.
+
+UML model was not discussed
+
+Next telecon: 17 december 10:00 – 11:00 CET. Agenda: 
+-	Report on Tokyo meeting – Dimitri
+- Codelists
+- Definitions
+- ...
+
+	
+
