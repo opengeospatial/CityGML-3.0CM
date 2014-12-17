@@ -1,0 +1,43 @@
+Minutes of telecon 17 december 2014
+
+Agenda: 
+1.	Main agenda point is report from the CityGML SWG (@Dimitri provided you are available for the call?). 
+2.	Once we know what they thought of our proposals we know our next steps with regards to:
+  a.	Codelists 
+  b.	Definitions
+  c.	UML model
+3.	Plan next telecon
+
+Present: 
+- Linda
+- Dimitri
+- Joachim
+- Heinrich
+
+Dimitri - report from Tokyo CityGML SWG meeting
+-	WP1: CityGML UML model ready for use quite soon including documentation on how to use the model.
+-	WP3: SWG has asked this working group to give more information about what they are doing. 
+-	WP6: Showed use cases. They are developing an ADE for modeling temporal information at different levels in the CityGML model. Intention is to make it part of CityGML. 
+-	WP9: Dimitri's report was appreciated and the SWG was happy with our progress. Feedback: 
+  -	Naming + definition – The SWG agreed on principle with our suggestions for (re)naming classes and our suggestions for definitions. Once we agree on definitions and renaming and have a consensus in our WP9 group, bring it back to the SWG. 
+  -	City furniture model: recommendation from the SWG is to keep both classes (i.e. keep CityFurniture and add OtherConstruction) because this means less change to the existing model and city furniture is a semantic category of things, although the SWG understands that it cannot be defined completely unambiguously.
+    -	WP9 group agrees to concentrate on OtherConstruction class and keep CityFurniture with the possibility to revisit this if we find a lot of ambiguous examples.
+  -	Semantic structuring of OtherConstruction with parts and installations: there was support for this in the SWG. It is not a big deal to add this to the model and it could be of use. 
+		- Joachim pointed out that it is not sufficiently clear what is a construction part and what is a construction installation (the same goes for the Building module). 
+		- Heinrich: in the INSPIRE Production Facilities theme installations are used to describe feature parts. It is often not enough to look at the whole.
+		- WP9 group decided to at least add Other Construction parts, but more discussion is necessary on whether installations should also be added.
+		- Action Heinrich: to provide examples of OtherConstructions with construction parts and construction installations. The WP9 group will discuss this in the next telecon and decide, based on the examples, either to model only construction parts, without definition but with a remark that it is up to the user how to use this; or both construction parts and construction installations. 
+	-	Need for interior LODs: no real feedback. Could be useful. 
+		- WP9 group decided not to model interior LODs in this version of CityGML. We will add the suggestion that if necessary it could be modeled in an ADE or a later version. 
+	- UML model: was presented by Dimitri, no comments. The SWG is happy with the progress. 
+-	Dimitri asked about WP14 in the SWG meeting: no progress.
+-	Short discussion on codelists
+	- We need to decide if we will provide small generic codelists, large codelists that cover most needs ( will lead to more interoperability), hierarchical codelists... This affects the whole CityGML model. 
+	- Action Linda: look at codelists AAA: AFIS-ALKIS-ATKIS and discuss next time.
+- Action everyone: review definitions
+-	Next meeting: 12 January 2015 (Dimitri will not attend but provide input), telecon. Agenda: 
+	- discuss semantic construction parts based on examples;
+	- codelists
+	
+	
+
