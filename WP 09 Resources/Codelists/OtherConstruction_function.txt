@@ -5,7 +5,6 @@ settling vat
 wind turbine
 transformer vault
 open basin
-bunker
 forage silo
 shed
 high-tension line tower
