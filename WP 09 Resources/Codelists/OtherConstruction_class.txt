@@ -1,4 +1,6 @@
 Storage structure
-Civic engineering structure
+Civil engineering structure
+Transportation structure
+Production structure
 Separation
 Other
