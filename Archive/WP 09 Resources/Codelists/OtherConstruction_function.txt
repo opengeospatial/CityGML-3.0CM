@@ -1,0 +1,33 @@
+span structure
+open shed
+storage tank
+settling vat
+wind turbine
+transformer vault
+open basin
+forage silo
+shed
+high-tension line tower
+pump works
+railway platform
+lock
+longitudinal dyke
+wharf
+weir
+retaining wall
+overwater building (dutch: overkluizing)
+culvert
+fauna facility
+fish passage facility
+check
+cut
+pontoon
+ford
+wall
+quay wall
+noise barrier
+sheet pile
+shoring
+fence
+wire fence
+fauna fence
