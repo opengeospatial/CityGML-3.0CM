@@ -1,0 +1,1 @@
+This is the folder where ongoing work on the codelists for WP09, is done. Draft versions of the new codelists for OtherConstruction are stored here. 

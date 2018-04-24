@@ -1,0 +1,3 @@
+When the development of CityGML 3.0 started in 2014, the work was organised into 14 Work Packages (WPs) and individual folders were created on this github repository for every WP to provide minutes of meetings, work results, etc.
+By the end of 2017, the results of the individual WPs were integrated into a consolidated version of the CityGML 3.0 Conceptual Model.
+This folder archives the resources from the individual work Packages. Please note: As not all WPs were active in the past and also not all WPs made use of github, only the resources of WPs 01, 03, 06, and 09 are available here.

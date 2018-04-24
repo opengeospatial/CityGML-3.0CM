@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<UMLProfile>
+
+	<!-- modified by Simon Cox from profile created by Clemens Portele - last edit: 2009-05-152 -->
+
+	<Documentation id="GML" name="UML Profile for GML Applications Schemas" version="2.0" notes="This profile defines a set of stereotypes and tagged values for defining application schemas for GML Application schemas."/>
+
+	<Content>
+		
+		<Stereotypes>
+
+			<Stereotype name="Application Schema" notes="An application schema according to ISO 19109 and the Generic Conceptual Model.">
+				<AppliesTo>
+					<Apply type="package"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="targetNamespace" description="Target XML namespace of the application schema" default="FIXME"/>
+					<Tag name="xmlns" description="Namespace prefix to be used as short form of the target namespace" default="FIXME"/>
+					<Tag name="version" description="Current version of the application schema" default="FIXME" />
+					<Tag name="xsdDocument" description="Name of an XML Schema document to create representing the content of this package" default="FIXME"/>
+					<Tag name="gmlProfileSchema" description="URL of the schema location of a GML profile (optional)"/>
+					<Tag name="xsdEncodingRule" description="XML Schema encoding rule to apply" values="iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions" default="iso19136_2007" />
+				</TaggedValues>
+			</Stereotype>
+
+<!-- this stereotype may be added for packages without stereotype during the conversion to an implementation model, if needed
+			<Stereotype name="bundle" notes="A package that is not an application schema.">
+				<AppliesTo>
+					<Apply type="package"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="xsdDocument" description="Name of an XML Schema document to create representing the content of this package"/>
+					<Tag name="xsdEncodingRule" description="XML Schema encoding rule to apply" values="iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions" default="iso19136_2007_INSPIRE_Extensions" />
+				</TaggedValues>
+			</Stereotype>
+-->
+
+			<Stereotype name="Leaf" notes="A package that is not an application schema and contains no packages.">
+				<AppliesTo>
+					<Apply type="package"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="xsdDocument" description="Name of an XML Schema document to create representing the content of this package"/>
+					<Tag name="xsdEncodingRule" description="XML Schema encoding rule to apply" values="iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions" default="iso19136_2007" />
+				</TaggedValues>
+			</Stereotype>
+
+			<Stereotype name="FeatureType" notes="A feature type.">
+				<AppliesTo>
+					<Apply type="class"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="xsdEncodingRule" description="XML Schema encoding rule to apply" values="iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions" default="iso19136_2007" />
+					<Tag name="noPropertyType" description="Surpress creation of a standard property type that supports inline or by-reference encoding (applies to ISO 19136:2007 encoding rule)." values="true | false" default="false" />
+					<Tag name="byValuePropertyType" description="Create a property type that requires that the instance is encoded inline (applies to ISO 19136:2007 encoding rule)." values="true | false" default="false" />
+					<Tag name="isCollection" description="Identifies the feature type as a feature collection." values="true | false" default="false" />
+				</TaggedValues>
+			</Stereotype>
+
+			<Stereotype name="Type" notes="A conceptual, abstract type that is not a spatial object type.">
+				<AppliesTo>
+					<Apply type="class"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="xsdEncodingRule" description="XML Schema encoding rule to apply" values="iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions" default="iso19136_2007" />
+					<Tag name="noPropertyType" description="Surpress creation of a standard property type that supports inline or by-reference encoding (applies to ISO 19136:2007 encoding rule)." values="true | false" default="false" />
+					<Tag name="byValuePropertyType" description="Create a property type that requires that the instance is encoded inline (applies to ISO 19136:2007 encoding rule)." values="true | false" default="false" />
+					<Tag name="isCollection" description="Identifies the type as an object collection." values="true | false" default="false" />
+					<Tag name="xmlSchemaType" description="If the type has a canonical XML Schema encoding the XML Schema typename corresponding to the data type shall be given as the value (applies to ISO 19136:2007 encoding rule)"/>
+				</TaggedValues>
+			</Stereotype>
+
+<!-- this stereotype may be added for classes with no stereotype during the conversion to an implementation model
+			<Stereotype name="class" notes="A type with identity that is not a spatial object type.">
+				<AppliesTo>
+					<Apply type="class"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="xsdEncodingRule" description="XML Schema encoding rule to apply" values="iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions" default="iso19136_2007_INSPIRE_Extensions" />
+					<Tag name="noPropertyType" description="Surpress creation of a standard property type that supports inline or by-reference encoding (applies to ISO 19136:2007 encoding rule)." values="true | false" default="false" />
+					<Tag name="byValuePropertyType" description="Create a property type that requires that the instance is encoded inline (applies to ISO 19136:2007 encoding rule)." values="true | false" default="false" />
+					<Tag name="isCollection" description="Identifies the type as an object collection." values="true | false" default="false" />
+				</TaggedValues>
+			</Stereotype>
+-->
+
+			<Stereotype name="DataType" notes="A structured data type without identity.">
+				<AppliesTo>
+					<Apply type="class"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="xsdEncodingRule" description="XML Schema encoding rule to apply" values="iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions" default="iso19136_2007" />
+					<Tag name="noPropertyType" description="Surpress creation of a standard property type that supports inline encoding (applies to ISO 19136:2007 encoding rule)." values="true | false" default="false" />
+					<Tag name="isCollection" description="Identifies the data type as an object collection." values="true | false" default="false" />
+				</TaggedValues>
+			</Stereotype>
+
+			<Stereotype name="Union" notes="A structured data type without identity where exactly one of the properties of the type is present in any instance.">
+				<AppliesTo>
+					<Apply type="class"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="xsdEncodingRule" description="XML Schema encoding rule to apply" values="iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions" default="iso19136_2007" />
+					<Tag name="noPropertyType" description="Surpress creation of a standard property type that supports inline encoding (applies to ISO 19136:2007 encoding rule)." values="true | false" default="false" />
+				</TaggedValues>
+			</Stereotype>
+
+			<Stereotype name="enumeration" notes="An enumeration.">
+				<AppliesTo>
+					<Apply type="class"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="xsdEncodingRule" description="XML Schema encoding rule to apply" values="iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions" default="iso19136_2007" />
+				</TaggedValues>
+			</Stereotype>
+
+			<Stereotype name="CodeList" notes="A code list.">
+				<AppliesTo>
+					<Apply type="class"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="xsdEncodingRule" description="XML Schema encoding rule to apply" values="iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions" default="iso19136_2007" />
+					<Tag name="asDictionary" description="Encode code list as externally managed dictionary (applies to ISO 19136:2007 encoding rule)." values="true | false" default="true" />
+					<Tag name="codeSpace" type="string" description="URI that identifies the authority for this dictionary and its members" unit="" values="" default=""/>
+					<Tag name="dictionaryIdentifier" type="string" description="URI that identifies this dictionary" unit="" values="" default=""/>
+					<Tag name="memberIdentifierStem" type="string" description="URI stem used for dictionary members" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+
+			<Stereotype name="Import" notes="The model elements of the supplier package are imported.">
+				<AppliesTo>
+					<Apply type="dependency"/>
+				</AppliesTo>
+			</Stereotype>
+
+<!-- this stereotype may be added for properties with no stereotype during the conversion to an implementation model -->
+
+			<Stereotype name="Property" notes="A regular property.">
+				<AppliesTo>
+					<Apply type="attribute"/>
+					<Apply type="associationRole"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="sequenceNumber" description="Unique integer value for properties of the type used to sort properties (applies to ISO 19136:2007 encoding rule)"/>
+					<Tag name="inlineOrByReference" description="Controls whether property values may be encoded inline or by reference (applies to ISO 19136:2007 encoding rule)" values="inline | byReference | inlineOrByReference" default="inlineOrByReference"/>
+					<Tag name="isMetadata" description="Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world." values="true | false" default="false"/>
+				</TaggedValues>
+			</Stereotype>
+
+		</Stereotypes>
+	</Content>	
+</UMLProfile>

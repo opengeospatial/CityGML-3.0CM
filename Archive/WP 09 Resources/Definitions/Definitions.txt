@@ -1,0 +1,28 @@
+This file contains drafts of definitions for CityGML classes related to constructions. These drafts are ongoing work. 
+
+First draft 13 nov 2014 by Linda van den Brink, based on the outcome of the first WP09 workshop.
+
+AbstractConstruction definition
+An object, manufactured by humans from construction materials, which is connected to earth and intended to be permanent. A connection with the ground also exists when the construction rests by its own weight on the ground or is  moveable  limited  on stationary rails or if the construction  is intended to be used mainly stationary.
+Note: Everything that is covered by other CityGML modules, e.g. Transportation or Water body, is not an 
+AbstractConstruction. E.g. a road or canal is man made, but not an AbstractConstruction. 
+
+(Building, Bridge, Tunnel, CityFurniture and OtherConstruction are specializations of AbstractConstruction and inherit its defining aspects. These are not repeated in the definitions below, but do apply.)
+
+Building definition
+A roofed construction which can be entered by human beings, normally enclosed, and used or intended for the shelter of humans, animals or things or for the production of economic goods.
+
+Bridge definition
+Civil engineering work that affords passage to pedestrians, animals, vehicles, and service(s) above obstacles or between two points at a height above ground (cf. ISO 6707-1)
+
+Tunnel definition
+Horizontal or sloping, mostly enclosed passage way of some length, mainly underground or underwater (cf. ISO 6707-1), that affords passage to pedestrians, animals, vehicles, and service(s).
+
+CityFurniture definition
+Small object, usually not manufactured on site, that supports the general function of the area it is located in.
+Note 1: 'small' is not strictly defined but explained by example:  lanterns, traffic lights, traffic signs, flower buckets, advertising columns, benches, delimitation stakes, or bus stops.
+Note 2: City furniture are different from building furniture. While the latter ar movable objects, city furniture are immovable. 
+Note 3: It is not possible to make a 100% clear mathematical division of what is city furniture and what is other construction. The WP09 working group sees two ways of solving this: 1)	Replace class of city furniture by other construction, or 2)	Keep both, and accept that there is no 100% clear division between both. 
+
+OtherConstruction definition
+Every construction which is not covered by any of the other subclasses of AbstractConstruction.

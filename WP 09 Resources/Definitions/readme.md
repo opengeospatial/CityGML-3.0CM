@@ -1,1 +1,0 @@
-This is the folder where ongoing WP09 work on the definitions for classes related to constructions, is done. The definitions will be moved to the UML model when there is consensus in WP09 on their wording.
