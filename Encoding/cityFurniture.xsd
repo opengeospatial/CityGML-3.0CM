@@ -4,7 +4,7 @@
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
   <element name="CityFurniture" substitutionGroup="core:AbstractTopLevelCityObject" type="frn:CityFurnitureType">
     <annotation>
-      <documentation>Wikipedia: City furniture is a collective term for objects and pieces of equipment installed on streets and roads for various purposes. It includes benches, traffic barriers, bollards, post boxes, phone boxes, streetlamps, traffic lights, traffic signs, bus stops, tram stops, taxi stands, public lavatories, fountains, watering troughs, memorials, public sculptures, and waste receptacles.</documentation>
+      <documentation>City furniture is a collective term for objects and pieces of equipment installed on streets and roads for various purposes. It includes benches, traffic barriers, bollards, post boxes, phone boxes, streetlamps, traffic lights, traffic signs, bus stops, tram stops, taxi stands, public lavatories, fountains, watering troughs, memorials, public sculptures, and waste receptacles. [Wikipedia]</documentation>
     </annotation>
   </element>
   <complexType name="CityFurnitureType">
@@ -13,20 +13,24 @@
         <sequence>
           <element minOccurs="0" name="class" type="gml:CodeType">
             <annotation>
-              <documentation>SIG3D: Classification of CityFurniture as given by the relevant national regulations, information communities, or specific applications.</documentation>
+              <documentation>Classification of CityFurniture as given by the relevant national regulations, information communities, or specific applications. [SIG3D]</documentation>
             </annotation>
           </element>
           <element maxOccurs="unbounded" minOccurs="0" name="function" type="gml:CodeType">
             <annotation>
-              <documentation>SIG3D: Specified function of CityFurniture as given by the relevant national regulations, information communities, or specific applications.</documentation>
+              <documentation>Specified function of CityFurniture as given by the relevant national regulations, information communities, or specific applications. [SIG3D]</documentation>
             </annotation>
           </element>
           <element maxOccurs="unbounded" minOccurs="0" name="usage" type="gml:CodeType">
             <annotation>
-              <documentation>SIG3D: Actual usage of CityFurniture as given by the relevant national regulations, information communities, or specific applications.</documentation>
+              <documentation>Actual usage of CityFurniture as given by the relevant national regulations, information communities, or specific applications. [SIG3D]</documentation>
             </annotation>
           </element>
-          <element minOccurs="0" name="furnitureSpace" type="frn:FurnitureSpacePropertyType"/>
+          <element minOccurs="0" name="furnitureSpace" type="frn:FurnitureSpacePropertyType">
+            <annotation>
+              <documentation>The space occupied by this city furniture. One city furniture can occupy one space at maximum.</documentation>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -38,7 +42,11 @@
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="FurnitureSpace" substitutionGroup="core:AbstractOccupiedSpace" type="frn:FurnitureSpaceType"/>
+  <element name="FurnitureSpace" substitutionGroup="core:AbstractOccupiedSpace" type="frn:FurnitureSpaceType">
+    <annotation>
+      <documentation>A space occupied by a city furniture.</documentation>
+    </annotation>
+  </element>
   <complexType name="FurnitureSpaceType">
     <complexContent>
       <extension base="core:AbstractOccupiedSpaceType">

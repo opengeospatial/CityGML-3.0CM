@@ -17,7 +17,11 @@
               <documentation>SIG3D: Number denoting the LOD of the relief component. The LOD concept for the relief is defined in chapter ...</documentation>
             </annotation>
           </element>
-          <element minOccurs="0" name="extent" type="gml:SurfacePropertyType"/>
+          <element minOccurs="0" name="extent" type="gml:SurfacePropertyType">
+            <annotation>
+              <documentation>SIG3D: Polygon (optionally with holes) denoting the extent where the relief component is valid.</documentation>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -38,8 +42,16 @@
     <complexContent>
       <extension base="dem:AbstractReliefComponentType">
         <sequence>
-          <element minOccurs="0" name="ridgeOrValleyLines" type="gml:MultiCurvePropertyType"/>
-          <element minOccurs="0" name="breaklines" type="gml:MultiCurvePropertyType"/>
+          <element minOccurs="0" name="ridgeOrValleyLines" type="gml:MultiCurvePropertyType">
+            <annotation>
+              <documentation>SIG3D: Relation to 3D lines (gml:MultiCurve) denoting ridge or valley lines.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="breaklines" type="gml:MultiCurvePropertyType">
+            <annotation>
+              <documentation>SIG3D: Relation to 3D lines (gml:MultiCurve) denoting break lines.</documentation>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>

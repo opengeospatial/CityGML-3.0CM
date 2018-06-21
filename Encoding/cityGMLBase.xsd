@@ -110,21 +110,21 @@ AbstractCityObject relative to the surrounding terrain.</documentation>
     <complexContent>
       <extension base="core:AbstractPhysicalSpaceType">
         <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="opening">
-            <complexType>
-              <complexContent>
-                <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="core:AbstractVoid"/>
-                  </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
-                </extension>
-              </complexContent>
-            </complexType>
+          <element minOccurs="0" name="lod1ImplicitRepresentation" type="core:ImplicitGeometryPropertyType">
+            <annotation>
+              <documentation>Relation to LOD1 implicit geometry of AbstractOccupiedSpace.</documentation>
+            </annotation>
           </element>
-          <element minOccurs="0" name="lod1ImplicitRepresentation" type="core:ImplicitGeometryPropertyType"/>
-          <element minOccurs="0" name="lod2ImplicitRepresentation" type="core:ImplicitGeometryPropertyType"/>
-          <element minOccurs="0" name="lod3ImplicitRepresentation" type="core:ImplicitGeometryPropertyType"/>
+          <element minOccurs="0" name="lod2ImplicitRepresentation" type="core:ImplicitGeometryPropertyType">
+            <annotation>
+              <documentation>Relation to LOD2 implicit geometry of AbstractOccupiedSpace.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="lod3ImplicitRepresentation" type="core:ImplicitGeometryPropertyType">
+            <annotation>
+              <documentation>Relation to LOD3 implicit geometry of AbstractOccupiedSpace.</documentation>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -141,9 +141,21 @@ AbstractCityObject relative to the surrounding terrain.</documentation>
     <complexContent>
       <extension base="core:AbstractSpaceType">
         <sequence>
-          <element minOccurs="0" name="lod1TerrainIntersectionCurve" type="gml:MultiCurvePropertyType"/>
-          <element minOccurs="0" name="lod2TerrainIntersectionCurve" type="gml:MultiCurvePropertyType"/>
-          <element minOccurs="0" name="lod3TerrainIntersectionCurve" type="gml:MultiCurvePropertyType"/>
+          <element minOccurs="0" name="lod1TerrainIntersectionCurve" type="gml:MultiCurvePropertyType">
+            <annotation>
+              <documentation>SIG 3D: Relation to intersection curve(s) between an LOD1 AbstractPhysicalSpace and a terrain (LOD1 or LOD2 or LOD3).</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="lod2TerrainIntersectionCurve" type="gml:MultiCurvePropertyType">
+            <annotation>
+              <documentation>SIG 3D: Relation to intersection curve(s) between an LOD2 AbstractPhysicalSpace and a terrain (LOD1 or LOD2 or LOD3).</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="lod3TerrainIntersectionCurve" type="gml:MultiCurvePropertyType">
+            <annotation>
+              <documentation>SIG 3D: Relation to intersection curve(s) between an LOD3 AbstractPhysicalSpace and a terrain (LOD1 or LOD2 or LOD3).</documentation>
+            </annotation>
+          </element>
           <element minOccurs="0" name="pointCloud" type="core:PointCloudPropertyType"/>
         </sequence>
       </extension>
@@ -163,7 +175,11 @@ AbstractCityObject relative to the surrounding terrain.</documentation>
         <sequence>
           <element minOccurs="0" name="occupancyDaytime" type="integer"/>
           <element minOccurs="0" name="occupancyNighttime" type="integer"/>
-          <element minOccurs="0" name="spaceType" type="core:SpaceTypeType"/>
+          <element minOccurs="0" name="spaceType" type="core:SpaceTypeType">
+            <annotation>
+              <documentation>Degree of openness of an abstract space.</documentation>
+            </annotation>
+          </element>
           <element maxOccurs="unbounded" minOccurs="0" name="boundary" type="core:AbstractSpaceBoundaryPropertyType">
             <annotation>
               <appinfo>
@@ -172,15 +188,51 @@ AbstractCityObject relative to the surrounding terrain.</documentation>
             </annotation>
           </element>
           <element maxOccurs="unbounded" minOccurs="0" name="spaceRelation" type="core:AbstractSpaceRelationPropertyType"/>
-          <element minOccurs="0" name="lod0Point" type="gml:PointPropertyType"/>
-          <element minOccurs="0" name="lod0MultiSurface" type="gml:MultiSurfacePropertyType"/>
-          <element minOccurs="0" name="lod1Solid" type="gml:SolidPropertyType"/>
-          <element minOccurs="0" name="lod2MultiSurface" type="gml:MultiSurfacePropertyType"/>
-          <element minOccurs="0" name="lod2Solid" type="gml:SolidPropertyType"/>
-          <element minOccurs="0" name="lod2MultiCurve" type="gml:MultiCurvePropertyType"/>
-          <element minOccurs="0" name="lod3MultiSurface" type="gml:MultiSurfacePropertyType"/>
-          <element minOccurs="0" name="lod3Solid" type="gml:SolidPropertyType"/>
-          <element minOccurs="0" name="lod3MultiCurve" type="gml:MultiCurvePropertyType"/>
+          <element minOccurs="0" name="lod0Point" type="gml:PointPropertyType">
+            <annotation>
+              <documentation>Relation to a  LOD0 point geometry of AbstractSpace.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="lod0MultiSurface" type="gml:MultiSurfacePropertyType">
+            <annotation>
+              <documentation>Relation to a  LOD0 surface geometry of AbstractSpace.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="lod1Solid" type="gml:SolidPropertyType">
+            <annotation>
+              <documentation>Relation to a  LOD1 solid geometry of AbstractSpace.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="lod2MultiSurface" type="gml:MultiSurfacePropertyType">
+            <annotation>
+              <documentation>Relation to a  LOD2 surface geometry of AbstractSpace.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="lod2Solid" type="gml:SolidPropertyType">
+            <annotation>
+              <documentation>Relation to a  LOD2 solid geometry of AbstractSpace.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="lod2MultiCurve" type="gml:MultiCurvePropertyType">
+            <annotation>
+              <documentation>Relation to a  LOD2 curve geometry of AbstractSpace.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="lod3MultiSurface" type="gml:MultiSurfacePropertyType">
+            <annotation>
+              <documentation>Relation to a  LOD3 surface geometry of AbstractSpace.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="lod3Solid" type="gml:SolidPropertyType">
+            <annotation>
+              <documentation>Relation to a  LOD3 solid geometry of AbstractSpace.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="lod3MultiCurve" type="gml:MultiCurvePropertyType">
+            <annotation>
+              <documentation>Relation to a  LOD3 curve geometry of AbstractSpace.</documentation>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -205,10 +257,26 @@ AbstractCityObject relative to the surrounding terrain.</documentation>
             </annotation>
           </element>
           <element maxOccurs="unbounded" minOccurs="0" name="boundaryRelation" type="core:AbstractBoundaryRelationPropertyType"/>
-          <element minOccurs="0" name="lod0MultiCurve" type="gml:MultiCurvePropertyType"/>
-          <element minOccurs="0" name="lod1MultiSurface" type="gml:MultiSurfacePropertyType"/>
-          <element minOccurs="0" name="lod2MultiSurface" type="gml:MultiSurfacePropertyType"/>
-          <element minOccurs="0" name="lod3MultiSurface" type="gml:MultiSurfacePropertyType"/>
+          <element minOccurs="0" name="lod0MultiCurve" type="gml:MultiCurvePropertyType">
+            <annotation>
+              <documentation>Relation to a  LOD0 curve geometry of AbstractSpace.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="lod1MultiSurface" type="gml:MultiSurfacePropertyType">
+            <annotation>
+              <documentation>Relation to a  LOD1 surface geometry of AbstractSpaceBoundary.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="lod2MultiSurface" type="gml:MultiSurfacePropertyType">
+            <annotation>
+              <documentation>Relation to a  LOD2 surface geometry of AbstractSpaceBoundary.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="lod3MultiSurface" type="gml:MultiSurfacePropertyType">
+            <annotation>
+              <documentation>Relation to a  LOD3 surface geometry of AbstractSpaceBoundary.</documentation>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -340,13 +408,20 @@ AbstractCityObject relative to the surrounding terrain.</documentation>
       <extension base="gml:AbstractFeatureType">
         <sequence>
           <element name="xalAddress">
+            <annotation>
+              <documentation>SIG3D: Relation to an OASIS address object.</documentation>
+            </annotation>
             <complexType>
               <sequence>
                 <element ref="xAL:AddressDetails"/>
               </sequence>
             </complexType>
           </element>
-          <element minOccurs="0" name="multiPoint" type="gml:MultiPointPropertyType"/>
+          <element minOccurs="0" name="multiPoint" type="gml:MultiPointPropertyType">
+            <annotation>
+              <documentation>SIG3D: Spatial reference of the address, e. g. positions of building entrances.</documentation>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -380,6 +455,9 @@ AbstractCityObject relative to the surrounding terrain.</documentation>
       <extension base="core:AbstractFeatureWithLifespanType">
         <sequence>
           <element maxOccurs="unbounded" minOccurs="0" name="cityObjectMember">
+            <annotation>
+              <documentation>SIG3D: Relation of CityModel to AbstractTopLevelCityObject.</documentation>
+            </annotation>
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
@@ -462,11 +540,23 @@ AbstractCityObject relative to the surrounding terrain.</documentation>
   <simpleType name="DoubleBetween0and1ListType">
     <restriction base="gml:doubleList"/>
   </simpleType>
-  <element name="ExternalReference" substitutionGroup="gml:AbstractObject" type="core:ExternalReferenceType"/>
+  <element name="ExternalReference" substitutionGroup="gml:AbstractObject" type="core:ExternalReferenceType">
+    <annotation>
+      <documentation>SIG3D: Reference to a corresponding object in another information system, for example in the German cadastre (ALKIS), the German topographic information system (ATKIS), or the OS UK MasterMap®.</documentation>
+    </annotation>
+  </element>
   <complexType name="ExternalReferenceType">
     <sequence>
-      <element name="targetResource" type="anyURI"/>
-      <element minOccurs="0" name="informationSystem" type="anyURI"/>
+      <element name="targetResource" type="anyURI">
+        <annotation>
+          <documentation>SIG3D: Referenced object in the external information system or data set.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" name="informationSystem" type="anyURI">
+        <annotation>
+          <documentation>SIG3D: URL or URN of the information system or data set.</documentation>
+        </annotation>
+      </element>
       <element minOccurs="0" name="relationType" type="anyURI"/>
     </sequence>
   </complexType>
@@ -520,16 +610,48 @@ AbstractCityObject relative to the surrounding terrain.</documentation>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="ImplicitGeometry" substitutionGroup="gml:AbstractGML" type="core:ImplicitGeometryType"/>
+  <element name="ImplicitGeometry" substitutionGroup="gml:AbstractFeature" type="core:ImplicitGeometryType">
+    <annotation>
+      <documentation>SIG3D: A  geometric representation where the shape is stored only once as a prototypical geometry, for example a tree or other vegetation object, a traffic light or a traffic sign. This prototypic geometry object can be re-used or referenced many times, wherever the corresponding feature occurs in the 3D city model.</documentation>
+    </annotation>
+  </element>
   <complexType name="ImplicitGeometryType">
     <complexContent>
-      <extension base="gml:AbstractGMLType">
+      <extension base="gml:AbstractFeatureType">
         <sequence>
-          <element minOccurs="0" name="transformationMatrix" type="core:TransformationMatrix4x4Type"/>
-          <element minOccurs="0" name="mimeType" type="gml:CodeType"/>
-          <element minOccurs="0" name="libraryObject" type="anyURI"/>
-          <element name="referencePoint" type="gml:PointPropertyType"/>
-          <element minOccurs="0" name="relativeGMLGeometry" type="gml:GeometryPropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="appearance">
+            <complexType>
+              <sequence>
+                <element ref="app:Appearance"/>
+              </sequence>
+              <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="transformationMatrix" type="core:TransformationMatrix4x4Type">
+            <annotation>
+              <documentation>SIG3D: Mathematical transformation (translation, rotation and scaling) between the prototype geometry and the actual spatial position of the object.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="mimeType" type="gml:CodeType">
+            <annotation>
+              <documentation>SIG3D: Mime type of the referenced external geometric object (attribute libraryObject).</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="libraryObject" type="anyURI">
+            <annotation>
+              <documentation>SIG3D: External link to a prototype geometry.</documentation>
+            </annotation>
+          </element>
+          <element name="referencePoint" type="gml:PointPropertyType">
+            <annotation>
+              <documentation>SIG3D: Base point of the object in the world coordinate system.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="relativeGMLGeometry" type="gml:GeometryPropertyType">
+            <annotation>
+              <documentation>SIG3D: Geometry of the prototype, specified in a local coordinate system.</documentation>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -568,22 +690,72 @@ AbstractCityObject relative to the surrounding terrain.</documentation>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
   <simpleType name="RelativeToTerrainType">
+    <annotation>
+      <documentation>SIG3D: Enumeration of the CityObject property relativeToTerrain.</documentation>
+    </annotation>
     <restriction base="string">
-      <enumeration value="entirelyAboveTerrain"/>
-      <enumeration value="substantiallyAboveTerrain"/>
-      <enumeration value="substantiallyAboveAndBelowTerrain"/>
-      <enumeration value="substantiallyBelowTerrain"/>
-      <enumeration value="entirelyBelowTerrain"/>
+      <enumeration value="entirelyAboveTerrain">
+        <annotation>
+          <documentation>SIG3D: Object is located entirely above terrain.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="substantiallyAboveTerrain">
+        <annotation>
+          <documentation>SIG3D:  Most, but not all parts of the object are located above terrain.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="substantiallyAboveAndBelowTerrain">
+        <annotation>
+          <documentation>SIG3D: Parts of the object are located above terrain, and other parts below terrain.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="substantiallyBelowTerrain">
+        <annotation>
+          <documentation>SIG3D: Most, but not all parts of the object are located below terrain.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="entirelyBelowTerrain">
+        <annotation>
+          <documentation>SIG3D: All parts of the object are located below terrain.</documentation>
+        </annotation>
+      </enumeration>
     </restriction>
   </simpleType>
   <simpleType name="RelativeToWaterType">
+    <annotation>
+      <documentation>SIG3D: Enumeration of the CityObject property relativeToWater.</documentation>
+    </annotation>
     <restriction base="string">
-      <enumeration value="entirelyAboveWaterSurface"/>
-      <enumeration value="substantiallyAboveWaterSurface"/>
-      <enumeration value="substantiallyAboveAndBelowWaterSurface"/>
-      <enumeration value="substantiallyBelowWaterSurface"/>
-      <enumeration value="entirelyBelowWaterSurface"/>
-      <enumeration value="temporarilyAboveAndBelowWaterSurface"/>
+      <enumeration value="entirelyAboveWaterSurface">
+        <annotation>
+          <documentation>SIG3D: Object is located entirely above water surface.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="substantiallyAboveWaterSurface">
+        <annotation>
+          <documentation>SIG3D: Most, but not all parts of the object are located above water surface.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="substantiallyAboveAndBelowWaterSurface">
+        <annotation>
+          <documentation>SIG3D: Parts of the object are located above water surface, and other parts below water surface.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="substantiallyBelowWaterSurface">
+        <annotation>
+          <documentation>SIG3D: Most, but not all parts of the object are located below water surface.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="entirelyBelowWaterSurface">
+        <annotation>
+          <documentation>SIG3D: All parts of the object are located below water surface.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="temporarilyAboveAndBelowWaterSurface">
+        <annotation>
+          <documentation>SIG3D: The height of the water surface is varying and the object temporily is located above or below water level.</documentation>
+        </annotation>
+      </enumeration>
     </restriction>
   </simpleType>
   <element name="ReliefSurface" substitutionGroup="core:AbstractThematicSurface" type="core:ReliefSurfaceType"/>
@@ -615,9 +787,21 @@ AbstractCityObject relative to the surrounding terrain.</documentation>
   </simpleType>
   <simpleType name="SpaceTypeType">
     <restriction base="string">
-      <enumeration value="closed"/>
-      <enumeration value="open"/>
-      <enumeration value="semiOpen"/>
+      <enumeration value="closed">
+        <annotation>
+          <documentation>boundaries at all sides</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="open">
+        <annotation>
+          <documentation>boundary at the bottom only</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="semiOpen">
+        <annotation>
+          <documentation>at least one side has a boundary</documentation>
+        </annotation>
+      </enumeration>
     </restriction>
   </simpleType>
   <element name="ThematicBoundaryRelation" substitutionGroup="core:AbstractBoundaryRelation" type="core:ThematicBoundaryRelationType"/>

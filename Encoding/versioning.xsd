@@ -26,7 +26,7 @@
     <restriction base="string">
       <enumeration value="planned"/>
       <enumeration value="realized"/>
-      <enumeration value="historical succession"/>
+      <enumeration value="historicalSuccession"/>
       <enumeration value="fork"/>
       <enumeration value="merge"/>
     </restriction>

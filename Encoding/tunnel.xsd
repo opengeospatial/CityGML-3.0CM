@@ -36,24 +36,32 @@
             </annotation>
           </element>
           <element maxOccurs="unbounded" minOccurs="0" name="hollowSpaceInstallation">
+            <annotation>
+              <documentation>SIG3D: Relation between HollowSpace and TunnelInstallation.</documentation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">tun:TunnelInstallation</targetElement>
+              </appinfo>
+            </annotation>
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="tun:TunnelInstallation"/>
-                  </sequence>
+                  <sequence/>
                   <attributeGroup ref="gml:AssociationAttributeGroup"/>
                 </extension>
               </complexContent>
             </complexType>
           </element>
           <element maxOccurs="unbounded" minOccurs="0" name="interiorFurniture">
+            <annotation>
+              <documentation>SIG3D: Relation between HollowSpace and TunnelFurniture.</documentation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">tun:TunnelFurniture</targetElement>
+              </appinfo>
+            </annotation>
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
-                    <element ref="tun:TunnelFurniture"/>
-                  </sequence>
+                  <sequence/>
                   <attributeGroup ref="gml:AssociationAttributeGroup"/>
                 </extension>
               </complexContent>
@@ -95,25 +103,29 @@
             </annotation>
           </element>
           <element maxOccurs="unbounded" minOccurs="0" name="interiorHollowSpace">
+            <annotation>
+              <documentation>SIG3D: Relation between Tunnel or TunnelPart and HollowSpace.</documentation>
+            </annotation>
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
+                  <sequence>
                     <element ref="tun:HollowSpace"/>
                   </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
                 </extension>
               </complexContent>
             </complexType>
           </element>
           <element maxOccurs="unbounded" minOccurs="0" name="tunnelInstallation">
+            <annotation>
+              <documentation>SIG3D: Relation between Tunnel or TunnelPart and TunnelInstallation.</documentation>
+            </annotation>
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
+                  <sequence>
                     <element ref="tun:TunnelInstallation"/>
                   </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
                 </extension>
               </complexContent>
             </complexType>
@@ -122,10 +134,9 @@
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
+                  <sequence>
                     <element ref="tun:TunnelFurniture"/>
                   </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
                 </extension>
               </complexContent>
             </complexType>
@@ -134,22 +145,48 @@
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
+                  <sequence>
                     <element ref="tun:TunnelConstructiveElement"/>
                   </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
                 </extension>
               </complexContent>
             </complexType>
           </element>
           <element maxOccurs="unbounded" name="tunnelSpace" type="con:ConstructionSpacePropertyType"/>
-          <element minOccurs="0" name="conditionOfConstruction" type="gml:CodeType"/>
-          <element minOccurs="0" name="dateOfConstruction" type="date"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="dateOfRenovation" type="date"/>
-          <element minOccurs="0" name="dateOfDemolition" type="date"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="elevation" type="con:ElevationPropertyType"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="heightAboveGround" type="con:HeightAboveGroundPropertyType"/>
+          <element minOccurs="0" name="conditionOfConstruction" type="con:ConditionOfConstructionValueType">
+            <annotation>
+              <documentation>[INSPIRE] Status of the construction.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="dateOfConstruction" type="date">
+            <annotation>
+              <documentation>Date of completion of a construction.</documentation>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="dateOfRenovation" type="date">
+            <annotation>
+              <documentation>Date of renovation of a construction.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="dateOfDemolition" type="date">
+            <annotation>
+              <documentation>Date of demolition of a construction.</documentation>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="elevation" type="con:ElevationPropertyType">
+            <annotation>
+              <documentation>[INSPIRE] Vertically-constrained dimensional property consisting of an absolute measure referenced to a well-defined surface which is commonly taken as origin (geoïd, water level, etc.).</documentation>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="heightAboveGround" type="con:HeightAboveGroundPropertyType">
+            <annotation>
+              <documentation>[INSPIRE] Height above ground.</documentation>
+            </annotation>
+          </element>
           <element maxOccurs="unbounded" minOccurs="0" name="tunnelPart">
+            <annotation>
+              <documentation>Relation between Tunnel and TunnelPart.</documentation>
+            </annotation>
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
@@ -286,25 +323,29 @@
             </annotation>
           </element>
           <element maxOccurs="unbounded" minOccurs="0" name="interiorHollowSpace">
+            <annotation>
+              <documentation>SIG3D: Relation between Tunnel or TunnelPart and HollowSpace.</documentation>
+            </annotation>
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
+                  <sequence>
                     <element ref="tun:HollowSpace"/>
                   </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
                 </extension>
               </complexContent>
             </complexType>
           </element>
           <element maxOccurs="unbounded" minOccurs="0" name="tunnelInstallation">
+            <annotation>
+              <documentation>SIG3D: Relation between Tunnel or TunnelPart and TunnelInstallation.</documentation>
+            </annotation>
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
+                  <sequence>
                     <element ref="tun:TunnelInstallation"/>
                   </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
                 </extension>
               </complexContent>
             </complexType>
@@ -313,10 +354,9 @@
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
+                  <sequence>
                     <element ref="tun:TunnelFurniture"/>
                   </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
                 </extension>
               </complexContent>
             </complexType>
@@ -325,21 +365,44 @@
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
-                  <sequence minOccurs="0">
+                  <sequence>
                     <element ref="tun:TunnelConstructiveElement"/>
                   </sequence>
-                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
                 </extension>
               </complexContent>
             </complexType>
           </element>
           <element maxOccurs="unbounded" name="tunnelSpace" type="con:ConstructionSpacePropertyType"/>
-          <element minOccurs="0" name="conditionOfConstruction" type="gml:CodeType"/>
-          <element minOccurs="0" name="dateOfConstruction" type="date"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="dateOfRenovation" type="date"/>
-          <element minOccurs="0" name="dateOfDemolition" type="date"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="elevation" type="con:ElevationPropertyType"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="heightAboveGround" type="con:HeightAboveGroundPropertyType"/>
+          <element minOccurs="0" name="conditionOfConstruction" type="con:ConditionOfConstructionValueType">
+            <annotation>
+              <documentation>[INSPIRE] Status of the construction.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="dateOfConstruction" type="date">
+            <annotation>
+              <documentation>Date of completion of a construction.</documentation>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="dateOfRenovation" type="date">
+            <annotation>
+              <documentation>Date of renovation of a construction.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="dateOfDemolition" type="date">
+            <annotation>
+              <documentation>Date of demolition of a construction.</documentation>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="elevation" type="con:ElevationPropertyType">
+            <annotation>
+              <documentation>[INSPIRE] Vertically-constrained dimensional property consisting of an absolute measure referenced to a well-defined surface which is commonly taken as origin (geoïd, water level, etc.).</documentation>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="heightAboveGround" type="con:HeightAboveGroundPropertyType">
+            <annotation>
+              <documentation>[INSPIRE] Height above ground.</documentation>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>

@@ -27,6 +27,9 @@
             </annotation>
           </element>
           <element maxOccurs="unbounded" minOccurs="0" name="groupMember">
+            <annotation>
+              <documentation>SIG3D: Reference to a city object.</documentation>
+            </annotation>
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractMemberType">
@@ -70,13 +73,24 @@
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="Role" substitutionGroup="gml:AbstractGML" type="grp:RoleType"/>
+  <element name="Role" substitutionGroup="gml:AbstractGML" type="grp:RoleType">
+    <annotation>
+      <documentation>SIG3D: Specification of a CityObject and its specific role in a CityObjectGroup.</documentation>
+    </annotation>
+  </element>
   <complexType name="RoleType">
     <complexContent>
       <extension base="gml:AbstractGMLType">
         <sequence>
-          <element name="role" type="string"/>
+          <element name="role" type="string">
+            <annotation>
+              <documentation>SIG3D: Description of the role.</documentation>
+            </annotation>
+          </element>
           <element name="groupMember">
+            <annotation>
+              <documentation>SIG3D: Reference to a city object.</documentation>
+            </annotation>
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
