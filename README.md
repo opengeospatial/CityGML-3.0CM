@@ -11,6 +11,7 @@ Resources
 ---------
 This repository provides the following resources:
 - **Folder "Conceptual Model"**: Contains the CityGML 3.0 conceptual model which was created using the software Enterprise Architect.
-- **Folder "Encoding"**: Contains the XML Schema files of the CityGML 3.0 conceptual model which were derived automatically from the UML model using the software ShapeChange together with test data sets.
+- **Folder "Encoding"**: Contains the XML Schema files of the CityGML 3.0 conceptual model which were derived automatically from the UML model using the software ShapeChange
+- **Folder "Test data"**: Contains test data sets.
 
 **Please be aware that the resources provided here are development versions and, thus, minor changes are still possible. The resources provided here do not represent the final version of CityGML 3.0.**
