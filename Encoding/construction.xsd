@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:bldg="http://www.opengis.net/citygml/building/3.0" xmlns:brid="http://www.opengis.net/citygml/bridge/3.0" xmlns:con="http://www.opengis.net/citygml/construction/3.0" xmlns:core="http://www.opengis.net/citygml/3.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:tun="http://www.opengis.net/citygml/tunnel/3.0" elementFormDefault="qualified" targetNamespace="http://www.opengis.net/citygml/construction/3.0" version="3.0.0">
+  <import namespace="http://www.opengis.net/citygml/3.0" schemaLocation="./cityGMLBase.xsd"/>
+  <import namespace="http://www.opengis.net/citygml/bridge/3.0" schemaLocation="./bridge.xsd"/>
+  <import namespace="http://www.opengis.net/citygml/building/3.0" schemaLocation="./building.xsd"/>
+  <import namespace="http://www.opengis.net/citygml/tunnel/3.0" schemaLocation="./tunnel.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <complexType name="AbstractConstructionPropertyType">
+    <choice minOccurs="0">
+      <element ref="brid:Bridge"/>
+      <element ref="brid:BridgePart"/>
+      <element ref="bldg:Building"/>
+      <element ref="bldg:BuildingPart"/>
+      <element ref="con:OtherConstruction"/>
+      <element ref="tun:Tunnel"/>
+      <element ref="tun:TunnelPart"/>
+    </choice>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="AbstractConstructionOpeningSurface" substitutionGroup="core:AbstractVoidSurface" type="con:AbstractConstructionOpeningSurfaceType"/>
+  <complexType abstract="true" name="AbstractConstructionOpeningSurfaceType">
+    <complexContent>
+      <extension base="core:AbstractVoidSurfaceType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractConstructionOpeningSurfacePropertyType">
+    <sequence minOccurs="0">
+      <element ref="con:AbstractConstructionOpeningSurface"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="AbstractConstructionSurface" substitutionGroup="core:AbstractThematicSurface" type="con:AbstractConstructionSurfaceType"/>
+  <complexType abstract="true" name="AbstractConstructionSurfaceType">
+    <complexContent>
+      <extension base="core:AbstractThematicSurfaceType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractConstructionSurfacePropertyType">
+    <sequence minOccurs="0">
+      <element ref="con:AbstractConstructionSurface"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="AbstractConstructionVoid" substitutionGroup="core:AbstractVoid" type="con:AbstractConstructionVoidType"/>
+  <complexType abstract="true" name="AbstractConstructionVoidType">
+    <complexContent>
+      <extension base="core:AbstractVoidType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractConstructionVoidPropertyType">
+    <sequence minOccurs="0">
+      <element ref="con:AbstractConstructionVoid"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="AbstractConstructiveElement" substitutionGroup="core:AbstractOccupiedSpace" type="con:AbstractConstructiveElementType"/>
+  <complexType abstract="true" name="AbstractConstructiveElementType">
+    <complexContent>
+      <extension base="core:AbstractOccupiedSpaceType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractConstructiveElementPropertyType">
+    <sequence minOccurs="0">
+      <element ref="con:AbstractConstructiveElement"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="AbstractFurniture" substitutionGroup="core:AbstractOccupiedSpace" type="con:AbstractFurnitureType"/>
+  <complexType abstract="true" name="AbstractFurnitureType">
+    <complexContent>
+      <extension base="core:AbstractOccupiedSpaceType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractFurniturePropertyType">
+    <sequence minOccurs="0">
+      <element ref="con:AbstractFurniture"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="AbstractInstallation" substitutionGroup="core:AbstractOccupiedSpace" type="con:AbstractInstallationType"/>
+  <complexType abstract="true" name="AbstractInstallationType">
+    <complexContent>
+      <extension base="core:AbstractOccupiedSpaceType">
+        <sequence>
+          <element minOccurs="0" name="relationToConstruction" type="con:RelationToConstructionType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractInstallationPropertyType">
+    <sequence minOccurs="0">
+      <element ref="con:AbstractInstallation"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="CeilingSurface" substitutionGroup="con:AbstractConstructionSurface" type="con:CeilingSurfaceType">
+    <annotation>
+      <documentation>SIG3D: Overhead boundary surface of a room, covering the upper limit of a room.</documentation>
+    </annotation>
+  </element>
+  <complexType name="CeilingSurfaceType">
+    <complexContent>
+      <extension base="con:AbstractConstructionSurfaceType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="CeilingSurfacePropertyType">
+    <sequence minOccurs="0">
+      <element ref="con:CeilingSurface"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="ConstructionSpace" substitutionGroup="core:AbstractOccupiedSpace" type="con:ConstructionSpaceType"/>
+  <complexType name="ConstructionSpaceType">
+    <complexContent>
+      <extension base="core:AbstractOccupiedSpaceType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ConstructionSpacePropertyType">
+    <sequence minOccurs="0">
+      <element ref="con:ConstructionSpace"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Door" substitutionGroup="con:AbstractConstructionVoid" type="con:DoorType">
+    <annotation>
+      <documentation>ISO 6707-1: Construction for closing an opening intended primarily for access or egress or both.</documentation>
+    </annotation>
+  </element>
+  <complexType name="DoorType">
+    <complexContent>
+      <extension base="con:AbstractConstructionVoidType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="address" type="core:AddressPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="DoorPropertyType">
+    <sequence minOccurs="0">
+      <element ref="con:Door"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="DoorSurface" substitutionGroup="con:AbstractConstructionOpeningSurface" type="con:DoorSurfaceType"/>
+  <complexType name="DoorSurfaceType">
+    <complexContent>
+      <extension base="con:AbstractConstructionOpeningSurfaceType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="address" type="core:AddressPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="DoorSurfacePropertyType">
+    <sequence minOccurs="0">
+      <element ref="con:DoorSurface"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Elevation" substitutionGroup="gml:AbstractObject" type="con:ElevationType"/>
+  <complexType name="ElevationType">
+    <sequence>
+      <element name="elevationReference" type="gml:CodeType"/>
+      <element name="elevationValue" type="gml:DirectPositionType"/>
+    </sequence>
+  </complexType>
+  <complexType name="ElevationPropertyType">
+    <sequence>
+      <element ref="con:Elevation"/>
+    </sequence>
+  </complexType>
+  <element name="FloorSurface" substitutionGroup="con:AbstractConstructionSurface" type="con:FloorSurfaceType">
+    <annotation>
+      <documentation>SIG3D: Lower boundary surface of a room, covering the lower limit of a room.</documentation>
+    </annotation>
+  </element>
+  <complexType name="FloorSurfaceType">
+    <complexContent>
+      <extension base="con:AbstractConstructionSurfaceType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FloorSurfacePropertyType">
+    <sequence minOccurs="0">
+      <element ref="con:FloorSurface"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="GroundSurface" substitutionGroup="con:AbstractConstructionSurface" type="con:GroundSurfaceType">
+    <annotation>
+      <documentation>SIG3D: Exterior, lower boundary surface of a building , building part or building installation bounded by soil or water.</documentation>
+    </annotation>
+  </element>
+  <complexType name="GroundSurfaceType">
+    <complexContent>
+      <extension base="con:AbstractConstructionSurfaceType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GroundSurfacePropertyType">
+    <sequence minOccurs="0">
+      <element ref="con:GroundSurface"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="HeightAboveGround" substitutionGroup="gml:AbstractObject" type="con:HeightAboveGroundType"/>
+  <complexType name="HeightAboveGroundType">
+    <sequence>
+      <element name="heightReference" type="gml:CodeType"/>
+      <element name="lowReference" type="gml:CodeType"/>
+      <element name="status" type="gml:CodeType"/>
+      <element name="value" type="gml:LengthType"/>
+    </sequence>
+  </complexType>
+  <complexType name="HeightAboveGroundPropertyType">
+    <sequence>
+      <element ref="con:HeightAboveGround"/>
+    </sequence>
+  </complexType>
+  <element name="InteriorWallSurface" substitutionGroup="con:AbstractConstructionSurface" type="con:InteriorWallSurfaceType">
+    <annotation>
+      <documentation>SIG3D: Lateral boundary surface of a room, covering the lateral limit of a room.</documentation>
+    </annotation>
+  </element>
+  <complexType name="InteriorWallSurfaceType">
+    <complexContent>
+      <extension base="con:AbstractConstructionSurfaceType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="InteriorWallSurfacePropertyType">
+    <sequence minOccurs="0">
+      <element ref="con:InteriorWallSurface"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="OtherConstruction" substitutionGroup="core:AbstractTopLevelCityObject" type="con:OtherConstructionType"/>
+  <complexType name="OtherConstructionType">
+    <complexContent>
+      <extension base="core:AbstractTopLevelCityObjectType">
+        <sequence>
+          <element minOccurs="0" name="conditionOfConstruction" type="gml:CodeType"/>
+          <element minOccurs="0" name="dateOfConstruction" type="date"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="dateOfRenovation" type="date"/>
+          <element minOccurs="0" name="dateOfDemolition" type="date"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="elevation" type="con:ElevationPropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="heightAboveGround" type="con:HeightAboveGroundPropertyType"/>
+          <element name="class" type="gml:CodeType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="function" type="gml:CodeType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="usage" type="gml:CodeType"/>
+          <element name="constructionSpace" type="con:ConstructionSpacePropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="OtherConstructionPropertyType">
+    <sequence minOccurs="0">
+      <element ref="con:OtherConstruction"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="OuterCeilingSurface" substitutionGroup="con:AbstractConstructionSurface" type="con:OuterCeilingSurfaceType">
+    <annotation>
+      <documentation>SIG3D: Exterior, lower boundary surface of a building , building part or building installation bounded by air.</documentation>
+    </annotation>
+  </element>
+  <complexType name="OuterCeilingSurfaceType">
+    <complexContent>
+      <extension base="con:AbstractConstructionSurfaceType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="OuterCeilingSurfacePropertyType">
+    <sequence minOccurs="0">
+      <element ref="con:OuterCeilingSurface"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="OuterFloorSurface" substitutionGroup="con:AbstractConstructionSurface" type="con:OuterFloorSurfaceType">
+    <annotation>
+      <documentation>SIG3D: Exterior, upper boundary surface of a building , building part or building installation which is not a roof.</documentation>
+    </annotation>
+  </element>
+  <complexType name="OuterFloorSurfaceType">
+    <complexContent>
+      <extension base="con:AbstractConstructionSurfaceType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="OuterFloorSurfacePropertyType">
+    <sequence minOccurs="0">
+      <element ref="con:OuterFloorSurface"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="RelationToConstructionType">
+    <restriction base="string">
+      <enumeration value="inside"/>
+      <enumeration value="outside"/>
+      <enumeration value="bothInsideAndOutside"/>
+    </restriction>
+  </simpleType>
+  <element name="RoofSurface" substitutionGroup="con:AbstractConstructionSurface" type="con:RoofSurfaceType">
+    <annotation>
+      <documentation>SIG3D: Exterior, upper boundary surface of a building, building part or building installation, whose primary function is to protect from the effects of weather.</documentation>
+    </annotation>
+  </element>
+  <complexType name="RoofSurfaceType">
+    <complexContent>
+      <extension base="con:AbstractConstructionSurfaceType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RoofSurfacePropertyType">
+    <sequence minOccurs="0">
+      <element ref="con:RoofSurface"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="WallSurface" substitutionGroup="con:AbstractConstructionSurface" type="con:WallSurfaceType">
+    <annotation>
+      <documentation>SIG3D: Exterior, lateral boundary surface of a building , building part, or building installation.</documentation>
+    </annotation>
+  </element>
+  <complexType name="WallSurfaceType">
+    <complexContent>
+      <extension base="con:AbstractConstructionSurfaceType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="WallSurfacePropertyType">
+    <sequence minOccurs="0">
+      <element ref="con:WallSurface"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Window" substitutionGroup="con:AbstractConstructionVoid" type="con:WindowType">
+    <annotation>
+      <documentation>SIG3D: Construction for closing an opening in a wall or roof, primarily intended to admit light and/or provide ventilation (cf. ISO 6707).</documentation>
+    </annotation>
+  </element>
+  <complexType name="WindowType">
+    <complexContent>
+      <extension base="con:AbstractConstructionVoidType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="WindowPropertyType">
+    <sequence minOccurs="0">
+      <element ref="con:Window"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="WindowSurface" substitutionGroup="con:AbstractConstructionOpeningSurface" type="con:WindowSurfaceType"/>
+  <complexType name="WindowSurfaceType">
+    <complexContent>
+      <extension base="con:AbstractConstructionOpeningSurfaceType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="WindowSurfacePropertyType">
+    <sequence minOccurs="0">
+      <element ref="con:WindowSurface"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

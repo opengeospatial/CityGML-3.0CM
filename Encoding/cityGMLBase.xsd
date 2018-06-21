@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:app="http://www.opengis.net/citygml/appearance/3.0" xmlns:core="http://www.opengis.net/citygml/3.0" xmlns:dyn="http://www.opengis.net/citygml/dynamizer/3.0" xmlns:gen="http://www.opengis.net/citygml/generics/3.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:vers="http://www.opengis.net/citygml/versioning/3.0" xmlns:xAL="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" elementFormDefault="qualified" targetNamespace="http://www.opengis.net/citygml/3.0" version="3.0.0">
+  <import namespace="http://www.opengis.net/citygml/appearance/3.0" schemaLocation="./appearance.xsd"/>
+  <import namespace="http://www.opengis.net/citygml/dynamizer/3.0" schemaLocation="./dynamizer.xsd"/>
+  <import namespace="http://www.opengis.net/citygml/generics/3.0" schemaLocation="./generics.xsd"/>
+  <import namespace="http://www.opengis.net/citygml/versioning/3.0" schemaLocation="./versioning.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" schemaLocation="http://schemas.opengis.net/citygml/xAL/xAL.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="AbstractBoundaryRelation" substitutionGroup="gml:AbstractGML" type="core:AbstractBoundaryRelationType"/>
+  <complexType name="AbstractBoundaryRelationType">
+    <complexContent>
+      <extension base="gml:AbstractGMLType">
+        <sequence>
+          <element name="boundaryRelation" type="core:AbstractSpaceBoundaryPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractBoundaryRelationPropertyType">
+    <sequence minOccurs="0">
+      <element ref="core:AbstractBoundaryRelation"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="AbstractCityObject" substitutionGroup="core:AbstractFeatureWithLifespan" type="core:AbstractCityObjectType">
+    <annotation>
+      <documentation>SIG3D: Abstract super class of all thematic classes within CityGML data model.</documentation>
+    </annotation>
+  </element>
+  <complexType abstract="true" name="AbstractCityObjectType">
+    <complexContent>
+      <extension base="core:AbstractFeatureWithLifespanType">
+        <sequence>
+          <element minOccurs="0" name="relativeToTerrain" type="core:RelativeToTerrainType">
+            <annotation>
+              <documentation>SIG3D: Vertical position of the 
+AbstractCityObject relative to the surrounding terrain.</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="relativeToWater" type="core:RelativeToWaterType">
+            <annotation>
+              <documentation>SIG3D: Vertical position of the AbstractCityObject relative to a surrounding water surface.</documentation>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="externalReference" type="core:ExternalReferencePropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="generalizesTo" type="core:AbstractCityObjectPropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="appearance">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="app:Appearance"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="genericAttribute" type="gen:AbstractGenericAttributePropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="dynamizer" type="dyn:DynamizerPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractCityObjectPropertyType">
+    <sequence minOccurs="0">
+      <element ref="core:AbstractCityObject"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="AbstractFeatureWithLifespan" substitutionGroup="gml:AbstractFeature" type="core:AbstractFeatureWithLifespanType"/>
+  <complexType abstract="true" name="AbstractFeatureWithLifespanType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element minOccurs="0" name="creationDate" type="dateTime"/>
+          <element minOccurs="0" name="terminationDate" type="dateTime"/>
+          <element minOccurs="0" name="validFrom" type="dateTime"/>
+          <element minOccurs="0" name="validTo" type="dateTime"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractFeatureWithLifespanPropertyType">
+    <sequence minOccurs="0">
+      <element ref="core:AbstractFeatureWithLifespan"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="AbstractLogicalSpace" substitutionGroup="core:AbstractSpace" type="core:AbstractLogicalSpaceType"/>
+  <complexType abstract="true" name="AbstractLogicalSpaceType">
+    <complexContent>
+      <extension base="core:AbstractSpaceType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractLogicalSpacePropertyType">
+    <sequence minOccurs="0">
+      <element ref="core:AbstractLogicalSpace"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="AbstractOccupiedSpace" substitutionGroup="core:AbstractPhysicalSpace" type="core:AbstractOccupiedSpaceType"/>
+  <complexType abstract="true" name="AbstractOccupiedSpaceType">
+    <complexContent>
+      <extension base="core:AbstractPhysicalSpaceType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="opening">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="core:AbstractVoid"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="lod1ImplicitRepresentation" type="core:ImplicitGeometryPropertyType"/>
+          <element minOccurs="0" name="lod2ImplicitRepresentation" type="core:ImplicitGeometryPropertyType"/>
+          <element minOccurs="0" name="lod3ImplicitRepresentation" type="core:ImplicitGeometryPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractOccupiedSpacePropertyType">
+    <sequence minOccurs="0">
+      <element ref="core:AbstractOccupiedSpace"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="AbstractPhysicalSpace" substitutionGroup="core:AbstractSpace" type="core:AbstractPhysicalSpaceType"/>
+  <complexType abstract="true" name="AbstractPhysicalSpaceType">
+    <complexContent>
+      <extension base="core:AbstractSpaceType">
+        <sequence>
+          <element minOccurs="0" name="lod1TerrainIntersectionCurve" type="gml:MultiCurvePropertyType"/>
+          <element minOccurs="0" name="lod2TerrainIntersectionCurve" type="gml:MultiCurvePropertyType"/>
+          <element minOccurs="0" name="lod3TerrainIntersectionCurve" type="gml:MultiCurvePropertyType"/>
+          <element minOccurs="0" name="pointCloud" type="core:PointCloudPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractPhysicalSpacePropertyType">
+    <sequence minOccurs="0">
+      <element ref="core:AbstractPhysicalSpace"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="AbstractSpace" substitutionGroup="core:AbstractCityObject" type="core:AbstractSpaceType"/>
+  <complexType abstract="true" name="AbstractSpaceType">
+    <complexContent>
+      <extension base="core:AbstractCityObjectType">
+        <sequence>
+          <element minOccurs="0" name="occupancyDaytime" type="integer"/>
+          <element minOccurs="0" name="occupancyNighttime" type="integer"/>
+          <element minOccurs="0" name="spaceType" type="core:SpaceTypeType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="boundary" type="core:AbstractSpaceBoundaryPropertyType">
+            <annotation>
+              <appinfo>
+                <reversePropertyName xmlns="http://www.opengis.net/gml/3.2">core:bounds</reversePropertyName>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="spaceRelation" type="core:AbstractSpaceRelationPropertyType"/>
+          <element minOccurs="0" name="lod0Point" type="gml:PointPropertyType"/>
+          <element minOccurs="0" name="lod0MultiSurface" type="gml:MultiSurfacePropertyType"/>
+          <element minOccurs="0" name="lod1Solid" type="gml:SolidPropertyType"/>
+          <element minOccurs="0" name="lod2MultiSurface" type="gml:MultiSurfacePropertyType"/>
+          <element minOccurs="0" name="lod2Solid" type="gml:SolidPropertyType"/>
+          <element minOccurs="0" name="lod2MultiCurve" type="gml:MultiCurvePropertyType"/>
+          <element minOccurs="0" name="lod3MultiSurface" type="gml:MultiSurfacePropertyType"/>
+          <element minOccurs="0" name="lod3Solid" type="gml:SolidPropertyType"/>
+          <element minOccurs="0" name="lod3MultiCurve" type="gml:MultiCurvePropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractSpacePropertyType">
+    <sequence minOccurs="0">
+      <element ref="core:AbstractSpace"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="AbstractSpaceBoundary" substitutionGroup="core:AbstractCityObject" type="core:AbstractSpaceBoundaryType"/>
+  <complexType abstract="true" name="AbstractSpaceBoundaryType">
+    <complexContent>
+      <extension base="core:AbstractCityObjectType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="bounds" type="core:AbstractSpacePropertyType">
+            <annotation>
+              <appinfo>
+                <reversePropertyName xmlns="http://www.opengis.net/gml/3.2">core:boundary</reversePropertyName>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="boundaryRelation" type="core:AbstractBoundaryRelationPropertyType"/>
+          <element minOccurs="0" name="lod0MultiCurve" type="gml:MultiCurvePropertyType"/>
+          <element minOccurs="0" name="lod1MultiSurface" type="gml:MultiSurfacePropertyType"/>
+          <element minOccurs="0" name="lod2MultiSurface" type="gml:MultiSurfacePropertyType"/>
+          <element minOccurs="0" name="lod3MultiSurface" type="gml:MultiSurfacePropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractSpaceBoundaryPropertyType">
+    <sequence minOccurs="0">
+      <element ref="core:AbstractSpaceBoundary"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="AbstractSpaceRelation" substitutionGroup="gml:AbstractGML" type="core:AbstractSpaceRelationType"/>
+  <complexType abstract="true" name="AbstractSpaceRelationType">
+    <complexContent>
+      <extension base="gml:AbstractGMLType">
+        <sequence>
+          <element name="spaceRelation" type="core:AbstractSpacePropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractSpaceRelationPropertyType">
+    <sequence minOccurs="0">
+      <element ref="core:AbstractSpaceRelation"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="AbstractThematicSurface" substitutionGroup="core:AbstractSpaceBoundary" type="core:AbstractThematicSurfaceType"/>
+  <complexType abstract="true" name="AbstractThematicSurfaceType">
+    <complexContent>
+      <extension base="core:AbstractSpaceBoundaryType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="opening">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="core:AbstractVoidSurface"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="pointCloud" type="core:PointCloudPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractThematicSurfacePropertyType">
+    <sequence minOccurs="0">
+      <element ref="core:AbstractThematicSurface"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="AbstractTopLevelCityObject" substitutionGroup="core:AbstractCityObject" type="core:AbstractTopLevelCityObjectType"/>
+  <complexType abstract="true" name="AbstractTopLevelCityObjectType">
+    <complexContent>
+      <extension base="core:AbstractCityObjectType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractTopLevelCityObjectPropertyType">
+    <sequence minOccurs="0">
+      <element ref="core:AbstractTopLevelCityObject"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="AbstractUnoccupiedSpace" substitutionGroup="core:AbstractPhysicalSpace" type="core:AbstractUnoccupiedSpaceType"/>
+  <complexType abstract="true" name="AbstractUnoccupiedSpaceType">
+    <complexContent>
+      <extension base="core:AbstractPhysicalSpaceType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractUnoccupiedSpacePropertyType">
+    <sequence minOccurs="0">
+      <element ref="core:AbstractUnoccupiedSpace"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="AbstractVoid" substitutionGroup="core:AbstractUnoccupiedSpace" type="core:AbstractVoidType">
+    <annotation>
+      <documentation>SIG3D: Abstract super class of Window and Door</documentation>
+    </annotation>
+  </element>
+  <complexType abstract="true" name="AbstractVoidType">
+    <complexContent>
+      <extension base="core:AbstractUnoccupiedSpaceType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractVoidPropertyType">
+    <sequence minOccurs="0">
+      <element ref="core:AbstractVoid"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="AbstractVoidSurface" substitutionGroup="core:AbstractSpaceBoundary" type="core:AbstractVoidSurfaceType"/>
+  <complexType abstract="true" name="AbstractVoidSurfaceType">
+    <complexContent>
+      <extension base="core:AbstractSpaceBoundaryType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractVoidSurfacePropertyType">
+    <sequence minOccurs="0">
+      <element ref="core:AbstractVoidSurface"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Address" substitutionGroup="gml:AbstractFeature" type="core:AddressType">
+    <annotation>
+      <documentation>SIG3D: Proxy for the OASIS address schema</documentation>
+    </annotation>
+  </element>
+  <complexType name="AddressType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="xalAddress">
+            <complexType>
+              <sequence>
+                <element ref="xAL:AddressDetails"/>
+              </sequence>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="multiPoint" type="gml:MultiPointPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AddressPropertyType">
+    <sequence minOccurs="0">
+      <element ref="core:Address"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="BoundaryRelationTypeType">
+    <restriction base="string">
+      <enumeration value="disjoint"/>
+      <enumeration value="equal"/>
+      <enumeration value="touch"/>
+      <enumeration value="overlap"/>
+      <enumeration value="covers"/>
+      <enumeration value="coveredBy"/>
+      <enumeration value="inside"/>
+      <enumeration value="contains"/>
+    </restriction>
+  </simpleType>
+  <element name="CityModel" substitutionGroup="core:AbstractFeatureWithLifespan" type="core:CityModelType">
+    <annotation>
+      <documentation>SIG3D: Collection of CityObjects with optional metadata.</documentation>
+    </annotation>
+  </element>
+  <complexType name="CityModelType">
+    <complexContent>
+      <extension base="core:AbstractFeatureWithLifespanType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="cityObjectMember">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="core:AbstractTopLevelCityObject"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="appearanceMember">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="app:Appearance"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="versionMember">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="vers:Version"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="versionTransitionMember">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="vers:VersionTransition"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="CityModelPropertyType">
+    <sequence minOccurs="0">
+      <element ref="core:CityModel"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="ClosureSurface" substitutionGroup="core:AbstractSpaceBoundary" type="core:ClosureSurfaceType"/>
+  <complexType name="ClosureSurfaceType">
+    <complexContent>
+      <extension base="core:AbstractSpaceBoundaryType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ClosureSurfacePropertyType">
+    <sequence minOccurs="0">
+      <element ref="core:ClosureSurface"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="DoubleBetween0and1Type">
+    <restriction base="double">
+      <minInclusive value="0"/>
+      <maxInclusive value="1"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="DoubleBetween0and1ListType">
+    <restriction base="gml:doubleList"/>
+  </simpleType>
+  <element name="ExternalReference" substitutionGroup="gml:AbstractObject" type="core:ExternalReferenceType"/>
+  <complexType name="ExternalReferenceType">
+    <sequence>
+      <element name="targetResource" type="anyURI"/>
+      <element minOccurs="0" name="informationSystem" type="anyURI"/>
+      <element minOccurs="0" name="relationType" type="anyURI"/>
+    </sequence>
+  </complexType>
+  <complexType name="ExternalReferencePropertyType">
+    <sequence>
+      <element ref="core:ExternalReference"/>
+    </sequence>
+  </complexType>
+  <element name="GenericSurface" substitutionGroup="core:AbstractSpaceBoundary" type="core:GenericSurfaceType"/>
+  <complexType name="GenericSurfaceType">
+    <complexContent>
+      <extension base="core:AbstractSpaceBoundaryType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GenericSurfacePropertyType">
+    <sequence minOccurs="0">
+      <element ref="core:GenericSurface"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="GeometricBoundaryRelation" substitutionGroup="core:AbstractBoundaryRelation" type="core:GeometricBoundaryRelationType"/>
+  <complexType name="GeometricBoundaryRelationType">
+    <complexContent>
+      <extension base="core:AbstractBoundaryRelationType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GeometricBoundaryRelationPropertyType">
+    <sequence minOccurs="0">
+      <element ref="core:GeometricBoundaryRelation"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="GeometricSpaceRelation" substitutionGroup="core:AbstractSpaceRelation" type="core:GeometricSpaceRelationType"/>
+  <complexType name="GeometricSpaceRelationType">
+    <complexContent>
+      <extension base="core:AbstractSpaceRelationType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GeometricSpaceRelationPropertyType">
+    <sequence minOccurs="0">
+      <element ref="core:GeometricSpaceRelation"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="ImplicitGeometry" substitutionGroup="gml:AbstractGML" type="core:ImplicitGeometryType"/>
+  <complexType name="ImplicitGeometryType">
+    <complexContent>
+      <extension base="gml:AbstractGMLType">
+        <sequence>
+          <element minOccurs="0" name="transformationMatrix" type="core:TransformationMatrix4x4Type"/>
+          <element minOccurs="0" name="mimeType" type="gml:CodeType"/>
+          <element minOccurs="0" name="libraryObject" type="anyURI"/>
+          <element name="referencePoint" type="gml:PointPropertyType"/>
+          <element minOccurs="0" name="relativeGMLGeometry" type="gml:GeometryPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ImplicitGeometryPropertyType">
+    <sequence minOccurs="0">
+      <element ref="core:ImplicitGeometry"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="IntegerBetween0and3Type">
+    <restriction base="integer">
+      <minInclusive value="0"/>
+      <maxInclusive value="3"/>
+    </restriction>
+  </simpleType>
+  <element name="PointCloud" substitutionGroup="gml:AbstractFeature" type="core:PointCloudType"/>
+  <complexType name="PointCloudType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="mimeType" type="gml:CodeType"/>
+          <element name="pointFile" type="anyURI"/>
+          <element name="pointFileSrsName" type="string"/>
+          <element minOccurs="0" name="points" type="gml:MultiPointPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PointCloudPropertyType">
+    <sequence minOccurs="0">
+      <element ref="core:PointCloud"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="RelativeToTerrainType">
+    <restriction base="string">
+      <enumeration value="entirelyAboveTerrain"/>
+      <enumeration value="substantiallyAboveTerrain"/>
+      <enumeration value="substantiallyAboveAndBelowTerrain"/>
+      <enumeration value="substantiallyBelowTerrain"/>
+      <enumeration value="entirelyBelowTerrain"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="RelativeToWaterType">
+    <restriction base="string">
+      <enumeration value="entirelyAboveWaterSurface"/>
+      <enumeration value="substantiallyAboveWaterSurface"/>
+      <enumeration value="substantiallyAboveAndBelowWaterSurface"/>
+      <enumeration value="substantiallyBelowWaterSurface"/>
+      <enumeration value="entirelyBelowWaterSurface"/>
+      <enumeration value="temporarilyAboveAndBelowWaterSurface"/>
+    </restriction>
+  </simpleType>
+  <element name="ReliefSurface" substitutionGroup="core:AbstractThematicSurface" type="core:ReliefSurfaceType"/>
+  <complexType name="ReliefSurfaceType">
+    <complexContent>
+      <extension base="core:AbstractThematicSurfaceType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ReliefSurfacePropertyType">
+    <sequence minOccurs="0">
+      <element ref="core:ReliefSurface"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="SpaceRelationTypeType">
+    <restriction base="string">
+      <enumeration value="disjoint"/>
+      <enumeration value="equal"/>
+      <enumeration value="touch"/>
+      <enumeration value="overlap"/>
+      <enumeration value="covers"/>
+      <enumeration value="coveredBy"/>
+      <enumeration value="inside"/>
+      <enumeration value="contains"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="SpaceTypeType">
+    <restriction base="string">
+      <enumeration value="closed"/>
+      <enumeration value="open"/>
+      <enumeration value="semiOpen"/>
+    </restriction>
+  </simpleType>
+  <element name="ThematicBoundaryRelation" substitutionGroup="core:AbstractBoundaryRelation" type="core:ThematicBoundaryRelationType"/>
+  <complexType name="ThematicBoundaryRelationType">
+    <complexContent>
+      <extension base="core:AbstractBoundaryRelationType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ThematicBoundaryRelationPropertyType">
+    <sequence minOccurs="0">
+      <element ref="core:ThematicBoundaryRelation"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="ThematicSpaceRelation" substitutionGroup="core:AbstractSpaceRelation" type="core:ThematicSpaceRelationType"/>
+  <complexType name="ThematicSpaceRelationType">
+    <complexContent>
+      <extension base="core:AbstractSpaceRelationType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ThematicSpaceRelationPropertyType">
+    <sequence minOccurs="0">
+      <element ref="core:ThematicSpaceRelation"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="TopologicBoundaryRelation" substitutionGroup="core:AbstractBoundaryRelation" type="core:TopologicBoundaryRelationType"/>
+  <complexType name="TopologicBoundaryRelationType">
+    <complexContent>
+      <extension base="core:AbstractBoundaryRelationType">
+        <sequence>
+          <element name="relation" type="core:BoundaryRelationTypeType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="TopologicBoundaryRelationPropertyType">
+    <sequence minOccurs="0">
+      <element ref="core:TopologicBoundaryRelation"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="TopologicSpaceRelation" substitutionGroup="core:AbstractSpaceRelation" type="core:TopologicSpaceRelationType"/>
+  <complexType name="TopologicSpaceRelationType">
+    <complexContent>
+      <extension base="core:AbstractSpaceRelationType">
+        <sequence>
+          <element name="relation" type="core:SpaceRelationTypeType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="TopologicSpaceRelationPropertyType">
+    <sequence minOccurs="0">
+      <element ref="core:TopologicSpaceRelation"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="TransformationMatrix2x2Type">
+    <annotation>
+      <documentation>SIG3D: 2x2 Transformation matrix (z-rotation and scaling)</documentation>
+    </annotation>
+    <restriction base="gml:doubleList"/>
+  </simpleType>
+  <simpleType name="TransformationMatrix3x4Type">
+    <annotation>
+      <documentation>SIG3D: 3x4 transformation matrix, (arbitrary rotation and scaling and translation).</documentation>
+    </annotation>
+    <restriction base="gml:doubleList"/>
+  </simpleType>
+  <simpleType name="TransformationMatrix4x4Type">
+    <annotation>
+      <documentation>SIG3D: Transformation matrix with 4 rows and columns, used for simultaneously specifying translation, rotation and scaling.</documentation>
+    </annotation>
+    <restriction base="gml:doubleList"/>
+  </simpleType>
+</schema>
