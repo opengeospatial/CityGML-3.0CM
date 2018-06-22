@@ -72,7 +72,11 @@
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element abstract="true" name="AbstractTextureParameterization" substitutionGroup="gml:AbstractObject" type="app:AbstractTextureParameterizationType"/>
+  <element abstract="true" name="AbstractTextureParameterization" substitutionGroup="gml:AbstractObject" type="app:AbstractTextureParameterizationType">
+    <annotation>
+      <documentation>SIG3D: Abstract superclass of TexCoordGen and TextCoordList</documentation>
+    </annotation>
+  </element>
   <complexType abstract="true" name="AbstractTextureParameterizationType">
     <sequence/>
   </complexType>
@@ -96,6 +100,9 @@
             </annotation>
           </element>
           <element maxOccurs="unbounded" minOccurs="0" name="surfaceDataMember">
+            <annotation>
+              <documentation>SIG3D: List of surface data properties for the current appearance theme</documentation>
+            </annotation>
             <complexType>
               <complexContent>
                 <extension base="gml:AbstractFeatureMemberType">
@@ -196,12 +203,20 @@
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="TexCoordGen" substitutionGroup="app:AbstractTextureParameterization" type="app:TexCoordGenType"/>
+  <element name="TexCoordGen" substitutionGroup="app:AbstractTextureParameterization" type="app:TexCoordGenType">
+    <annotation>
+      <documentation>SIG3D: Texture parameterization using a transformation matrix.</documentation>
+    </annotation>
+  </element>
   <complexType name="TexCoordGenType">
     <complexContent>
       <extension base="app:AbstractTextureParameterizationType">
         <sequence>
-          <element name="worldToTexture" type="core:TransformationMatrix3x4Type"/>
+          <element name="worldToTexture" type="core:TransformationMatrix3x4Type">
+            <annotation>
+              <documentation>SIG3D: 3x4 Matrix that defines the transformation between world coordinates and texture coordinates.</documentation>
+            </annotation>
+          </element>
         </sequence>
         <attributeGroup ref="gml:SRSReferenceGroup"/>
       </extension>
@@ -212,13 +227,25 @@
       <element ref="app:TexCoordGen"/>
     </sequence>
   </complexType>
-  <element name="TexCoordList" substitutionGroup="app:AbstractTextureParameterization" type="app:TexCoordListType"/>
+  <element name="TexCoordList" substitutionGroup="app:AbstractTextureParameterization" type="app:TexCoordListType">
+    <annotation>
+      <documentation>SIG3D: Texture parameterization using explicit texture coordinates (a list of pairs of 2 double values). Each ring that is part of the surface requires a TexCoordList object.</documentation>
+    </annotation>
+  </element>
   <complexType name="TexCoordListType">
     <complexContent>
       <extension base="app:AbstractTextureParameterizationType">
         <sequence>
-          <element maxOccurs="unbounded" name="textureCoordinates" type="gml:doubleList"/>
-          <element maxOccurs="unbounded" name="ring" type="anyURI"/>
+          <element maxOccurs="unbounded" name="textureCoordinates" type="gml:doubleList">
+            <annotation>
+              <documentation>SIG3D: List of texture coordinates with two doubles per ring vertex</documentation>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" name="ring" type="anyURI">
+            <annotation>
+              <documentation>SIG3D: gml:ids of the LinearRings that are parameterized using the given texture coordinates</documentation>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -228,12 +255,20 @@
       <element ref="app:TexCoordList"/>
     </sequence>
   </complexType>
-  <element name="TextureAssociation" substitutionGroup="gml:AbstractGML" type="app:TextureAssociationType"/>
+  <element name="TextureAssociation" substitutionGroup="gml:AbstractGML" type="app:TextureAssociationType">
+    <annotation>
+      <documentation>SIG3D: Connects a surface geometry with a parameterized texture.</documentation>
+    </annotation>
+  </element>
   <complexType name="TextureAssociationType">
     <complexContent>
       <extension base="gml:AbstractGMLType">
         <sequence>
-          <element name="uri" type="anyURI"/>
+          <element name="uri" type="anyURI">
+            <annotation>
+              <documentation>SIG3D: Link to the geometry object to be textured.</documentation>
+            </annotation>
+          </element>
           <element name="target" type="app:AbstractTextureParameterizationPropertyType"/>
         </sequence>
       </extension>
@@ -247,19 +282,57 @@
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
   <simpleType name="TextureTypeType">
+    <annotation>
+      <documentation>SIG3D: Differentiates types of textures</documentation>
+    </annotation>
     <restriction base="string">
-      <enumeration value="specific"/>
-      <enumeration value="typical"/>
-      <enumeration value="unknown"/>
+      <enumeration value="specific">
+        <annotation>
+          <documentation>SIG3D: The texture is specific for a certain object</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="typical">
+        <annotation>
+          <documentation>SIG3D: The texture is typical for a kind of object</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="unknown">
+        <annotation>
+          <documentation>SIG3D: The texture type is unknown.</documentation>
+        </annotation>
+      </enumeration>
     </restriction>
   </simpleType>
   <simpleType name="WrapModeType">
+    <annotation>
+      <documentation>SIG3D: Specification of texture wrapping adopted from COLLADA standard. Defines the bahavior when accessing a texture outside the underlaying image raster.</documentation>
+    </annotation>
     <restriction base="string">
-      <enumeration value="none"/>
-      <enumeration value="wrap"/>
-      <enumeration value="mirror"/>
-      <enumeration value="clamp"/>
-      <enumeration value="border"/>
+      <enumeration value="none">
+        <annotation>
+          <documentation>COLLADA: The resulting color is fully transparent</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="wrap">
+        <annotation>
+          <documentation>COLLADA: The texture is repeated</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="mirror">
+        <annotation>
+          <documentation>COLLADA: The texture is repeated and mirrored</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="clamp">
+        <annotation>
+          <documentation>COLLADA: The texture is clamped to its edges</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="border">
+        <annotation>
+          <documentation>COLLADA: The resulting color is specified by the borderColor element (RGBA)</documentation>
+        </annotation>
+      </enumeration>
     </restriction>
   </simpleType>
   <element name="X3DMaterial" substitutionGroup="app:AbstractSurfaceData" type="app:X3DMaterialType">

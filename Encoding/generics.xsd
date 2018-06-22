@@ -16,12 +16,20 @@
       <element ref="gen:AbstractGenericAttribute"/>
     </sequence>
   </complexType>
-  <element name="DateAttribute" substitutionGroup="gen:AbstractGenericAttribute" type="gen:DateAttributeType"/>
+  <element name="DateAttribute" substitutionGroup="gen:AbstractGenericAttribute" type="gen:DateAttributeType">
+    <annotation>
+      <documentation>SIG3D: Generic Attribute of type "date".</documentation>
+    </annotation>
+  </element>
   <complexType name="DateAttributeType">
     <complexContent>
       <extension base="gen:AbstractGenericAttributeType">
         <sequence>
-          <element name="value" type="date"/>
+          <element name="value" type="date">
+            <annotation>
+              <documentation>SIG3D: Value of the Generic Attribute.</documentation>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -31,12 +39,20 @@
       <element ref="gen:DateAttribute"/>
     </sequence>
   </complexType>
-  <element name="DoubleAttribute" substitutionGroup="gen:AbstractGenericAttribute" type="gen:DoubleAttributeType"/>
+  <element name="DoubleAttribute" substitutionGroup="gen:AbstractGenericAttribute" type="gen:DoubleAttributeType">
+    <annotation>
+      <documentation>SIG3D: Generic Attribute of type "double".</documentation>
+    </annotation>
+  </element>
   <complexType name="DoubleAttributeType">
     <complexContent>
       <extension base="gen:AbstractGenericAttributeType">
         <sequence>
-          <element name="value" type="double"/>
+          <element name="value" type="double">
+            <annotation>
+              <documentation>SIG3D: Value of the Generic Attribute.</documentation>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -46,12 +62,20 @@
       <element ref="gen:DoubleAttribute"/>
     </sequence>
   </complexType>
-  <element name="GenericAttributeSet" substitutionGroup="gen:AbstractGenericAttribute" type="gen:GenericAttributeSetType"/>
+  <element name="GenericAttributeSet" substitutionGroup="gen:AbstractGenericAttribute" type="gen:GenericAttributeSetType">
+    <annotation>
+      <documentation>SIG3D: Set of Generic Attributes.</documentation>
+    </annotation>
+  </element>
   <complexType name="GenericAttributeSetType">
     <complexContent>
       <extension base="gen:AbstractGenericAttributeType">
         <sequence>
-          <element minOccurs="0" name="codeSpace" type="anyURI"/>
+          <element minOccurs="0" name="codeSpace" type="anyURI">
+            <annotation>
+              <documentation>SIG3D: Codespace idcentifier of the Generic AttributeSet.</documentation>
+            </annotation>
+          </element>
           <element maxOccurs="unbounded" name="genericAttribute" type="gen:AbstractGenericAttributePropertyType"/>
         </sequence>
       </extension>
@@ -195,12 +219,20 @@
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="IntAttribute" substitutionGroup="gen:AbstractGenericAttribute" type="gen:IntAttributeType"/>
+  <element name="IntAttribute" substitutionGroup="gen:AbstractGenericAttribute" type="gen:IntAttributeType">
+    <annotation>
+      <documentation>SIG3D: Generic Attribute of type "integer".</documentation>
+    </annotation>
+  </element>
   <complexType name="IntAttributeType">
     <complexContent>
       <extension base="gen:AbstractGenericAttributeType">
         <sequence>
-          <element name="value" type="integer"/>
+          <element name="value" type="integer">
+            <annotation>
+              <documentation>SIG3D: Value of the Generic Attribute.</documentation>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -210,12 +242,20 @@
       <element ref="gen:IntAttribute"/>
     </sequence>
   </complexType>
-  <element name="MeasureAttribute" substitutionGroup="gen:AbstractGenericAttribute" type="gen:MeasureAttributeType"/>
+  <element name="MeasureAttribute" substitutionGroup="gen:AbstractGenericAttribute" type="gen:MeasureAttributeType">
+    <annotation>
+      <documentation>SIG3D: Generic Attribute of type "Measure" (double-attribute with explicit specification of a unit-of-measurement).</documentation>
+    </annotation>
+  </element>
   <complexType name="MeasureAttributeType">
     <complexContent>
       <extension base="gen:AbstractGenericAttributeType">
         <sequence>
-          <element name="value" type="gml:MeasureType"/>
+          <element name="value" type="gml:MeasureType">
+            <annotation>
+              <documentation>SIG3D: Value of the Generic Attribute.</documentation>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -225,12 +265,20 @@
       <element ref="gen:MeasureAttribute"/>
     </sequence>
   </complexType>
-  <element name="StringAttribute" substitutionGroup="gen:AbstractGenericAttribute" type="gen:StringAttributeType"/>
+  <element name="StringAttribute" substitutionGroup="gen:AbstractGenericAttribute" type="gen:StringAttributeType">
+    <annotation>
+      <documentation>SIG3D: Generic Attribute of type "string".</documentation>
+    </annotation>
+  </element>
   <complexType name="StringAttributeType">
     <complexContent>
       <extension base="gen:AbstractGenericAttributeType">
         <sequence>
-          <element name="value" type="string"/>
+          <element name="value" type="string">
+            <annotation>
+              <documentation>SIG3D: Value of the Generic Attribute.</documentation>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
@@ -240,12 +288,20 @@
       <element ref="gen:StringAttribute"/>
     </sequence>
   </complexType>
-  <element name="UriAttribute" substitutionGroup="gen:AbstractGenericAttribute" type="gen:UriAttributeType"/>
+  <element name="UriAttribute" substitutionGroup="gen:AbstractGenericAttribute" type="gen:UriAttributeType">
+    <annotation>
+      <documentation>SIG3D: Generic Attribute of type "URI".</documentation>
+    </annotation>
+  </element>
   <complexType name="UriAttributeType">
     <complexContent>
       <extension base="gen:AbstractGenericAttributeType">
         <sequence>
-          <element name="value" type="anyURI"/>
+          <element name="value" type="anyURI">
+            <annotation>
+              <documentation>SIG3D: Value of the Generic Attribute.</documentation>
+            </annotation>
+          </element>
         </sequence>
       </extension>
     </complexContent>
