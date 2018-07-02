@@ -12,6 +12,8 @@ Scope
 
 CityGML version 3.0 consists of a single *conceptual model* and multiple implementations of the conceptual model using different data definition and data storage methodologies. Each storage methodology is designated as a named *encoding*. This scope of this repository is only the conceptual model. Note that this *may* include dependencies of some or all encodings on specific characteristics of the conceptual model.
 
+![CityGML Overview](CityModelA.png)
+
 Role of SIG 3D
 --
 
