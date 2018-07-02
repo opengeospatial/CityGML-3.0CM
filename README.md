@@ -46,12 +46,6 @@ The top-level use cases for CityGML models can be divided into five groups:
 
 - **Analysis** is the use of a model to determine properties and characteristics of the modelled environment such as solar electric and heating potential, viewsheds and lines-of-sight, obstructions to flight, parcel contents, and other intrinsic joint properties of the modelled elements.
 
-
-Characteristics and Requirements
---
-
-CityGML can represent complete environments or disconnected pieces, including generic elements such as trees or road signs. A representation of a complete environment is called a [complete] *model*. A representation of a disconnected piece is called a *fragment*.
-
 Conceptual Model Details
 ---
 
@@ -68,6 +62,9 @@ Use
 The conceptual model is used as a framework for the implementation of methods of expressing CityGML using specific encoding methodologies. Requirements on representations in individual encodings should be derived from the conceptual model. Most encodings will not have a direct mapping of every detail of every structure and property in the conceptual model. It is the responsibility of the specific encoding standard to define how the encoding meets the representational requirements of the conceptual model and to identify gaps, ambiguities, and mis-mappings.
 
 Characteristics and requirements
+
+CityGML can represent complete environments or disconnected pieces, including generic elements such as trees or road signs. A representation of a complete environment is called a [complete] *model*. Complete models are required for all use cases except visualisation. It is highly recommended that any model of an environment be a complete model.
+A representation of a disconnected piece is called a *fragment*.  Fragments may be physically stored as discrete elements, for example individual files, but these elements are only suitable for construction of complete models. 
 
 Encodings
 --
