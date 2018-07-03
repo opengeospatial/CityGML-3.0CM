@@ -61,7 +61,7 @@ The purpose of the conceptual model is to define the concepts to be implemented 
 
 Use
 
-The conceptual model is used as a framework for the implementation of methods of expressing CityGML using specific encoding methodologies. Requirements on representations in individual encodings should be derived from the conceptual model. Most encodings will not have a direct mapping of every detail of every structure and property in the conceptual model. It is the responsibility of the specific encoding standard to define how the encoding meets the representational requirements of the conceptual model and to identify gaps, ambiguities, and mis-mappings.
+The Conceptual Model is used as a framework for the implementation of methods of expressing CityGML using specific encoding methodologies. Requirements on representations in individual encodings should be derived from the conceptual model. Most encodings will not have a direct mapping of every detail of every structure and property in the conceptual model. It is the responsibility of the specific encoding standard to define how the encoding meets the representational requirements of the conceptual model and to identify gaps, ambiguities, and mis-mappings.
 
 Characteristics and requirements
 
