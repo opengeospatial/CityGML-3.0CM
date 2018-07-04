@@ -2,22 +2,22 @@ CityGML 3.0 Conceptual Model
 ===========
 
 This is the public repository for the Open Geospatial Consortium (OGC) CityGML Standards Working Group (SWG) CityGML version 3.0 Conceptual Model standard. 
-
-Discovery, discussions, and the raising and resolution of issues regarding the Conceptual Model are focussed here, under the moderation of the SWG chairs, and under the OGC policies and procedures for the adoption of results by the SWG.
-
-Interested reviewers and participants should use the Issues tab to direct questions, comments, criticisms, and issues toward the chairs or other relevant party. The chairs follow the issues and will respond or delegate as appropriate. Consensus and mutual understanding is the goal of the chairs. If an issue cannot be resolved by consensus, it will be considered by the SWG following OGC policies and procedures.
+Discovery, discussions, and the raising and resolution of issues regarding the Conceptual Model are focussed here and under the OGC policies and procedures for the adoption of results by the SWG.
+Interested reviewers and participants should use the Issues tab to direct questions, comments, criticisms, and issues toward the chairs or other relevant party. Consensus and mutual understanding is the goal. 
 
 Scope
 --
 
-CityGML version 3.0 consists of a single *Conceptual Model* and multiple implementations of the conceptual model using different data definition and data storage methodologies. Each storage methodology is designated as a named *Encoding*. This scope of this repository is only the Conceptual Model. Note that this *may* include dependencies of some or all Encodings on specific characteristics of the Conceptual Model.
+CityGML version 3.0 consists of a single *Conceptual Model* and multiple implementations of the conceptual model using different data definition and data storage methodologies. Each storage methodology is designated as a named *Encoding*. This scope of this repository is only the Conceptual Model. Note that this *may* include dependencies of some or all Encodings on specific characteristics of the Conceptual Model. In particular, since the ShapeChange 
+[https://shapechange.net/targets/xsd/]
+ tool automates implementation of an XML Encoding of the Conceptual Model as an XML schema, compatibility with ShapeChange is a key dependency. There will certainly be other dependencies discovered or expressed as development of other Encodings progresses. 
 
 ![CityGML Overview](CityModelA.png)
 
 Role of SIG 3D
 --
 
-The work of the Special Interest Group 3D (SIG 3D) of the initiative Geodata Infrastructure Germany (GDI-DE) has been instrumental in the further development of CityGML, especially revision of the concept of level-of-detail (LOD).
+The work of the Special Interest Group 3D (SIG 3D) of the initiative Geodata  Infrastructure Germany (GDI-DE) has been instrumental in the further development of CityGML, especially revision of the concept of level-of-detail (LOD).
 
 Naming
 --
@@ -71,5 +71,7 @@ A representation of a disconnected piece is called a *fragment*.  Fragments may 
 Encodings
 --
 
-Several Encodings (GML, relational database/SQL, JSON) are in commercial use with CityGML 2.0. It is likely that these will be updated to comply with the changes in the 3.0 Conceptual Model but, as of July 2018, results provided by the Work Package 2 team led by the Technische Universitaet Muenchen are only available for GML. Please refer to the separate GML section of the CityGML Encodings repository at [https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/GML] for details.
+Several Encodings (GML, relational database/SQL, JSON) are in commercial use with CityGML 2.0. It is likely that these will be updated to comply with the changes in the 3.0 Conceptual Model but, as of July 2018, results provided by the Work Package 2 team led by the Technische Universitaet Muenchen are only available for GML. Please refer to the separate GML section of the CityGML Encodings repository at [https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/GML] for details. 
+
+Because implementability of the Conceptual Model via one or more encodings is a practical requirement for any use of CityGML it is important to be able to test various aspects of the Conceptual Model through experimental Encodings during development of the Conceptual Model. These can be found at [https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/GML/Examples].
 
