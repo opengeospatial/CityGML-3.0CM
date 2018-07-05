@@ -10,7 +10,7 @@ Scope
 
 CityGML version 3.0 consists of a single *Conceptual Model* and multiple implementations of the conceptual model using different data definition and data storage methodologies. Each storage methodology is designated as a named *Encoding*. This scope of this repository is only the Conceptual Model. Note that this *may* include dependencies of some or all Encodings on specific characteristics of the Conceptual Model. In particular, since the ShapeChange 
 [https://shapechange.net/targets/xsd/]
- tool automates implementation of an XML Encoding of the Conceptual Model as an XML schema, compatibility with ShapeChange is a key dependency. There will certainly be other dependencies discovered or expressed as development of other Encodings progresses. 
+ tool automates implementation of an XML Encoding of the Conceptual Model as an XML schema, compatibility with ShapeChange is a weak dependency. The team editing the draft UML expression of the Conceptual Model has had to ensure the implementability via ShapeChange either by adjusting the Conceptual Model or enhancing ShapeChange. There will certainly be other dependencies discovered or expressed as development of other Encodings progresses. 
 
 ![CityGML Overview](CityModelA.png)
 
