@@ -15,7 +15,7 @@ but are now classified using the new stereotype.
 * Removed `PointCloud` from the `Core` module and put it into a separate extension module.
 [#14](https://github.com/opengeospatial/CityGML-3.0CM/issues/14)
 * The classes `AbstractVoidSurface` and `AbstractVoid` have been made non-abstract and renamed to `Void` and `VoidSurface`.
-* Simplified the `Construction` module. The semantics of `Void`, `VoidSurface` and opengins (e.g. `Door`, `DoorSurface`)
+* Simplified the `Construction` module. The semantics of `Void`, `VoidSurface` and openings (e.g. `Door`, `DoorSurface`)
 are now more precise.
 [#3](https://github.com/opengeospatial/CityGML-3.0CM/issues/3), [#22](https://github.com/opengeospatial/CityGML-3.0CM/issues/22)
 * Removed the classes `ReliefSurface` and `GenericSurface` from the `Core` module.
