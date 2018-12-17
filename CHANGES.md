@@ -1,7 +1,7 @@
 Change Log
 ==========
 
-### 3.0.0-draft.1 - tbd
+### 3.0.0-draft.2018.12.17.1 (2018-12-17)
 
 ##### Changes
 * Resolved multiple inheritance in the model by introducing a new stereotype `<<TopLevelFeatureType>>` that replaces the
