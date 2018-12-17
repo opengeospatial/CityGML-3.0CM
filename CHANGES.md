@@ -21,3 +21,6 @@ are now more precise.
 * Removed the classes `ReliefSurface` and `GenericSurface` from the `Core` module.
 * Simplified the `SpaceRelation` concept in the `Core` module to allow for relations between any city object.
   * This is now similar to the relation concept in IFC.
+
+##### GML application schemas and test datasets
+GML application schemas and test datasets are available from the [releases section](https://github.com/opengeospatial/CityGML-3.0Encodings/releases/tag/3.0.0-draft.2018.12.17.1) of the CityGML-3.0Encodings repository. Please make sure to download the matching release.
