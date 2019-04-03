@@ -1,14 +1,12 @@
 CityGML 3.0 Conceptual Model
 ===========
-
+Overview
 --
-
 This is the public repository for the Open Geospatial Consortium (OGC) CityGML Standards Working Group (SWG) CityGML version 3.0 Conceptual Model standard. 
 Discovery, discussions, and the raising and resolution of issues regarding the Conceptual Model are focussed here and under the OGC policies and procedures for the adoption of results by the SWG.
 Interested reviewers and participants should use the Issues tab to direct questions, comments, criticisms, and issues toward the chairs or other relevant party. Consensus and mutual understanding is the goal. 
---
 The contributor understands that any contributions, if accepted by the OGC Membership, shall be incorporated into OGC standards documents and that all copyright and intellectual property shall be vested to the OGC.
---
+
 Scope
 --
 
