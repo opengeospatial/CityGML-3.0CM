@@ -1,5 +1,6 @@
 The spreadsheet summarising the progress on the github issues in the bi-weekly web conferences can be accessed here: https://docs.google.com/spreadsheets/d/1W125JKqL2CztRiU8RSRXa8cIRJm3TB5Fdue8OtC0pIg/edit#gid=105567035
 
+---
 
 CityGML 3.0 Conceptual Model
 ===========
