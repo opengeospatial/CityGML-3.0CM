@@ -1,6 +1,24 @@
 Change Log
 ==========
 
+### 3.0.0-draft.2019.06.05.1 (2019-06-05)
+
+#### Changes
+
+* The attributes `occupancyDaytime` and `occupancyNighttime` were removed from the class `AbstractSpace`. Instead, an attribute `occupancy` was introduced to the classes `AbstractConstruction`, `TrafficSpace` and `TransportationComplex`, together with the data type `Occupancy` and the code lists `IntervalValue` and `OccupantTypeValue`. 
+[#62](https://github.com/opengeospatial/CityGML-3.0CM/issues/62)
+* To make the UML model fully language-independent, a language-independent `DoubleList` type was defined which replaces the `doubleList` type from GML. 
+[#16](https://github.com/opengeospatial/CityGML-3.0CM/issues/16)
+* To make the UML model fully language-independent, the classes `AbstractFeature` and `AbstractGML` were removed from the UML model; instead, a comment was added to describe which attributes are inherited from these classes in the GML encoding. 
+[#18](https://github.com/opengeospatial/CityGML-3.0CM/issues/18)
+* The attributes `minHeight` and `maxHeight` were added to the class `PlantCover`. 
+[#34](https://github.com/opengeospatial/CityGML-3.0CM/issues/34)
+* The attributes `rootBallDiameter` and `maxRootBallDepth` were added to the class `SolitaryVegetationObject`. 
+[#50](https://github.com/opengeospatial/CityGML-3.0CM/issues/50)
+* The class `AnyFeature` from ISO 19109 was added to the Core model to allow for the relation `featureMember` also in CityGML 3. 
+[#61](https://github.com/opengeospatial/CityGML-3.0CM/issues/61)
+
+
 ### 3.0.0-draft.2019.04.09.1 (2019-04-09)
 
 ##### Changes
