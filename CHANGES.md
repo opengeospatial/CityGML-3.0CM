@@ -15,6 +15,8 @@ Change Log
 * Added a `lod0MultiSurface` geometry property to `AbstractThematicSurface`. [#92](https://github.com/opengeospatial/CityGML-3.0CM/issues/92)
 * Change stereotype of `ImplicitGeometry` from `<<FeatureType>>` to `<<ObjectType>>`. [#86](https://github.com/opengeospatial/CityGML-3.0CM/issues/86)
 * An association from `CityObjectRelation` to `AbstractGenericAttribute` was defined in the Core module. This allowed for removing the class `GenericCityObjectRelation` in the Generics module. [#80](https://github.com/opengeospatial/CityGML-3.0CM/issues/80)
+* The association between `AbstractSpace` and `AbstractThematicSurface` was made uni-directional. In the thematic modules Construction, Building, Transportation, and WaterBody, the subsets of the bounds-boundary relation were replaced by the original bounds-boundary relation. In this way, no additional relationships are derived in the GML application schemas. [#21](https://github.com/opengeospatial/CityGML-3.0Encodings/issues/21)
+* Changed sequence of properties in `core:AbstractSpaceType`. [#22](https://github.com/opengeospatial/CityGML-3.0Encodings/issues/22)
 
 ### 3.0.0-draft.2019.06.05.1 (2019-06-05)
 
