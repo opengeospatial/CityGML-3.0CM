@@ -1,6 +1,23 @@
 Change Log
 ==========
 
+### 3.0.0-draft.2019.18.10.1 (2019-18-10)
+
+This is a new release of the draft OGC CityGML 3.0 Conceptual Model.
+
+#### Changes
+
+* Moved attribute `surfaceMaterial` from `TrafficSpace`/`AuxiliaryTrafficSpace` to `TrafficArea`/`AuxiliaryTrafficArea`. [#78](https://github.com/opengeospatial/CityGML-3.0CM/issues/78)
+* Class `ImplicitGeometry`: made attribute `transformationMatrix` mandatory. [#73](https://github.com/opengeospatial/CityGML-3.0CM/issues/73)
+* Added `class`, `function`, and `usage` to `Door` and `Window`. [#76](https://github.com/opengeospatial/CityGML-3.0CM/issues/76)
+* Changed composition between `AbstractBuilding` and `AbstractBuildingSubdivision` to aggregation. [#71](https://github.com/opengeospatial/CityGML-3.0CM/issues/71)
+* Introduced the abstract classes `AbstractAppearance`, `AbstractDynamizer`, `AbstractGenericAttribute`, `AbstractPointCloud`, `AbstractVersion`, and `AbstractVersionTransition` to remove dependencies of the Core module to the thematic modules Appearance, Dynamizer, Generics, PointCloud, and Versioning. [#68](https://github.com/opengeospatial/CityGML-3.0CM/issues/68)
+* Added code list classes to every module. [#10](https://github.com/opengeospatial/CityGML-3.0CM/issues/10)
+* Corrected OCL constraint of the class `PointCloud`. [#91](https://github.com/opengeospatial/CityGML-3.0CM/issues/91)
+* Added a `lod0MultiSurface` geometry property to `AbstractThematicSurface`. [#92](https://github.com/opengeospatial/CityGML-3.0CM/issues/92)
+* Change stereotype of `ImplicitGeometry` from `<<FeatureType>>` to `<<ObjectType>>`. [#86](https://github.com/opengeospatial/CityGML-3.0CM/issues/86)
+* An association from `CityObjectRelation` to `AbstractGenericAttribute` was defined in the Core module. This allowed for removing the class `GenericCityObjectRelation` in the Generics module. [#80](https://github.com/opengeospatial/CityGML-3.0CM/issues/80)
+
 ### 3.0.0-draft.2019.06.05.1 (2019-06-05)
 
 #### Changes
