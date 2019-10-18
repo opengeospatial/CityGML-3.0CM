@@ -1,7 +1,7 @@
 Change Log
 ==========
 
-### 3.0.0-draft.2019.18.10.1 (2019-18-10)
+### 3.0.0-draft.2019.10.18.1 (2019-10-18)
 
 This is a new release of the draft OGC CityGML 3.0 Conceptual Model.
 
