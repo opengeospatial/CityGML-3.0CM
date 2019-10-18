@@ -3,8 +3,6 @@ Change Log
 
 ### 3.0.0-draft.2019.10.18.1 (2019-10-18)
 
-This is a new release of the draft OGC CityGML 3.0 Conceptual Model.
-
 #### Changes
 
 * Moved attribute `surfaceMaterial` from `TrafficSpace`/`AuxiliaryTrafficSpace` to `TrafficArea`/`AuxiliaryTrafficArea`. [#78](https://github.com/opengeospatial/CityGML-3.0CM/issues/78)
@@ -73,4 +71,4 @@ are now more precise.
   * This is now similar to the relation concept in IFC.
 
 ##### GML application schemas and test datasets
-GML application schemas and test datasets are available from the [releases section](https://github.com/opengeospatial/CityGML-3.0Encodings/releases/tag/3.0.0-draft.2018.12.17.1) of the CityGML-3.0Encodings repository. Please make sure to download the matching release.
+GML application schemas and test datasets are available from the [releases section](https://github.com/opengeospatial/CityGML-3.0Encodings/releases) of the CityGML-3.0Encodings repository. Please make sure to download the matching release.
