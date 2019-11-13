@@ -1,6 +1,60 @@
 Change Log
 ==========
 
+### 3.0.0-draft.2019.11.13.1 (2019-11-13)
+
+#### Changes
+
+* The attribute `engineeringCRS` was added to the class `CityModel` to define a local coordinate system in a CityGML file.
+The attribute is encoded as metadata property in the XML Schema. [#45](https://github.com/opengeospatial/CityGML-3.0CM/issues/45)
+
+* The Transportation module was refined. [#64](https://github.com/opengeospatial/CityGML-3.0CM/issues/64)
+  * The new concepts `Waterway`, `Intersection`, and `Marking` were added
+  * The `TransportationComplex` is now modelled as `AbstractTransportationSpace`, and the class
+    `TransportationSpace` was removed. [#82](https://github.com/opengeospatial/CityGML-3.0CM/issues/82)
+  * The classes `Track`, `Road`, `Waterway`, `Railway`, and `Square` have now the stereotype
+   `<<TopLevelFeatureType>>`. [#81](https://github.com/opengeospatial/CityGML-3.0CM/issues/81)
+  * The attributes `class`, `function`, and `usage` were removed from the class `AbstractTransportationSpace`
+   and are now defined separately for the classes `Track`, `Road`, `Waterway`, `Railway`, and `Square` to
+   allow individual codelists for each feature type.
+  * `AuxiliaryTrafficSpace` is now a subclass of `AbstractUnoccupiedSpace` instead of `AbstractPhysicalSpace`.
+  * The subclasses `Drain`, `Manhole`, and `RoadwayDamage` were removed and instead were added as entries to 
+   the codelist for the `class` attribute of the feature type `Hole`.
+  * The attribute `granularity` was added to the classes `TrafficSpace` and `AuxiliaryTrafficSpace` to be able
+  to model traffic spaces at different levels of granularity. The allowed values `area`, `way` and `lane` 
+  are defined as enumeration `GranularityValue`.
+  * A class `HoleSurface` was introduced to be able to represent the boundary surface of a hole.
+  * The property `trafficFlow` was renamed to `trafficDirection`, its datatype was changed to an enumeration, 
+  and it was moved from the class `Section` to the two classes `AbstractTransportationSpace` and `TrafficSpace`.
+  * The `GM_Complex` geometry as well as the `network` associations from `TrafficSpace` and 
+  `AbstractTransportationSpace` to `GM_Complex` were removed from the Transportation module. Instead, the 
+  property `lod0MultiCurve` was added to `AbstractSpace` in the Core module, which allows for representing every
+  space through a `GM_MultiCurve` in LOD 0.
+
+* The Dynamizer module was refined. [#94](https://github.com/opengeospatial/CityGML-3.0CM/issues/94)
+  * The `SensorConnection` data type contains new attributes to connect to different Sensor APIs using HTTP 
+  requests, MQTT Brokers, and Security parameters.
+  * The `AbstractAtomicTimeseries` class no longer imports the OGC standards TimeSeriesML and 
+  Observations & Measurements (O&M). Instead, by means of the three subclasses `TabulatedFileTimeseries`,
+  `StandardFileTimeseries`, and `GenericTimeseries` it is now possible to link to standardized timeseries files
+   such as TimeseriesML 1.0 and O&M 2.0, to link to tabulated files such as CSV, and to represent basic 
+   time-value pairs for different types of properties such as integer, double, appearances, geometries, and 
+   ImplicitGeometries. A main motivation for this change was to reduce the dependencies and tight coupling 
+   to other standards, and thus to ease implementations.
+  * The properties `firstTimestamp` and `lastTimestamp` were added to the class `AbstractTimeseries` to make
+  them available for all subclasses.
+  * The data type `URI` was changed to `CharacterString` for the attributes `attributeRef`, `linkToObservation`,
+   and `linkToSensorDescription` to be able to represent XPath expressions.
+  * The association `isComponent` was renamed into `component`.
+
+- The Relief module was refined. [#97](https://github.com/opengeospatial/CityGML-3.0CM/issues/97)
+  * The classes `ReliefFeature` and `AbstractReliefComponent` are now defined as subclasses of the class 
+  `AbstractSpaceBoundary`. The class `AbstractSpaceBoundary`, in turn, was introduced in the Core module as
+  superclass of `AbstractThematicSurface`.
+  * The class `TINRelief` is again associated with `GM_TriangulatedSurface` as in CityGML 2.0.
+  * The class `MassPointRelief` is again associated with `GM_MultiPoint` as in CityGML 2.0. In addition, it is
+   can also be represented using an `AbstractPointCloud`. 
+
 ### 3.0.0-draft.2019.10.18.1 (2019-10-18)
 
 #### Changes
