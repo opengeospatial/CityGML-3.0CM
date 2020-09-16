@@ -1,5 +1,11 @@
 The spreadsheet summarising the progress on the github issues in the bi-weekly web conferences can be accessed here: https://docs.google.com/spreadsheets/d/1W125JKqL2CztRiU8RSRXa8cIRJm3TB5Fdue8OtC0pIg/edit#gid=105567035
 
+The CityGML 3.0 Conceptual Model Standard is available in [PDF](http://docs.ogc.org/DRAFTS/20-010.pdf) and [HTML](http://docs.ogc.org/DRAFTS/20-010.html)
+
+A CityGML 3.0 Users Guide is provided in addition to the CityGML 3.0 standard. The Users Guide provides non-normative information which may be of value to users of the Standard. 
+
+The CityGML 3.0 Users Guide is available in [PDF](http://docs.ogc.org/DRAFTS/20-066.pdf) and [HTML](http://docs.ogc.org/DRAFTS/20-066.html)
+
 ---
 
 CityGML 3.0 Conceptual Model
