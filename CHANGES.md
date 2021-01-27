@@ -29,28 +29,22 @@ Change Log
   * The name of the class `TopologicRelationTypeValue` was changed to `TopologicalRelationTypeValue`. [#132](https://github.com/opengeospatial/CityGML-3.0CM/issues/132)
 
 * Building module
-  * The class `RoomElevationReferenceValue` was changed from enumeration to code list.
   * The bi-directional association between `BuildingUnit` and `Storey` was split into two uni-directional associations. [#119](https://github.com/opengeospatial/CityGML-3.0CM/issues/119)
 
 * CityObjectGroup module
   * Class `Role`: The multiplicity of the attribute `role` was changed from [1] to [0..1].
   
 * Construction module
-  * The class `ElevationReferenceValue` was changed from enumeration to code list.
   * Class `Door`: The names of the property types were changed from `WindowClassValue`, `WindowFunctionValue`, `WindowUsageValue` to `DoorClassValue`, `DoorFunctionValue`, `DoorUsageValue`. [#106](https://github.com/opengeospatial/CityGML-3.0CM/issues/106)
 
 * Dynamizer module
   * The names of the following code lists were changed: `SensorConnectionValue` into `SensorConnectionTypeValue`, `StandardFileValue` into `StandardFileTypeValue`, `TabulatedFileValue` into `TabulatedFileTypeValue`, and `AuthenticationValue` into `AuthenticationTypeValue`.
   
 * Generics module
-  * The attribute `name` was moved from the class `AbstractGenericAttribute` to its subclasses `GenericAttributeSet`, `StringAttribute`, `IntAttribute`, `DoubleAttribute`, `DateAttribute`, `UriAttribute`, and `MeasureAttribute`.
   * The data type `CodeAttribute` was added.
   
 * Transportation module
   * `TransportationSpaceClassValue`, `TransportationSpaceFunctionValue`, and `TransportationSpaceUsageValue` were removed. [#117](https://github.com/opengeospatial/CityGML-3.0CM/issues/117)
-
-* WaterBody module
-  * The class `WaterClosureSurface` was removed, because the closure surface is already defined by the class `ClosureSurface` in the `Core` module.
 
 ### 3.0.0-draft.2019.11.13.1 (2019-11-13)
 
@@ -105,6 +99,19 @@ The attribute is encoded as metadata property in the XML Schema. [#45](https://g
   * The class `TINRelief` is again associated with `GM_TriangulatedSurface` as in CityGML 2.0.
   * The class `MassPointRelief` is again associated with `GM_MultiPoint` as in CityGML 2.0. In addition, it is
    can also be represented using an `AbstractPointCloud`. 
+  
+- Building module
+  * The class `RoomElevationReferenceValue` was changed from enumeration to code list.
+  
+- Construction module
+  * The class `ElevationReferenceValue` was changed from enumeration to code list.
+
+- Generics module
+  * The attribute `name` was moved from the class `AbstractGenericAttribute` to its subclasses `GenericAttributeSet`, `StringAttribute`, `IntAttribute`, `DoubleAttribute`, `DateAttribute`, `UriAttribute`, and `MeasureAttribute`.
+  
+- WaterBody module
+  * The class `WaterClosureSurface` was removed, because the closure surface is already defined by the class `ClosureSurface` in the `Core` module.
+
 
 ### 3.0.0-draft.2019.10.18.1 (2019-10-18)
 
