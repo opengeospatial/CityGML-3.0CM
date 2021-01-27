@@ -1,6 +1,57 @@
 Change Log
 ==========
 
+### 3.0.0-draft.2020.09.17.1 (2020-09-17)
+
+#### Changes
+
+* Definitions for all classes, attributes, data types, enumerations, code lists, basic types, etc. were added.
+* The color scheme for the UML model was simplified.
+* The dependency to ISO 19136 was replaced by a dependency to ISO 19109.
+* The new ADE mechanism was added.
+* After review of the draft specification, several conceptual, editorial, typographical, and grammatical issues were applied. See [#117](https://github.com/opengeospatial/CityGML-3.0CM/issues/117), [#118](https://github.com/opengeospatial/CityGML-3.0CM/issues/118), [#119](https://github.com/opengeospatial/CityGML-3.0CM/issues/119), [#136](https://github.com/opengeospatial/CityGML-3.0CM/issues/136), [#137](https://github.com/opengeospatial/CityGML-3.0CM/issues/137), and [#124](https://github.com/opengeospatial/CityGML-3.0CM/issues/124) for details.
+
+* Appearance module
+  * Class `TextureAssociation`: The attribute `uri` was renamed to `target`. [#105](https://github.com/opengeospatial/CityGML-3.0CM/issues/105)
+
+* Core module
+  * The names of the following code lists were changed: `QualifiedVolumeValue` into `QualifiedVolumeTypeValue`, `QualifiedAreaValue` into `QualifiedAreaTypeValue`, and `MimeValue` -> `MimeTypeValue`.
+  * The union class `CityModelMember` was added to allow for arbitrary order of the member properties of `CityModel` in encodings. [#38](https://github.com/opengeospatial/CityGML-3.0Encodings/issues/38)
+  * The following changes were applied to avoid GML-dependency in the conceptual model: [#16](https://github.com/opengeospatial/CityGML-3.0CM/issues/16) and [#18](https://github.com/opengeospatial/CityGML-3.0CM/issues/18)
+    - A language-independent `MeasureOrNilReasonList` type was added together with the classes `DoubleOrNilReasonList`, `DoubleOrNilReason`, `NilReason`, and `NilReasonEnumeration`.
+    - The class `AbstractFeature` with the attributes `featureID`, `identifier`, `name`, and `description` was added, as well as the basic type `ID`.
+    - The classes `AbstractPointCloud`, `AbstractSurfaceData`, `AbstractTimeseries`, and `Address` are derived now from the new class `AbstractFeature`.
+    - Association between `ImplicitGeometry` and `GM_Object`: The role name `relativeGMLGeometry` was renamed to `relativeGeometry`.
+    - Class `CityModelMember`: The type of the attribute `featureMember` was changed from `AnyFeature` to `AbstractFeature`.
+  * The basic type `Code` was added.
+  * The data type `XALAddressDetails` was renamed to `XALAddress` to support XAL v3.0.
+  * The role `bounds` was removed. [#117](https://github.com/opengeospatial/CityGML-3.0CM/issues/117)
+  * The name of the class `TopologicRelationTypeValue` was changed to `TopologicalRelationTypeValue`. [#132](https://github.com/opengeospatial/CityGML-3.0CM/issues/132)
+
+* Building module
+  * The class `RoomElevationReferenceValue` was changed from enumeration to code list.
+  * The bi-directional association between `BuildingUnit` and `Storey` was split into two uni-directional associations. [#119](https://github.com/opengeospatial/CityGML-3.0CM/issues/119)
+
+* CityObjectGroup module
+  * Class `Role`: The multiplicity of the attribute `role` was changed from [1] to [0..1].
+  
+* Construction module
+  * The class `ElevationReferenceValue` was changed from enumeration to code list.
+  * Class `Door`: The names of the property types were changed from `WindowClassValue`, `WindowFunctionValue`, `WindowUsageValue` to `DoorClassValue`, `DoorFunctionValue`, `DoorUsageValue`. [#106](https://github.com/opengeospatial/CityGML-3.0CM/issues/106)
+
+* Dynamizer module
+  * The names of the following code lists were changed: `SensorConnectionValue` into `SensorConnectionTypeValue`, `StandardFileValue` into `StandardFileTypeValue`, `TabulatedFileValue` into `TabulatedFileTypeValue`, and `AuthenticationValue` into `AuthenticationTypeValue`.
+  
+* Generics module
+  * The attribute `name` was moved from the class `AbstractGenericAttribute` to its subclasses `GenericAttributeSet`, `StringAttribute`, `IntAttribute`, `DoubleAttribute`, `DateAttribute`, `UriAttribute`, and `MeasureAttribute`.
+  * The data type `CodeAttribute` was added.
+  
+* Transportation module
+  * `TransportationSpaceClassValue`, `TransportationSpaceFunctionValue`, and `TransportationSpaceUsageValue` were removed. [#117](https://github.com/opengeospatial/CityGML-3.0CM/issues/117)
+
+* WaterBody module
+  * The class `WaterClosureSurface` was removed, because the closure surface is already defined by the class `ClosureSurface` in the `Core` module.
+
 ### 3.0.0-draft.2019.11.13.1 (2019-11-13)
 
 #### Changes
