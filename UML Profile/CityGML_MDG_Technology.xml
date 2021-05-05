@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<MDG.Technology version="1.0"><Documentation id="xyz" name="CityGML" version="1.0" notes="This MDG Technology defines a set of stereotypes and tagged values for defining CityGML application schemas."/><UMLProfiles><UMLProfile profiletype="uml2">
+			<Documentation id="FA5634AC-0" name="CityGML" version="1.0" notes="This profile defines a set of stereotypes and tagged values for defining CityGML application schemas."/>
+			<Content>
+				<Stereotypes>
+					<Stereotype name="ApplicationSchema" notes="An application schema according to ISO 19109 and the Generic Conceptual Model.">
+						<AppliesTo>
+							<Apply type="Package"/>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="xsdDocument" type="String" description="Name of an XML Schema document to create representing the content of this package" unit="" values="" default=""/>
+							<Tag name="targetNamespace" type="String" description="Target XML namespace of the application schema" unit="" values="" default=""/>
+							<Tag name="xmlns" type="String" description="Namespace prefix to be used as short form of the target namespace" unit="" values="" default=""/>
+							<Tag name="version" type="String" description="Current version of the application schema" unit="" values="" default=""/>
+							<Tag name="gmlProfileSchema" type="String" description="URL of the schema location of a GML profile (optional)" unit="" values="" default=""/>
+							<Tag name="language" type="String" description="" unit="" values="" default=""/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="BasicType" notes="A user-defined simple type.">
+						<AppliesTo>
+							<Apply type="Class"/>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="base" type="String" description="The base type restricted by the new type." unit="" values="" default=""/>
+							<Tag name="length" type="Integer" description="" unit="" values="" default=""/>
+							<Tag name="minLength" type="Integer" description="" unit="" values="" default=""/>
+							<Tag name="maxLength" type="Integer" description="" unit="" values="" default=""/>
+							<Tag name="rangeMinimum" type="Integer" description="" unit="" values="" default=""/>
+							<Tag name="rangeMaximum" type="Integer" description="" unit="" values="" default=""/>
+							<Tag name="itemType" type="String" description="" unit="" values="" default=""/>
+							<Tag name="xsdEncodingRule" type="enumeration" description="" unit="" values="notEncoded,iso19136_2007,gml33,citygml" default=""/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="CodeList" notes="A code list.">
+						<AppliesTo>
+							<Apply type="Class"/>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="asDictionary" type="Boolean" description="Encode code list as externally managed dictionary." unit="" values="True,False" default="true"/>
+							<Tag name="xsdEncodingRule" type="enumeration" description="" unit="" values="notEncoded,iso19136_2007,gml33,citygml" default=""/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="DataType" notes="A structured data type without identity.">
+						<AppliesTo>
+							<Apply type="DataType"/>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="noPropertyType" type="Boolean" description="Suppress creation of a standard property type that supports inline encoding." unit="" values="True,False" default="false"/>
+							<Tag name="xsdEncodingRule" type="enumeration" description="" unit="" values="notEncoded,iso19136_2007,gml33,citygml" default=""/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="FeatureType" notes="A feature type.">
+						<AppliesTo>
+							<Apply type="Class"/>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="noPropertyType" type="Boolean" description="Suppress creation of a standard property type that supports inline or by-reference encoding." unit="" values="True,False" default="false"/>
+							<Tag name="byValuePropertyType" type="Boolean" description="Create a property type that requires that the instance is encoded inline." unit="" values="True,False" default="false"/>
+							<Tag name="isCollection" type="Boolean" description="Identifies the feature type as a feature collection." unit="" values="True,False" default="false"/>
+							<Tag name="gmlMixin" type="Boolean" description="Identifies the feature type as a mixin class." unit="" values="True,False" default="false"/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="Leaf" notes="A package that is not an application schema and contains no packages.">
+						<AppliesTo>
+							<Apply type="Package"/>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="xsdDocument" type="String" description="Name of an XML Schema document to create representing the content of this package" unit="" values="" default=""/>
+							<Tag name="xsdEncodingRule" type="enumeration" description="" unit="" values="notEncoded,iso19136_2007,gml33,citygml" default=""/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="ObjectType" notes="">
+						<AppliesTo>
+							<Apply type="Class"/>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="noPropertyType" type="Boolean" description="" unit="" values="True,False" default="false"/>
+							<Tag name="byValuePropertyType" type="Boolean" description="" unit="" values="True,False" default="false"/>
+							<Tag name="isCollection" type="Boolean" description="" unit="" values="True,False" default="false"/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="Property" notes="A regular property.">
+						<AppliesTo>
+							<Apply type="Property"/>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="sequenceNumber" type="Integer" description="Unique integer value for properties of the type used to sort properties." unit="" values="" default=""/>
+							<Tag name="inlineOrByReference" type="enumeration" description="Controls whether property values may be encoded inline or by reference." unit="" values="inline,byReference,inlineOrByReference" default="inlineOrByReference"/>
+							<Tag name="isMetadata" type="Boolean" description="Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world." unit="" values="True,False" default="false"/>
+							<Tag name="xsdEncodingRule" type="enumeration" description="" unit="" values="notEncoded,iso19136_2007,gml33,citygml" default=""/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="TopLevelFeatureType" notes="" generalizes="FeatureType" baseStereotypes="FeatureType"/>
+					<Stereotype name="Union" notes="A structured data type without identity where exactly one of the properties of the type is present in any instance.">
+						<AppliesTo>
+							<Apply type="DataType"/>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="noPropertyType" type="Boolean" description="Suppress creation of a standard property type that supports inline encoding." unit="" values="True,False" default="false"/>
+							<Tag name="gmlAsGroup" type="Boolean" description="" unit="" values="True,False" default="false"/>
+							<Tag name="xsdEncodingRule" type="enumeration" description="" unit="" values="notEncoded,iso19136_2007,gml33,citygml" default=""/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="Version" notes="">
+						<AppliesTo>
+							<Apply type="Property"/>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="sequenceNumber" type="Integer" description="" unit="" values="" default=""/>
+							<Tag name="inlineOrByReference" type="enumeration" description="" unit="" values="inline,byReference,inlineOrByReference" default="inlineOrByReference"/>
+							<Tag name="isMetadata" type="Boolean" description="" unit="" values="True,False" default="false"/>
+						</TaggedValues>
+					</Stereotype>
+				</Stereotypes>
+				<TaggedValueTypes/>
+			</Content>
+		</UMLProfile>
+	</UMLProfiles></MDG.Technology>
