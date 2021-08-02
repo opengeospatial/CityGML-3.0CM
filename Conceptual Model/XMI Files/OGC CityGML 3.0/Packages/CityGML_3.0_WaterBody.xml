@@ -1,0 +1,955 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CityGML="http://www.sparxsystems.com/profiles/CityGML/1.0">
+	<xmi:Documentation exporter="Enterprise Architect" exporterVersion="6.5"/>
+	<uml:Model xmi:type="uml:Model" name="EA_Model" visibility="public">
+		<packagedElement xmi:type="uml:Package" xmi:id="EAPK_A5BC15D5_3041_4a84_BA9E_A28E1B43D317" name="WaterBody" visibility="public">
+			<packageImport xmi:type="uml:PackageImport" xmi:id="EAID_94CA0C13_28D4_447e_8DB7_C4BFC1AC9899" visibility="public" importedPackage="EAPK_FDE7D4FC_4EF3_42d1_9A94_D7340DBBD79F"/>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_27BE7F41_0641_4d63_99E7_7D853AA20FE7" name="AbstractWaterBoundarySurface" visibility="public" isAbstract="true">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_F4201E7C_B011_40ae_BC19_6AF7A7BEE204" name="adeOfAbstractWaterBoundarySurface" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_CA9CF2B4_2602_43fd_A0DC_6D8CC6A79AB3"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000001_B011_40ae_BC19_6AF7A7BEE204" value="0"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000002_B011_40ae_BC19_6AF7A7BEE204" value="-1"/>
+				</ownedAttribute>
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_4B1022E5_9D6C_488f_9F6A_AB5B3368BA46" general="EAID_BC472102_AACD_4b6a_8772_C2FAA0560D4D"/>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_4FEC38A3_07D2_4350_986E_BE01485FEACE" visibility="public">
+				<memberEnd xmi:idref="EAID_dstEC38A3_07D2_4350_986E_BE01485FEACE"/>
+				<memberEnd xmi:idref="EAID_srcEC38A3_07D2_4350_986E_BE01485FEACE"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcEC38A3_07D2_4350_986E_BE01485FEACE" visibility="public" association="EAID_4FEC38A3_07D2_4350_986E_BE01485FEACE" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_80384F70_9D84_4889_A585_1E0215420245"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000003__07D2_4350_986E_BE01485FEACE" value="0"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000004__07D2_4350_986E_BE01485FEACE" value="2"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_80384F70_9D84_4889_A585_1E0215420245" name="WaterBody" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_3E810D10_0445_4562_AB8B_CC3D1043090D" name="class" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_5CC28AE4_DBCA_44eb_9CB5_A4170E78E04C"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000005_0445_4562_AB8B_CC3D1043090D" value="0"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000006_0445_4562_AB8B_CC3D1043090D" value="1"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_D9BE7F6A_53E2_4ded_BA4D_91A72E4D735C" name="function" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_1513B6AD_44CF_4f92_8387_018ADCD7C77D"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000007_53E2_4ded_BA4D_91A72E4D735C" value="0"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000008_53E2_4ded_BA4D_91A72E4D735C" value="-1"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_C8708993_4735_47aa_A4E7_45D887946196" name="usage" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_BA5E9962_CA89_4dd7_8B60_4396417F287F"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000009_4735_47aa_A4E7_45D887946196" value="0"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000010_4735_47aa_A4E7_45D887946196" value="-1"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_16B863BD_6B5B_441f_96B4_E3592C6873A8" name="adeOfWaterBody" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_D4D099D4_5536_4269_8D05_8E07FB2FEA83"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000011_6B5B_441f_96B4_E3592C6873A8" value="0"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000012_6B5B_441f_96B4_E3592C6873A8" value="-1"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dstEC38A3_07D2_4350_986E_BE01485FEACE" name="boundary" visibility="public" association="EAID_4FEC38A3_07D2_4350_986E_BE01485FEACE" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="shared">
+					<type xmi:idref="EAID_27BE7F41_0641_4d63_99E7_7D853AA20FE7"/>
+					<lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000013__07D2_4350_986E_BE01485FEACE" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000014__07D2_4350_986E_BE01485FEACE" value="-1"/>
+				</ownedAttribute>
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_B9ACA007_1DCF_400c_8809_A7E9DB8A279A" general="EAID_599046F5_43BB_4199_B9A4_3D34B3B628C7"/>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_5CC28AE4_DBCA_44eb_9CB5_A4170E78E04C" name="WaterBodyClassValue" visibility="public"/>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_1513B6AD_44CF_4f92_8387_018ADCD7C77D" name="WaterBodyFunctionValue" visibility="public"/>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_BA5E9962_CA89_4dd7_8B60_4396417F287F" name="WaterBodyUsageValue" visibility="public"/>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_C8808C43_BEC8_4db7_87D5_B0C4C08709E5" name="WaterGroundSurface" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_8D3B3406_A4FD_4fbb_86B2_242BC2620CE6" name="adeOfWaterGroundSurface" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_9B5ABB19_3D69_4ec8_A445_6FEBC73E9A2A"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000015_A4FD_4fbb_86B2_242BC2620CE6" value="0"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000016_A4FD_4fbb_86B2_242BC2620CE6" value="-1"/>
+				</ownedAttribute>
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_E3971DA6_485F_4750_98FD_EF73FF034E56" general="EAID_27BE7F41_0641_4d63_99E7_7D853AA20FE7"/>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_2F5C42D5_F6F0_4921_B38E_FECA15BAF286" name="WaterLevelValue" visibility="public"/>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_0EB5D62C_61E4_46ea_9822_4C2C5B6AD755" name="WaterSurface" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_F5E75355_ED9C_4745_AF47_626D3546875A" name="waterLevel" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_2F5C42D5_F6F0_4921_B38E_FECA15BAF286"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000017_ED9C_4745_AF47_626D3546875A" value="0"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000018_ED9C_4745_AF47_626D3546875A" value="1"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_618A4E8A_81FD_409d_94D5_37BB849FC804" name="adeOfWaterSurface" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_48A3A99A_262F_475f_A48B_729C7A18850F"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000019_81FD_409d_94D5_37BB849FC804" value="0"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000020_81FD_409d_94D5_37BB849FC804" value="-1"/>
+				</ownedAttribute>
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_FD4EDF58_2657_4217_82F2_C3F9FB244B6C" general="EAID_27BE7F41_0641_4d63_99E7_7D853AA20FE7"/>
+			</packagedElement>
+			<packagedElement xmi:type="uml:DataType" xmi:id="EAID_CA9CF2B4_2602_43fd_A0DC_6D8CC6A79AB3" name="ADEOfAbstractWaterBoundarySurface" visibility="public" isAbstract="true"/>
+			<packagedElement xmi:type="uml:DataType" xmi:id="EAID_D4D099D4_5536_4269_8D05_8E07FB2FEA83" name="ADEOfWaterBody" visibility="public" isAbstract="true"/>
+			<packagedElement xmi:type="uml:DataType" xmi:id="EAID_9B5ABB19_3D69_4ec8_A445_6FEBC73E9A2A" name="ADEOfWaterGroundSurface" visibility="public" isAbstract="true"/>
+			<packagedElement xmi:type="uml:DataType" xmi:id="EAID_48A3A99A_262F_475f_A48B_729C7A18850F" name="ADEOfWaterSurface" visibility="public" isAbstract="true"/>
+		</packagedElement>
+		<CityGML:FeatureType base_Class="EAID_27BE7F41_0641_4d63_99E7_7D853AA20FE7" gmlMixin="false" noPropertyType="false" isCollection="false" byValuePropertyType="false"/>
+		<CityGML:Property base_Property="EAID_F4201E7C_B011_40ae_BC19_6AF7A7BEE204" isMetadata="false" inlineOrByReference="inlineOrByReference" sequenceNumber="1"/>
+		<CityGML:TopLevelFeatureType base_Class="EAID_80384F70_9D84_4889_A585_1E0215420245" gmlMixin="false" noPropertyType="false" isCollection="false" byValuePropertyType="false"/>
+		<CityGML:Property base_Property="EAID_3E810D10_0445_4562_AB8B_CC3D1043090D" isMetadata="false" inlineOrByReference="inlineOrByReference" sequenceNumber="1"/>
+		<CityGML:Property base_Property="EAID_D9BE7F6A_53E2_4ded_BA4D_91A72E4D735C" isMetadata="false" inlineOrByReference="inlineOrByReference" sequenceNumber="2"/>
+		<CityGML:Property base_Property="EAID_C8708993_4735_47aa_A4E7_45D887946196" isMetadata="false" inlineOrByReference="inlineOrByReference" sequenceNumber="3"/>
+		<CityGML:Property base_Property="EAID_16B863BD_6B5B_441f_96B4_E3592C6873A8" isMetadata="false" inlineOrByReference="inlineOrByReference" sequenceNumber="5"/>
+		<CityGML:Property base_Property="EAID_dstEC38A3_07D2_4350_986E_BE01485FEACE" xsdEncodingRule="$ea_notes=Values: notEncoded,iso19136_2007,gml33,citygml&#xA;" isMetadata="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;" inlineOrByReference="inlineOrByReference$ea_notes= Controls whether property values may be encoded inline or by reference.&#xA;" sequenceNumber="4$ea_notes= Unique integer value for properties of the type used to sort properties.&#xA;"/>
+		<CityGML:CodeList base_Class="EAID_5CC28AE4_DBCA_44eb_9CB5_A4170E78E04C" asDictionary="true"/>
+		<CityGML:CodeList base_Class="EAID_1513B6AD_44CF_4f92_8387_018ADCD7C77D" asDictionary="true"/>
+		<CityGML:CodeList base_Class="EAID_BA5E9962_CA89_4dd7_8B60_4396417F287F" asDictionary="true"/>
+		<CityGML:FeatureType base_Class="EAID_C8808C43_BEC8_4db7_87D5_B0C4C08709E5" gmlMixin="false" noPropertyType="false" isCollection="false" byValuePropertyType="false"/>
+		<CityGML:Property base_Property="EAID_8D3B3406_A4FD_4fbb_86B2_242BC2620CE6" isMetadata="false" inlineOrByReference="inlineOrByReference" sequenceNumber="1"/>
+		<CityGML:CodeList base_Class="EAID_2F5C42D5_F6F0_4921_B38E_FECA15BAF286" asDictionary="true"/>
+		<CityGML:FeatureType base_Class="EAID_0EB5D62C_61E4_46ea_9822_4C2C5B6AD755" gmlMixin="false" noPropertyType="false" isCollection="false" byValuePropertyType="false"/>
+		<CityGML:Property base_Property="EAID_F5E75355_ED9C_4745_AF47_626D3546875A" isMetadata="false" inlineOrByReference="inlineOrByReference" sequenceNumber="1"/>
+		<CityGML:Property base_Property="EAID_618A4E8A_81FD_409d_94D5_37BB849FC804" isMetadata="false" inlineOrByReference="inlineOrByReference" sequenceNumber="2"/>
+		<CityGML:DataType base_DataType="EAID_CA9CF2B4_2602_43fd_A0DC_6D8CC6A79AB3" noPropertyType="false"/>
+		<CityGML:DataType base_DataType="EAID_D4D099D4_5536_4269_8D05_8E07FB2FEA83" noPropertyType="false"/>
+		<CityGML:DataType base_DataType="EAID_9B5ABB19_3D69_4ec8_A445_6FEBC73E9A2A" noPropertyType="false"/>
+		<CityGML:DataType base_DataType="EAID_48A3A99A_262F_475f_A48B_729C7A18850F" noPropertyType="false"/>
+		<CityGML:ApplicationSchema base_Package="EAPK_A5BC15D5_3041_4a84_BA9E_A28E1B43D317" version="3.0.0" language="en" xsdDocument="waterBody.xsd" xmlns="wtr" targetNamespace="http://www.opengis.net/citygml/waterbody/3.0"/>
+	</uml:Model>
+	<xmi:Extension extender="Enterprise Architect" extenderID="6.5">
+		<elements>
+			<element xmi:idref="EAPK_A5BC15D5_3041_4a84_BA9E_A28E1B43D317" xmi:type="uml:Package" name="WaterBody" scope="public">
+				<model package2="EAID_A5BC15D5_3041_4a84_BA9E_A28E1B43D317" package="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A" tpos="0" ea_localid="18" ea_eleType="package"/>
+				<properties documentation="The WaterBody module supports representation of the thematic aspects and 3D geometry of rivers, canals, lakes, and basins. It does, however, not inherit any hydrological or other dynamic aspects of fluid flow." isSpecification="false" sType="Package" nType="0" scope="public" stereotype="ApplicationSchema"/>
+				<project author="ebbinghaus" version="1.0" phase="1.0" created="2012-11-26 12:48:30" modified="2020-02-27 17:57:03" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_48460EC2_A4E8_72a4_B5C5_56E8000CDA75" name="gmlProfileSchema" value="#NOTES#Description: URL of the schema location of a GML profile (optional)&#xA;" modelElement="EAID_A5BC15D5_3041_4a84_BA9E_A28E1B43D317"/>
+					<tag xmi:id="EAID_DEB7F7C4_CC2A_41cc_9A9B_689196DA185F" name="language" value="en" modelElement="EAID_A5BC15D5_3041_4a84_BA9E_A28E1B43D317"/>
+					<tag xmi:id="EAID_393CD814_DD9A_9cdd_9F73_AEA1081059E4" name="targetNamespace" value="http://www.opengis.net/citygml/waterbody/3.0#NOTES#Description: Target XML namespace of the application schema&#xA;" modelElement="EAID_A5BC15D5_3041_4a84_BA9E_A28E1B43D317"/>
+					<tag xmi:id="EAID_6F40CEE6_AE8C_0eae_94BE_C293145F3D9E" name="version" value="3.0.0#NOTES#Description: Current version of the application schema&#xA;" modelElement="EAID_A5BC15D5_3041_4a84_BA9E_A28E1B43D317"/>
+					<tag xmi:id="EAID_08B91BD2_D9F8_1ed9_AAF4_6A5185D66C9B" name="xmlns" value="wtr#NOTES#Description: Namespace prefix to be used as short form of the target namespace&#xA;" modelElement="EAID_A5BC15D5_3041_4a84_BA9E_A28E1B43D317"/>
+					<tag xmi:id="EAID_6E79370E_DD94_9fdd_8484_94BFB4C6EF95" name="xsdDocument" value="waterBody.xsd#NOTES#Description: Name of an XML Schema document to create representing the content of this package&#xA;" modelElement="EAID_A5BC15D5_3041_4a84_BA9E_A28E1B43D317"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={1450DB55-B437-4750-91C2-AC7C00E5068A}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=ApplicationSchema;FQName=CityGML::ApplicationSchema;@ENDSTEREO;$DES;$CLT={A5BC15D5-3041-4a84-BA9E-A28E1B43D317}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="CityGML"/>
+				<packageproperties version="1.0" xmiver="Enterprise Architect XMI/UML 1.3" tpos="0"/>
+				<paths/>
+				<times created="2012-11-26 12:48:30" modified="2020-02-27 17:57:03" lastloaddate="2017-06-23 14:44:19" lastsavedate="2013-04-17 14:47:25"/>
+				<flags iscontrolled="FALSE" isprotected="FALSE" batchsave="0" batchload="0" usedtd="FALSE" logxml="FALSE" packageFlags="Recurse=0;"/>
+			</element>
+			<element xmi:idref="EAID_27BE7F41_0641_4d63_99E7_7D853AA20FE7" xmi:type="uml:Class" name="AbstractWaterBoundarySurface" scope="public">
+				<model package="EAPK_A5BC15D5_3041_4a84_BA9E_A28E1B43D317" tpos="0" ea_localid="157" ea_eleType="element"/>
+				<properties documentation="AbstractWaterBoundarySurface is the abstract superclass for all kinds of thematic surfaces bounding a water body." isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="true" isActive="false"/>
+				<project author="ebbinghaus" version="1.0" phase="1.0" created="2012-07-09 14:11:25" modified="2020-05-28 13:23:48" complexity="1" status="Proposed"/>
+				<code product_name="Java" gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_ED33D65F_A24E_81a2_B287_CADE3D33E05B" name="byValuePropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Create a property type that requires that the instance is encoded inline.&#xA;" modelElement="EAID_27BE7F41_0641_4d63_99E7_7D853AA20FE7"/>
+					<tag xmi:id="EAID_D8E5B7C5_7754_6c77_A034_C84AA40C49DC" name="gmlMixin" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Identifies the feature type as a mixin class.&#xA;" modelElement="EAID_27BE7F41_0641_4d63_99E7_7D853AA20FE7"/>
+					<tag xmi:id="EAID_26B33348_1E57_d91e_9EEC_02CCC1BC0563" name="isCollection" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Identifies the feature type as a feature collection.&#xA;" modelElement="EAID_27BE7F41_0641_4d63_99E7_7D853AA20FE7"/>
+					<tag xmi:id="EAID_F9638764_E613_9ee6_B823_0FF526C5316E" name="noPropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Suppress creation of a standard property type that supports inline or by-reference encoding.&#xA;" modelElement="EAID_27BE7F41_0641_4d63_99E7_7D853AA20FE7"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={5E09B545-F3DE-4b54-8C6C-C936A04BA298}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=FeatureType;FQName=CityGML::FeatureType;@ENDSTEREO;$DES;$CLT={27BE7F41-0641-4d63-99E7-7D853AA20FE7}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={48C28E51-AD63-464e-83BC-3BEAC3E2B2AE}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isActive@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={27BE7F41-0641-4d63-99E7-7D853AA20FE7}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="WaterBody"/>
+				<attributes>
+					<attribute xmi:idref="EAID_F4201E7C_B011_40ae_BC19_6AF7A7BEE204" name="adeOfAbstractWaterBoundarySurface" scope="Public">
+						<initial/>
+						<documentation value="Augments AbstractWaterBoundarySurface with properties defined in an ADE."/>
+						<model ea_localid="10572" ea_guid="{F4201E7C-B011-40ae-BC19-6AF7A7BEE204}"/>
+						<properties type="ADEOfAbstractWaterBoundarySurface" collection="false" static="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype stereotype="Property"/>
+						<bounds lower="0" upper="*"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;union=0;"/>
+						<tags>
+							<tag xmi:id="EAID_E810E922_58E8_b658_8AFA_AC7F92E61B21" name="sequenceNumber" value="1" notes="Description: Unique integer value for properties of the type used to sort properties.&#xA;"/>
+							<tag xmi:id="EAID_37DFCA0A_B550_b0b5_A7E5_2DAFAB63E1F6" name="inlineOrByReference" value="inlineOrByReference" notes="Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;"/>
+							<tag xmi:id="EAID_08A8199D_FE63_35fe_B7D9_4DE271072C68" name="isMetadata" value="false" notes="Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;"/>
+							<tag xmi:id="EAID_BCD3CBEE_9454_f194_B0F9_CF1FA79F6E3C" name="xsdEncodingRule" notes="Values: notEncoded,iso19136_2007,gml33,citygml&#xA;"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={66E64DB8-373F-404f-83FB-65FB09C53AB8}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;FQName=CityGML::Property;@ENDSTEREO;$DES;$CLT={F4201E7C-B011-40ae-BC19-6AF7A7BEE204}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+					</attribute>
+				</attributes>
+				<links>
+					<Generalization xmi:id="EAID_4B1022E5_9D6C_488f_9F6A_AB5B3368BA46" start="EAID_27BE7F41_0641_4d63_99E7_7D853AA20FE7" end="EAID_BC472102_AACD_4b6a_8772_C2FAA0560D4D"/>
+					<Association xmi:id="EAID_4FEC38A3_07D2_4350_986E_BE01485FEACE" start="EAID_80384F70_9D84_4889_A585_1E0215420245" end="EAID_27BE7F41_0641_4d63_99E7_7D853AA20FE7"/>
+					<Generalization xmi:id="EAID_E3971DA6_485F_4750_98FD_EF73FF034E56" start="EAID_C8808C43_BEC8_4db7_87D5_B0C4C08709E5" end="EAID_27BE7F41_0641_4d63_99E7_7D853AA20FE7"/>
+					<Generalization xmi:id="EAID_FD4EDF58_2657_4217_82F2_C3F9FB244B6C" start="EAID_0EB5D62C_61E4_46ea_9822_4C2C5B6AD755" end="EAID_27BE7F41_0641_4d63_99E7_7D853AA20FE7"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_80384F70_9D84_4889_A585_1E0215420245" xmi:type="uml:Class" name="WaterBody" scope="public">
+				<model package="EAPK_A5BC15D5_3041_4a84_BA9E_A28E1B43D317" tpos="0" ea_localid="159" ea_eleType="element"/>
+				<properties documentation="A WaterBody represents significant and permanent or semi-permanent accumulations of surface water, usually covering a part of the Earth." isSpecification="false" sType="Class" nType="0" scope="public" stereotype="TopLevelFeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="ebbinghaus" version="1.0" phase="1.0" created="2012-07-09 14:11:25" modified="2020-05-28 13:23:02" complexity="1" status="Proposed"/>
+				<code product_name="Java" gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_ED33D65F_A24E_81a2_AC59_4FE4E47552BD" name="byValuePropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Create a property type that requires that the instance is encoded inline.&#xA;" modelElement="EAID_80384F70_9D84_4889_A585_1E0215420245"/>
+					<tag xmi:id="EAID_D8E5B7C5_7754_6c77_8735_2747A750479F" name="gmlMixin" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Identifies the feature type as a mixin class.&#xA;" modelElement="EAID_80384F70_9D84_4889_A585_1E0215420245"/>
+					<tag xmi:id="EAID_26B33348_1E57_d91e_8E62_7DA98554B895" name="isCollection" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Identifies the feature type as a feature collection.&#xA;" modelElement="EAID_80384F70_9D84_4889_A585_1E0215420245"/>
+					<tag xmi:id="EAID_F9638764_E613_9ee6_90AE_5B25D05B5D4E" name="noPropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Suppress creation of a standard property type that supports inline or by-reference encoding.&#xA;" modelElement="EAID_80384F70_9D84_4889_A585_1E0215420245"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={7102CBC4-8192-4b48-BA98-D048F98D2607}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=TopLevelFeatureType;FQName=CityGML::TopLevelFeatureType;@ENDSTEREO;$DES;$CLT={80384F70-9D84-4889-A585-1E0215420245}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={8F7D84BC-C464-4221-A087-416003760972}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isActive@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={80384F70-9D84-4889-A585-1E0215420245}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="WaterBody"/>
+				<attributes>
+					<attribute xmi:idref="EAID_3E810D10_0445_4562_AB8B_CC3D1043090D" name="class" scope="Public">
+						<initial/>
+						<documentation value="Indicates the specific type of the WaterBody."/>
+						<model ea_localid="223" ea_guid="{3E810D10-0445-4562-AB8B-CC3D1043090D}"/>
+						<properties type="WaterBodyClassValue" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype stereotype="Property"/>
+						<bounds lower="0" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="IsLiteral=0;volatile=0;union=0;"/>
+						<tags>
+							<tag xmi:id="EAID_E810E922_58E8_b658_8BD9_EA335DA52D77" name="sequenceNumber" value="1" notes="Description: Unique integer value for properties of the type used to sort properties.&#xA;"/>
+							<tag xmi:id="EAID_37DFCA0A_B550_b0b5_B50F_9198804FF1EA" name="inlineOrByReference" value="inlineOrByReference" notes="Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;"/>
+							<tag xmi:id="EAID_08A8199D_FE63_35fe_8069_CCD4AF5E2DF4" name="isMetadata" value="false" notes="Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;"/>
+							<tag xmi:id="EAID_BCD3CBEE_9454_f194_9462_8E893038ED63" name="xsdEncodingRule" notes="Values: notEncoded,iso19136_2007,gml33,citygml&#xA;"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={0D492552-D76E-4b1c-89B2-4E68F7B17385}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;FQName=CityGML::Property;@ENDSTEREO;$DES;$CLT={3E810D10-0445-4562-AB8B-CC3D1043090D}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+					</attribute>
+					<attribute xmi:idref="EAID_D9BE7F6A_53E2_4ded_BA4D_91A72E4D735C" name="function" scope="Public">
+						<initial/>
+						<documentation value="Specifies the intended purposes of the WaterBody."/>
+						<model ea_localid="224" ea_guid="{D9BE7F6A-53E2-4ded-BA4D-91A72E4D735C}"/>
+						<properties type="WaterBodyFunctionValue" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="1"/>
+						<stereotype stereotype="Property"/>
+						<bounds lower="0" upper="*"/>
+						<options/>
+						<style/>
+						<styleex value="IsLiteral=0;volatile=0;union=0;"/>
+						<tags>
+							<tag xmi:id="EAID_E810E922_58E8_b658_BA5A_25B4253CC429" name="sequenceNumber" value="2" notes="Description: Unique integer value for properties of the type used to sort properties.&#xA;"/>
+							<tag xmi:id="EAID_37DFCA0A_B550_b0b5_B4D9_4967C4AC214F" name="inlineOrByReference" value="inlineOrByReference" notes="Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;"/>
+							<tag xmi:id="EAID_08A8199D_FE63_35fe_85CF_2029F6E0F940" name="isMetadata" value="false" notes="Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;"/>
+							<tag xmi:id="EAID_BCD3CBEE_9454_f194_A166_B8D62EFE8ED3" name="xsdEncodingRule" notes="Values: notEncoded,iso19136_2007,gml33,citygml&#xA;"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={BD2E43D5-B64C-4853-88B6-E831A26B2D23}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;FQName=CityGML::Property;@ENDSTEREO;$DES;$CLT={D9BE7F6A-53E2-4ded-BA4D-91A72E4D735C}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+					</attribute>
+					<attribute xmi:idref="EAID_C8708993_4735_47aa_A4E7_45D887946196" name="usage" scope="Public">
+						<initial/>
+						<documentation value="Specifies the actual uses of the WaterBody."/>
+						<model ea_localid="225" ea_guid="{C8708993-4735-47aa-A4E7-45D887946196}"/>
+						<properties type="WaterBodyUsageValue" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="2"/>
+						<stereotype stereotype="Property"/>
+						<bounds lower="0" upper="*"/>
+						<options/>
+						<style/>
+						<styleex value="IsLiteral=0;volatile=0;union=0;"/>
+						<tags>
+							<tag xmi:id="EAID_E810E922_58E8_b658_AEBA_516816A12CA8" name="sequenceNumber" value="3" notes="Description: Unique integer value for properties of the type used to sort properties.&#xA;"/>
+							<tag xmi:id="EAID_37DFCA0A_B550_b0b5_B37A_36193B46B9B9" name="inlineOrByReference" value="inlineOrByReference" notes="Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;"/>
+							<tag xmi:id="EAID_08A8199D_FE63_35fe_8B80_01FA708E36F8" name="isMetadata" value="false" notes="Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;"/>
+							<tag xmi:id="EAID_BCD3CBEE_9454_f194_914C_6442571E3CE8" name="xsdEncodingRule" notes="Values: notEncoded,iso19136_2007,gml33,citygml&#xA;"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={BDBC2620-1110-454e-AEBF-EF4F2FF8EB0F}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;FQName=CityGML::Property;@ENDSTEREO;$DES;$CLT={C8708993-4735-47aa-A4E7-45D887946196}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+					</attribute>
+					<attribute xmi:idref="EAID_16B863BD_6B5B_441f_96B4_E3592C6873A8" name="adeOfWaterBody" scope="Public">
+						<initial/>
+						<documentation value="Augments the WaterBody with properties defined in an ADE."/>
+						<model ea_localid="10571" ea_guid="{16B863BD-6B5B-441f-96B4-E3592C6873A8}"/>
+						<properties type="ADEOfWaterBody" collection="false" static="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0"/>
+						<containment containment="Not Specified" position="3"/>
+						<stereotype stereotype="Property"/>
+						<bounds lower="0" upper="*"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;union=0;"/>
+						<tags>
+							<tag xmi:id="EAID_E810E922_58E8_b658_93B0_9A2C1A901A17" name="sequenceNumber" value="5" notes="Description: Unique integer value for properties of the type used to sort properties.&#xA;"/>
+							<tag xmi:id="EAID_37DFCA0A_B550_b0b5_B1A5_441AACB8551C" name="inlineOrByReference" value="inlineOrByReference" notes="Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;"/>
+							<tag xmi:id="EAID_08A8199D_FE63_35fe_95CB_57E9976B3239" name="isMetadata" value="false" notes="Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;"/>
+							<tag xmi:id="EAID_BCD3CBEE_9454_f194_9DC4_5B657BF73E68" name="xsdEncodingRule" notes="Values: notEncoded,iso19136_2007,gml33,citygml&#xA;"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={E3788313-69AE-4614-8C18-66A03F6D2965}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;FQName=CityGML::Property;@ENDSTEREO;$DES;$CLT={16B863BD-6B5B-441f-96B4-E3592C6873A8}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+					</attribute>
+				</attributes>
+				<links>
+					<Association xmi:id="EAID_4FEC38A3_07D2_4350_986E_BE01485FEACE" start="EAID_80384F70_9D84_4889_A585_1E0215420245" end="EAID_27BE7F41_0641_4d63_99E7_7D853AA20FE7"/>
+					<Generalization xmi:id="EAID_B9ACA007_1DCF_400c_8809_A7E9DB8A279A" start="EAID_80384F70_9D84_4889_A585_1E0215420245" end="EAID_599046F5_43BB_4199_B9A4_3D34B3B628C7"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_5CC28AE4_DBCA_44eb_9CB5_A4170E78E04C" xmi:type="uml:Class" name="WaterBodyClassValue" scope="public">
+				<model package="EAPK_A5BC15D5_3041_4a84_BA9E_A28E1B43D317" tpos="0" ea_localid="8026" ea_eleType="element"/>
+				<properties documentation="WaterBodyClassValue is a code list used to further classify a WaterBody." isSpecification="false" sType="Class" nType="0" scope="public" stereotype="CodeList" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="Tatjana" version="1.0" phase="1.0" created="2019-09-30 10:24:58" modified="2020-05-29 23:22:04" complexity="1" status="Proposed"/>
+				<code product_name="Java" gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_0BE3FA2A_79E2_1979_A21C_DE3692D493D4" name="asDictionary" value="true#NOTES#Values: True,False&#xA;Default: true&#xA;Description: Encode code list as externally managed dictionary.&#xA;" modelElement="EAID_5CC28AE4_DBCA_44eb_9CB5_A4170E78E04C"/>
+					<tag xmi:id="EAID_BCD3CBEE_C886_55c8_AD6A_041377756D00" name="xsdEncodingRule" value="#NOTES#Values: notEncoded,iso19136_2007,gml33,citygml&#xA;" modelElement="EAID_5CC28AE4_DBCA_44eb_9CB5_A4170E78E04C"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={4D2475A2-72F3-4b4a-98AE-ED85E5299EF4}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=CodeList;FQName=CityGML::CodeList;@ENDSTEREO;$DES;$CLT={5CC28AE4-DBCA-44eb-9CB5-A4170E78E04C}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="WaterBody" ea_attsclassified="{3E810D10-0445-4562-AB8B-CC3D1043090D}"/>
+			</element>
+			<element xmi:idref="EAID_1513B6AD_44CF_4f92_8387_018ADCD7C77D" xmi:type="uml:Class" name="WaterBodyFunctionValue" scope="public">
+				<model package="EAPK_A5BC15D5_3041_4a84_BA9E_A28E1B43D317" tpos="0" ea_localid="8027" ea_eleType="element"/>
+				<properties documentation="WaterBodyFunctionValue is a code list that enumerates the different purposes of a WaterBody." isSpecification="false" sType="Class" nType="0" scope="public" stereotype="CodeList" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="Tatjana" version="1.0" phase="1.0" created="2019-09-30 10:25:06" modified="2019-12-17 14:20:30" complexity="1" status="Proposed"/>
+				<code product_name="Java" gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_0BE3FA2A_79E2_1979_B699_7227CFCFC8D4" name="asDictionary" value="true#NOTES#Values: True,False&#xA;Default: true&#xA;Description: Encode code list as externally managed dictionary.&#xA;" modelElement="EAID_1513B6AD_44CF_4f92_8387_018ADCD7C77D"/>
+					<tag xmi:id="EAID_BCD3CBEE_C886_55c8_9F93_EF9C7436B5CF" name="xsdEncodingRule" value="#NOTES#Values: notEncoded,iso19136_2007,gml33,citygml&#xA;" modelElement="EAID_1513B6AD_44CF_4f92_8387_018ADCD7C77D"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={FEAB33BE-8C3F-437f-90DC-5665969CED19}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=CodeList;FQName=CityGML::CodeList;@ENDSTEREO;$DES;$CLT={1513B6AD-44CF-4f92-8387-018ADCD7C77D}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="WaterBody" ea_attsclassified="{D9BE7F6A-53E2-4ded-BA4D-91A72E4D735C}"/>
+			</element>
+			<element xmi:idref="EAID_BA5E9962_CA89_4dd7_8B60_4396417F287F" xmi:type="uml:Class" name="WaterBodyUsageValue" scope="public">
+				<model package="EAPK_A5BC15D5_3041_4a84_BA9E_A28E1B43D317" tpos="0" ea_localid="8028" ea_eleType="element"/>
+				<properties documentation="WaterBodyUsageValue is a code list that enumerates the different uses of a WaterBody." isSpecification="false" sType="Class" nType="0" scope="public" stereotype="CodeList" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="Tatjana" version="1.0" phase="1.0" created="2019-09-30 10:25:14" modified="2019-12-17 14:20:38" complexity="1" status="Proposed"/>
+				<code product_name="Java" gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_0BE3FA2A_79E2_1979_8870_97F7C5BC1F80" name="asDictionary" value="true#NOTES#Values: True,False&#xA;Default: true&#xA;Description: Encode code list as externally managed dictionary.&#xA;" modelElement="EAID_BA5E9962_CA89_4dd7_8B60_4396417F287F"/>
+					<tag xmi:id="EAID_BCD3CBEE_C886_55c8_B0A4_93BAFD324688" name="xsdEncodingRule" value="#NOTES#Values: notEncoded,iso19136_2007,gml33,citygml&#xA;" modelElement="EAID_BA5E9962_CA89_4dd7_8B60_4396417F287F"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={B1D777AC-9529-4fe7-A622-600F9313A7F2}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=CodeList;FQName=CityGML::CodeList;@ENDSTEREO;$DES;$CLT={BA5E9962-CA89-4dd7-8B60-4396417F287F}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="WaterBody" ea_attsclassified="{C8708993-4735-47aa-A4E7-45D887946196}"/>
+			</element>
+			<element xmi:idref="EAID_C8808C43_BEC8_4db7_87D5_B0C4C08709E5" xmi:type="uml:Class" name="WaterGroundSurface" scope="public">
+				<model package="EAPK_A5BC15D5_3041_4a84_BA9E_A28E1B43D317" tpos="0" ea_localid="161" ea_eleType="element"/>
+				<properties documentation="A WaterGroundSurface represents the exterior boundary surface of the submerged bottom of a water body." isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="ebbinghaus" version="1.0" phase="1.0" created="2012-07-09 14:11:25" modified="2020-05-26 11:39:30" complexity="1" status="Proposed"/>
+				<code product_name="Java" gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_ED33D65F_A24E_81a2_880E_14F16EFC42B8" name="byValuePropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Create a property type that requires that the instance is encoded inline.&#xA;" modelElement="EAID_C8808C43_BEC8_4db7_87D5_B0C4C08709E5"/>
+					<tag xmi:id="EAID_D8E5B7C5_7754_6c77_867F_22F5407A1990" name="gmlMixin" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Identifies the feature type as a mixin class.&#xA;" modelElement="EAID_C8808C43_BEC8_4db7_87D5_B0C4C08709E5"/>
+					<tag xmi:id="EAID_26B33348_1E57_d91e_8068_2DC94DA39903" name="isCollection" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Identifies the feature type as a feature collection.&#xA;" modelElement="EAID_C8808C43_BEC8_4db7_87D5_B0C4C08709E5"/>
+					<tag xmi:id="EAID_F9638764_E613_9ee6_8B45_CD94A705FD2F" name="noPropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Suppress creation of a standard property type that supports inline or by-reference encoding.&#xA;" modelElement="EAID_C8808C43_BEC8_4db7_87D5_B0C4C08709E5"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={07164D97-B5DA-4eaf-837C-D7BC70C85461}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=FeatureType;FQName=CityGML::FeatureType;@ENDSTEREO;$DES;$CLT={C8808C43-BEC8-4db7-87D5-B0C4C08709E5}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={5F536368-C072-430d-9062-C2913A009173}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isActive@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={C8808C43-BEC8-4db7-87D5-B0C4C08709E5}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="WaterBody"/>
+				<attributes>
+					<attribute xmi:idref="EAID_8D3B3406_A4FD_4fbb_86B2_242BC2620CE6" name="adeOfWaterGroundSurface" scope="Public">
+						<initial/>
+						<documentation value="Augments the WaterGroundSurface with properties defined in an ADE."/>
+						<model ea_localid="10573" ea_guid="{8D3B3406-A4FD-4fbb-86B2-242BC2620CE6}"/>
+						<properties type="ADEOfWaterGroundSurface" collection="false" static="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype stereotype="Property"/>
+						<bounds lower="0" upper="*"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;union=0;"/>
+						<tags>
+							<tag xmi:id="EAID_E810E922_58E8_b658_BAC7_74A3FBB9D57F" name="sequenceNumber" value="1" notes="Description: Unique integer value for properties of the type used to sort properties.&#xA;"/>
+							<tag xmi:id="EAID_37DFCA0A_B550_b0b5_B640_0611D0C9196C" name="inlineOrByReference" value="inlineOrByReference" notes="Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;"/>
+							<tag xmi:id="EAID_08A8199D_FE63_35fe_8DC1_636FB440E0FB" name="isMetadata" value="false" notes="Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;"/>
+							<tag xmi:id="EAID_BCD3CBEE_9454_f194_8D4B_E438771A82F0" name="xsdEncodingRule" notes="Values: notEncoded,iso19136_2007,gml33,citygml&#xA;"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={E58AA342-9344-492a-AAE4-25C40FE38B25}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;FQName=CityGML::Property;@ENDSTEREO;$DES;$CLT={8D3B3406-A4FD-4fbb-86B2-242BC2620CE6}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+					</attribute>
+				</attributes>
+				<links>
+					<Generalization xmi:id="EAID_E3971DA6_485F_4750_98FD_EF73FF034E56" start="EAID_C8808C43_BEC8_4db7_87D5_B0C4C08709E5" end="EAID_27BE7F41_0641_4d63_99E7_7D853AA20FE7"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_2F5C42D5_F6F0_4921_B38E_FECA15BAF286" xmi:type="uml:Class" name="WaterLevelValue" scope="public">
+				<model package="EAPK_A5BC15D5_3041_4a84_BA9E_A28E1B43D317" tpos="0" ea_localid="8029" ea_eleType="element"/>
+				<properties documentation="WaterLevelValue is a code list that enumerates the different levels of a water surface." isSpecification="false" sType="Class" nType="0" scope="public" stereotype="CodeList" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="Tatjana" version="1.0" phase="1.0" created="2019-09-30 10:26:10" modified="2020-05-29 23:22:04" complexity="1" status="Proposed"/>
+				<code product_name="Java" gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_0BE3FA2A_79E2_1979_A318_18F28426A4BC" name="asDictionary" value="true#NOTES#Values: True,False&#xA;Default: true&#xA;Description: Encode code list as externally managed dictionary.&#xA;" modelElement="EAID_2F5C42D5_F6F0_4921_B38E_FECA15BAF286"/>
+					<tag xmi:id="EAID_BCD3CBEE_C886_55c8_AF08_8633C0324655" name="xsdEncodingRule" value="#NOTES#Values: notEncoded,iso19136_2007,gml33,citygml&#xA;" modelElement="EAID_2F5C42D5_F6F0_4921_B38E_FECA15BAF286"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={F96E0607-F2D8-4594-A51C-932FA1E366E2}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=CodeList;FQName=CityGML::CodeList;@ENDSTEREO;$DES;$CLT={2F5C42D5-F6F0-4921-B38E-FECA15BAF286}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="WaterBody" ea_attsclassified="{F5E75355-ED9C-4745-AF47-626D3546875A}"/>
+			</element>
+			<element xmi:idref="EAID_0EB5D62C_61E4_46ea_9822_4C2C5B6AD755" xmi:type="uml:Class" name="WaterSurface" scope="public">
+				<model package="EAPK_A5BC15D5_3041_4a84_BA9E_A28E1B43D317" tpos="0" ea_localid="156" ea_eleType="element"/>
+				<properties documentation="A WaterSurface represents the upper exterior interface between a water body and the atmosphere." isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="ebbinghaus" version="1.0" phase="1.0" created="2012-07-09 14:11:25" modified="2020-05-26 11:39:30" complexity="1" status="Proposed"/>
+				<code product_name="Java" gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_ED33D65F_A24E_81a2_A0C8_94BBC1FE8469" name="byValuePropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Create a property type that requires that the instance is encoded inline.&#xA;" modelElement="EAID_0EB5D62C_61E4_46ea_9822_4C2C5B6AD755"/>
+					<tag xmi:id="EAID_D8E5B7C5_7754_6c77_AF4B_7D841218737C" name="gmlMixin" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Identifies the feature type as a mixin class.&#xA;" modelElement="EAID_0EB5D62C_61E4_46ea_9822_4C2C5B6AD755"/>
+					<tag xmi:id="EAID_26B33348_1E57_d91e_8638_CCCDB81C5732" name="isCollection" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Identifies the feature type as a feature collection.&#xA;" modelElement="EAID_0EB5D62C_61E4_46ea_9822_4C2C5B6AD755"/>
+					<tag xmi:id="EAID_F9638764_E613_9ee6_B116_315E172EDBC7" name="noPropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Suppress creation of a standard property type that supports inline or by-reference encoding.&#xA;" modelElement="EAID_0EB5D62C_61E4_46ea_9822_4C2C5B6AD755"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={42F822B1-C336-47fc-ADDD-2FB2B3245904}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=FeatureType;FQName=CityGML::FeatureType;@ENDSTEREO;$DES;$CLT={0EB5D62C-61E4-46ea-9822-4C2C5B6AD755}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={BC1BE1C3-239A-43db-92DE-476AF98221F7}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isActive@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={0EB5D62C-61E4-46ea-9822-4C2C5B6AD755}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="WaterBody"/>
+				<attributes>
+					<attribute xmi:idref="EAID_F5E75355_ED9C_4745_AF47_626D3546875A" name="waterLevel" scope="Public">
+						<initial/>
+						<documentation value="Specifies the level of the WaterSurface."/>
+						<model ea_localid="222" ea_guid="{F5E75355-ED9C-4745-AF47-626D3546875A}"/>
+						<properties type="WaterLevelValue" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype stereotype="Property"/>
+						<bounds lower="0" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="IsLiteral=0;volatile=0;union=0;"/>
+						<tags>
+							<tag xmi:id="EAID_E810E922_58E8_b658_9DAB_CB1E5CB8F82C" name="sequenceNumber" value="1" notes="Description: Unique integer value for properties of the type used to sort properties.&#xA;"/>
+							<tag xmi:id="EAID_37DFCA0A_B550_b0b5_A8D5_AD91F573A54B" name="inlineOrByReference" value="inlineOrByReference" notes="Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;"/>
+							<tag xmi:id="EAID_08A8199D_FE63_35fe_B8CA_2BA26FD9A62C" name="isMetadata" value="false" notes="Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;"/>
+							<tag xmi:id="EAID_BCD3CBEE_9454_f194_8E69_6C6AECA890E1" name="xsdEncodingRule" notes="Values: notEncoded,iso19136_2007,gml33,citygml&#xA;"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={36267403-3CCA-4e54-AA89-B47541B3FA29}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;FQName=CityGML::Property;@ENDSTEREO;$DES;$CLT={F5E75355-ED9C-4745-AF47-626D3546875A}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+					</attribute>
+					<attribute xmi:idref="EAID_618A4E8A_81FD_409d_94D5_37BB849FC804" name="adeOfWaterSurface" scope="Public">
+						<initial/>
+						<documentation value="Augments the WaterSurface with properties defined in an ADE."/>
+						<model ea_localid="10574" ea_guid="{618A4E8A-81FD-409d-94D5-37BB849FC804}"/>
+						<properties type="ADEOfWaterSurface" collection="false" static="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0"/>
+						<containment containment="Not Specified" position="1"/>
+						<stereotype stereotype="Property"/>
+						<bounds lower="0" upper="*"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;union=0;"/>
+						<tags>
+							<tag xmi:id="EAID_E810E922_58E8_b658_9936_437775DEBDD5" name="sequenceNumber" value="2" notes="Description: Unique integer value for properties of the type used to sort properties.&#xA;"/>
+							<tag xmi:id="EAID_37DFCA0A_B550_b0b5_8D80_C9853CC90402" name="inlineOrByReference" value="inlineOrByReference" notes="Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;"/>
+							<tag xmi:id="EAID_08A8199D_FE63_35fe_9692_EC88798BE442" name="isMetadata" value="false" notes="Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;"/>
+							<tag xmi:id="EAID_BCD3CBEE_9454_f194_BFEF_B56F54C01E84" name="xsdEncodingRule" notes="Values: notEncoded,iso19136_2007,gml33,citygml&#xA;"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={B22E3E69-E3DA-406d-AF65-A7D10AA9B40C}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;FQName=CityGML::Property;@ENDSTEREO;$DES;$CLT={618A4E8A-81FD-409d-94D5-37BB849FC804}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+					</attribute>
+				</attributes>
+				<links>
+					<Generalization xmi:id="EAID_FD4EDF58_2657_4217_82F2_C3F9FB244B6C" start="EAID_0EB5D62C_61E4_46ea_9822_4C2C5B6AD755" end="EAID_27BE7F41_0641_4d63_99E7_7D853AA20FE7"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_CA9CF2B4_2602_43fd_A0DC_6D8CC6A79AB3" xmi:type="uml:DataType" name="ADEOfAbstractWaterBoundarySurface" scope="public">
+				<model package="EAPK_A5BC15D5_3041_4a84_BA9E_A28E1B43D317" tpos="0" ea_localid="8227" ea_eleType="element"/>
+				<properties documentation="ADEOfAbstractWaterBoundarySurface acts as a hook to define properties within an ADE that are to be added to AbstractWaterBoundarySurface." isSpecification="false" sType="DataType" nType="0" scope="public" stereotype="DataType" isRoot="false" isLeaf="false" isAbstract="true"/>
+				<project author="Tatjana" version="1.0" phase="1.0" created="2020-05-26 11:29:26" modified="2020-05-29 00:38:00" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=11796479;BorderColor=-1;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_F9638764_0401_4b04_AA56_00CD93938FFA" name="noPropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Suppress creation of a standard property type that supports inline encoding.&#xA;" modelElement="EAID_CA9CF2B4_2602_43fd_A0DC_6D8CC6A79AB3"/>
+					<tag xmi:id="EAID_BCD3CBEE_E42B_51e4_A480_07B8A38B0431" name="xsdEncodingRule" value="#NOTES#Values: notEncoded,iso19136_2007,gml33,citygml&#xA;" modelElement="EAID_CA9CF2B4_2602_43fd_A0DC_6D8CC6A79AB3"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={FE8844E1-611E-475d-BBAC-B03541D08BBE}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=DataType;FQName=CityGML::DataType;@ENDSTEREO;$DES;$CLT={CA9CF2B4-2602-43fd-A0DC-6D8CC6A79AB3}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="WaterBody" ea_attsclassified="{F4201E7C-B011-40ae-BC19-6AF7A7BEE204}"/>
+			</element>
+			<element xmi:idref="EAID_D4D099D4_5536_4269_8D05_8E07FB2FEA83" xmi:type="uml:DataType" name="ADEOfWaterBody" scope="public">
+				<model package="EAPK_A5BC15D5_3041_4a84_BA9E_A28E1B43D317" tpos="0" ea_localid="8226" ea_eleType="element"/>
+				<properties documentation="ADEOfWaterBody acts as a hook to define properties within an ADE that are to be added to a WaterBody." isSpecification="false" sType="DataType" nType="0" scope="public" stereotype="DataType" isRoot="false" isLeaf="false" isAbstract="true"/>
+				<project author="Tatjana" version="1.0" phase="1.0" created="2020-05-26 11:29:18" modified="2020-05-28 23:10:11" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=11796479;BorderColor=-1;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_F9638764_0401_4b04_9788_83B00C07EEC8" name="noPropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Suppress creation of a standard property type that supports inline encoding.&#xA;" modelElement="EAID_D4D099D4_5536_4269_8D05_8E07FB2FEA83"/>
+					<tag xmi:id="EAID_BCD3CBEE_E42B_51e4_87AE_9EE362BDE29F" name="xsdEncodingRule" value="#NOTES#Values: notEncoded,iso19136_2007,gml33,citygml&#xA;" modelElement="EAID_D4D099D4_5536_4269_8D05_8E07FB2FEA83"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={94B4BE9E-0073-4f90-BC29-F61C4C5D226C}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=DataType;FQName=CityGML::DataType;@ENDSTEREO;$DES;$CLT={D4D099D4-5536-4269-8D05-8E07FB2FEA83}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="WaterBody" ea_attsclassified="{16B863BD-6B5B-441f-96B4-E3592C6873A8}"/>
+			</element>
+			<element xmi:idref="EAID_9B5ABB19_3D69_4ec8_A445_6FEBC73E9A2A" xmi:type="uml:DataType" name="ADEOfWaterGroundSurface" scope="public">
+				<model package="EAPK_A5BC15D5_3041_4a84_BA9E_A28E1B43D317" tpos="0" ea_localid="8228" ea_eleType="element"/>
+				<properties documentation="ADEOfWaterGroundSurface acts as a hook to define properties within an ADE that are to be added to a WaterGroundSurface." isSpecification="false" sType="DataType" nType="0" scope="public" stereotype="DataType" isRoot="false" isLeaf="false" isAbstract="true"/>
+				<project author="Tatjana" version="1.0" phase="1.0" created="2020-05-26 11:29:38" modified="2020-05-28 23:10:49" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=11796479;BorderColor=-1;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_F9638764_0401_4b04_A41E_5321021886B9" name="noPropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Suppress creation of a standard property type that supports inline encoding.&#xA;" modelElement="EAID_9B5ABB19_3D69_4ec8_A445_6FEBC73E9A2A"/>
+					<tag xmi:id="EAID_BCD3CBEE_E42B_51e4_A8EE_CC1B2D6E28EB" name="xsdEncodingRule" value="#NOTES#Values: notEncoded,iso19136_2007,gml33,citygml&#xA;" modelElement="EAID_9B5ABB19_3D69_4ec8_A445_6FEBC73E9A2A"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={F88261D9-873E-489b-B6BD-A921B18AAFEA}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=DataType;FQName=CityGML::DataType;@ENDSTEREO;$DES;$CLT={9B5ABB19-3D69-4ec8-A445-6FEBC73E9A2A}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="WaterBody" ea_attsclassified="{8D3B3406-A4FD-4fbb-86B2-242BC2620CE6}"/>
+			</element>
+			<element xmi:idref="EAID_48A3A99A_262F_475f_A48B_729C7A18850F" xmi:type="uml:DataType" name="ADEOfWaterSurface" scope="public">
+				<model package="EAPK_A5BC15D5_3041_4a84_BA9E_A28E1B43D317" tpos="0" ea_localid="8229" ea_eleType="element"/>
+				<properties documentation="ADEOfWaterSurface acts as a hook to define properties within an ADE that are to be added to a WaterSurface." isSpecification="false" sType="DataType" nType="0" scope="public" stereotype="DataType" isRoot="false" isLeaf="false" isAbstract="true"/>
+				<project author="Tatjana" version="1.0" phase="1.0" created="2020-05-26 11:29:47" modified="2020-05-28 23:10:31" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=11796479;BorderColor=-1;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_F9638764_0401_4b04_97FB_05D3E31810BD" name="noPropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Suppress creation of a standard property type that supports inline encoding.&#xA;" modelElement="EAID_48A3A99A_262F_475f_A48B_729C7A18850F"/>
+					<tag xmi:id="EAID_BCD3CBEE_E42B_51e4_A407_681A8EF10F7C" name="xsdEncodingRule" value="#NOTES#Values: notEncoded,iso19136_2007,gml33,citygml&#xA;" modelElement="EAID_48A3A99A_262F_475f_A48B_729C7A18850F"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={55DCF9F0-2E27-4e14-A489-B357BA87B4FB}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=DataType;FQName=CityGML::DataType;@ENDSTEREO;$DES;$CLT={48A3A99A-262F-475f-A48B-729C7A18850F}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="WaterBody" ea_attsclassified="{618A4E8A-81FD-409d-94D5-37BB849FC804}"/>
+			</element>
+		</elements>
+		<connectors>
+			<connector xmi:idref="EAID_4B1022E5_9D6C_488f_9F6A_AB5B3368BA46">
+				<source xmi:idref="EAID_27BE7F41_0641_4d63_99E7_7D853AA20FE7">
+					<model ea_localid="157" type="Class" name="AbstractWaterBoundarySurface"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_BC472102_AACD_4b6a_8772_C2FAA0560D4D">
+					<model ea_localid="7631" type="Class" name="AbstractThematicSurface"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="9088"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_4FEC38A3_07D2_4350_986E_BE01485FEACE">
+				<source xmi:idref="EAID_80384F70_9D84_4889_A585_1E0215420245">
+					<model ea_localid="159" type="Class" name="WaterBody"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type multiplicity="0..2" aggregation="shared" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_27BE7F41_0641_4d63_99E7_7D853AA20FE7">
+					<model ea_localid="157" type="Class" name="AbstractWaterBoundarySurface"/>
+					<role name="boundary" stereotype="Property" visibility="Public" targetScope="instance"/>
+					<type multiplicity="*" aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs value="$XREFPROP=$XID={475B1DF9-5CA0-40b5-B332-8AF151D7D229}$XID;$NAM=Stereotypes$NAM;$TYP=connectorDestEnd property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;FQName=CityGML::Property;@ENDSTEREO;$DES;$CLT={4FEC38A3-07D2-4350-986E-BE01485FEACE}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+					<tags>
+						<tag xmi:id="EAID_08A8199D_FE63_35fe_910D_4A098FC61804" name="isMetadata" value="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;"/>
+						<tag xmi:id="EAID_37DFCA0A_B550_b0b5_B2E8_EC32661EDF28" name="inlineOrByReference" value="inlineOrByReference$ea_notes= Controls whether property values may be encoded inline or by reference.&#xA;"/>
+						<tag xmi:id="EAID_BCD3CBEE_9454_f194_8062_2D3F91E30E63" name="xsdEncodingRule" value="$ea_notes=Values: notEncoded,iso19136_2007,gml33,citygml&#xA;"/>
+						<tag xmi:id="EAID_E810E922_58E8_b658_BF5C_78E4BB1D690D" name="sequenceNumber" value="4$ea_notes= Unique integer value for properties of the type used to sort properties.&#xA;"/>
+					</tags>
+				</target>
+				<model ea_localid="9296"/>
+				<properties ea_type="Association" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels lb="0..2" rb="*" rt="+boundary&#xA;«Property»"/>
+				<extendedProperties/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_E3971DA6_485F_4750_98FD_EF73FF034E56">
+				<source xmi:idref="EAID_C8808C43_BEC8_4db7_87D5_B0C4C08709E5">
+					<model ea_localid="161" type="Class" name="WaterGroundSurface"/>
+					<role visibility="Public"/>
+					<type aggregation="none"/>
+					<constraints/>
+					<modifiers isOrdered="false" isNavigable="false"/>
+					<style/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_27BE7F41_0641_4d63_99E7_7D853AA20FE7">
+					<model ea_localid="157" type="Class" name="AbstractWaterBoundarySurface"/>
+					<role visibility="Public"/>
+					<type aggregation="none"/>
+					<constraints/>
+					<modifiers isOrdered="false" isNavigable="true"/>
+					<style/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="7486"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="0" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs value="$XREFPROP=$XID={9076E1E5-8B9A-443f-B55D-FF91C7A1688C}$XID;$NAM=CustomProperties$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$DES=@PROP=@NAME=isSubstitutable@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={E3971DA6-485F-4750-98FD-EF73FF034E56}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_FD4EDF58_2657_4217_82F2_C3F9FB244B6C">
+				<source xmi:idref="EAID_0EB5D62C_61E4_46ea_9822_4C2C5B6AD755">
+					<model ea_localid="156" type="Class" name="WaterSurface"/>
+					<role visibility="Public"/>
+					<type aggregation="none"/>
+					<constraints/>
+					<modifiers isOrdered="false" isNavigable="false"/>
+					<style/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_27BE7F41_0641_4d63_99E7_7D853AA20FE7">
+					<model ea_localid="157" type="Class" name="AbstractWaterBoundarySurface"/>
+					<role visibility="Public"/>
+					<type aggregation="none"/>
+					<constraints/>
+					<modifiers isOrdered="false" isNavigable="true"/>
+					<style/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="7490"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="0" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs value="$XREFPROP=$XID={CA59F543-4FC2-44ad-81A4-A8120FEC2880}$XID;$NAM=CustomProperties$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$DES=@PROP=@NAME=isSubstitutable@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={FD4EDF58-2657-4217-82F2-C3F9FB244B6C}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_B9ACA007_1DCF_400c_8809_A7E9DB8A279A">
+				<source xmi:idref="EAID_80384F70_9D84_4889_A585_1E0215420245">
+					<model ea_localid="159" type="Class" name="WaterBody"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_599046F5_43BB_4199_B9A4_3D34B3B628C7">
+					<model ea_localid="7638" type="Class" name="AbstractOccupiedSpace"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="9085"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_94CA0C13_28D4_447e_8DB7_C4BFC1AC9899">
+				<source xmi:idref="EAID_A5BC15D5_3041_4a84_BA9E_A28E1B43D317">
+					<model ea_localid="9" type="Package" name="WaterBody"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_FDE7D4FC_4EF3_42d1_9A94_D7340DBBD79F">
+					<model ea_localid="16" type="Package" name="Core"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="9315"/>
+				<properties ea_type="Package" stereotype="import" direction="Source -&gt; Destination"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels mb=" &#xA;«import»"/>
+				<extendedProperties conditional=" &#xA;«import»" virtualInheritance="0"/>
+				<style/>
+				<xrefs value="$XREFPROP=$XID={CFDBB866-B28C-43ba-9386-BC2832B5D5D8}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=import;GUID={7DF0246C-3D82-4be3-BF2E-AF2C11CB80DE};@ENDSTEREO;$DES;$CLT={94CA0C13-28D4-447e-8DB7-C4BFC1AC9899}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<tags/>
+			</connector>
+		</connectors>
+		<primitivetypes>
+			<packagedElement xmi:type="uml:Package" xmi:id="EAPrimitiveTypesPackage" name="EA_PrimitiveTypes_Package" visibility="public"/>
+		</primitivetypes>
+		<profiles>
+			<uml:Profile xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1/" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmi:id="FA5634AC-0" nsPrefix="CityGML" name="CityGML" metamodelReference="mmref01">
+				<ownedComment xmi:type="uml:Comment" xmi:id="comment01" annotatedElement="FA5634AC-0">
+					<body>This profile defines a set of stereotypes and tagged values for defining CityGML application schemas. Version:1.0</body>
+				</ownedComment>
+				<packageImport xmi:id="mmref01">
+					<importedPackage href="http://schema.omg.org/spec/UML/2.1/"/>
+				</packageImport>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Version" name="Version">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Version-base_Property" name="base_Property" association="Property_Version">
+						<type href="http://schema.omg.org/spec/UML/2.1/Property"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Version-isMetadata" name="isMetadata">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Version-inlineOrByReference" name="inlineOrByReference">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Version-sequenceNumber" name="sequenceNumber">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Property_Version" name="A_Property_Version" memberEnd="extension_Version Version-base_Property">
+					<ownedEnd xmi:id="extension_Version" name="extension_Version" type="Version" isComposite="true" lower="0" upper="1" memberEnd="extension_Version Version-base_Property"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Union" name="Union">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Union-base_DataType" name="base_DataType" association="DataType_Union">
+						<type href="http://schema.omg.org/spec/UML/2.1/DataType"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Union-gmlAsGroup" name="gmlAsGroup">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Union-xsdEncodingRule" name="xsdEncodingRule">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Union-noPropertyType" name="noPropertyType">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="DataType_Union" name="A_DataType_Union" memberEnd="extension_Union Union-base_DataType">
+					<ownedEnd xmi:id="extension_Union" name="extension_Union" type="Union" isComposite="true" lower="0" upper="1" memberEnd="extension_Union Union-base_DataType"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="CodeList" name="CodeList">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="CodeList-base_Class" name="base_Class" association="Class_CodeList">
+						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="CodeList-asDictionary" name="asDictionary">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="CodeList-xsdEncodingRule" name="xsdEncodingRule">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Class_CodeList" name="A_Class_CodeList" memberEnd="extension_CodeList CodeList-base_Class">
+					<ownedEnd xmi:id="extension_CodeList" name="extension_CodeList" type="CodeList" isComposite="true" lower="0" upper="1" memberEnd="extension_CodeList CodeList-base_Class"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="ApplicationSchema" name="ApplicationSchema">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ApplicationSchema-base_Package" name="base_Package" association="Package_ApplicationSchema">
+						<type href="http://schema.omg.org/spec/UML/2.1/Package"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ApplicationSchema-version" name="version">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ApplicationSchema-language" name="language">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ApplicationSchema-gmlProfileSchema" name="gmlProfileSchema">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ApplicationSchema-xsdDocument" name="xsdDocument">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ApplicationSchema-xmlns" name="xmlns">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ApplicationSchema-targetNamespace" name="targetNamespace">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Package_ApplicationSchema" name="A_Package_ApplicationSchema" memberEnd="extension_ApplicationSchema ApplicationSchema-base_Package">
+					<ownedEnd xmi:id="extension_ApplicationSchema" name="extension_ApplicationSchema" type="ApplicationSchema" isComposite="true" lower="0" upper="1" memberEnd="extension_ApplicationSchema ApplicationSchema-base_Package"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="FeatureType" name="FeatureType">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="FeatureType-base_Class" name="base_Class" association="Class_FeatureType">
+						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="FeatureType-gmlMixin" name="gmlMixin">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="FeatureType-noPropertyType" name="noPropertyType">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="FeatureType-isCollection" name="isCollection">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="FeatureType-byValuePropertyType" name="byValuePropertyType">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Class_FeatureType" name="A_Class_FeatureType" memberEnd="extension_FeatureType FeatureType-base_Class">
+					<ownedEnd xmi:id="extension_FeatureType" name="extension_FeatureType" type="FeatureType" isComposite="true" lower="0" upper="1" memberEnd="extension_FeatureType FeatureType-base_Class"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Leaf" name="Leaf">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Leaf-base_Package" name="base_Package" association="Package_Leaf">
+						<type href="http://schema.omg.org/spec/UML/2.1/Package"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Leaf-xsdEncodingRule" name="xsdEncodingRule">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Leaf-xsdDocument" name="xsdDocument">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Package_Leaf" name="A_Package_Leaf" memberEnd="extension_Leaf Leaf-base_Package">
+					<ownedEnd xmi:id="extension_Leaf" name="extension_Leaf" type="Leaf" isComposite="true" lower="0" upper="1" memberEnd="extension_Leaf Leaf-base_Package"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="ObjectType" name="ObjectType">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ObjectType-base_Class" name="base_Class" association="Class_ObjectType">
+						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ObjectType-noPropertyType" name="noPropertyType">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ObjectType-isCollection" name="isCollection">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ObjectType-byValuePropertyType" name="byValuePropertyType">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Class_ObjectType" name="A_Class_ObjectType" memberEnd="extension_ObjectType ObjectType-base_Class">
+					<ownedEnd xmi:id="extension_ObjectType" name="extension_ObjectType" type="ObjectType" isComposite="true" lower="0" upper="1" memberEnd="extension_ObjectType ObjectType-base_Class"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="DataType" name="DataType">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="DataType-base_DataType" name="base_DataType" association="DataType_DataType">
+						<type href="http://schema.omg.org/spec/UML/2.1/DataType"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="DataType-xsdEncodingRule" name="xsdEncodingRule">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="DataType-noPropertyType" name="noPropertyType">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="DataType_DataType" name="A_DataType_DataType" memberEnd="extension_DataType DataType-base_DataType">
+					<ownedEnd xmi:id="extension_DataType" name="extension_DataType" type="DataType" isComposite="true" lower="0" upper="1" memberEnd="extension_DataType DataType-base_DataType"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="TopLevelFeatureType" name="TopLevelFeatureType">
+					<generalization xmi:type="uml:Generalization" xmi:id="TopLevelFeatureType_FeatureType_generalization" general="FeatureType"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="BasicType" name="BasicType">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="BasicType-base_Class" name="base_Class" association="Class_BasicType">
+						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="BasicType-rangeMaximum" name="rangeMaximum">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="BasicType-maxLength" name="maxLength">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="BasicType-xsdEncodingRule" name="xsdEncodingRule">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="BasicType-length" name="length">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="BasicType-minLength" name="minLength">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="BasicType-rangeMinimum" name="rangeMinimum">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="BasicType-base" name="base">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="BasicType-itemType" name="itemType">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Class_BasicType" name="A_Class_BasicType" memberEnd="extension_BasicType BasicType-base_Class">
+					<ownedEnd xmi:id="extension_BasicType" name="extension_BasicType" type="BasicType" isComposite="true" lower="0" upper="1" memberEnd="extension_BasicType BasicType-base_Class"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Property" name="Property">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Property-base_Property" name="base_Property" association="Property_Property">
+						<type href="http://schema.omg.org/spec/UML/2.1/Property"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Property-xsdEncodingRule" name="xsdEncodingRule">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Property-isMetadata" name="isMetadata">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Property-inlineOrByReference" name="inlineOrByReference">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Property-sequenceNumber" name="sequenceNumber">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Property_Property" name="A_Property_Property" memberEnd="extension_Property Property-base_Property">
+					<ownedEnd xmi:id="extension_Property" name="extension_Property" type="Property" isComposite="true" lower="0" upper="1" memberEnd="extension_Property Property-base_Property"/>
+				</packagedElement>
+			</uml:Profile>
+		</profiles>
+		<diagrams>
+			<diagram xmi:id="EAID_69A26A1E_1FD3_4f32_A18D_3E79F3674D96">
+				<model package="EAPK_A5BC15D5_3041_4a84_BA9E_A28E1B43D317" localID="16" owner="EAPK_A5BC15D5_3041_4a84_BA9E_A28E1B43D317"/>
+				<properties name="WaterBody" type="Logical"/>
+				<project author="kolbe/kutzner" version="1.0" created="2012-11-26 00:00:00" modified="2020-05-30 00:35:06"/>
+				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=1130;DocSize.cy=795;ShowDetails=0;Orientation=L;Zoom=122;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=1;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AllDockable=0;AdvancedElementProps=1;AdvancedFeatureProps=0;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;HideConnStereotype=1;"/>
+				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=0;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;HideConnStereotype=1;SuppressedCompartments=;Theme=:119;SaveTag=56208305;"/>
+				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
+				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
+				<extendedProperties/>
+				<elements>
+					<element geometry="Left=746;Top=159;Right=857;Bottom=218;" subject="EAID_06D54D2B_DB27_428a_91AE_E0CC25A61A79" seqno="1" style="DUID=558A9265;NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;BCol=16770764;AttPro=0;AttPri=0;AttPub=0;AttPkg=0;OpPro=0;OpPri=0;OpPub=0;OpPkg=0;AttCustom=0;OpCustom=0;PType=0;RzO=1;"/>
+					<element geometry="Left=545;Top=150;Right=699;Bottom=228;" subject="EAID_BC472102_AACD_4b6a_8772_C2FAA0560D4D" seqno="2" style="DUID=148EA386;NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;AttPro=0;AttPri=0;AttPub=0;AttPkg=0;OpPro=0;OpPri=0;OpPub=0;OpPkg=0;AttCustom=0;OpCustom=0;PType=0;RzO=1;BCol=16770764;"/>
+					<element geometry="Left=92;Top=263;Right=316;Bottom=400;" subject="EAID_80384F70_9D84_4889_A585_1E0215420245" seqno="3" style="DUID=5D83FE35;NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;BCol=11796479;HideIcon=0;"/>
+					<element geometry="Left=363;Top=401;Right=608;Bottom=505;" subject="EAID_0EB5D62C_61E4_46ea_9822_4C2C5B6AD755" seqno="4" style="DUID=D7FD6102;NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;BCol=11796479;HideIcon=0;"/>
+					<element geometry="Left=641;Top=401;Right=958;Bottom=489;" subject="EAID_C8808C43_BEC8_4db7_87D5_B0C4C08709E5" seqno="5" style="DUID=C27D9DEF;NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;BCol=11796479;HideIcon=0;"/>
+					<element geometry="Left=132;Top=150;Right=274;Bottom=228;" subject="EAID_599046F5_43BB_4199_B9A4_3D34B3B628C7" seqno="6" style="DUID=49D75E25;NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;BCol=16770764;AttPro=0;AttPri=0;AttPub=0;AttPkg=0;OpPro=0;OpPri=0;OpPub=0;OpPkg=0;AttCustom=0;OpCustom=0;PType=0;RzO=1;"/>
+					<element geometry="Left=416;Top=264;Right=828;Bottom=351;" subject="EAID_27BE7F41_0641_4d63_99E7_7D853AA20FE7" seqno="7" style="DUID=A26696A2;NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;BCol=11796479;HideIcon=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=-38;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_4B1022E5_9D6C_488f_9F6A_AB5B3368BA46" style="Mode=3;EOID=148EA386;SOID=A26696A2;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=-52;SY=0;EX=-25;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_12D40BC9_B6B4_4985_ACA5_F9E616136C33" style="Mode=3;EOID=148EA386;SOID=558A9265;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=67;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_B9ACA007_1DCF_400c_8809_A7E9DB8A279A" style="Mode=3;EOID=49D75E25;SOID=5D83FE35;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=63;SY=38;EX=-1;EY=14;EDGE=2;$LLB=CX=18:CY=16:OX=6:OY=6:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LLT=;LMT=;LMB=;LRT=CX=53:CY=32:OX=42:OY=-19:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=CX=4:CY=16:OX=-6:OY=8:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_4FEC38A3_07D2_4350_986E_BE01485FEACE" style="Mode=3;EOID=A26696A2;SOID=5D83FE35;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="EDGE=1;SX=10;SY=51;EX=0;EY=0;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=494:-381$622:-381$;" subject="EAID_FD4EDF58_2657_4217_82F2_C3F9FB244B6C" style="Mode=3;EOID=A26696A2;SOID=D7FD6102;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="EDGE=1;SX=-43;SY=21;EX=0;EY=0;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=755:-381$622:-381$;" subject="EAID_E3971DA6_485F_4750_98FD_EF73FF034E56" style="Mode=3;EOID=A26696A2;SOID=C27D9DEF;Color=-1;LWidth=0;Hidden=0;"/>
+				</elements>
+			</diagram>
+			<diagram xmi:id="EAID_0365B0D3_2657_49b1_A025_F6A23F0B70EA">
+				<model package="EAPK_A5BC15D5_3041_4a84_BA9E_A28E1B43D317" localID="3592" owner="EAPK_A5BC15D5_3041_4a84_BA9E_A28E1B43D317"/>
+				<properties name="WaterBody - Code lists" type="Logical"/>
+				<project author="Tatjana" version="1.0" created="2019-09-30 10:24:54" modified="2020-05-30 00:35:13"/>
+				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=1130;DocSize.cy=795;ShowDetails=0;Orientation=L;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AllDockable=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;SaveTag=04AF6E95;"/>
+				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
+				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
+				<extendedProperties/>
+				<elements>
+					<element geometry="Left=508;Top=133;Right=660;Bottom=180;" subject="EAID_2F5C42D5_F6F0_4921_B38E_FECA15BAF286" seqno="1" style="DUID=DDCE86B7;HideIcon=0;BCol=11796479;"/>
+					<element geometry="Left=300;Top=253;Right=452;Bottom=300;" subject="EAID_BA5E9962_CA89_4dd7_8B60_4396417F287F" seqno="2" style="DUID=649D689C;HideIcon=0;BCol=11796479;"/>
+					<element geometry="Left=300;Top=193;Right=452;Bottom=240;" subject="EAID_1513B6AD_44CF_4f92_8387_018ADCD7C77D" seqno="3" style="DUID=3D9CC060;HideIcon=0;BCol=11796479;"/>
+					<element geometry="Left=300;Top=133;Right=452;Bottom=180;" subject="EAID_5CC28AE4_DBCA_44eb_9CB5_A4170E78E04C" seqno="4" style="DUID=FE3463E5;HideIcon=0;BCol=11796479;"/>
+				</elements>
+			</diagram>
+			<diagram xmi:id="EAID_D1905ADE_FE54_42dc_A9C7_FAA9EE7DD1AB">
+				<model package="EAPK_A5BC15D5_3041_4a84_BA9E_A28E1B43D317" localID="3604" owner="EAPK_A5BC15D5_3041_4a84_BA9E_A28E1B43D317"/>
+				<properties name="WaterBody - ADE Data types" type="Logical"/>
+				<project author="Tatjana" version="1.0" created="2020-05-26 11:28:06" modified="2020-05-30 00:35:10"/>
+				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=1138;DocSize.cy=795;ShowDetails=0;Orientation=L;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AllDockable=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;SaveTag=5AB71D84;"/>
+				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
+				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
+				<extendedProperties/>
+				<elements>
+					<element geometry="Left=516;Top=172;Right=649;Bottom=220;" subject="EAID_48A3A99A_262F_475f_A48B_729C7A18850F" seqno="1" style="DUID=10B69879;HideIcon=0;"/>
+					<element geometry="Left=327;Top=172;Right=501;Bottom=220;" subject="EAID_9B5ABB19_3D69_4ec8_A445_6FEBC73E9A2A" seqno="2" style="DUID=577684F8;HideIcon=0;"/>
+					<element geometry="Left=461;Top=111;Right=688;Bottom=159;" subject="EAID_CA9CF2B4_2602_43fd_A0DC_6D8CC6A79AB3" seqno="3" style="DUID=8EF9E28A;HideIcon=0;"/>
+					<element geometry="Left=327;Top=110;Right=445;Bottom=158;" subject="EAID_D4D099D4_5536_4269_8D05_8E07FB2FEA83" seqno="4" style="DUID=7852DB42;HideIcon=0;"/>
+				</elements>
+			</diagram>
+		</diagrams>
+	</xmi:Extension>
+</xmi:XMI>

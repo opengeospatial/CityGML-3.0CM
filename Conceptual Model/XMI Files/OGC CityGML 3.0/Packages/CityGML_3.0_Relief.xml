@@ -1,0 +1,1547 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:thecustomprofile="http://www.sparxsystems.com/profiles/thecustomprofile/1.0" xmlns:CityGML="http://www.sparxsystems.com/profiles/CityGML/1.0">
+	<xmi:Documentation exporter="Enterprise Architect" exporterVersion="6.5"/>
+	<uml:Model xmi:type="uml:Model" name="EA_Model" visibility="public">
+		<packagedElement xmi:type="uml:Package" xmi:id="EAPK_E5C5322E_A142_4812_AD39_C64DA8CBCE6E" name="Relief" visibility="public">
+			<packageImport xmi:type="uml:PackageImport" xmi:id="EAID_6545C370_A7FE_42d7_AFD3_12247EFC5E8D" visibility="public" importedPackage="EAPK_FDE7D4FC_4EF3_42d1_9A94_D7340DBBD79F"/>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7" name="AbstractReliefComponent" visibility="public" isAbstract="true">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_F7918A8A_9ACD_4ff3_988C_2B2351CEEABC" name="lod" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_C4D25E26_5DFC_461f_902F_0A5385B7BEC4"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000001_9ACD_4ff3_988C_2B2351CEEABC" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000002_9ACD_4ff3_988C_2B2351CEEABC" value="1"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_C44CCEEC_65B6_4014_BE58_C7824115643E" name="adeOfAbstractReliefComponent" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_6CE84985_39F6_4358_973C_F11C0ACEDE05"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000003_65B6_4014_BE58_C7824115643E" value="0"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000004_65B6_4014_BE58_C7824115643E" value="-1"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dstD2290E_988D_48c9_800F_2CE00E1E28D0" name="extent" visibility="public" association="EAID_B7D2290E_988D_48c9_800F_2CE00E1E28D0" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="shared">
+					<type xmi:idref="EAID_F23E617D_5FEA_4cd6_AAE5_F38E34971B2E"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000005__988D_48c9_800F_2CE00E1E28D0" value="0"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000006__988D_48c9_800F_2CE00E1E28D0" value="1"/>
+				</ownedAttribute>
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_BE4DA325_6162_4d43_B2E6_E166B8DCF29B" general="EAID_47C81848_9C36_4278_9655_043640A70675"/>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_B7D2290E_988D_48c9_800F_2CE00E1E28D0" visibility="public">
+				<memberEnd xmi:idref="EAID_dstD2290E_988D_48c9_800F_2CE00E1E28D0"/>
+				<memberEnd xmi:idref="EAID_srcD2290E_988D_48c9_800F_2CE00E1E28D0"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcD2290E_988D_48c9_800F_2CE00E1E28D0" visibility="public" association="EAID_B7D2290E_988D_48c9_800F_2CE00E1E28D0" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7"/>
+					<lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000007__988D_48c9_800F_2CE00E1E28D0" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000008__988D_48c9_800F_2CE00E1E28D0" value="-1"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_9E1930C5_BBB4_4421_BBB0_7B5FE727F5E2" visibility="public">
+				<memberEnd xmi:idref="EAID_dst1930C5_BBB4_4421_BBB0_7B5FE727F5E2"/>
+				<memberEnd xmi:idref="EAID_src1930C5_BBB4_4421_BBB0_7B5FE727F5E2"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src1930C5_BBB4_4421_BBB0_7B5FE727F5E2" visibility="public" association="EAID_9E1930C5_BBB4_4421_BBB0_7B5FE727F5E2" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_90C1991A_7C36_4b51_B5DD_F6A570100375"/>
+					<lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000009__BBB4_4421_BBB0_7B5FE727F5E2" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000010__BBB4_4421_BBB0_7B5FE727F5E2" value="-1"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_7423A1EA_4F50_40af_9E8C_C0D867BCA731" name="BreaklineRelief" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_0600EEEC_2F74_4ebb_80B3_3A3CF3C40584" name="adeOfBreaklineRelief" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_1A1C4316_D886_4dd2_9AC0_33588E8A8720"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000011_2F74_4ebb_80B3_3A3CF3C40584" value="0"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000012_2F74_4ebb_80B3_3A3CF3C40584" value="-1"/>
+				</ownedAttribute>
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_14A7D481_FDB0_458f_B3B1_6F4E4A43A702" general="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dstF3710B_44D8_41f3_8C58_5A6B2068F9D6" name="ridgeOrValleyLines" visibility="public" association="EAID_41F3710B_44D8_41f3_8C58_5A6B2068F9D6" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_5E740584_6743_42da_8CD0_2E342F9A5FDE"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000013__44D8_41f3_8C58_5A6B2068F9D6" value="0"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000014__44D8_41f3_8C58_5A6B2068F9D6" value="1"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst6717D0_4B13_40c3_BABE_8A1C4518D53A" name="breaklines" visibility="public" association="EAID_7A6717D0_4B13_40c3_BABE_8A1C4518D53A" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_5E740584_6743_42da_8CD0_2E342F9A5FDE"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000017__4B13_40c3_BABE_8A1C4518D53A" value="0"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000018__4B13_40c3_BABE_8A1C4518D53A" value="1"/>
+				</ownedAttribute>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_41F3710B_44D8_41f3_8C58_5A6B2068F9D6" visibility="public">
+				<memberEnd xmi:idref="EAID_dstF3710B_44D8_41f3_8C58_5A6B2068F9D6"/>
+				<memberEnd xmi:idref="EAID_srcF3710B_44D8_41f3_8C58_5A6B2068F9D6"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcF3710B_44D8_41f3_8C58_5A6B2068F9D6" visibility="public" association="EAID_41F3710B_44D8_41f3_8C58_5A6B2068F9D6" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_7423A1EA_4F50_40af_9E8C_C0D867BCA731"/>
+					<lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000015__44D8_41f3_8C58_5A6B2068F9D6" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000016__44D8_41f3_8C58_5A6B2068F9D6" value="-1"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_7A6717D0_4B13_40c3_BABE_8A1C4518D53A" visibility="public">
+				<memberEnd xmi:idref="EAID_dst6717D0_4B13_40c3_BABE_8A1C4518D53A"/>
+				<memberEnd xmi:idref="EAID_src6717D0_4B13_40c3_BABE_8A1C4518D53A"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src6717D0_4B13_40c3_BABE_8A1C4518D53A" visibility="public" association="EAID_7A6717D0_4B13_40c3_BABE_8A1C4518D53A" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_7423A1EA_4F50_40af_9E8C_C0D867BCA731"/>
+					<lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000019__4B13_40c3_BABE_8A1C4518D53A" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000020__4B13_40c3_BABE_8A1C4518D53A" value="-1"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_C67FBEF8_132F_4a19_87E1_4F040BE587BE" name="MassPointRelief" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_C0CD8FB8_0692_456c_B213_CC58117117B0" name="adeOfMassPointRelief" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_5BAC845C_4A26_44e5_8E07_444013A49BB0"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000021_0692_456c_B213_CC58117117B0" value="0"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000022_0692_456c_B213_CC58117117B0" value="-1"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst2D6EB8_73B6_43bf_B1CD_A2E6E1CE3A5E" name="pointCloud" visibility="public" association="EAID_5A2D6EB8_73B6_43bf_B1CD_A2E6E1CE3A5E" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_38EB3C61_64E6_4992_8DB9_356635E2B808"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000023__73B6_43bf_B1CD_A2E6E1CE3A5E" value="0"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000024__73B6_43bf_B1CD_A2E6E1CE3A5E" value="1"/>
+				</ownedAttribute>
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_787F795B_4687_4d8f_A946_53275CA9B99C" general="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst2AFFA8_4144_4ce5_9341_4F644DE280DE" name="reliefPoints" visibility="public" association="EAID_9A2AFFA8_4144_4ce5_9341_4F644DE280DE" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_EAAC4305_1147_4752_801A_48B1BB977958"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000027__4144_4ce5_9341_4F644DE280DE" value="0"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000028__4144_4ce5_9341_4F644DE280DE" value="1"/>
+				</ownedAttribute>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_5A2D6EB8_73B6_43bf_B1CD_A2E6E1CE3A5E" visibility="public">
+				<memberEnd xmi:idref="EAID_dst2D6EB8_73B6_43bf_B1CD_A2E6E1CE3A5E"/>
+				<memberEnd xmi:idref="EAID_src2D6EB8_73B6_43bf_B1CD_A2E6E1CE3A5E"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src2D6EB8_73B6_43bf_B1CD_A2E6E1CE3A5E" visibility="public" association="EAID_5A2D6EB8_73B6_43bf_B1CD_A2E6E1CE3A5E" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_C67FBEF8_132F_4a19_87E1_4F040BE587BE"/>
+					<lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000025__73B6_43bf_B1CD_A2E6E1CE3A5E" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000026__73B6_43bf_B1CD_A2E6E1CE3A5E" value="-1"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_9A2AFFA8_4144_4ce5_9341_4F644DE280DE" visibility="public">
+				<memberEnd xmi:idref="EAID_dst2AFFA8_4144_4ce5_9341_4F644DE280DE"/>
+				<memberEnd xmi:idref="EAID_src2AFFA8_4144_4ce5_9341_4F644DE280DE"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src2AFFA8_4144_4ce5_9341_4F644DE280DE" visibility="public" association="EAID_9A2AFFA8_4144_4ce5_9341_4F644DE280DE" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_C67FBEF8_132F_4a19_87E1_4F040BE587BE"/>
+					<lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000029__4144_4ce5_9341_4F644DE280DE" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000030__4144_4ce5_9341_4F644DE280DE" value="-1"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_EBD13E4A_697E_425d_AE47_77BC140AAA85" name="RasterRelief" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_11074975_4F81_4cf3_9BF7_A9DA408E985B" name="adeOfRasterRelief" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_F19C4792_8912_4163_A770_EFB0783D0141"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000031_4F81_4cf3_9BF7_A9DA408E985B" value="0"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000032_4F81_4cf3_9BF7_A9DA408E985B" value="-1"/>
+				</ownedAttribute>
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_6AB0FC18_7F65_47e3_B46C_B06B4D80BFE0" general="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst11BBA1_BD2A_431f_9F34_5D34C45CF434" name="grid" visibility="public" association="EAID_8211BBA1_BD2A_431f_9F34_5D34C45CF434" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_CEB09532_0C7F_4f9d_BF64_622ABFC72B3A"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000033__BD2A_431f_9F34_5D34C45CF434" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000034__BD2A_431f_9F34_5D34C45CF434" value="1"/>
+				</ownedAttribute>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_8211BBA1_BD2A_431f_9F34_5D34C45CF434" visibility="public">
+				<memberEnd xmi:idref="EAID_dst11BBA1_BD2A_431f_9F34_5D34C45CF434"/>
+				<memberEnd xmi:idref="EAID_src11BBA1_BD2A_431f_9F34_5D34C45CF434"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src11BBA1_BD2A_431f_9F34_5D34C45CF434" visibility="public" association="EAID_8211BBA1_BD2A_431f_9F34_5D34C45CF434" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_EBD13E4A_697E_425d_AE47_77BC140AAA85"/>
+					<lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000035__BD2A_431f_9F34_5D34C45CF434" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000036__BD2A_431f_9F34_5D34C45CF434" value="-1"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_90C1991A_7C36_4b51_B5DD_F6A570100375" name="ReliefFeature" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_D0B44B43_4FA0_4f0b_9F37_35CAD8F013D7" name="lod" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_C4D25E26_5DFC_461f_902F_0A5385B7BEC4"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000037_4FA0_4f0b_9F37_35CAD8F013D7" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000038_4FA0_4f0b_9F37_35CAD8F013D7" value="1"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_4B095247_D944_4c6e_A12A_7FFF3840EF02" name="adeOfReliefFeature" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_DF552FE6_83BE_4ac9_8B04_33C9C228E5F5"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000039_D944_4c6e_A12A_7FFF3840EF02" value="0"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000040_D944_4c6e_A12A_7FFF3840EF02" value="-1"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst1930C5_BBB4_4421_BBB0_7B5FE727F5E2" name="reliefComponent" visibility="public" association="EAID_9E1930C5_BBB4_4421_BBB0_7B5FE727F5E2" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="shared">
+					<type xmi:idref="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000041__BBB4_4421_BBB0_7B5FE727F5E2" value="1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000042__BBB4_4421_BBB0_7B5FE727F5E2" value="-1"/>
+				</ownedAttribute>
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_B6B2087D_9676_4c08_AE46_ADC340E619A4" general="EAID_47C81848_9C36_4278_9655_043640A70675"/>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_691F1836_DD16_45c0_9978_FABBA6CE23B4" name="TINRelief" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_44431BBD_DC9A_4041_834E_2730893779F9" name="adeOfTINRelief" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_787CD588_67FA_4120_A58D_1238C929B670"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000043_DC9A_4041_834E_2730893779F9" value="0"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000044_DC9A_4041_834E_2730893779F9" value="-1"/>
+				</ownedAttribute>
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_01C96C9D_1C86_4b26_9639_A94351CBF178" general="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst94E3BB_472A_4af5_9E4C_C7C94FA90E6A" name="tin" visibility="public" association="EAID_4C94E3BB_472A_4af5_9E4C_C7C94FA90E6A" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_815F2729_8FAC_4572_B9C7_D54ECC3BDA1F"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000045__472A_4af5_9E4C_C7C94FA90E6A" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000046__472A_4af5_9E4C_C7C94FA90E6A" value="1"/>
+				</ownedAttribute>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_4C94E3BB_472A_4af5_9E4C_C7C94FA90E6A" visibility="public">
+				<memberEnd xmi:idref="EAID_dst94E3BB_472A_4af5_9E4C_C7C94FA90E6A"/>
+				<memberEnd xmi:idref="EAID_src94E3BB_472A_4af5_9E4C_C7C94FA90E6A"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src94E3BB_472A_4af5_9E4C_C7C94FA90E6A" visibility="public" association="EAID_4C94E3BB_472A_4af5_9E4C_C7C94FA90E6A" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_691F1836_DD16_45c0_9978_FABBA6CE23B4"/>
+					<lowerValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000047__472A_4af5_9E4C_C7C94FA90E6A" value="-1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000048__472A_4af5_9E4C_C7C94FA90E6A" value="-1"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:DataType" xmi:id="EAID_6CE84985_39F6_4358_973C_F11C0ACEDE05" name="ADEOfAbstractReliefComponent" visibility="public" isAbstract="true"/>
+			<packagedElement xmi:type="uml:DataType" xmi:id="EAID_1A1C4316_D886_4dd2_9AC0_33588E8A8720" name="ADEOfBreaklineRelief" visibility="public" isAbstract="true"/>
+			<packagedElement xmi:type="uml:DataType" xmi:id="EAID_5BAC845C_4A26_44e5_8E07_444013A49BB0" name="ADEOfMassPointRelief" visibility="public" isAbstract="true"/>
+			<packagedElement xmi:type="uml:DataType" xmi:id="EAID_F19C4792_8912_4163_A770_EFB0783D0141" name="ADEOfRasterRelief" visibility="public" isAbstract="true"/>
+			<packagedElement xmi:type="uml:DataType" xmi:id="EAID_DF552FE6_83BE_4ac9_8B04_33C9C228E5F5" name="ADEOfReliefFeature" visibility="public" isAbstract="true"/>
+			<packagedElement xmi:type="uml:DataType" xmi:id="EAID_787CD588_67FA_4120_A58D_1238C929B670" name="ADEOfTINRelief" visibility="public" isAbstract="true"/>
+			<ownedRule xmi:type="uml:Constraint" xmi:id="EAID_FA3061BB_7262_4a3e_AD90_FC20B9A61B46">
+				<constrainedElement xmi:idref="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7"/>
+				<specification xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_7262_4a3e_AD90_FC20B9A61B46" body="polygonGeometry : inv: extent.patch-&gt;size()=1 and extent.patch-&gt;forAll(oclIsKindOf(GM_Polygon))"/>
+			</ownedRule>
+			<packagedElement xmi:type="uml:Usage" xmi:id="EAID_A7F13392_C7E5_4134_BC2C_16E986F07351" visibility="public" supplier="EAPK_C6593764_1DF3_44f8_9658_D42F172B225B" client="EAPK_E5C5322E_A142_4812_AD39_C64DA8CBCE6E"/>
+		</packagedElement>
+		<CityGML:FeatureType base_Class="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7" gmlMixin="false" noPropertyType="false" isCollection="false" byValuePropertyType="false"/>
+		<CityGML:Property base_Property="EAID_F7918A8A_9ACD_4ff3_988C_2B2351CEEABC" isMetadata="false" inlineOrByReference="inlineOrByReference" sequenceNumber="1"/>
+		<CityGML:Property base_Property="EAID_C44CCEEC_65B6_4014_BE58_C7824115643E" isMetadata="false" inlineOrByReference="inlineOrByReference" sequenceNumber="3"/>
+		<CityGML:Property base_Property="EAID_dstD2290E_988D_48c9_800F_2CE00E1E28D0" xsdEncodingRule="$ea_notes=Values: notEncoded,iso19136_2007,gml33,citygml&#xA;" isMetadata="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;" inlineOrByReference="inlineOrByReference$ea_notes=Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;" sequenceNumber="2$ea_notes= Unique integer value for properties of the type used to sort properties.&#xA;"/>
+		<CityGML:FeatureType base_Class="EAID_7423A1EA_4F50_40af_9E8C_C0D867BCA731" gmlMixin="false" noPropertyType="false" isCollection="false" byValuePropertyType="false"/>
+		<CityGML:Property base_Property="EAID_0600EEEC_2F74_4ebb_80B3_3A3CF3C40584" isMetadata="false" inlineOrByReference="inlineOrByReference" sequenceNumber="3"/>
+		<CityGML:Property base_Property="EAID_dstF3710B_44D8_41f3_8C58_5A6B2068F9D6" xsdEncodingRule="$ea_notes=Values: notEncoded,iso19136_2007,gml33,citygml&#xA;" isMetadata="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;" inlineOrByReference="inlineOrByReference$ea_notes=Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;" sequenceNumber="1$ea_notes= Unique integer value for properties of the type used to sort properties.&#xA;"/>
+		<CityGML:Property base_Property="EAID_dst6717D0_4B13_40c3_BABE_8A1C4518D53A" xsdEncodingRule="$ea_notes=Values: notEncoded,iso19136_2007,gml33,citygml&#xA;" isMetadata="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;" inlineOrByReference="inlineOrByReference$ea_notes=Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;" sequenceNumber="2$ea_notes= Unique integer value for properties of the type used to sort properties.&#xA;"/>
+		<CityGML:FeatureType base_Class="EAID_C67FBEF8_132F_4a19_87E1_4F040BE587BE" gmlMixin="false" noPropertyType="false" isCollection="false" byValuePropertyType="false"/>
+		<CityGML:Property base_Property="EAID_C0CD8FB8_0692_456c_B213_CC58117117B0" isMetadata="false" inlineOrByReference="inlineOrByReference" sequenceNumber="3"/>
+		<CityGML:Property base_Property="EAID_dst2D6EB8_73B6_43bf_B1CD_A2E6E1CE3A5E" xsdEncodingRule="$ea_notes=Values: notEncoded,iso19136_2007,gml33,citygml&#xA;" isMetadata="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;" inlineOrByReference="inlineOrByReference$ea_notes=Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;" sequenceNumber="2$ea_notes= Unique integer value for properties of the type used to sort properties.&#xA;"/>
+		<CityGML:Property base_Property="EAID_dst2AFFA8_4144_4ce5_9341_4F644DE280DE" xsdEncodingRule="$ea_notes=Values: notEncoded,iso19136_2007,gml33,citygml&#xA;" isMetadata="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;" inlineOrByReference="inlineOrByReference$ea_notes=Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;" sequenceNumber="1$ea_notes= Unique integer value for properties of the type used to sort properties.&#xA;"/>
+		<CityGML:FeatureType base_Class="EAID_EBD13E4A_697E_425d_AE47_77BC140AAA85" gmlMixin="false" noPropertyType="false" isCollection="false" byValuePropertyType="false"/>
+		<CityGML:Property base_Property="EAID_11074975_4F81_4cf3_9BF7_A9DA408E985B" isMetadata="false" inlineOrByReference="inlineOrByReference" sequenceNumber="2"/>
+		<CityGML:Property base_Property="EAID_dst11BBA1_BD2A_431f_9F34_5D34C45CF434" xsdEncodingRule="$ea_notes=Values: notEncoded,iso19136_2007,gml33,citygml&#xA;" isMetadata="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;" inlineOrByReference="inlineOrByReference$ea_notes=Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;" sequenceNumber="1$ea_notes= Unique integer value for properties of the type used to sort properties.&#xA;"/>
+		<CityGML:TopLevelFeatureType base_Class="EAID_90C1991A_7C36_4b51_B5DD_F6A570100375" gmlMixin="false" noPropertyType="false" isCollection="false" byValuePropertyType="false"/>
+		<CityGML:Property base_Property="EAID_D0B44B43_4FA0_4f0b_9F37_35CAD8F013D7" isMetadata="false" inlineOrByReference="inlineOrByReference" sequenceNumber="1"/>
+		<CityGML:Property base_Property="EAID_4B095247_D944_4c6e_A12A_7FFF3840EF02" isMetadata="false" inlineOrByReference="inlineOrByReference" sequenceNumber="3"/>
+		<CityGML:Property base_Property="EAID_dst1930C5_BBB4_4421_BBB0_7B5FE727F5E2" xsdEncodingRule="$ea_notes=Values: notEncoded,iso19136_2007,gml33,citygml&#xA;" isMetadata="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;" inlineOrByReference="inlineOrByReference$ea_notes=Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;" sequenceNumber="2$ea_notes= Unique integer value for properties of the type used to sort properties.&#xA;"/>
+		<CityGML:FeatureType base_Class="EAID_691F1836_DD16_45c0_9978_FABBA6CE23B4" gmlMixin="false" noPropertyType="false" isCollection="false" byValuePropertyType="false"/>
+		<CityGML:Property base_Property="EAID_44431BBD_DC9A_4041_834E_2730893779F9" isMetadata="false" inlineOrByReference="inlineOrByReference" sequenceNumber="2"/>
+		<CityGML:Property base_Property="EAID_dst94E3BB_472A_4af5_9E4C_C7C94FA90E6A" xsdEncodingRule="$ea_notes=Values: notEncoded,iso19136_2007,gml33,citygml&#xA;" isMetadata="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;" inlineOrByReference="inlineOrByReference$ea_notes=Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;" sequenceNumber="1$ea_notes= Unique integer value for properties of the type used to sort properties.&#xA;"/>
+		<CityGML:DataType base_DataType="EAID_6CE84985_39F6_4358_973C_F11C0ACEDE05" noPropertyType="false"/>
+		<CityGML:DataType base_DataType="EAID_1A1C4316_D886_4dd2_9AC0_33588E8A8720" noPropertyType="false"/>
+		<CityGML:DataType base_DataType="EAID_5BAC845C_4A26_44e5_8E07_444013A49BB0" noPropertyType="false"/>
+		<CityGML:DataType base_DataType="EAID_F19C4792_8912_4163_A770_EFB0783D0141" noPropertyType="false"/>
+		<CityGML:DataType base_DataType="EAID_DF552FE6_83BE_4ac9_8B04_33C9C228E5F5" noPropertyType="false"/>
+		<CityGML:DataType base_DataType="EAID_787CD588_67FA_4120_A58D_1238C929B670" noPropertyType="false"/>
+		<thecustomprofile:OCL base_Constraint="EAID_FA3061BB_7262_4a3e_AD90_FC20B9A61B46"/>
+		<CityGML:ApplicationSchema base_Package="EAPK_E5C5322E_A142_4812_AD39_C64DA8CBCE6E" version="3.0.0" language="en" xsdDocument="relief.xsd" xmlns="dem" targetNamespace="http://www.opengis.net/citygml/relief/3.0"/>
+	</uml:Model>
+	<xmi:Extension extender="Enterprise Architect" extenderID="6.5">
+		<elements>
+			<element xmi:idref="EAPK_E5C5322E_A142_4812_AD39_C64DA8CBCE6E" xmi:type="uml:Package" name="Relief" scope="public">
+				<model package2="EAID_E5C5322E_A142_4812_AD39_C64DA8CBCE6E" package="EAPK_369E0123_00FC_4098_BEF2_3BB506B2012A" tpos="0" ea_localid="14" ea_eleType="package"/>
+				<properties documentation="The Relief module supports representation of the terrain. CityGML supports terrain representations at different levels of detail, reflecting different accuracies or resolutions. Terrain may be specified as a regular raster or grid, as a TIN, by break lines, and/or by mass points." isSpecification="false" sType="Package" nType="0" scope="public" stereotype="ApplicationSchema"/>
+				<project author="ebbinghaus" version="1.0" phase="1.0" created="2012-11-28 13:27:43" modified="2020-02-27 17:56:24" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_48460EC2_A4E8_72a4_BB7E_D8E673D62916" name="gmlProfileSchema" value="#NOTES#Description: URL of the schema location of a GML profile (optional)&#xA;" modelElement="EAID_E5C5322E_A142_4812_AD39_C64DA8CBCE6E"/>
+					<tag xmi:id="EAID_DEB7F7C4_CC2A_41cc_976D_D58CA44B51FA" name="language" value="en" modelElement="EAID_E5C5322E_A142_4812_AD39_C64DA8CBCE6E"/>
+					<tag xmi:id="EAID_393CD814_DD9A_9cdd_A60A_B1E96E71FD45" name="targetNamespace" value="http://www.opengis.net/citygml/relief/3.0#NOTES#Description: Target XML namespace of the application schema&#xA;" modelElement="EAID_E5C5322E_A142_4812_AD39_C64DA8CBCE6E"/>
+					<tag xmi:id="EAID_6F40CEE6_AE8C_0eae_A0AC_E07F0DC478F2" name="version" value="3.0.0#NOTES#Description: Current version of the application schema&#xA;" modelElement="EAID_E5C5322E_A142_4812_AD39_C64DA8CBCE6E"/>
+					<tag xmi:id="EAID_08B91BD2_D9F8_1ed9_880A_9C68718BACCB" name="xmlns" value="dem#NOTES#Description: Namespace prefix to be used as short form of the target namespace&#xA;" modelElement="EAID_E5C5322E_A142_4812_AD39_C64DA8CBCE6E"/>
+					<tag xmi:id="EAID_6E79370E_DD94_9fdd_A8C2_3EFCA836846C" name="xsdDocument" value="relief.xsd#NOTES#Description: Name of an XML Schema document to create representing the content of this package&#xA;" modelElement="EAID_E5C5322E_A142_4812_AD39_C64DA8CBCE6E"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={17250857-2904-4368-9AB7-1C9D05BEFDEF}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=ApplicationSchema;FQName=CityGML::ApplicationSchema;@ENDSTEREO;$DES;$CLT={E5C5322E-A142-4812-AD39-C64DA8CBCE6E}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="CityGML"/>
+				<packageproperties version="1.0" xmiver="Enterprise Architect XMI/UML 1.3" tpos="0"/>
+				<paths/>
+				<times created="2012-11-28 13:27:43" modified="2020-02-27 17:56:24" lastloaddate="2017-06-23 14:44:11" lastsavedate="2013-04-17 14:47:22"/>
+				<flags iscontrolled="FALSE" isprotected="FALSE" batchsave="0" batchload="0" usedtd="FALSE" logxml="FALSE" packageFlags="Recurse=0;"/>
+			</element>
+			<element xmi:idref="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7" xmi:type="uml:Class" name="AbstractReliefComponent" scope="public">
+				<model package="EAPK_E5C5322E_A142_4812_AD39_C64DA8CBCE6E" tpos="0" ea_localid="118" ea_eleType="element"/>
+				<properties documentation="An AbstractReliefComponent represents an element of the terrain surface - either a TIN, a raster or grid, mass points or break lines." isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="true" isActive="false"/>
+				<project author="ebbinghaus" version="1.0" phase="1.0" created="2012-07-09 13:59:14" modified="2020-08-03 15:16:56" complexity="1" status="Proposed"/>
+				<code product_name="Java" gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_ED33D65F_A24E_81a2_BA36_AA80765E5718" name="byValuePropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Create a property type that requires that the instance is encoded inline.&#xA;" modelElement="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7"/>
+					<tag xmi:id="EAID_D8E5B7C5_7754_6c77_A1A2_D7135B0F08DB" name="gmlMixin" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Identifies the feature type as a mixin class.&#xA;" modelElement="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7"/>
+					<tag xmi:id="EAID_26B33348_1E57_d91e_987E_9274D442CA55" name="isCollection" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Identifies the feature type as a feature collection.&#xA;" modelElement="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7"/>
+					<tag xmi:id="EAID_F9638764_E613_9ee6_9316_2A1DA4726802" name="noPropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Suppress creation of a standard property type that supports inline or by-reference encoding.&#xA;" modelElement="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={879D0ACA-08FD-4a57-A97D-6CB04010D3AF}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=FeatureType;FQName=CityGML::FeatureType;@ENDSTEREO;$DES;$CLT={057DADD3-ABDC-4035-BA1D-DC05B6FE70D7}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={BE3BB2DA-E762-48e9-AE2F-32AF55235021}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isActive@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={057DADD3-ABDC-4035-BA1D-DC05B6FE70D7}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Relief"/>
+				<attributes>
+					<attribute xmi:idref="EAID_F7918A8A_9ACD_4ff3_988C_2B2351CEEABC" name="lod" scope="Public">
+						<initial/>
+						<documentation value="Indicates the Level of Detail of the terrain component."/>
+						<model ea_localid="181" ea_guid="{F7918A8A-9ACD-4ff3-988C-2B2351CEEABC}"/>
+						<properties type="IntegerBetween0and3" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype stereotype="Property"/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="IsLiteral=0;volatile=0;union=0;"/>
+						<tags>
+							<tag xmi:id="EAID_E810E922_58E8_b658_916D_A84607DB75EA" name="sequenceNumber" value="1" notes="Description: Unique integer value for properties of the type used to sort properties.&#xA;"/>
+							<tag xmi:id="EAID_37DFCA0A_B550_b0b5_BEC6_B050E0B6A63C" name="inlineOrByReference" value="inlineOrByReference" notes="Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;"/>
+							<tag xmi:id="EAID_08A8199D_FE63_35fe_B4AF_CF7AD23C5964" name="isMetadata" value="false" notes="Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;"/>
+							<tag xmi:id="EAID_BCD3CBEE_9454_f194_AB34_A31BE0B3318C" name="xsdEncodingRule" notes="Values: notEncoded,iso19136_2007,gml33,citygml&#xA;"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={EF523559-784E-4d75-A6B6-347D6BFB2EB2}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;FQName=CityGML::Property;@ENDSTEREO;$DES;$CLT={F7918A8A-9ACD-4ff3-988C-2B2351CEEABC}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+					</attribute>
+					<attribute xmi:idref="EAID_C44CCEEC_65B6_4014_BE58_C7824115643E" name="adeOfAbstractReliefComponent" scope="Public">
+						<initial/>
+						<documentation value="Augments AbstractReliefComponent with properties defined in an ADE."/>
+						<model ea_localid="10580" ea_guid="{C44CCEEC-65B6-4014-BE58-C7824115643E}"/>
+						<properties type="ADEOfAbstractReliefComponent" collection="false" static="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0"/>
+						<containment containment="Not Specified" position="1"/>
+						<stereotype stereotype="Property"/>
+						<bounds lower="0" upper="*"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;union=0;"/>
+						<tags>
+							<tag xmi:id="EAID_E810E922_58E8_b658_A1C5_BB7522514BE0" name="sequenceNumber" value="3" notes="Description: Unique integer value for properties of the type used to sort properties.&#xA;"/>
+							<tag xmi:id="EAID_37DFCA0A_B550_b0b5_898F_ABD2BCED9594" name="inlineOrByReference" value="inlineOrByReference" notes="Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;"/>
+							<tag xmi:id="EAID_08A8199D_FE63_35fe_BE34_8485CB9C2D1B" name="isMetadata" value="false" notes="Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;"/>
+							<tag xmi:id="EAID_BCD3CBEE_9454_f194_A167_992EAD631ACD" name="xsdEncodingRule" notes="Values: notEncoded,iso19136_2007,gml33,citygml&#xA;"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={A4A22F10-286E-425c-A97A-F646A04E6006}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;FQName=CityGML::Property;@ENDSTEREO;$DES;$CLT={C44CCEEC-65B6-4014-BE58-C7824115643E}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+					</attribute>
+				</attributes>
+				<constraints>
+					<constraint name="polygonGeometry" description="inv: extent.patch-&amp;gt;size()=1 and extent.patch-&amp;gt;forAll(oclIsKindOf(GM_Polygon))" type="OCL" weight="0.00" status="Approved"/>
+				</constraints>
+				<links>
+					<Association xmi:id="EAID_B7D2290E_988D_48c9_800F_2CE00E1E28D0" start="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7" end="EAID_F23E617D_5FEA_4cd6_AAE5_F38E34971B2E"/>
+					<Generalization xmi:id="EAID_BE4DA325_6162_4d43_B2E6_E166B8DCF29B" start="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7" end="EAID_47C81848_9C36_4278_9655_043640A70675"/>
+					<Generalization xmi:id="EAID_01C96C9D_1C86_4b26_9639_A94351CBF178" start="EAID_691F1836_DD16_45c0_9978_FABBA6CE23B4" end="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7"/>
+					<Generalization xmi:id="EAID_14A7D481_FDB0_458f_B3B1_6F4E4A43A702" start="EAID_7423A1EA_4F50_40af_9E8C_C0D867BCA731" end="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7"/>
+					<Generalization xmi:id="EAID_6AB0FC18_7F65_47e3_B46C_B06B4D80BFE0" start="EAID_EBD13E4A_697E_425d_AE47_77BC140AAA85" end="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7"/>
+					<Generalization xmi:id="EAID_787F795B_4687_4d8f_A946_53275CA9B99C" start="EAID_C67FBEF8_132F_4a19_87E1_4F040BE587BE" end="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7"/>
+					<Association xmi:id="EAID_9E1930C5_BBB4_4421_BBB0_7B5FE727F5E2" start="EAID_90C1991A_7C36_4b51_B5DD_F6A570100375" end="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7"/>
+					<NoteLink xmi:id="EAID_A4C3E2CD_A4F5_4235_B32E_E581E0D43F60" start="EAID_FA3061BB_7262_4a3e_AD90_FC20B9A61B46" end="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_7423A1EA_4F50_40af_9E8C_C0D867BCA731" xmi:type="uml:Class" name="BreaklineRelief" scope="public">
+				<model package="EAPK_E5C5322E_A142_4812_AD39_C64DA8CBCE6E" tpos="0" ea_localid="121" ea_eleType="element"/>
+				<properties documentation="A BreaklineRelief represents a terrain component with 3D lines. These lines denote break lines or ridge/valley lines." isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="ebbinghaus" version="1.0" phase="1.0" created="2012-07-09 13:59:14" modified="2020-05-28 21:06:53" complexity="1" status="Proposed"/>
+				<code product_name="Java" gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_ED33D65F_A24E_81a2_B101_E7460B5503A1" name="byValuePropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Create a property type that requires that the instance is encoded inline.&#xA;" modelElement="EAID_7423A1EA_4F50_40af_9E8C_C0D867BCA731"/>
+					<tag xmi:id="EAID_D8E5B7C5_7754_6c77_A31C_20642BD4E63F" name="gmlMixin" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Identifies the feature type as a mixin class.&#xA;" modelElement="EAID_7423A1EA_4F50_40af_9E8C_C0D867BCA731"/>
+					<tag xmi:id="EAID_26B33348_1E57_d91e_BA3C_355C0E804918" name="isCollection" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Identifies the feature type as a feature collection.&#xA;" modelElement="EAID_7423A1EA_4F50_40af_9E8C_C0D867BCA731"/>
+					<tag xmi:id="EAID_F9638764_E613_9ee6_B2A1_8330FF210469" name="noPropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Suppress creation of a standard property type that supports inline or by-reference encoding.&#xA;" modelElement="EAID_7423A1EA_4F50_40af_9E8C_C0D867BCA731"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={A9D7A211-7599-49ea-9426-6AA75340AB88}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=FeatureType;FQName=CityGML::FeatureType;@ENDSTEREO;$DES;$CLT={7423A1EA-4F50-40af-9E8C-C0D867BCA731}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={52ECDC7B-8C40-4044-9CFC-AAEB7A641BF0}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isActive@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={7423A1EA-4F50-40af-9E8C-C0D867BCA731}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Relief"/>
+				<attributes>
+					<attribute xmi:idref="EAID_0600EEEC_2F74_4ebb_80B3_3A3CF3C40584" name="adeOfBreaklineRelief" scope="Public">
+						<initial/>
+						<documentation value="Augments the BreaklineRelief with properties defined in an ADE."/>
+						<model ea_localid="10583" ea_guid="{0600EEEC-2F74-4ebb-80B3-3A3CF3C40584}"/>
+						<properties type="ADEOfBreaklineRelief" collection="false" static="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype stereotype="Property"/>
+						<bounds lower="0" upper="*"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;union=0;"/>
+						<tags>
+							<tag xmi:id="EAID_E810E922_58E8_b658_A115_2E62C2FDE2B4" name="sequenceNumber" value="3" notes="Description: Unique integer value for properties of the type used to sort properties.&#xA;"/>
+							<tag xmi:id="EAID_37DFCA0A_B550_b0b5_B74F_533FE2A50CBB" name="inlineOrByReference" value="inlineOrByReference" notes="Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;"/>
+							<tag xmi:id="EAID_08A8199D_FE63_35fe_A3C2_6EF73DFFFF96" name="isMetadata" value="false" notes="Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;"/>
+							<tag xmi:id="EAID_BCD3CBEE_9454_f194_AAF1_F822BF922728" name="xsdEncodingRule" notes="Values: notEncoded,iso19136_2007,gml33,citygml&#xA;"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={0F77B694-0945-4ef4-8A4D-B7033B927C46}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;FQName=CityGML::Property;@ENDSTEREO;$DES;$CLT={0600EEEC-2F74-4ebb-80B3-3A3CF3C40584}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+					</attribute>
+				</attributes>
+				<links>
+					<Generalization xmi:id="EAID_14A7D481_FDB0_458f_B3B1_6F4E4A43A702" start="EAID_7423A1EA_4F50_40af_9E8C_C0D867BCA731" end="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7"/>
+					<Association xmi:id="EAID_41F3710B_44D8_41f3_8C58_5A6B2068F9D6" start="EAID_7423A1EA_4F50_40af_9E8C_C0D867BCA731" end="EAID_5E740584_6743_42da_8CD0_2E342F9A5FDE"/>
+					<Association xmi:id="EAID_7A6717D0_4B13_40c3_BABE_8A1C4518D53A" start="EAID_7423A1EA_4F50_40af_9E8C_C0D867BCA731" end="EAID_5E740584_6743_42da_8CD0_2E342F9A5FDE"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_C67FBEF8_132F_4a19_87E1_4F040BE587BE" xmi:type="uml:Class" name="MassPointRelief" scope="public">
+				<model package="EAPK_E5C5322E_A142_4812_AD39_C64DA8CBCE6E" tpos="0" ea_localid="123" ea_eleType="element"/>
+				<properties documentation="A MassPointRelief represents a terrain component as a collection of 3D points." isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="ebbinghaus" version="1.0" phase="1.0" created="2012-07-09 13:59:14" modified="2020-05-28 21:06:53" complexity="1" status="Proposed"/>
+				<code product_name="Java" gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_ED33D65F_A24E_81a2_8CD5_69E5B3D3C098" name="byValuePropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Create a property type that requires that the instance is encoded inline.&#xA;" modelElement="EAID_C67FBEF8_132F_4a19_87E1_4F040BE587BE"/>
+					<tag xmi:id="EAID_D8E5B7C5_7754_6c77_A1B3_62B888C74FCD" name="gmlMixin" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Identifies the feature type as a mixin class.&#xA;" modelElement="EAID_C67FBEF8_132F_4a19_87E1_4F040BE587BE"/>
+					<tag xmi:id="EAID_26B33348_1E57_d91e_8910_EB75B1BBCE09" name="isCollection" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Identifies the feature type as a feature collection.&#xA;" modelElement="EAID_C67FBEF8_132F_4a19_87E1_4F040BE587BE"/>
+					<tag xmi:id="EAID_F9638764_E613_9ee6_B21D_2E2CA42D4DE6" name="noPropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Suppress creation of a standard property type that supports inline or by-reference encoding.&#xA;" modelElement="EAID_C67FBEF8_132F_4a19_87E1_4F040BE587BE"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={819432F4-5A30-49ef-B418-567C3CF67873}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=FeatureType;FQName=CityGML::FeatureType;@ENDSTEREO;$DES;$CLT={C67FBEF8-132F-4a19-87E1-4F040BE587BE}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={D053E890-7728-49f1-AEDE-B16897429F9D}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isActive@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={C67FBEF8-132F-4a19-87E1-4F040BE587BE}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Relief"/>
+				<attributes>
+					<attribute xmi:idref="EAID_C0CD8FB8_0692_456c_B213_CC58117117B0" name="adeOfMassPointRelief" scope="Public">
+						<initial/>
+						<documentation value="Augments the MassPointRelief with properties defined in an ADE."/>
+						<model ea_localid="10582" ea_guid="{C0CD8FB8-0692-456c-B213-CC58117117B0}"/>
+						<properties type="ADEOfMassPointRelief" collection="false" static="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype stereotype="Property"/>
+						<bounds lower="0" upper="*"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;union=0;"/>
+						<tags>
+							<tag xmi:id="EAID_E810E922_58E8_b658_9BF3_9A4D45025A09" name="sequenceNumber" value="3" notes="Description: Unique integer value for properties of the type used to sort properties.&#xA;"/>
+							<tag xmi:id="EAID_37DFCA0A_B550_b0b5_A0C3_266AAA4A1248" name="inlineOrByReference" value="inlineOrByReference" notes="Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;"/>
+							<tag xmi:id="EAID_08A8199D_FE63_35fe_BAEB_4E062EF7E964" name="isMetadata" value="false" notes="Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;"/>
+							<tag xmi:id="EAID_BCD3CBEE_9454_f194_A23E_6B95586FF015" name="xsdEncodingRule" notes="Values: notEncoded,iso19136_2007,gml33,citygml&#xA;"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={9C1B8877-F1D6-4dc5-94E9-006D49A42158}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;FQName=CityGML::Property;@ENDSTEREO;$DES;$CLT={C0CD8FB8-0692-456c-B213-CC58117117B0}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+					</attribute>
+				</attributes>
+				<links>
+					<Association xmi:id="EAID_5A2D6EB8_73B6_43bf_B1CD_A2E6E1CE3A5E" start="EAID_C67FBEF8_132F_4a19_87E1_4F040BE587BE" end="EAID_38EB3C61_64E6_4992_8DB9_356635E2B808"/>
+					<Generalization xmi:id="EAID_787F795B_4687_4d8f_A946_53275CA9B99C" start="EAID_C67FBEF8_132F_4a19_87E1_4F040BE587BE" end="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7"/>
+					<Association xmi:id="EAID_9A2AFFA8_4144_4ce5_9341_4F644DE280DE" start="EAID_C67FBEF8_132F_4a19_87E1_4F040BE587BE" end="EAID_EAAC4305_1147_4752_801A_48B1BB977958"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_EBD13E4A_697E_425d_AE47_77BC140AAA85" xmi:type="uml:Class" name="RasterRelief" scope="public">
+				<model package="EAPK_E5C5322E_A142_4812_AD39_C64DA8CBCE6E" tpos="0" ea_localid="124" ea_eleType="element"/>
+				<properties documentation="A RasterRelief represents a terrain component as a regular raster or grid." isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="ebbinghaus" version="1.0" phase="1.0" created="2012-07-09 13:59:14" modified="2020-05-28 21:06:53" complexity="1" status="Proposed"/>
+				<code product_name="Java" gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_ED33D65F_A24E_81a2_A7D5_A92DE61561AD" name="byValuePropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Create a property type that requires that the instance is encoded inline.&#xA;" modelElement="EAID_EBD13E4A_697E_425d_AE47_77BC140AAA85"/>
+					<tag xmi:id="EAID_D8E5B7C5_7754_6c77_87EB_42F678CDF17D" name="gmlMixin" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Identifies the feature type as a mixin class.&#xA;" modelElement="EAID_EBD13E4A_697E_425d_AE47_77BC140AAA85"/>
+					<tag xmi:id="EAID_26B33348_1E57_d91e_91F1_8D556AC317C2" name="isCollection" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Identifies the feature type as a feature collection.&#xA;" modelElement="EAID_EBD13E4A_697E_425d_AE47_77BC140AAA85"/>
+					<tag xmi:id="EAID_F9638764_E613_9ee6_A070_E1D00F2348B5" name="noPropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Suppress creation of a standard property type that supports inline or by-reference encoding.&#xA;" modelElement="EAID_EBD13E4A_697E_425d_AE47_77BC140AAA85"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={74CB4E6F-5CFD-48fe-B859-8D21AD4F891B}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=FeatureType;FQName=CityGML::FeatureType;@ENDSTEREO;$DES;$CLT={EBD13E4A-697E-425d-AE47-77BC140AAA85}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={985BBDBC-6733-481d-BB5C-AD816D7BDAA9}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isActive@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={EBD13E4A-697E-425d-AE47-77BC140AAA85}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Relief"/>
+				<attributes>
+					<attribute xmi:idref="EAID_11074975_4F81_4cf3_9BF7_A9DA408E985B" name="adeOfRasterRelief" scope="Public">
+						<initial/>
+						<documentation value="Augments the RasterRelief with properties defined in an ADE."/>
+						<model ea_localid="10584" ea_guid="{11074975-4F81-4cf3-9BF7-A9DA408E985B}"/>
+						<properties type="ADEOfRasterRelief" collection="false" static="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype stereotype="Property"/>
+						<bounds lower="0" upper="*"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;union=0;"/>
+						<tags>
+							<tag xmi:id="EAID_E810E922_58E8_b658_810E_9B5E7CFAED76" name="sequenceNumber" value="2" notes="Description: Unique integer value for properties of the type used to sort properties.&#xA;"/>
+							<tag xmi:id="EAID_37DFCA0A_B550_b0b5_B9E5_11CB73CE8403" name="inlineOrByReference" value="inlineOrByReference" notes="Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;"/>
+							<tag xmi:id="EAID_08A8199D_FE63_35fe_A3F0_F7BC5957443A" name="isMetadata" value="false" notes="Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;"/>
+							<tag xmi:id="EAID_BCD3CBEE_9454_f194_A8BE_E10437A9ADE9" name="xsdEncodingRule" notes="Values: notEncoded,iso19136_2007,gml33,citygml&#xA;"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={A2A4C8DB-796A-4c38-A777-10ADF936A926}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;FQName=CityGML::Property;@ENDSTEREO;$DES;$CLT={11074975-4F81-4cf3-9BF7-A9DA408E985B}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+					</attribute>
+				</attributes>
+				<links>
+					<Generalization xmi:id="EAID_6AB0FC18_7F65_47e3_B46C_B06B4D80BFE0" start="EAID_EBD13E4A_697E_425d_AE47_77BC140AAA85" end="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7"/>
+					<Association xmi:id="EAID_8211BBA1_BD2A_431f_9F34_5D34C45CF434" start="EAID_EBD13E4A_697E_425d_AE47_77BC140AAA85" end="EAID_CEB09532_0C7F_4f9d_BF64_622ABFC72B3A"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_90C1991A_7C36_4b51_B5DD_F6A570100375" xmi:type="uml:Class" name="ReliefFeature" scope="public">
+				<model package="EAPK_E5C5322E_A142_4812_AD39_C64DA8CBCE6E" tpos="0" ea_localid="122" ea_eleType="element"/>
+				<properties documentation="A ReliefFeature is a collection of terrain components representing the Earth's surface, also known as the Digital Terrain Model." isSpecification="false" sType="Class" nType="0" scope="public" stereotype="TopLevelFeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="ebbinghaus" version="1.0" phase="1.0" created="2012-07-09 13:59:14" modified="2020-09-03 14:49:47" complexity="1" status="Proposed"/>
+				<code product_name="Java" gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_ED33D65F_A24E_81a2_B77F_17ED3EE65D1D" name="byValuePropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Create a property type that requires that the instance is encoded inline.&#xA;" modelElement="EAID_90C1991A_7C36_4b51_B5DD_F6A570100375"/>
+					<tag xmi:id="EAID_D8E5B7C5_7754_6c77_990B_C47B52B92F43" name="gmlMixin" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Identifies the feature type as a mixin class.&#xA;" modelElement="EAID_90C1991A_7C36_4b51_B5DD_F6A570100375"/>
+					<tag xmi:id="EAID_26B33348_1E57_d91e_8F25_6D975505BE64" name="isCollection" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Identifies the feature type as a feature collection.&#xA;" modelElement="EAID_90C1991A_7C36_4b51_B5DD_F6A570100375"/>
+					<tag xmi:id="EAID_F9638764_E613_9ee6_B4F5_19DDB74B0B90" name="noPropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Suppress creation of a standard property type that supports inline or by-reference encoding.&#xA;" modelElement="EAID_90C1991A_7C36_4b51_B5DD_F6A570100375"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={5F1B880F-AFBF-4b65-8EC2-2765D07937E3}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=TopLevelFeatureType;FQName=CityGML::TopLevelFeatureType;@ENDSTEREO;$DES;$CLT={90C1991A-7C36-4b51-B5DD-F6A570100375}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={2D215F18-A363-4670-971C-186038DB530A}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isActive@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={90C1991A-7C36-4b51-B5DD-F6A570100375}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Relief"/>
+				<attributes>
+					<attribute xmi:idref="EAID_D0B44B43_4FA0_4f0b_9F37_35CAD8F013D7" name="lod" scope="Public">
+						<initial/>
+						<documentation value="Indicates the Level of Detail of the ReliefFeature."/>
+						<model ea_localid="182" ea_guid="{D0B44B43-4FA0-4f0b-9F37-35CAD8F013D7}"/>
+						<properties type="IntegerBetween0and3" derived="0" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype stereotype="Property"/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="IsLiteral=0;volatile=0;union=0;"/>
+						<tags>
+							<tag xmi:id="EAID_E810E922_58E8_b658_AE9D_16E85FD92F89" name="sequenceNumber" value="1" notes="Description: Unique integer value for properties of the type used to sort properties.&#xA;"/>
+							<tag xmi:id="EAID_37DFCA0A_B550_b0b5_8FF0_B4289862FAFA" name="inlineOrByReference" value="inlineOrByReference" notes="Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;"/>
+							<tag xmi:id="EAID_08A8199D_FE63_35fe_BD99_604480874259" name="isMetadata" value="false" notes="Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;"/>
+							<tag xmi:id="EAID_BCD3CBEE_9454_f194_8D9D_17722EFA1B12" name="xsdEncodingRule" notes="Values: notEncoded,iso19136_2007,gml33,citygml&#xA;"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={60E8BFB3-4132-4345-81E4-23B5499847BE}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;FQName=CityGML::Property;@ENDSTEREO;$DES;$CLT={D0B44B43-4FA0-4f0b-9F37-35CAD8F013D7}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+					</attribute>
+					<attribute xmi:idref="EAID_4B095247_D944_4c6e_A12A_7FFF3840EF02" name="adeOfReliefFeature" scope="Public">
+						<initial/>
+						<documentation value="Augments the ReliefFeature with properties defined in an ADE."/>
+						<model ea_localid="10579" ea_guid="{4B095247-D944-4c6e-A12A-7FFF3840EF02}"/>
+						<properties type="ADEOfReliefFeature" collection="false" static="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0"/>
+						<containment containment="Not Specified" position="1"/>
+						<stereotype stereotype="Property"/>
+						<bounds lower="0" upper="*"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;union=0;"/>
+						<tags>
+							<tag xmi:id="EAID_E810E922_58E8_b658_8BD6_E1401A365AFC" name="sequenceNumber" value="3" notes="Description: Unique integer value for properties of the type used to sort properties.&#xA;"/>
+							<tag xmi:id="EAID_37DFCA0A_B550_b0b5_A835_325FA2835FE6" name="inlineOrByReference" value="inlineOrByReference" notes="Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;"/>
+							<tag xmi:id="EAID_08A8199D_FE63_35fe_B05F_9471D2E382C2" name="isMetadata" value="false" notes="Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;"/>
+							<tag xmi:id="EAID_BCD3CBEE_9454_f194_B4E2_08E41925377E" name="xsdEncodingRule" notes="Values: notEncoded,iso19136_2007,gml33,citygml&#xA;"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={B7CF1422-A48E-40c1-9577-11F76B5D04BF}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;FQName=CityGML::Property;@ENDSTEREO;$DES;$CLT={4B095247-D944-4c6e-A12A-7FFF3840EF02}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+					</attribute>
+				</attributes>
+				<links>
+					<Association xmi:id="EAID_9E1930C5_BBB4_4421_BBB0_7B5FE727F5E2" start="EAID_90C1991A_7C36_4b51_B5DD_F6A570100375" end="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7"/>
+					<Generalization xmi:id="EAID_B6B2087D_9676_4c08_AE46_ADC340E619A4" start="EAID_90C1991A_7C36_4b51_B5DD_F6A570100375" end="EAID_47C81848_9C36_4278_9655_043640A70675"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_691F1836_DD16_45c0_9978_FABBA6CE23B4" xmi:type="uml:Class" name="TINRelief" scope="public">
+				<model package="EAPK_E5C5322E_A142_4812_AD39_C64DA8CBCE6E" tpos="0" ea_localid="120" ea_eleType="element"/>
+				<properties documentation="A TINRelief represents a terrain component as a triangulated irregular network." isSpecification="false" sType="Class" nType="0" scope="public" stereotype="FeatureType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="ebbinghaus" version="1.0" phase="1.0" created="2012-07-09 13:59:14" modified="2020-05-28 21:06:53" complexity="1" status="Proposed"/>
+				<code product_name="Java" gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_ED33D65F_A24E_81a2_8309_40D0D7654CA7" name="byValuePropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Create a property type that requires that the instance is encoded inline.&#xA;" modelElement="EAID_691F1836_DD16_45c0_9978_FABBA6CE23B4"/>
+					<tag xmi:id="EAID_D8E5B7C5_7754_6c77_A23A_B3E373BECF01" name="gmlMixin" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Identifies the feature type as a mixin class.&#xA;" modelElement="EAID_691F1836_DD16_45c0_9978_FABBA6CE23B4"/>
+					<tag xmi:id="EAID_26B33348_1E57_d91e_99A6_6DC3E31402C6" name="isCollection" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Identifies the feature type as a feature collection.&#xA;" modelElement="EAID_691F1836_DD16_45c0_9978_FABBA6CE23B4"/>
+					<tag xmi:id="EAID_F9638764_E613_9ee6_8F9F_2D7187B42E16" name="noPropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Suppress creation of a standard property type that supports inline or by-reference encoding.&#xA;" modelElement="EAID_691F1836_DD16_45c0_9978_FABBA6CE23B4"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={10A47BC4-244E-4d38-8618-33D3C3A64987}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=FeatureType;FQName=CityGML::FeatureType;@ENDSTEREO;$DES;$CLT={691F1836-DD16-45c0-9978-FABBA6CE23B4}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={29DEA33F-2EFA-4b03-9B15-84041AF5AD7B}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isActive@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={691F1836-DD16-45c0-9978-FABBA6CE23B4}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Relief"/>
+				<attributes>
+					<attribute xmi:idref="EAID_44431BBD_DC9A_4041_834E_2730893779F9" name="adeOfTINRelief" scope="Public">
+						<initial/>
+						<documentation value="Augments the TINRelief with properties defined in an ADE."/>
+						<model ea_localid="10581" ea_guid="{44431BBD-DC9A-4041-834E-2730893779F9}"/>
+						<properties type="ADEOfTINRelief" collection="false" static="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype stereotype="Property"/>
+						<bounds lower="0" upper="*"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;union=0;"/>
+						<tags>
+							<tag xmi:id="EAID_E810E922_58E8_b658_9C65_C8671E77FA81" name="sequenceNumber" value="2" notes="Description: Unique integer value for properties of the type used to sort properties.&#xA;"/>
+							<tag xmi:id="EAID_37DFCA0A_B550_b0b5_A259_263270C98C62" name="inlineOrByReference" value="inlineOrByReference" notes="Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;"/>
+							<tag xmi:id="EAID_08A8199D_FE63_35fe_963E_C5E966A1220B" name="isMetadata" value="false" notes="Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;"/>
+							<tag xmi:id="EAID_BCD3CBEE_9454_f194_988F_3974F2AC2FA4" name="xsdEncodingRule" notes="Values: notEncoded,iso19136_2007,gml33,citygml&#xA;"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={64F81ED4-1A65-49aa-984E-43FC56D87118}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;FQName=CityGML::Property;@ENDSTEREO;$DES;$CLT={44431BBD-DC9A-4041-834E-2730893779F9}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+					</attribute>
+				</attributes>
+				<links>
+					<Generalization xmi:id="EAID_01C96C9D_1C86_4b26_9639_A94351CBF178" start="EAID_691F1836_DD16_45c0_9978_FABBA6CE23B4" end="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7"/>
+					<Association xmi:id="EAID_4C94E3BB_472A_4af5_9E4C_C7C94FA90E6A" start="EAID_691F1836_DD16_45c0_9978_FABBA6CE23B4" end="EAID_815F2729_8FAC_4572_B9C7_D54ECC3BDA1F"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_6CE84985_39F6_4358_973C_F11C0ACEDE05" xmi:type="uml:DataType" name="ADEOfAbstractReliefComponent" scope="public">
+				<model package="EAPK_E5C5322E_A142_4812_AD39_C64DA8CBCE6E" tpos="0" ea_localid="8239" ea_eleType="element"/>
+				<properties documentation="ADEOfAbstractReliefComponent acts as a hook to define properties within an ADE that are to be added to AbstractReliefComponent." isSpecification="false" sType="DataType" nType="0" scope="public" stereotype="DataType" isRoot="false" isLeaf="false" isAbstract="true"/>
+				<project author="Tatjana" version="1.0" phase="1.0" created="2020-05-26 12:32:42" modified="2020-05-29 00:13:42" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=11796479;BorderColor=-1;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_F9638764_0401_4b04_8A5C_0FE1DC778760" name="noPropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Suppress creation of a standard property type that supports inline encoding.&#xA;" modelElement="EAID_6CE84985_39F6_4358_973C_F11C0ACEDE05"/>
+					<tag xmi:id="EAID_BCD3CBEE_E42B_51e4_896E_432BC3A1DEF1" name="xsdEncodingRule" value="#NOTES#Values: notEncoded,iso19136_2007,gml33,citygml&#xA;" modelElement="EAID_6CE84985_39F6_4358_973C_F11C0ACEDE05"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={FA334F3A-382B-417c-8C71-8E66704B8E59}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=DataType;FQName=CityGML::DataType;@ENDSTEREO;$DES;$CLT={6CE84985-39F6-4358-973C-F11C0ACEDE05}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Relief" ea_attsclassified="{C44CCEEC-65B6-4014-BE58-C7824115643E}"/>
+			</element>
+			<element xmi:idref="EAID_1A1C4316_D886_4dd2_9AC0_33588E8A8720" xmi:type="uml:DataType" name="ADEOfBreaklineRelief" scope="public">
+				<model package="EAPK_E5C5322E_A142_4812_AD39_C64DA8CBCE6E" tpos="0" ea_localid="8242" ea_eleType="element"/>
+				<properties documentation="ADEOfBreaklineRelief acts as a hook to define properties within an ADE that are to be added to a BreaklineRelief." isSpecification="false" sType="DataType" nType="0" scope="public" stereotype="DataType" isRoot="false" isLeaf="false" isAbstract="true"/>
+				<project author="Tatjana" version="1.0" phase="1.0" created="2020-05-26 12:33:19" modified="2020-05-29 00:15:02" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=11796479;BorderColor=-1;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_F9638764_0401_4b04_8763_19A8E7057B57" name="noPropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Suppress creation of a standard property type that supports inline encoding.&#xA;" modelElement="EAID_1A1C4316_D886_4dd2_9AC0_33588E8A8720"/>
+					<tag xmi:id="EAID_BCD3CBEE_E42B_51e4_82F8_0A4A1914C51E" name="xsdEncodingRule" value="#NOTES#Values: notEncoded,iso19136_2007,gml33,citygml&#xA;" modelElement="EAID_1A1C4316_D886_4dd2_9AC0_33588E8A8720"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={54037923-67C6-4775-BA1A-FE7B0F215FB7}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=DataType;FQName=CityGML::DataType;@ENDSTEREO;$DES;$CLT={1A1C4316-D886-4dd2-9AC0-33588E8A8720}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Relief" ea_attsclassified="{0600EEEC-2F74-4ebb-80B3-3A3CF3C40584}"/>
+			</element>
+			<element xmi:idref="EAID_5BAC845C_4A26_44e5_8E07_444013A49BB0" xmi:type="uml:DataType" name="ADEOfMassPointRelief" scope="public">
+				<model package="EAPK_E5C5322E_A142_4812_AD39_C64DA8CBCE6E" tpos="0" ea_localid="8241" ea_eleType="element"/>
+				<properties documentation="ADEOfMassPointRelief acts as a hook to define properties within an ADE that are to be added to a MassPointRelief." isSpecification="false" sType="DataType" nType="0" scope="public" stereotype="DataType" isRoot="false" isLeaf="false" isAbstract="true"/>
+				<project author="Tatjana" version="1.0" phase="1.0" created="2020-05-26 12:33:09" modified="2020-05-29 00:14:31" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=11796479;BorderColor=-1;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_F9638764_0401_4b04_8E10_94F5312395A2" name="noPropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Suppress creation of a standard property type that supports inline encoding.&#xA;" modelElement="EAID_5BAC845C_4A26_44e5_8E07_444013A49BB0"/>
+					<tag xmi:id="EAID_BCD3CBEE_E42B_51e4_B277_2CEBC595068F" name="xsdEncodingRule" value="#NOTES#Values: notEncoded,iso19136_2007,gml33,citygml&#xA;" modelElement="EAID_5BAC845C_4A26_44e5_8E07_444013A49BB0"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={BF89076A-2A3E-4cf8-B9A1-76CE8D147F4F}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=DataType;FQName=CityGML::DataType;@ENDSTEREO;$DES;$CLT={5BAC845C-4A26-44e5-8E07-444013A49BB0}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Relief" ea_attsclassified="{C0CD8FB8-0692-456c-B213-CC58117117B0}"/>
+			</element>
+			<element xmi:idref="EAID_F19C4792_8912_4163_A770_EFB0783D0141" xmi:type="uml:DataType" name="ADEOfRasterRelief" scope="public">
+				<model package="EAPK_E5C5322E_A142_4812_AD39_C64DA8CBCE6E" tpos="0" ea_localid="8243" ea_eleType="element"/>
+				<properties documentation="ADEOfRasterRelief acts as a hook to define properties within an ADE that are to be added to a RasterRelief." isSpecification="false" sType="DataType" nType="0" scope="public" stereotype="DataType" isRoot="false" isLeaf="false" isAbstract="true"/>
+				<project author="Tatjana" version="1.0" phase="1.0" created="2020-05-26 12:33:26" modified="2020-05-29 00:15:25" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=11796479;BorderColor=-1;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_F9638764_0401_4b04_9119_6A1CC2C10103" name="noPropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Suppress creation of a standard property type that supports inline encoding.&#xA;" modelElement="EAID_F19C4792_8912_4163_A770_EFB0783D0141"/>
+					<tag xmi:id="EAID_BCD3CBEE_E42B_51e4_8F7E_8537A4AF467A" name="xsdEncodingRule" value="#NOTES#Values: notEncoded,iso19136_2007,gml33,citygml&#xA;" modelElement="EAID_F19C4792_8912_4163_A770_EFB0783D0141"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={DC64FA7D-A434-4f00-B3F8-FC60A3A3654E}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=DataType;FQName=CityGML::DataType;@ENDSTEREO;$DES;$CLT={F19C4792-8912-4163-A770-EFB0783D0141}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Relief" ea_attsclassified="{11074975-4F81-4cf3-9BF7-A9DA408E985B}"/>
+			</element>
+			<element xmi:idref="EAID_DF552FE6_83BE_4ac9_8B04_33C9C228E5F5" xmi:type="uml:DataType" name="ADEOfReliefFeature" scope="public">
+				<model package="EAPK_E5C5322E_A142_4812_AD39_C64DA8CBCE6E" tpos="0" ea_localid="8238" ea_eleType="element"/>
+				<properties documentation="ADEOfReliefFeature acts as a hook to define properties within an ADE that are to be added to a ReliefFeature." isSpecification="false" sType="DataType" nType="0" scope="public" stereotype="DataType" isRoot="false" isLeaf="false" isAbstract="true"/>
+				<project author="Tatjana" version="1.0" phase="1.0" created="2020-05-26 12:32:31" modified="2020-05-29 00:13:01" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=11796479;BorderColor=-1;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_F9638764_0401_4b04_8A1C_ECE48D15A801" name="noPropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Suppress creation of a standard property type that supports inline encoding.&#xA;" modelElement="EAID_DF552FE6_83BE_4ac9_8B04_33C9C228E5F5"/>
+					<tag xmi:id="EAID_BCD3CBEE_E42B_51e4_AE79_990B4B896B06" name="xsdEncodingRule" value="#NOTES#Values: notEncoded,iso19136_2007,gml33,citygml&#xA;" modelElement="EAID_DF552FE6_83BE_4ac9_8B04_33C9C228E5F5"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={84051CC8-31D5-4b6d-878E-298A88E034A0}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=DataType;FQName=CityGML::DataType;@ENDSTEREO;$DES;$CLT={DF552FE6-83BE-4ac9-8B04-33C9C228E5F5}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Relief" ea_attsclassified="{4B095247-D944-4c6e-A12A-7FFF3840EF02}"/>
+			</element>
+			<element xmi:idref="EAID_787CD588_67FA_4120_A58D_1238C929B670" xmi:type="uml:DataType" name="ADEOfTINRelief" scope="public">
+				<model package="EAPK_E5C5322E_A142_4812_AD39_C64DA8CBCE6E" tpos="0" ea_localid="8240" ea_eleType="element"/>
+				<properties documentation="ADEOfTINRelief acts as a hook to define properties within an ADE that are to be added to a TINRelief." isSpecification="false" sType="DataType" nType="0" scope="public" stereotype="DataType" isRoot="false" isLeaf="false" isAbstract="true"/>
+				<project author="Tatjana" version="1.0" phase="1.0" created="2020-05-26 12:32:59" modified="2020-05-29 00:14:05" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=11796479;BorderColor=-1;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_F9638764_0401_4b04_998B_9DA29609B7D8" name="noPropertyType" value="false#NOTES#Values: True,False&#xA;Default: false&#xA;Description: Suppress creation of a standard property type that supports inline encoding.&#xA;" modelElement="EAID_787CD588_67FA_4120_A58D_1238C929B670"/>
+					<tag xmi:id="EAID_BCD3CBEE_E42B_51e4_A99E_7943F5048BE3" name="xsdEncodingRule" value="#NOTES#Values: notEncoded,iso19136_2007,gml33,citygml&#xA;" modelElement="EAID_787CD588_67FA_4120_A58D_1238C929B670"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={43E7DEF6-90F4-437e-9569-C89C0A0A21A4}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=DataType;FQName=CityGML::DataType;@ENDSTEREO;$DES;$CLT={787CD588-67FA-4120-A58D-1238C929B670}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Relief" ea_attsclassified="{44431BBD-DC9A-4041-834E-2730893779F9}"/>
+			</element>
+			<element xmi:idref="EAID_FA3061BB_7262_4a3e_AD90_FC20B9A61B46" xmi:type="uml:Constraint" scope="public">
+				<model package="EAPK_E5C5322E_A142_4812_AD39_C64DA8CBCE6E" tpos="0" ea_localid="8189" ea_eleType="element"/>
+				<properties documentation="polygonGeometry : inv: extent.patch-&gt;size()=1 and extent.patch-&gt;forAll(oclIsKindOf(GM_Polygon))" isSpecification="false" sType="Constraint" nType="0" scope="public" stereotype="OCL"/>
+				<project author="Tatjana" version="1.0" phase="1.0" created="2020-03-11 15:45:13" modified="2020-05-29 19:10:55" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={B482E5B6-442A-4d7f-B6A2-C166A3101DBA}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=OCL;GUID={05E7D712-145F-442c-83C1-AFB281634B9E};@ENDSTEREO;$DES;$CLT={FA3061BB-7262-4a3e-AD90-FC20B9A61B46}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Relief"/>
+				<links>
+					<NoteLink xmi:id="EAID_A4C3E2CD_A4F5_4235_B32E_E581E0D43F60" start="EAID_FA3061BB_7262_4a3e_AD90_FC20B9A61B46" end="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7"/>
+				</links>
+			</element>
+		</elements>
+		<connectors>
+			<connector xmi:idref="EAID_B7D2290E_988D_48c9_800F_2CE00E1E28D0">
+				<source xmi:idref="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7">
+					<model ea_localid="118" type="Class" name="AbstractReliefComponent"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type multiplicity="*" aggregation="shared" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_F23E617D_5FEA_4cd6_AAE5_F38E34971B2E">
+					<model ea_localid="1026" type="Class" name="GM_Surface"/>
+					<role name="extent" stereotype="Property" visibility="Public" targetScope="instance"/>
+					<type multiplicity="0..1" aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation value="Indicates the geometrical extent of the terrain component. The geometrical extent is provided as a 2D Surface geometry."/>
+					<xrefs value="$XREFPROP=$XID={F560CD4A-1423-43e5-A7A1-CF1CEEC39BAE}$XID;$NAM=Stereotypes$NAM;$TYP=connectorDestEnd property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;FQName=CityGML::Property;@ENDSTEREO;$DES;$CLT={B7D2290E-988D-48c9-800F-2CE00E1E28D0}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+					<tags>
+						<tag xmi:id="EAID_08A8199D_FE63_35fe_AFA6_13CE9E6F7D38" name="isMetadata" value="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;"/>
+						<tag xmi:id="EAID_37DFCA0A_B550_b0b5_824C_125D68B45764" name="inlineOrByReference" value="inlineOrByReference$ea_notes=Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;"/>
+						<tag xmi:id="EAID_BCD3CBEE_9454_f194_BDE9_1736D2564321" name="xsdEncodingRule" value="$ea_notes=Values: notEncoded,iso19136_2007,gml33,citygml&#xA;"/>
+						<tag xmi:id="EAID_E810E922_58E8_b658_AF06_9A16B0E960FC" name="sequenceNumber" value="2$ea_notes= Unique integer value for properties of the type used to sort properties.&#xA;"/>
+					</tags>
+				</target>
+				<model ea_localid="9121"/>
+				<properties ea_type="Association" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels lb="*" rb="0..1" rt="+extent&#xA;«Property»"/>
+				<extendedProperties/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_BE4DA325_6162_4d43_B2E6_E166B8DCF29B">
+				<source xmi:idref="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7">
+					<model ea_localid="118" type="Class" name="AbstractReliefComponent"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_47C81848_9C36_4278_9655_043640A70675">
+					<model ea_localid="8178" type="Class" name="AbstractSpaceBoundary"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="9185"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_01C96C9D_1C86_4b26_9639_A94351CBF178">
+				<source xmi:idref="EAID_691F1836_DD16_45c0_9978_FABBA6CE23B4">
+					<model ea_localid="120" type="Class" name="TINRelief"/>
+					<role visibility="Public"/>
+					<type aggregation="none"/>
+					<constraints/>
+					<modifiers isOrdered="false" isNavigable="false"/>
+					<style/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7">
+					<model ea_localid="118" type="Class" name="AbstractReliefComponent"/>
+					<role visibility="Public"/>
+					<type aggregation="none"/>
+					<constraints/>
+					<modifiers isOrdered="false" isNavigable="true"/>
+					<style/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="7586"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="0" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs value="$XREFPROP=$XID={E2B06171-C8F4-408a-A1A6-695075FDCF2D}$XID;$NAM=CustomProperties$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$DES=@PROP=@NAME=isSubstitutable@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={01C96C9D-1C86-4b26-9639-A94351CBF178}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_14A7D481_FDB0_458f_B3B1_6F4E4A43A702">
+				<source xmi:idref="EAID_7423A1EA_4F50_40af_9E8C_C0D867BCA731">
+					<model ea_localid="121" type="Class" name="BreaklineRelief"/>
+					<role visibility="Public"/>
+					<type aggregation="none"/>
+					<constraints/>
+					<modifiers isOrdered="false" isNavigable="false"/>
+					<style/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7">
+					<model ea_localid="118" type="Class" name="AbstractReliefComponent"/>
+					<role visibility="Public"/>
+					<type aggregation="none"/>
+					<constraints/>
+					<modifiers isOrdered="false" isNavigable="true"/>
+					<style/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="7585"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="0" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs value="$XREFPROP=$XID={9CCD7FD5-A06F-498d-A364-02B312B5EDDB}$XID;$NAM=CustomProperties$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$DES=@PROP=@NAME=isSubstitutable@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={14A7D481-FDB0-458f-B3B1-6F4E4A43A702}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_6AB0FC18_7F65_47e3_B46C_B06B4D80BFE0">
+				<source xmi:idref="EAID_EBD13E4A_697E_425d_AE47_77BC140AAA85">
+					<model ea_localid="124" type="Class" name="RasterRelief"/>
+					<role visibility="Public"/>
+					<type aggregation="none"/>
+					<constraints/>
+					<modifiers isOrdered="false" isNavigable="false"/>
+					<style/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7">
+					<model ea_localid="118" type="Class" name="AbstractReliefComponent"/>
+					<role visibility="Public"/>
+					<type aggregation="none"/>
+					<constraints/>
+					<modifiers isOrdered="false" isNavigable="true"/>
+					<style/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="7583"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="0" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs value="$XREFPROP=$XID={17FC7045-459D-40f2-BB09-47F3F554D199}$XID;$NAM=CustomProperties$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$DES=@PROP=@NAME=isSubstitutable@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={6AB0FC18-7F65-47e3-B46C-B06B4D80BFE0}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_787F795B_4687_4d8f_A946_53275CA9B99C">
+				<source xmi:idref="EAID_C67FBEF8_132F_4a19_87E1_4F040BE587BE">
+					<model ea_localid="123" type="Class" name="MassPointRelief"/>
+					<role visibility="Public"/>
+					<type aggregation="none"/>
+					<constraints/>
+					<modifiers isOrdered="false" isNavigable="false"/>
+					<style/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7">
+					<model ea_localid="118" type="Class" name="AbstractReliefComponent"/>
+					<role visibility="Public"/>
+					<type aggregation="none"/>
+					<constraints/>
+					<modifiers isOrdered="false" isNavigable="true"/>
+					<style/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="7582"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="0" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs value="$XREFPROP=$XID={AA925E5B-7D1B-42be-8B5A-088E7EA2DF48}$XID;$NAM=CustomProperties$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$DES=@PROP=@NAME=isSubstitutable@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={787F795B-4687-4d8f-A946-53275CA9B99C}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_9E1930C5_BBB4_4421_BBB0_7B5FE727F5E2">
+				<source xmi:idref="EAID_90C1991A_7C36_4b51_B5DD_F6A570100375">
+					<model ea_localid="122" type="Class" name="ReliefFeature"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type multiplicity="*" aggregation="shared" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7">
+					<model ea_localid="118" type="Class" name="AbstractReliefComponent"/>
+					<role name="reliefComponent" stereotype="Property" visibility="Public" targetScope="instance"/>
+					<type multiplicity="1..*" aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation value="Relates to the terrain components that are part of the ReliefFeature."/>
+					<xrefs value="$XREFPROP=$XID={C60938B5-563D-4e78-9EF9-A190211942EF}$XID;$NAM=Stereotypes$NAM;$TYP=connectorDestEnd property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;FQName=CityGML::Property;@ENDSTEREO;$DES;$CLT={9E1930C5-BBB4-4421-BBB0-7B5FE727F5E2}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+					<tags>
+						<tag xmi:id="EAID_08A8199D_FE63_35fe_A752_56FFCAA2ADFC" name="isMetadata" value="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;"/>
+						<tag xmi:id="EAID_37DFCA0A_B550_b0b5_BA7F_4B2D95B18618" name="inlineOrByReference" value="inlineOrByReference$ea_notes=Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;"/>
+						<tag xmi:id="EAID_BCD3CBEE_9454_f194_BCC0_BF7552CAFA00" name="xsdEncodingRule" value="$ea_notes=Values: notEncoded,iso19136_2007,gml33,citygml&#xA;"/>
+						<tag xmi:id="EAID_E810E922_58E8_b658_BC5E_61E34D65300C" name="sequenceNumber" value="2$ea_notes= Unique integer value for properties of the type used to sort properties.&#xA;"/>
+					</tags>
+				</target>
+				<model ea_localid="7581"/>
+				<properties ea_type="Association" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels lb="*" rb="1..*" rt="+reliefComponent&#xA;«Property»"/>
+				<extendedProperties/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_A4C3E2CD_A4F5_4235_B32E_E581E0D43F60">
+				<source xmi:idref="EAID_FA3061BB_7262_4a3e_AD90_FC20B9A61B46">
+					<model ea_localid="8189" type="Constraint"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7">
+					<model ea_localid="118" type="Class" name="AbstractReliefComponent"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="9519"/>
+				<properties ea_type="NoteLink" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_41F3710B_44D8_41f3_8C58_5A6B2068F9D6">
+				<source xmi:idref="EAID_7423A1EA_4F50_40af_9E8C_C0D867BCA731">
+					<model ea_localid="121" type="Class" name="BreaklineRelief"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type multiplicity="*" aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_5E740584_6743_42da_8CD0_2E342F9A5FDE">
+					<model ea_localid="994" type="Class" name="GM_MultiCurve"/>
+					<role name="ridgeOrValleyLines" stereotype="Property" visibility="Public" targetScope="instance"/>
+					<type multiplicity="0..1" aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation value="Relates to the 3D MultiCurve geometry of the MassPointRelief. This association role is used to represent ridge or valley lines."/>
+					<xrefs value="$XREFPROP=$XID={748E2C33-3D8D-44f3-BE9A-653B6D4B3D7C}$XID;$NAM=Stereotypes$NAM;$TYP=connectorDestEnd property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;FQName=CityGML::Property;@ENDSTEREO;$DES;$CLT={41F3710B-44D8-41f3-8C58-5A6B2068F9D6}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+					<tags>
+						<tag xmi:id="EAID_08A8199D_FE63_35fe_A084_EC1EEDB403AA" name="isMetadata" value="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;"/>
+						<tag xmi:id="EAID_37DFCA0A_B550_b0b5_B577_6AC0BD5BDACF" name="inlineOrByReference" value="inlineOrByReference$ea_notes=Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;"/>
+						<tag xmi:id="EAID_BCD3CBEE_9454_f194_8AE5_BA6A9C8DA120" name="xsdEncodingRule" value="$ea_notes=Values: notEncoded,iso19136_2007,gml33,citygml&#xA;"/>
+						<tag xmi:id="EAID_E810E922_58E8_b658_9FC7_46A03BD2C5E9" name="sequenceNumber" value="1$ea_notes= Unique integer value for properties of the type used to sort properties.&#xA;"/>
+					</tags>
+				</target>
+				<model ea_localid="9124"/>
+				<properties ea_type="Association" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels lb="*" rb="0..1" rt="+ridgeOrValleyLines&#xA;«Property»"/>
+				<extendedProperties/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_7A6717D0_4B13_40c3_BABE_8A1C4518D53A">
+				<source xmi:idref="EAID_7423A1EA_4F50_40af_9E8C_C0D867BCA731">
+					<model ea_localid="121" type="Class" name="BreaklineRelief"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type multiplicity="*" aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_5E740584_6743_42da_8CD0_2E342F9A5FDE">
+					<model ea_localid="994" type="Class" name="GM_MultiCurve"/>
+					<role name="breaklines" stereotype="Property" visibility="Public" targetScope="instance"/>
+					<type multiplicity="0..1" aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation value="Relates to the 3D MultiCurve geometry of the MassPointRelief. This association role is used to represent break lines."/>
+					<xrefs value="$XREFPROP=$XID={4173A08D-12F3-4c81-9BAB-AAD8C0656EC9}$XID;$NAM=Stereotypes$NAM;$TYP=connectorDestEnd property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;FQName=CityGML::Property;@ENDSTEREO;$DES;$CLT={7A6717D0-4B13-40c3-BABE-8A1C4518D53A}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+					<tags>
+						<tag xmi:id="EAID_08A8199D_FE63_35fe_8176_F960FEB97F52" name="isMetadata" value="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;"/>
+						<tag xmi:id="EAID_37DFCA0A_B550_b0b5_8A42_F0843CCBC79C" name="inlineOrByReference" value="inlineOrByReference$ea_notes=Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;"/>
+						<tag xmi:id="EAID_BCD3CBEE_9454_f194_B1D5_8A78D09F2AAF" name="xsdEncodingRule" value="$ea_notes=Values: notEncoded,iso19136_2007,gml33,citygml&#xA;"/>
+						<tag xmi:id="EAID_E810E922_58E8_b658_927E_FAEA23C836E3" name="sequenceNumber" value="2$ea_notes= Unique integer value for properties of the type used to sort properties.&#xA;"/>
+					</tags>
+				</target>
+				<model ea_localid="9125"/>
+				<properties ea_type="Association" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels lb="*" rb="0..1" rt="+breaklines&#xA;«Property»"/>
+				<extendedProperties/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_5A2D6EB8_73B6_43bf_B1CD_A2E6E1CE3A5E">
+				<source xmi:idref="EAID_C67FBEF8_132F_4a19_87E1_4F040BE587BE">
+					<model ea_localid="123" type="Class" name="MassPointRelief"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type multiplicity="*" aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_38EB3C61_64E6_4992_8DB9_356635E2B808">
+					<model ea_localid="8084" type="Class" name="AbstractPointCloud"/>
+					<role name="pointCloud" stereotype="Property" visibility="Public" targetScope="instance"/>
+					<type multiplicity="0..1" aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation value="Relates to the 3D PointCloud of the MassPointRelief."/>
+					<xrefs value="$XREFPROP=$XID={F73520DB-6F73-488d-865A-ECD17948378C}$XID;$NAM=Stereotypes$NAM;$TYP=connectorDestEnd property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;FQName=CityGML::Property;@ENDSTEREO;$DES;$CLT={5A2D6EB8-73B6-43bf-B1CD-A2E6E1CE3A5E}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+					<tags>
+						<tag xmi:id="EAID_08A8199D_FE63_35fe_AFCE_7F6BBBE7D140" name="isMetadata" value="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;"/>
+						<tag xmi:id="EAID_37DFCA0A_B550_b0b5_84B2_386A26765DAE" name="inlineOrByReference" value="inlineOrByReference$ea_notes=Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;"/>
+						<tag xmi:id="EAID_BCD3CBEE_9454_f194_9C56_41C58C68EA8E" name="xsdEncodingRule" value="$ea_notes=Values: notEncoded,iso19136_2007,gml33,citygml&#xA;"/>
+						<tag xmi:id="EAID_E810E922_58E8_b658_97E7_FE1CC31EAC1E" name="sequenceNumber" value="2$ea_notes= Unique integer value for properties of the type used to sort properties.&#xA;"/>
+					</tags>
+				</target>
+				<model ea_localid="9510"/>
+				<properties ea_type="Association" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels lb="*" rb="0..1" rt="+pointCloud&#xA;«Property»"/>
+				<extendedProperties/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_9A2AFFA8_4144_4ce5_9341_4F644DE280DE">
+				<source xmi:idref="EAID_C67FBEF8_132F_4a19_87E1_4F040BE587BE">
+					<model ea_localid="123" type="Class" name="MassPointRelief"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type multiplicity="*" aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_EAAC4305_1147_4752_801A_48B1BB977958">
+					<model ea_localid="999" type="Class" name="GM_MultiPoint"/>
+					<role name="reliefPoints" stereotype="Property" visibility="Public" targetScope="instance"/>
+					<type multiplicity="0..1" aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation value="Relates to the 3D MultiPoint geometry of the MassPointRelief."/>
+					<xrefs value="$XREFPROP=$XID={E855558A-3887-4668-A571-368B73261129}$XID;$NAM=Stereotypes$NAM;$TYP=connectorDestEnd property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;FQName=CityGML::Property;@ENDSTEREO;$DES;$CLT={9A2AFFA8-4144-4ce5-9341-4F644DE280DE}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+					<tags>
+						<tag xmi:id="EAID_08A8199D_FE63_35fe_AA4B_E2E8DA73272E" name="isMetadata" value="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;"/>
+						<tag xmi:id="EAID_37DFCA0A_B550_b0b5_B484_475807F1F3C8" name="inlineOrByReference" value="inlineOrByReference$ea_notes=Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;"/>
+						<tag xmi:id="EAID_BCD3CBEE_9454_f194_9DE7_F7FF0409D193" name="xsdEncodingRule" value="$ea_notes=Values: notEncoded,iso19136_2007,gml33,citygml&#xA;"/>
+						<tag xmi:id="EAID_E810E922_58E8_b658_A20F_4E8183C88D96" name="sequenceNumber" value="1$ea_notes= Unique integer value for properties of the type used to sort properties.&#xA;"/>
+					</tags>
+				</target>
+				<model ea_localid="9509"/>
+				<properties ea_type="Association" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels lb="*" rb="0..1" rt="+reliefPoints&#xA;«Property»"/>
+				<extendedProperties/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_8211BBA1_BD2A_431f_9F34_5D34C45CF434">
+				<source xmi:idref="EAID_EBD13E4A_697E_425d_AE47_77BC140AAA85">
+					<model ea_localid="124" type="Class" name="RasterRelief"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type multiplicity="*" aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_CEB09532_0C7F_4f9d_BF64_622ABFC72B3A">
+					<model ea_localid="2552" type="Class" name="CV_DiscreteGridPointCoverage"/>
+					<role name="grid" stereotype="Property" visibility="Public" targetScope="instance"/>
+					<type multiplicity="1" aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation value="Relates to the DiscreteGridPointCoverage of the RasterRelief."/>
+					<xrefs value="$XREFPROP=$XID={EF7DDDC1-B041-4971-95FB-D01F7AC9F5B1}$XID;$NAM=Stereotypes$NAM;$TYP=connectorDestEnd property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;FQName=CityGML::Property;@ENDSTEREO;$DES;$CLT={8211BBA1-BD2A-431f-9F34-5D34C45CF434}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+					<tags>
+						<tag xmi:id="EAID_08A8199D_FE63_35fe_8507_5FC630257809" name="isMetadata" value="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;"/>
+						<tag xmi:id="EAID_37DFCA0A_B550_b0b5_ACDE_28578024AD13" name="inlineOrByReference" value="inlineOrByReference$ea_notes=Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;"/>
+						<tag xmi:id="EAID_BCD3CBEE_9454_f194_80B2_9F33F8118485" name="xsdEncodingRule" value="$ea_notes=Values: notEncoded,iso19136_2007,gml33,citygml&#xA;"/>
+						<tag xmi:id="EAID_E810E922_58E8_b658_9CE8_8D90C22454A8" name="sequenceNumber" value="1$ea_notes= Unique integer value for properties of the type used to sort properties.&#xA;"/>
+					</tags>
+				</target>
+				<model ea_localid="9126"/>
+				<properties ea_type="Association" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels lb="*" rb="1" rt="+grid&#xA;«Property»"/>
+				<extendedProperties/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_B6B2087D_9676_4c08_AE46_ADC340E619A4">
+				<source xmi:idref="EAID_90C1991A_7C36_4b51_B5DD_F6A570100375">
+					<model ea_localid="122" type="Class" name="ReliefFeature"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_47C81848_9C36_4278_9655_043640A70675">
+					<model ea_localid="8178" type="Class" name="AbstractSpaceBoundary"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="9354"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_4C94E3BB_472A_4af5_9E4C_C7C94FA90E6A">
+				<source xmi:idref="EAID_691F1836_DD16_45c0_9978_FABBA6CE23B4">
+					<model ea_localid="120" type="Class" name="TINRelief"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type multiplicity="*" aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_815F2729_8FAC_4572_B9C7_D54ECC3BDA1F">
+					<model ea_localid="954" type="Class" name="GM_TriangulatedSurface"/>
+					<role name="tin" stereotype="Property" visibility="Public" targetScope="instance"/>
+					<type multiplicity="1" aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation value="Relates to the triangulated surface of the TINRelief."/>
+					<xrefs value="$XREFPROP=$XID={27B81C7D-4336-4312-B1EC-C43264E25F43}$XID;$NAM=Stereotypes$NAM;$TYP=connectorDestEnd property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Property;FQName=CityGML::Property;@ENDSTEREO;$DES;$CLT={4C94E3BB-472A-4af5-9E4C-C7C94FA90E6A}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+					<tags>
+						<tag xmi:id="EAID_08A8199D_FE63_35fe_93BF_C32DB5192E6C" name="isMetadata" value="false$ea_notes=Values: True,False&#xA;Default: false&#xA;Description: Indicates whether the property is considered metadata about the instance - and not information about the phenomenon in the real world.&#xA;"/>
+						<tag xmi:id="EAID_37DFCA0A_B550_b0b5_BB43_465C0673FCC7" name="inlineOrByReference" value="inlineOrByReference$ea_notes=Values: inline,byReference,inlineOrByReference&#xA;Default: inlineOrByReference&#xA;Description: Controls whether property values may be encoded inline or by reference.&#xA;"/>
+						<tag xmi:id="EAID_BCD3CBEE_9454_f194_BE55_F0CF9563344A" name="xsdEncodingRule" value="$ea_notes=Values: notEncoded,iso19136_2007,gml33,citygml&#xA;"/>
+						<tag xmi:id="EAID_E810E922_58E8_b658_9172_BA59A9DA53C0" name="sequenceNumber" value="1$ea_notes= Unique integer value for properties of the type used to sort properties.&#xA;"/>
+					</tags>
+				</target>
+				<model ea_localid="9508"/>
+				<properties ea_type="Association" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels lb="*" rb="1" rt="+tin&#xA;«Property»"/>
+				<extendedProperties/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_6545C370_A7FE_42d7_AFD3_12247EFC5E8D">
+				<source xmi:idref="EAID_E5C5322E_A142_4812_AD39_C64DA8CBCE6E">
+					<model ea_localid="15" type="Package" name="Relief"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_FDE7D4FC_4EF3_42d1_9A94_D7340DBBD79F">
+					<model ea_localid="16" type="Package" name="Core"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="9323"/>
+				<properties ea_type="Package" stereotype="import" direction="Source -&gt; Destination"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels mb=" &#xA;«import»"/>
+				<extendedProperties conditional=" &#xA;«import»" virtualInheritance="0"/>
+				<style/>
+				<xrefs value="$XREFPROP=$XID={8701DB41-D1F4-4251-A485-2148088E9146}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=import;GUID={7DF0246C-3D82-4be3-BF2E-AF2C11CB80DE};@ENDSTEREO;$DES;$CLT={6545C370-A7FE-42d7-AFD3-12247EFC5E8D}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_A7F13392_C7E5_4134_BC2C_16E986F07351">
+				<source xmi:idref="EAID_E5C5322E_A142_4812_AD39_C64DA8CBCE6E">
+					<model ea_localid="15" type="Package" name="Relief"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_C6593764_1DF3_44f8_9658_D42F172B225B">
+					<model ea_localid="2448" type="Package" name="ISO 19123:2005 Schema for coverage geometry and functions"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="9260"/>
+				<properties ea_type="Usage" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels mb="«use»"/>
+				<extendedProperties conditional="«use»" virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+		</connectors>
+		<primitivetypes>
+			<packagedElement xmi:type="uml:Package" xmi:id="EAPrimitiveTypesPackage" name="EA_PrimitiveTypes_Package" visibility="public"/>
+		</primitivetypes>
+		<profiles>
+			<uml:Profile xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1/" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmi:id="thecustomprofile" nsPrefix="thecustomprofile" name="thecustomprofile" metamodelReference="mmref01">
+				<ownedComment xmi:type="uml:Comment" xmi:id="comment01" annotatedElement="thecustomprofile">
+					<body> Version:1.0</body>
+				</ownedComment>
+				<packageImport xmi:id="mmref01">
+					<importedPackage href="http://schema.omg.org/spec/UML/2.1/"/>
+				</packageImport>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="OCL" name="OCL">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="OCL-base_Constraint" name="base_Constraint" association="Constraint_OCL">
+						<type href="http://schema.omg.org/spec/UML/2.1/Constraint"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Constraint_OCL" name="A_Constraint_OCL" memberEnd="extension_OCL OCL-base_Constraint">
+					<ownedEnd xmi:id="extension_OCL" name="extension_OCL" type="OCL" isComposite="true" lower="0" upper="1" memberEnd="extension_OCL OCL-base_Constraint"/>
+				</packagedElement>
+			</uml:Profile>
+			<uml:Profile xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1/" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmi:id="FA5634AC-0" nsPrefix="CityGML" name="CityGML" metamodelReference="mmref01">
+				<ownedComment xmi:type="uml:Comment" xmi:id="comment01" annotatedElement="FA5634AC-0">
+					<body>This profile defines a set of stereotypes and tagged values for defining CityGML application schemas. Version:1.0</body>
+				</ownedComment>
+				<packageImport xmi:id="mmref01">
+					<importedPackage href="http://schema.omg.org/spec/UML/2.1/"/>
+				</packageImport>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Version" name="Version">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Version-base_Property" name="base_Property" association="Property_Version">
+						<type href="http://schema.omg.org/spec/UML/2.1/Property"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Version-isMetadata" name="isMetadata">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Version-inlineOrByReference" name="inlineOrByReference">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Version-sequenceNumber" name="sequenceNumber">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Property_Version" name="A_Property_Version" memberEnd="extension_Version Version-base_Property">
+					<ownedEnd xmi:id="extension_Version" name="extension_Version" type="Version" isComposite="true" lower="0" upper="1" memberEnd="extension_Version Version-base_Property"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Union" name="Union">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Union-base_DataType" name="base_DataType" association="DataType_Union">
+						<type href="http://schema.omg.org/spec/UML/2.1/DataType"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Union-gmlAsGroup" name="gmlAsGroup">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Union-xsdEncodingRule" name="xsdEncodingRule">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Union-noPropertyType" name="noPropertyType">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="DataType_Union" name="A_DataType_Union" memberEnd="extension_Union Union-base_DataType">
+					<ownedEnd xmi:id="extension_Union" name="extension_Union" type="Union" isComposite="true" lower="0" upper="1" memberEnd="extension_Union Union-base_DataType"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="CodeList" name="CodeList">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="CodeList-base_Class" name="base_Class" association="Class_CodeList">
+						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="CodeList-asDictionary" name="asDictionary">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="CodeList-xsdEncodingRule" name="xsdEncodingRule">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Class_CodeList" name="A_Class_CodeList" memberEnd="extension_CodeList CodeList-base_Class">
+					<ownedEnd xmi:id="extension_CodeList" name="extension_CodeList" type="CodeList" isComposite="true" lower="0" upper="1" memberEnd="extension_CodeList CodeList-base_Class"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="ApplicationSchema" name="ApplicationSchema">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ApplicationSchema-base_Package" name="base_Package" association="Package_ApplicationSchema">
+						<type href="http://schema.omg.org/spec/UML/2.1/Package"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ApplicationSchema-version" name="version">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ApplicationSchema-language" name="language">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ApplicationSchema-gmlProfileSchema" name="gmlProfileSchema">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ApplicationSchema-xsdDocument" name="xsdDocument">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ApplicationSchema-xmlns" name="xmlns">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ApplicationSchema-targetNamespace" name="targetNamespace">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Package_ApplicationSchema" name="A_Package_ApplicationSchema" memberEnd="extension_ApplicationSchema ApplicationSchema-base_Package">
+					<ownedEnd xmi:id="extension_ApplicationSchema" name="extension_ApplicationSchema" type="ApplicationSchema" isComposite="true" lower="0" upper="1" memberEnd="extension_ApplicationSchema ApplicationSchema-base_Package"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="FeatureType" name="FeatureType">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="FeatureType-base_Class" name="base_Class" association="Class_FeatureType">
+						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="FeatureType-gmlMixin" name="gmlMixin">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="FeatureType-noPropertyType" name="noPropertyType">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="FeatureType-isCollection" name="isCollection">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="FeatureType-byValuePropertyType" name="byValuePropertyType">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Class_FeatureType" name="A_Class_FeatureType" memberEnd="extension_FeatureType FeatureType-base_Class">
+					<ownedEnd xmi:id="extension_FeatureType" name="extension_FeatureType" type="FeatureType" isComposite="true" lower="0" upper="1" memberEnd="extension_FeatureType FeatureType-base_Class"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Leaf" name="Leaf">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Leaf-base_Package" name="base_Package" association="Package_Leaf">
+						<type href="http://schema.omg.org/spec/UML/2.1/Package"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Leaf-xsdEncodingRule" name="xsdEncodingRule">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Leaf-xsdDocument" name="xsdDocument">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Package_Leaf" name="A_Package_Leaf" memberEnd="extension_Leaf Leaf-base_Package">
+					<ownedEnd xmi:id="extension_Leaf" name="extension_Leaf" type="Leaf" isComposite="true" lower="0" upper="1" memberEnd="extension_Leaf Leaf-base_Package"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="ObjectType" name="ObjectType">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ObjectType-base_Class" name="base_Class" association="Class_ObjectType">
+						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ObjectType-noPropertyType" name="noPropertyType">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ObjectType-isCollection" name="isCollection">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ObjectType-byValuePropertyType" name="byValuePropertyType">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Class_ObjectType" name="A_Class_ObjectType" memberEnd="extension_ObjectType ObjectType-base_Class">
+					<ownedEnd xmi:id="extension_ObjectType" name="extension_ObjectType" type="ObjectType" isComposite="true" lower="0" upper="1" memberEnd="extension_ObjectType ObjectType-base_Class"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="DataType" name="DataType">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="DataType-base_DataType" name="base_DataType" association="DataType_DataType">
+						<type href="http://schema.omg.org/spec/UML/2.1/DataType"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="DataType-xsdEncodingRule" name="xsdEncodingRule">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="DataType-noPropertyType" name="noPropertyType">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="DataType_DataType" name="A_DataType_DataType" memberEnd="extension_DataType DataType-base_DataType">
+					<ownedEnd xmi:id="extension_DataType" name="extension_DataType" type="DataType" isComposite="true" lower="0" upper="1" memberEnd="extension_DataType DataType-base_DataType"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="TopLevelFeatureType" name="TopLevelFeatureType">
+					<generalization xmi:type="uml:Generalization" xmi:id="TopLevelFeatureType_FeatureType_generalization" general="FeatureType"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="BasicType" name="BasicType">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="BasicType-base_Class" name="base_Class" association="Class_BasicType">
+						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="BasicType-rangeMaximum" name="rangeMaximum">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="BasicType-maxLength" name="maxLength">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="BasicType-xsdEncodingRule" name="xsdEncodingRule">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="BasicType-length" name="length">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="BasicType-minLength" name="minLength">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="BasicType-rangeMinimum" name="rangeMinimum">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="BasicType-base" name="base">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="BasicType-itemType" name="itemType">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Class_BasicType" name="A_Class_BasicType" memberEnd="extension_BasicType BasicType-base_Class">
+					<ownedEnd xmi:id="extension_BasicType" name="extension_BasicType" type="BasicType" isComposite="true" lower="0" upper="1" memberEnd="extension_BasicType BasicType-base_Class"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Property" name="Property">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Property-base_Property" name="base_Property" association="Property_Property">
+						<type href="http://schema.omg.org/spec/UML/2.1/Property"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Property-xsdEncodingRule" name="xsdEncodingRule">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Property-isMetadata" name="isMetadata">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Property-inlineOrByReference" name="inlineOrByReference">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Property-sequenceNumber" name="sequenceNumber">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Property_Property" name="A_Property_Property" memberEnd="extension_Property Property-base_Property">
+					<ownedEnd xmi:id="extension_Property" name="extension_Property" type="Property" isComposite="true" lower="0" upper="1" memberEnd="extension_Property Property-base_Property"/>
+				</packagedElement>
+			</uml:Profile>
+		</profiles>
+		<diagrams>
+			<diagram xmi:id="EAID_D9236E1D_D6D8_4fb3_9AB4_C9105C205DD7">
+				<model package="EAPK_E5C5322E_A142_4812_AD39_C64DA8CBCE6E" localID="12" owner="EAPK_E5C5322E_A142_4812_AD39_C64DA8CBCE6E"/>
+				<properties name="Relief" type="Logical"/>
+				<project author="kolbe/kutzner" version="1.0" created="2012-11-28 00:00:00" modified="2020-05-30 00:33:53"/>
+				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=1130;DocSize.cy=795;ShowDetails=0;Orientation=L;Zoom=131;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=1;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AllDockable=0;AdvancedElementProps=1;AdvancedFeatureProps=0;AdvancedConnectorProps=0;m_bElementClassifier=1;SPT=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;HideConnStereotype=1;"/>
+				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=0;AdvancedConnectorProps=0;m_bElementClassifier=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;HideConnStereotype=1;SuppressedCompartments=;Theme=:119;SaveTag=DC0D4212;"/>
+				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
+				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
+				<extendedProperties/>
+				<elements>
+					<element geometry="Left=605;Top=69;Right=862;Bottom=144;" subject="EAID_FA3061BB_7262_4a3e_AD90_FC20B9A61B46" seqno="1" style="DUID=8A90C944;BCol=16777215;"/>
+					<element geometry="Left=395;Top=565;Right=528;Bottom=647;" subject="EAID_38EB3C61_64E6_4992_8DB9_356635E2B808" seqno="2" style="DUID=694B8326;NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;BCol=16770764;AttPro=0;AttPri=0;AttPub=0;AttPkg=0;OpPro=0;OpPri=0;OpPub=0;OpPkg=0;AttCustom=0;OpCustom=0;PType=0;RzO=1;"/>
+					<element geometry="Left=300;Top=471;Right=437;Bottom=549;" subject="EAID_EAAC4305_1147_4752_801A_48B1BB977958" seqno="3" style="DUID=4AD896B9;NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;AttPro=0;AttPri=0;AttPub=0;AttPkg=0;OpPro=0;OpPri=0;OpPub=0;OpPkg=0;AttCustom=0;OpCustom=0;PType=0;RzO=1;BCol=11796428;"/>
+					<element geometry="Left=92;Top=586;Right=244;Bottom=647;" subject="EAID_A2E22CE2_7E2E_4895_BE3E_E7BC14C9D51F" seqno="4" style="DUID=69F68252;NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;AttPro=0;AttPri=0;AttPub=0;AttPkg=0;OpPro=0;OpPri=0;OpPub=0;OpPkg=0;AttCustom=0;OpCustom=0;PType=0;RzO=1;BCol=11796428;"/>
+					<element geometry="Left=92;Top=471;Right=244;Bottom=549;" subject="EAID_815F2729_8FAC_4572_B9C7_D54ECC3BDA1F" seqno="5" style="DUID=BCB2BD12;NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;BCol=11796428;"/>
+					<element geometry="Left=257;Top=33;Right=414;Bottom=115;" subject="EAID_47C81848_9C36_4278_9655_043640A70675" seqno="6" style="DUID=353B214D;NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;HideIcon=0;BCol=16770764;AttPro=0;AttPri=0;AttPub=0;AttPkg=0;OpPro=0;OpPri=0;OpPub=0;OpPkg=0;AttCustom=0;OpCustom=0;PType=0;RzO=1;"/>
+					<element geometry="Left=447;Top=167;Right=813;Bottom=271;" subject="EAID_057DADD3_ABDC_4035_BA1D_DC05B6FE70D7" seqno="7" style="DUID=A0028193;NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;BCol=11796479;HideIcon=0;"/>
+					<element geometry="Left=66;Top=167;Right=314;Bottom=271;" subject="EAID_90C1991A_7C36_4b51_B5DD_F6A570100375" seqno="8" style="DUID=2F530D30;NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;BCol=11796479;HideIcon=0;"/>
+					<element geometry="Left=932;Top=167;Right=1074;Bottom=242;" subject="EAID_F23E617D_5FEA_4cd6_AAE5_F38E34971B2E" seqno="9" style="DUID=9B4494E4;NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;AttPro=0;AttPri=0;AttPub=0;AttPkg=0;OpPro=0;OpPri=0;OpPub=0;OpPkg=0;AttCustom=0;OpCustom=0;PType=0;RzO=1;BCol=11796428;"/>
+					<element geometry="Left=66;Top=327;Right=270;Bottom=415;" subject="EAID_691F1836_DD16_45c0_9978_FABBA6CE23B4" seqno="10" style="DUID=0EA7F619;NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;BCol=11796479;HideIcon=0;"/>
+					<element geometry="Left=285;Top=327;Right=554;Bottom=415;" subject="EAID_C67FBEF8_132F_4a19_87E1_4F040BE587BE" seqno="11" style="DUID=86846992;NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;BCol=11796479;HideIcon=0;"/>
+					<element geometry="Left=569;Top=327;Right=826;Bottom=415;" subject="EAID_7423A1EA_4F50_40af_9E8C_C0D867BCA731" seqno="12" style="DUID=B3201D2A;NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;BCol=11796479;HideIcon=0;"/>
+					<element geometry="Left=841;Top=327;Right=1073;Bottom=415;" subject="EAID_EBD13E4A_697E_425d_AE47_77BC140AAA85" seqno="13" style="DUID=0DEB4444;NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;BCol=11796479;HideIcon=0;"/>
+					<element geometry="Left=871;Top=471;Right=1043;Bottom=549;" subject="EAID_CEB09532_0C7F_4f9d_BF64_622ABFC72B3A" seqno="14" style="DUID=C6A4BCBE;NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;AttPro=0;AttPri=0;AttPub=0;AttPkg=0;OpPro=0;OpPri=0;OpPub=0;OpPkg=0;AttCustom=0;OpCustom=0;PType=0;RzO=1;BCol=11796428;"/>
+					<element geometry="Left=629;Top=471;Right=759;Bottom=549;" subject="EAID_5E740584_6743_42da_8CD0_2E342F9A5FDE" seqno="15" style="DUID=80C04AA1;NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;AttPro=0;AttPri=0;AttPub=0;AttPkg=0;OpPro=0;OpPri=0;OpPub=0;OpPkg=0;AttCustom=0;OpCustom=0;PType=0;RzO=1;BCol=11796428;"/>
+					<element geometry="SX=-1;SY=-20;EX=0;EY=38;EDGE=3;$LLB=CX=4:CY=16:OX=2:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LLT=;LMT=;LMB=;LRT=CX=53:CY=32:OX=19:OY=-17:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=CX=6:CY=16:OX=3:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_8211BBA1_BD2A_431f_9F34_5D34C45CF434" style="Mode=3;EOID=C6A4BCBE;SOID=0DEB4444;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="EDGE=1;SX=1;SY=0;EX=1;EY=0;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=420:-305$629:-305$;" subject="EAID_787F795B_4687_4d8f_A946_53275CA9B99C" style="Mode=3;EOID=A0028193;SOID=86846992;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="EDGE=1;EX=1;EY=-1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=168:-305$629:-305$;" subject="EAID_01C96C9D_1C86_4b26_9639_A94351CBF178" style="Mode=3;EOID=A0028193;SOID=0EA7F619;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=-4;SY=-5;EX=-4;EY=-4;EDGE=2;$LLB=CX=4:CY=16:OX=2:OY=-30:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LLT=;LMT=;LMB=;LRT=CX=82:CY=32:OX=44:OY=-23:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;LRB=CX=16:CY=16:OX=-4:OY=-30:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=0:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_9E1930C5_BBB4_4421_BBB0_7B5FE727F5E2" style="Mode=3;EOID=A0028193;SOID=2F530D30;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="EDGE=1;EX=1;EY=0;SX=1;SY=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=958:-305$629:-305$;" subject="EAID_6AB0FC18_7F65_47e3_B46C_B06B4D80BFE0" style="Mode=3;EOID=A0028193;SOID=0DEB4444;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="EDGE=1;SX=-1;SY=18;EX=1;EY=0;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=694:-305$629:-305$;" subject="EAID_14A7D481_FDB0_458f_B3B1_6F4E4A43A702" style="Mode=3;EOID=A0028193;SOID=B3201D2A;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=20;SY=-37;EX=123;EY=50;EDGE=3;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_A4C3E2CD_A4F5_4235_B32E_E581E0D43F60" style="Mode=3;EOID=A0028193;SOID=8A90C944;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=-48;SY=-44;EX=-45;EY=-4;EDGE=3;$LLB=CX=4:CY=16:OX=1:OY=1:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LLT=;LMT=;LMB=;LRT=CX=96:CY=32:OX=51:OY=-16:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=CX=18:CY=16:OX=5:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_41F3710B_44D8_41f3_8C58_5A6B2068F9D6" style="Mode=3;EOID=80C04AA1;SOID=B3201D2A;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=69;SY=-43;EX=28;EY=28;EDGE=3;$LLB=CX=4:CY=16:OX=-21:OY=1:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LLT=;LMT=;LMB=;LRT=CX=56:CY=32:OX=131:OY=-17:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=CX=18:CY=16:OX=-36:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_5A2D6EB8_73B6_43bf_B1CD_A2E6E1CE3A5E" style="Mode=3;EOID=694B8326;SOID=86846992;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=173;SY=-6;EX=3;EY=-20;EDGE=2;$LLB=CX=4:CY=16:OX=4:OY=-32:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LLT=;LMT=;LMB=;LRT=CX=53:CY=32:OX=10:OY=-20:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=CX=18:CY=16:OX=-2:OY=-32:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_B7D2290E_988D_48c9_800F_2CE00E1E28D0" style="Mode=3;EOID=9B4494E4;SOID=A0028193;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=-68;SY=51;EX=2;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=562:-146$335:-146$;" subject="EAID_BE4DA325_6162_4d43_B2E6_E166B8DCF29B" style="Mode=3;EOID=353B214D;SOID=A0028193;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=4;SY=42;EX=2;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=194:-146$335:-146$;" subject="EAID_B6B2087D_9676_4c08_AE46_ADC340E619A4" style="Mode=3;EOID=353B214D;SOID=2F530D30;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_F8511E19_C840_4092_8D2C_10DD8F36ABAF" style="Mode=3;EOID=BCB2BD12;SOID=69F68252;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=-43;EX=1;EY=0;EDGE=3;$LLB=CX=4:CY=16:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LLT=;LMT=;LMB=;LRT=CX=53:CY=32:OX=11:OY=-17:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=CX=6:CY=16:OX=2:OY=1:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_4C94E3BB_472A_4af5_9E4C_C7C94FA90E6A" style="Mode=3;EOID=BCB2BD12;SOID=0EA7F619;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=-46;SY=-43;EX=5;EY=39;EDGE=3;$LLB=CX=4:CY=16:OX=0:OY=1:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LLT=;LMT=;LMB=;LRT=CX=56:CY=32:OX=46:OY=-17:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=CX=18:CY=16:OX=4:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_9A2AFFA8_4144_4ce5_9341_4F644DE280DE" style="Mode=3;EOID=4AD896B9;SOID=86846992;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=39;SY=-42;EX=42;EY=39;EDGE=3;$LLB=CX=4:CY=16:OX=-22:OY=1:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LLT=;LMT=;LMB=;LRT=CX=54:CY=32:OX=127:OY=-18:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=CX=18:CY=16:OX=-36:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_7A6717D0_4B13_40c3_BABE_8A1C4518D53A" style="Mode=3;EOID=80C04AA1;SOID=B3201D2A;Color=-1;LWidth=0;Hidden=0;"/>
+				</elements>
+			</diagram>
+			<diagram xmi:id="EAID_1D144F33_D3F1_4efb_9A25_C99109469012">
+				<model package="EAPK_E5C5322E_A142_4812_AD39_C64DA8CBCE6E" localID="3607" owner="EAPK_E5C5322E_A142_4812_AD39_C64DA8CBCE6E"/>
+				<properties name="Relief - ADE Data types" type="Logical"/>
+				<project author="Tatjana" version="1.0" created="2020-05-26 11:59:28" modified="2020-05-30 00:33:57"/>
+				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=1138;DocSize.cy=795;ShowDetails=0;Orientation=L;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AllDockable=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;SaveTag=DBECBB29;"/>
+				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=0;ufh=0;hh=0;cls=0;bw=0;hli=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
+				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
+				<extendedProperties/>
+				<elements>
+					<element geometry="Left=498;Top=272;Right=625;Bottom=317;" subject="EAID_F19C4792_8912_4163_A770_EFB0783D0141" seqno="1" style="DUID=DAEC2345;HideIcon=0;"/>
+					<element geometry="Left=346;Top=272;Right=488;Bottom=317;" subject="EAID_1A1C4316_D886_4dd2_9AC0_33588E8A8720" seqno="2" style="DUID=11CDCC58;HideIcon=0;"/>
+					<element geometry="Left=475;Top=216;Right=621;Bottom=261;" subject="EAID_5BAC845C_4A26_44e5_8E07_444013A49BB0" seqno="3" style="DUID=61AB9216;HideIcon=0;"/>
+					<element geometry="Left=346;Top=216;Right=466;Bottom=261;" subject="EAID_787CD588_67FA_4120_A58D_1238C929B670" seqno="4" style="DUID=2718AEF0;HideIcon=0;"/>
+					<element geometry="Left=484;Top=160;Right=684;Bottom=205;" subject="EAID_6CE84985_39F6_4358_973C_F11C0ACEDE05" seqno="5" style="DUID=FCA8DEA8;HideIcon=0;"/>
+					<element geometry="Left=346;Top=160;Right=475;Bottom=205;" subject="EAID_DF552FE6_83BE_4ac9_8B04_33C9C228E5F5" seqno="6" style="DUID=B23764DE;HideIcon=0;"/>
+				</elements>
+			</diagram>
+		</diagrams>
+		<EAStub xmi:id="EAID_C4D25E26_5DFC_461f_902F_0A5385B7BEC4" name="IntegerBetween0and3" UMLType="Class"/>
+	</xmi:Extension>
+</xmi:XMI>
