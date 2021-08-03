@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+	<xmi:Documentation exporter="Enterprise Architect" exporterVersion="6.5"/>
+	<uml:Model xmi:type="uml:Model" name="EA_Model" visibility="public">
+		<packagedElement xmi:type="uml:Package" xmi:id="EAPK_70230547_C1F1_4b3d_B738_EEC6480392B5" name="OASIS" visibility="public">
+			<packagedElement xmi:type="uml:Package" xmi:id="EAPK_F55E2E82_EBD3_41fb_BB0E_5B31C72551D3" name="OASIS xAL v3.0" visibility="public"/>
+		</packagedElement>
+	</uml:Model>
+	<xmi:Extension extender="Enterprise Architect" extenderID="6.5">
+		<elements>
+			<element xmi:idref="EAPK_70230547_C1F1_4b3d_B738_EEC6480392B5" xmi:type="uml:Package" name="OASIS" scope="public">
+				<model package2="EAID_70230547_C1F1_4b3d_B738_EEC6480392B5" package="EAPK_F7E49622_96AD_472d_8DA1_75674075F430" tpos="0" ea_localid="817" ea_eleType="package"/>
+				<properties isSpecification="false" sType="Package" nType="0" scope="public"/>
+				<project author="Tatjana" version="1.0" phase="1.0" created="2020-06-11 12:22:20" modified="2020-06-11 12:22:20" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="Model"/>
+				<packageproperties version="1.0"/>
+				<paths/>
+				<times created="2020-06-11 12:22:20" modified="2020-06-11 12:22:20"/>
+				<flags iscontrolled="FALSE" isprotected="FALSE" usedtd="FALSE" logxml="FALSE" packageFlags="isModel=1;VICON=3;"/>
+			</element>
+			<element xmi:idref="EAPK_F55E2E82_EBD3_41fb_BB0E_5B31C72551D3" xmi:type="uml:Package" name="OASIS xAL v3.0" scope="public">
+				<model package2="EAID_F55E2E82_EBD3_41fb_BB0E_5B31C72551D3" package="EAPK_70230547_C1F1_4b3d_B738_EEC6480392B5" tpos="0" ea_localid="818" ea_eleType="package"/>
+				<properties isSpecification="false" sType="Package" nType="0" scope="public"/>
+				<project author="Tatjana" version="1.0" phase="1.0" created="2020-06-11 12:38:52" modified="2020-06-11 12:38:52" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="OASIS"/>
+				<packageproperties version="1.0"/>
+				<paths/>
+				<times created="2020-06-11 12:38:52" modified="2020-08-03 16:12:52"/>
+				<flags iscontrolled="FALSE" isprotected="FALSE" usedtd="FALSE" logxml="FALSE"/>
+			</element>
+		</elements>
+		<connectors>
+			<connector xmi:idref="EAID_B42002D0_BEB4_4bdd_B85F_A7C082989F70">
+				<source xmi:idref="EAID_369E0123_00FC_4098_BEF2_3BB506B2012A">
+					<model ea_localid="1" type="Package" name="CityGML"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_F55E2E82_EBD3_41fb_BB0E_5B31C72551D3">
+					<model ea_localid="8344" type="Package" name="OASIS xAL v3.0"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="9547"/>
+				<properties ea_type="Usage" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels mb="«use»"/>
+				<extendedProperties conditional="«use»" virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+		</connectors>
+		<primitivetypes>
+			<packagedElement xmi:type="uml:Package" xmi:id="EAPrimitiveTypesPackage" name="EA_PrimitiveTypes_Package" visibility="public"/>
+		</primitivetypes>
+		<profiles/>
+		<diagrams/>
+	</xmi:Extension>
+</xmi:XMI>
