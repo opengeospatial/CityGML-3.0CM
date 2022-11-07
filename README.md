@@ -83,7 +83,7 @@ A representation of a disconnected piece is called a *fragment*.  Fragments may 
 Encodings
 --
 
-Several Encodings (GML, relational database/SQL, JSON) are in commercial use with CityGML 2.0. It is likely that these will be updated to comply with the changes in the 3.0 Conceptual Model but, as of July 2018, results provided by the Work Package 2 team led by the Technische Universitaet Muenchen are only available for GML. Please refer to the separate GML section of the CityGML Encodings repository at [https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/CityGML] for details. 
+Several Encodings (GML, relational database/SQL, JSON) are in commercial use with CityGML 2.0. It is likely that these will be updated to comply with the changes in the 3.0 Conceptual Model but, as of July 2018, results provided by the Work Package 2 team led by the Technische Universitaet Muenchen are only available for GML. Please refer to the CityGML GML Encoding repository at [https://github.com/opengeospatial/CityGML3.0-GML-Encoding] for details. 
 
-Because implementability of the Conceptual Model via one or more encodings is a practical requirement for any use of CityGML it is important to be able to test various aspects of the Conceptual Model through experimental Encodings during development of the Conceptual Model. These can be found at [https://github.com/opengeospatial/CityGML-3.0Encodings/tree/master/CityGML/Examples].
+Because implementability of the Conceptual Model via one or more encodings is a practical requirement for any use of CityGML it is important to be able to test various aspects of the Conceptual Model through experimental Encodings during development of the Conceptual Model. These can be found at [https://github.com/opengeospatial/CityGML3.0-GML-Encoding/tree/main/resources/examples].
 
